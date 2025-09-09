@@ -1,0 +1,108 @@
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Mantém compatível com Prettier (normalmente 80/100/120 via .prettierrc)
+# Alguns editores respeitam essa chave:
+max_line_length = 120
+
+# ----------------------------
+# Código-fonte (JS/TS/React)
+# ----------------------------
+[*.{js,jsx,ts,tsx}]
+quote_type = single
+
+# ----------------------------
+# JSON / JSONC / JSON5
+# ----------------------------
+[*.{json,jsonc,json5}]
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+# Evita remoção de espaços em arrays/objetos “manuais” durante reviews
+trim_trailing_whitespace = true
+
+# package-lock, pnpm-lock, yarn.lock geralmente não devem ser reformatados
+[{package-lock.json,pnpm-lock.yaml,yarn.lock}]
+insert_final_newline = false
+trim_trailing_whitespace = false
+
+# ----------------------------
+# YAML (CI, Actions, k8s, etc.)
+# ----------------------------
+[*.{yml,yaml}]
+indent_style = space
+indent_size = 2
+
+# ----------------------------
+# Markdown / MDX (docs e conteúdo)
+# ----------------------------
+[*.{md,mdx}]
+# Não remover espaços à direita: preserva quebra de linha em listas e poesias
+trim_trailing_whitespace = false
+insert_final_newline = true
+
+# ----------------------------
+# CSS / SCSS / PostCSS
+# ----------------------------
+[*.{css,scss,pcss}]
+indent_style = space
+indent_size = 2
+
+# ----------------------------
+# HTML (emails, páginas estáticas)
+# ----------------------------
+[*.html]
+indent_style = space
+indent_size = 2
+
+# ----------------------------
+# Arquivos de config comuns
+# ----------------------------
+[*.{ini,properties,toml}]
+indent_style = space
+indent_size = 2
+
+# ----------------------------
+# Shell scripts
+# ----------------------------
+[*.sh]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+insert_final_newline = true
+
+# ----------------------------
+# Docker
+# ----------------------------
+[Dockerfile]
+indent_style = space
+indent_size = 2
+
+# ----------------------------
+# Makefile (tabs obrigatórias)
+# ----------------------------
+[Makefile]
+indent_style = tab
+
+# ----------------------------
+# Dotenv
+# ----------------------------
+[{.env,.env.*}]
+# Em geral, manter newline final ajuda em diffs e ferramentas
+insert_final_newline = true
+trim_trailing_whitespace = false
+
+# ----------------------------
+# SVG / imagens em texto
+# ----------------------------
+[*.svg]
+# Normalmente não queremos “mexer” muito nesses arquivos
+insert_final_newline = false
+trim_trailing_whitespace = false
