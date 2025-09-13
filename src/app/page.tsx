@@ -11,6 +11,7 @@ import {
   TableContainer,
   Paper,
   Typography,
+  Button,
 } from '@mui/material';
 
 interface Anuncio {
@@ -27,16 +28,36 @@ export default function Home() {
 
   useEffect(() => {
     fetch('/api/anuncios')
-      .then((res) => res.json())
-      .then((data) => setAnuncios(data))
-      .catch((err) => console.error('Erro ao buscar anúncios', err));
+      .then(res => res.json())
+      .then(data => setAnuncios(data))
+      .catch(err => console.error('Erro ao buscar anúncios', err));
   }, []);
+
+  const atualizarDados = async () => {
+    try {
+      const response = await fetch('/api/anuncios/fetch', {
+        method: 'POST',
+      });
+      const result = await response.json();
+      if (result.ok) {
+        // Recarrega os anúncios após a atualização
+        const anunciosResponse = await fetch('/api/anuncios');
+        const anunciosData = await anunciosResponse.json();
+        setAnuncios(anunciosData);
+      } else {
+        console.error('Erro ao atualizar dados:', result.error);
+      }
+    } catch (err) {
+      console.error('Erro ao atualizar dados:', err);
+    }
+  };
 
   return (
     <main>
-      <Typography variant="h4" component="h1" gutterBottom>
+      <Typography variant='h4' component='h1' gutterBottom>
         Anúncios
       </Typography>
+      <Button onClick={() => atualizarDados()}>Atualizar dados</Button>
       <TableContainer component={Paper}>
         <Table>
           <TableHead>
@@ -58,11 +79,7 @@ export default function Home() {
                 <TableCell>{anuncio.observacao}</TableCell>
                 <TableCell>{anuncio.tag}</TableCell>
                 <TableCell>
-                  <Link
-                    href={anuncio.url_apartamento}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <Link href={anuncio.url_apartamento} target='_blank' rel='noopener noreferrer'>
                     Ver anúncio
                   </Link>
                 </TableCell>
@@ -74,4 +91,3 @@ export default function Home() {
     </main>
   );
 }
-
