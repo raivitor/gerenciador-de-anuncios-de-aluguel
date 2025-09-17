@@ -2,6 +2,7 @@
   "name": "gerenciador-de-anuncios-de-aluguel",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
@@ -17,6 +18,7 @@
     "axios": "^1.12.1",
     "cheerio": "^1.1.2",
     "next": "15.5.3",
+    "puppeteer": "^24.22.0",
     "react": "19.1.1",
     "react-dom": "19.1.1"
   },
