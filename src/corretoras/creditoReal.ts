@@ -17,7 +17,6 @@ interface Filtros {
   cityState: string;
   finalValue: number;
   areaInitialValue: number;
-  bedrooms: number;
   parking: number;
 }
 
@@ -34,7 +33,6 @@ const filtros: Filtros = {
   cityState: 'Florianópolis_SC',
   finalValue: 4000,
   areaInitialValue: 75,
-  bedrooms: 2,
   parking: 1,
 };
 
