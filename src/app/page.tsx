@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import {
   Link,
   Table,
@@ -11,20 +11,34 @@ import {
   TableContainer,
   Paper,
   Typography,
-  Button,
+  TextField,
+  MenuItem,
 } from '@mui/material';
+import type { Tag } from './types/tag';
 
 interface Anuncio {
-  valor_aluguel: string;
-  valor_condominio: string;
-  url_apartamento: string;
+  id: number | string;
+  valor_aluguel: number;
   valor_total: number;
+  url_apartamento: string;
   observacao: string;
-  tag: string;
+  tag: Tag | '';
 }
 
 export default function Home() {
   const [anuncios, setAnuncios] = useState<Anuncio[]>([]);
+
+  const tagsDisponiveis = useMemo<Tag[]>(() => ['Não', 'Entrar em contato', 'Agendado', 'Visitado'], []);
+
+  const handleObservacaoChange = (index: number, observacao: string) => {
+    setAnuncios(prev =>
+      prev.map((anuncio, idx) => (idx === index ? { ...anuncio, observacao } : anuncio))
+    );
+  };
+
+  const handleTagChange = (index: number, tag: Tag | '') => {
+    setAnuncios(prev => prev.map((anuncio, idx) => (idx === index ? { ...anuncio, tag } : anuncio)));
+  };
 
   useEffect(() => {
     fetch('/api/anuncios')
@@ -57,13 +71,12 @@ export default function Home() {
       <Typography variant='h4' component='h1' gutterBottom>
         Anúncios
       </Typography>
-      <Button onClick={() => atualizarDados()}>Atualizar dados</Button>
+      {/* <Button onClick={() => atualizarDados()}>Atualizar dados</Button> */}
       <TableContainer component={Paper}>
         <Table>
           <TableHead>
             <TableRow>
               <TableCell>Valor Aluguel</TableCell>
-              <TableCell>Valor Condomínio</TableCell>
               <TableCell>Valor Total</TableCell>
               <TableCell>Observação</TableCell>
               <TableCell>Tag</TableCell>
@@ -72,12 +85,34 @@ export default function Home() {
           </TableHead>
           <TableBody>
             {anuncios.map((anuncio, index) => (
-              <TableRow key={index}>
-                <TableCell>{anuncio.valor_aluguel}</TableCell>
-                <TableCell>{anuncio.valor_condominio}</TableCell>
-                <TableCell>{anuncio.valor_total}</TableCell>
-                <TableCell>{anuncio.observacao}</TableCell>
-                <TableCell>{anuncio.tag}</TableCell>
+              <TableRow key={anuncio.id || index}>
+                <TableCell>{anuncio.valor_aluguel.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</TableCell>
+                <TableCell>{anuncio.valor_total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</TableCell>
+                <TableCell>
+                  <TextField
+                    value={anuncio.observacao}
+                    onChange={event => handleObservacaoChange(index, event.target.value)}
+                    fullWidth
+                    size='small'
+                    placeholder='Adicionar observação'
+                  />
+                </TableCell>
+                <TableCell>
+                  <TextField
+                    select
+                    value={anuncio.tag}
+                    fullWidth
+                    size='small'
+                    onChange={event => handleTagChange(index, event.target.value as Tag | '')}
+                  >
+                    <MenuItem value=''>Selecione…</MenuItem>
+                    {tagsDisponiveis.map(tag => (
+                      <MenuItem key={tag} value={tag}>
+                        {tag}
+                      </MenuItem>
+                    ))}
+                  </TextField>
+                </TableCell>
                 <TableCell>
                   <Link href={anuncio.url_apartamento} target='_blank' rel='noopener noreferrer'>
                     Ver anúncio
