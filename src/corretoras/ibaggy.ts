@@ -4,8 +4,8 @@ import { join } from 'node:path';
 import puppeteer, { Browser, Page } from 'puppeteer';
 
 export interface IbagyListing {
-  valor_aluguel: string;
-  valor_total: string;
+  valor_aluguel: number;
+  valor_total: number;
   url_apartamento: string;
   observacao: string;
   tag: string;
@@ -28,6 +28,17 @@ const cleanMoney = (value: string | null | undefined): string => {
     .replace(/[^0-9.,]/g, '')
     .replace(/\s+/g, '')
     .trim();
+};
+
+const parseMoney = (value: string | null | undefined): number => {
+  const cleaned = cleanMoney(value);
+  if (!cleaned) {
+    return 0;
+  }
+
+  const normalized = cleaned.replace(/\./g, '').replace(',', '.');
+  const parsed = Number.parseFloat(normalized);
+  return Number.isNaN(parsed) ? 0 : parsed;
 };
 
 const setPageDefaults = async (page: Page): Promise<void> => {
@@ -133,8 +144,8 @@ export default async function scrapeIbagy(): Promise<IbagyListing[]> {
       aggregatedListings.push(
         ...rawListings.map((listing: RawIbagyListing) => ({
           id: listing.id,
-          valor_aluguel: cleanMoney(listing.valor_aluguel),
-          valor_total: cleanMoney(listing.valor_total ?? listing.valor_aluguel),
+          valor_aluguel: parseMoney(listing.valor_aluguel),
+          valor_total: parseMoney(listing.valor_total ?? listing.valor_aluguel),
           url_apartamento: listing.url_apartamento ?? '',
           observacao: listing.observacao ?? '',
           tag: listing.tag ?? '',
