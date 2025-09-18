@@ -7,12 +7,12 @@ import type { CheerioAPI, Cheerio } from 'cheerio';
 import type { Tag } from '../app/types/tag';
 
 interface CreditoReal {
+  id: string;
   valor_aluguel: number;
-  valor_condominio?: number;
   url_apartamento: string;
   valor_total: number;
   observacao: string;
-  tag?: Tag;
+  tag: Tag | '';
 }
 
 interface Filtros {
@@ -60,11 +60,15 @@ const index = async (): Promise<CreditoReal[]> => {
   const listAlugueis: CreditoReal[] = $('#teste .bRuoBA a')
     .map((_, el) => {
       const $el = $(el);
+      const href = $el.attr('href') ?? '';
+      const [, idFromHref = ''] = href.split('-cod-');
       const aluguel: CreditoReal = {
-        url_apartamento: `https://www.creditoreal.com.br${$el.attr('href') ?? ''}`,
+        id: idFromHref,
         valor_aluguel: getTextNumber($el.find('section > div > div > p[type="text.body"]')),
         valor_total: getTextNumber($el.find('section > div > div > label')),
+        url_apartamento: `https://www.creditoreal.com.br${href}`,
         observacao: '',
+        tag: '',
       };
 
       return aluguel;
