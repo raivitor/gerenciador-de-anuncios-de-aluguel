@@ -1,7 +1,11 @@
+import { writeFile } from 'node:fs/promises';
+import { join } from 'node:path';
+
 import * as cheerio from 'cheerio';
 import axios from 'axios';
 import type { CheerioAPI, Cheerio } from 'cheerio';
 import type { Tag } from '../app/types/tag';
+
 interface CreditoReal {
   valor_aluguel: number;
   valor_condominio?: number;
@@ -44,6 +48,7 @@ const toNumber = (text: string): number => {
 const getTextNumber = ($el: Cheerio<any>): number => toNumber($el.text().trim());
 
 const encodeFilters = (f: Filtros): string => encodeURIComponent(JSON.stringify(f));
+const CREDITO_REAL_OUTPUT_PATH = join(process.cwd(), 'src/data/credito_real_anuncio.json');
 
 const index = async (): Promise<CreditoReal[]> => {
   const baseURL = 'https://www.creditoreal.com.br/alugueis/residencial?filters=';
@@ -65,7 +70,7 @@ const index = async (): Promise<CreditoReal[]> => {
       return aluguel;
     })
     .get();
-
+  await writeFile(CREDITO_REAL_OUTPUT_PATH, JSON.stringify(listAlugueis, null, 2), 'utf-8');
   return listAlugueis;
 };
 
