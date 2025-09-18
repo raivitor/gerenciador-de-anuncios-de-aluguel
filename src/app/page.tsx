@@ -13,6 +13,7 @@ import {
   Typography,
   TextField,
   MenuItem,
+  Button,
 } from '@mui/material';
 import type { Tag } from './types/tag';
 
@@ -71,7 +72,7 @@ export default function Home() {
       <Typography variant='h4' component='h1' gutterBottom>
         Anúncios
       </Typography>
-      {/* <Button onClick={() => atualizarDados()}>Atualizar dados</Button> */}
+      <Button onClick={() => atualizarDados()}>Atualizar dados</Button>
       <TableContainer component={Paper}>
         <Table>
           <TableHead>

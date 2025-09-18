@@ -3,29 +3,23 @@ import { join } from 'node:path';
 
 import { NextResponse } from 'next/server';
 
-import type creditoRealData from '@/data/credito_real_anuncio.json';
-import type ibagyData from '@/data/ibaggy_anuncio.json';
-
-type CreditoRealItem = (typeof creditoRealData)[number];
-type IbagyItem = (typeof ibagyData)[number];
-
-type Listing = CreditoRealItem | IbagyItem;
+import type { RentalListing } from '@/corretoras/crawler';
 
 const dataDir = join(process.cwd(), 'src', 'data');
 const creditoRealFile = join(dataDir, 'credito_real_anuncio.json');
 const ibagyFile = join(dataDir, 'ibaggy_anuncio.json');
 
-export async function GET(): Promise<NextResponse<Listing[]>> {
+export async function GET(): Promise<NextResponse<RentalListing[]>> {
   try {
     const [creditoRealRaw, ibagyRaw] = await Promise.all([
       readFile(creditoRealFile, 'utf-8'),
       readFile(ibagyFile, 'utf-8'),
     ]);
 
-    const creditoRealListings = JSON.parse(creditoRealRaw) as CreditoRealItem[];
-    const ibagyListings = JSON.parse(ibagyRaw) as IbagyItem[];
+    const creditoRealListings = JSON.parse(creditoRealRaw) as RentalListing[];
+    const ibagyListings = JSON.parse(ibagyRaw) as RentalListing[];
 
-    const combinedListings: Listing[] = [...creditoRealListings, ...ibagyListings];
+    const combinedListings: RentalListing[] = [...creditoRealListings, ...ibagyListings];
 
     combinedListings.sort((a, b) => {
       const totalA = typeof a.valor_total === 'number' ? a.valor_total : Number(a.valor_total) || 0;

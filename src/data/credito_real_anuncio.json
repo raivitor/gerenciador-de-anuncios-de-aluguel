@@ -1,98 +1,100 @@
 [
   {
-    "id": "cr110889",
-    "valor_aluguel": 2800,
-    "valor_total": 3520,
-    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-estreito-florianopolis-cod-cr110889",
-    "observacao": "",
-    "tag": ""
+    "id": "cr79623",
+    "valor_aluguel": 2500,
+    "valor_total": 3173,
+    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-trindade-florianopolis-cod-cr79623",
+    "observacao": ""
   },
   {
-    "id": "cr84209",
+    "id": "cr82734",
+    "valor_aluguel": 2600,
+    "valor_total": 3381,
+    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-trindade-florianopolis-cod-cr82734",
+    "observacao": ""
+  },
+  {
+    "id": "cr114464",
+    "valor_aluguel": 2850,
+    "valor_total": 3570,
+    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-itacorubi-florianopolis-cod-cr114464",
+    "observacao": ""
+  },
+  {
+    "id": "cr83589",
     "valor_aluguel": 2800,
-    "valor_total": 3620,
-    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-abraao-florianopolis-cod-cr84209",
-    "observacao": "",
-    "tag": ""
+    "valor_total": 3612,
+    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-trindade-florianopolis-cod-cr83589",
+    "observacao": ""
+  },
+  {
+    "id": "cr88328",
+    "valor_aluguel": 3000,
+    "valor_total": 3758,
+    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-itacorubi-florianopolis-cod-cr88328",
+    "observacao": ""
   },
   {
     "id": "cr80889",
     "valor_aluguel": 3200,
     "valor_total": 3931,
     "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-itacorubi-florianopolis-cod-cr80889",
-    "observacao": "",
-    "tag": ""
+    "observacao": ""
   },
   {
     "id": "cr83253",
     "valor_aluguel": 3100,
     "valor_total": 3965,
     "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-trindade-florianopolis-cod-cr83253",
-    "observacao": "",
-    "tag": ""
-  },
-  {
-    "id": "cr109621",
-    "valor_aluguel": 2600,
-    "valor_total": 3980,
-    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-centro-florianopolis-cod-cr109621",
-    "observacao": "",
-    "tag": ""
-  },
-  {
-    "id": "cr83674",
-    "valor_aluguel": 3200,
-    "valor_total": 4006,
-    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-balneario-florianopolis-cod-cr83674",
-    "observacao": "",
-    "tag": ""
+    "observacao": ""
   },
   {
     "id": "cr83400",
     "valor_aluguel": 3200,
     "valor_total": 4071,
     "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-itacorubi-florianopolis-cod-cr83400",
-    "observacao": "",
-    "tag": ""
+    "observacao": ""
   },
   {
     "id": "cr113738",
     "valor_aluguel": 3300,
     "valor_total": 4083,
     "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-carvoeira-florianopolis-cod-cr113738",
-    "observacao": "",
-    "tag": ""
+    "observacao": ""
   },
   {
     "id": "cr83198",
     "valor_aluguel": 3200,
     "valor_total": 4153,
     "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-joao-paulo-florianopolis-cod-cr83198",
-    "observacao": "",
-    "tag": ""
+    "observacao": ""
   },
   {
     "id": "cr80389",
     "valor_aluguel": 3400,
     "valor_total": 4310,
     "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-trindade-florianopolis-cod-cr80389",
-    "observacao": "",
-    "tag": ""
+    "observacao": ""
   },
   {
     "id": "cr108234",
     "valor_aluguel": 3450,
     "valor_total": 4312,
     "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-corrego-grande-florianopolis-cod-cr108234",
-    "observacao": "",
-    "tag": ""
+    "observacao": ""
   },
   {
     "id": "cr82858",
     "valor_aluguel": 3300,
     "valor_total": 4370,
     "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-corrego-grande-florianopolis-cod-cr82858",
-    "observacao": "",
-    "tag": ""
+    "observacao": ""
+  },
+  {
+    "id": "cr79674",
+    "valor_aluguel": 3500,
+    "valor_total": 4400,
+    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-itacorubi-florianopolis-cod-cr79674",
+    "observacao": ""
   }
 ]

@@ -1,23 +1,13 @@
-import { writeFile } from 'node:fs/promises';
-import { join } from 'node:path';
-
 import * as cheerio from 'cheerio';
 import axios from 'axios';
 import type { CheerioAPI, Cheerio } from 'cheerio';
-import type { Tag } from '../app/types/tag';
 
-interface CreditoReal {
-  id: string;
-  valor_aluguel: number;
-  url_apartamento: string;
-  valor_total: number;
-  observacao: string;
-  tag: Tag | '';
-}
+import { BaseCrawler, type RentalListing } from './crawler';
 
 interface Filtros {
   valueType: boolean;
   imovelTypes: string[];
+  neighborhoods: string[];
   cityState: string;
   finalValue: number;
   areaInitialValue: number;
@@ -34,9 +24,21 @@ const filtros: Filtros = {
     'Casa Sobrado',
     'Apartamento',
   ],
+  neighborhoods: [
+    'Agronômica',
+    'Carvoeira',
+    'Córrego Grande',
+    'Itacorubi',
+    'João Paulo',
+    'Monte Verde',
+    'Pantanal',
+    'Santa Mônica',
+    'Trindade',
+    'Parque São Jorge',
+  ],
   cityState: 'Florianópolis_SC',
   finalValue: 4000,
-  areaInitialValue: 75,
+  areaInitialValue: 70,
   parking: 1,
 };
 
@@ -48,34 +50,39 @@ const toNumber = (text: string): number => {
 const getTextNumber = ($el: Cheerio<any>): number => toNumber($el.text().trim());
 
 const encodeFilters = (f: Filtros): string => encodeURIComponent(JSON.stringify(f));
-const CREDITO_REAL_OUTPUT_PATH = join(process.cwd(), 'src/data/credito_real_anuncio.json');
 
-const index = async (): Promise<CreditoReal[]> => {
-  const baseURL = 'https://www.creditoreal.com.br/alugueis/residencial?filters=';
-  const url = `${baseURL}${encodeFilters(filtros)}&orderBy=2`;
-  console.log(url);
-  const { data: html } = await axios.get<string>(url);
-  const $: CheerioAPI = cheerio.load(html);
+export class CreditoRealCrawler extends BaseCrawler {
+  constructor() {
+    super('creditoReal', 'credito_real_anuncio.json');
+  }
 
-  const listAlugueis: CreditoReal[] = $('#teste .bRuoBA a')
-    .map((_, el) => {
-      const $el = $(el);
-      const href = $el.attr('href') ?? '';
-      const [, idFromHref = ''] = href.split('-cod-');
-      const aluguel: CreditoReal = {
-        id: idFromHref,
-        valor_aluguel: getTextNumber($el.find('section > div > div > p[type="text.body"]')),
-        valor_total: getTextNumber($el.find('section > div > div > label')),
-        url_apartamento: `https://www.creditoreal.com.br${href}`,
-        observacao: '',
-        tag: '',
-      };
+  protected async scrape(): Promise<RentalListing[]> {
+    const baseURL = 'https://www.creditoreal.com.br/alugueis/residencial?filters=';
+    const url = `${baseURL}${encodeFilters(filtros)}&orderBy=2`;
 
-      return aluguel;
-    })
-    .get();
-  await writeFile(CREDITO_REAL_OUTPUT_PATH, JSON.stringify(listAlugueis, null, 2), 'utf-8');
-  return listAlugueis;
-};
+    const { data: html } = await axios.get<string>(url);
+    const $: CheerioAPI = cheerio.load(html);
 
-export default index;
+    const listAlugueis: RentalListing[] = $('#teste .bRuoBA a')
+      .map((_, el) => {
+        const $el = $(el);
+        const href = $el.attr('href') ?? '';
+        const [, idFromHref = ''] = href.split('-cod-');
+
+        return {
+          id: idFromHref,
+          valor_aluguel: getTextNumber($el.find('section > div > div > p[type="text.body"]')),
+          valor_total: getTextNumber($el.find('section > div > div > label')),
+          url_apartamento: `https://www.creditoreal.com.br${href}`,
+          observacao: '',
+        };
+      })
+      .get();
+
+    return listAlugueis;
+  }
+}
+
+const creditoRealCrawler = new CreditoRealCrawler();
+
+export default creditoRealCrawler;

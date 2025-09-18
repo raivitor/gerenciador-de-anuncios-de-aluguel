@@ -1,1 +1,1 @@
-export type Tag = 'Não' | 'Entrar em contato' | 'Agendado' | 'Visitado';
+export type Tag = 'Não' | 'Entrar em contato' | 'Agendado' | 'Visitado' | '';

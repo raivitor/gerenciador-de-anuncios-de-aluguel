@@ -1,14 +1,8 @@
 import { NextResponse } from 'next/server';
 
-import creditoReal from '@/corretoras/creditoReal';
-import scrapeIbagy, { IbagyListing } from '@/corretoras/ibaggy';
-
-type CrawlerFn = () => Promise<unknown>;
-
-interface CrawlerTask {
-  name: string;
-  run: CrawlerFn;
-}
+import creditoRealCrawler from '@/corretoras/creditoReal';
+import ibagyCrawler from '@/corretoras/ibaggy';
+import type { BaseCrawler } from '@/corretoras/crawler';
 
 interface CrawlerResult {
   name: string;
@@ -17,10 +11,7 @@ interface CrawlerResult {
   error?: string;
 }
 
-const crawlers: CrawlerTask[] = [
-  { name: 'creditoReal', run: creditoReal },
-  { name: 'ibagy', run: scrapeIbagy as () => Promise<IbagyListing[]> },
-];
+const crawlers: BaseCrawler[] = [creditoRealCrawler, ibagyCrawler];
 
 export async function POST(): Promise<NextResponse<{ results: CrawlerResult[] }>> {
   const results: CrawlerResult[] = [];
