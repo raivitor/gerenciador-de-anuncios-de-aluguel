@@ -12,11 +12,7 @@ interface CrawlerResult {
   error?: string;
 }
 
-const crawlers: BaseCrawler[] = [
-  //creditoRealCrawler,
-  //ibagyCrawler,
-  olxCrawler,
-];
+const crawlers: BaseCrawler[] = [creditoRealCrawler, ibagyCrawler, olxCrawler];
 
 export async function POST(): Promise<NextResponse<{ results: CrawlerResult[] }>> {
   const results: CrawlerResult[] = [];
