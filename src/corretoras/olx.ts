@@ -1,5 +1,4 @@
 import puppeteer, { Browser, Page } from 'puppeteer';
-
 import { BaseCrawler, type RentalListing } from './crawler';
 
 export class OlxCrawler extends BaseCrawler {
@@ -53,24 +52,19 @@ export class OlxCrawler extends BaseCrawler {
       const page = await browser.newPage();
       await this.setPageDefaults(page);
 
-      const aggregatedListings: RentalListing[] = [];
-
-      let currentPage = 1;
+      const currentPage = 1;
       //let totalItems: number | null = null;
       //while (true) {
       await this.navigateToListingsPage(page, currentPage);
-      const { rawListings, json } = await page.evaluate(() => {
+      const rawListings = await page.evaluate(() => {
         const json = document.querySelector<HTMLElement>('#__NEXT_DATA__')?.innerText;
         const ads = json ? JSON.parse(json).props.pageProps.ads : [];
-        return {
-          rawListings: ads.map((item: any) => ({
-            id: item.listId,
-            priceValue: item.priceValue,
-            url_apartamento: item.friendlyUrl,
-            properties: item.properties,
-          })),
-          json: json ? JSON.parse(json) : null,
-        };
+        return ads.map((item: any) => ({
+          id: item.listId,
+          priceValue: item.priceValue,
+          url_apartamento: item.friendlyUrl,
+          properties: item.properties,
+        }));
       });
 
       const listings = rawListings.map((item: any) => {
@@ -93,7 +87,6 @@ export class OlxCrawler extends BaseCrawler {
         };
       });
 
-      //console.log(listings);
       return listings;
       //}
     } catch (error) {
