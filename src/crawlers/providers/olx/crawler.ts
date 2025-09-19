@@ -75,7 +75,7 @@ export class OlxCrawler extends PuppeteerCrawler {
           valor_total: valor_aluguel + condominio + iptu,
           url_apartamento: apto.url_apartamento,
           bairro: apto.bairro,
-          tamanho: Number(this.getValueByKey(apto.properties, 'size')),
+          tamanho: this.parseFloat(this.getValueByKey(apto.properties, 'size')),
           quartos: Number(this.getValueByKey(apto.properties, 'rooms')),
           banheiros: Number(this.getValueByKey(apto.properties, 'bathrooms')),
           garagem: Number(this.getValueByKey(apto.properties, 'garage_spaces')),
