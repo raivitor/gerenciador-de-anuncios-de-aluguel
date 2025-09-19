@@ -52,44 +52,62 @@ export class OlxCrawler extends BaseCrawler {
       const page = await browser.newPage();
       await this.setPageDefaults(page);
 
-      const currentPage = 1;
-      //let totalItems: number | null = null;
-      //while (true) {
-      await this.navigateToListingsPage(page, currentPage);
-      const rawListings = await page.evaluate(() => {
-        const json = document.querySelector<HTMLElement>('#__NEXT_DATA__')?.innerText;
-        const ads = json ? JSON.parse(json).props.pageProps.ads : [];
-        return ads.map((item: any) => ({
-          id: item.listId,
-          priceValue: item.priceValue,
-          url_apartamento: item.friendlyUrl,
-          properties: item.properties,
-        }));
-      });
+      let currentPage = 1;
+      let totalItems = 0;
+      const listaAgregadaApto: RentalListing[] = [];
+      while (true) {
+        await this.navigateToListingsPage(page, currentPage);
+        const { rawListaApto, totalBusca } = await page.evaluate(() => {
+          const totalResultados =
+            document
+              .querySelector<HTMLElement>('text-neutral-110')
+              ?.innerText.split(' ')
+              .slice(-2, -1)[0] || '0';
+          const json = document.querySelector<HTMLElement>('#__NEXT_DATA__')?.innerText;
+          const aptoDados = json ? JSON.parse(json).props.pageProps.ads : [];
+          const rawListaApto = aptoDados.map((item: any) => ({
+            id: item.listId,
+            priceValue: item.priceValue,
+            url_apartamento: item.friendlyUrl,
+            properties: item.properties,
+            bairro: item.locationDetails?.neighbourhood || '',
+          }));
+          return {
+            rawListaApto,
+            totalBusca: parseInt(totalResultados.replace(/\D/g, ''), 10) || 0,
+          };
+        });
 
-      const listings = rawListings.map((item: any) => {
-        const condominio = this.parseFloat(this.getValueByKey(item.properties, 'condominio'));
-        const rawIptu = this.parseFloat(this.getValueByKey(item.properties, 'iptu'));
-        const iptu = rawIptu > 500 ? rawIptu / 12 : rawIptu;
-        const valor_aluguel = this.parseFloat(
-          String(item?.priceValue || '0')
-            .replace(/[^\d,.-]/g, '')
-            .replace(',', '.')
+        totalItems = totalBusca;
+        const listaApto = rawListaApto.map((item: any) => {
+          const condominio = this.parseFloat(this.getValueByKey(item.properties, 'condominio'));
+          const rawIptu = this.parseFloat(this.getValueByKey(item.properties, 'iptu'));
+          const iptu = rawIptu > 500 ? rawIptu / 12 : rawIptu;
+          const valor_aluguel = this.parseFloat(
+            String(item?.priceValue || '0')
+              .replace(/[^\d,.-]/g, '')
+              .replace(',', '.')
+          );
+          return {
+            id: item.id,
+            valor_aluguel,
+            valor_total: valor_aluguel + condominio + iptu,
+            url_apartamento: item.url_apartamento,
+            bairro: item.bairro,
+            tamanho: this.getValueByKey(item.properties, 'size'),
+            quartos: this.getValueByKey(item.properties, 'rooms'),
+            banheiros: this.getValueByKey(item.properties, 'bathrooms'),
+            garagem: this.getValueByKey(item.properties, 'garage_spaces'),
+          };
+        });
+        listaAgregadaApto.push(...listaApto);
+        if (listaAgregadaApto.length >= totalItems) break;
+        console.log(
+          `OLX: Page ${currentPage} scraped, total items so far: ${listaAgregadaApto.length}/${totalItems}`
         );
-        return {
-          id: item.id,
-          valor_aluguel,
-          valor_total: valor_aluguel + condominio + iptu,
-          url_apartamento: item.url_apartamento,
-          tamanho: this.getValueByKey(item.properties, 'size'),
-          quartos: this.getValueByKey(item.properties, 'rooms'),
-          banheiros: this.getValueByKey(item.properties, 'bathrooms'),
-          garagem: this.getValueByKey(item.properties, 'garage_spaces'),
-        };
-      });
-
-      return listings;
-      //}
+        currentPage += 1;
+      }
+      return listaAgregadaApto;
     } catch (error) {
       console.error('OlxCrawler scrape error:', error);
       return [];

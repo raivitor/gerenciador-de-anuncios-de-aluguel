@@ -8,6 +8,7 @@ export interface RentalListing {
   valor_aluguel: number;
   valor_total: number;
   url_apartamento: string;
+  bairro?: string;
   tamanho?: string;
   quartos?: string;
   banheiros?: string;

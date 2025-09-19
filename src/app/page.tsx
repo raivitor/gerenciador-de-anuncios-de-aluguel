@@ -71,6 +71,7 @@ export default function Home() {
             <TableRow>
               <TableCell>Valor Aluguel</TableCell>
               <TableCell>Valor Total</TableCell>
+              <TableCell>Bairro</TableCell>
               <TableCell>Tamanho</TableCell>
               <TableCell>Quartos</TableCell>
               <TableCell>Banheiros</TableCell>
@@ -85,6 +86,7 @@ export default function Home() {
               <TableRow key={anuncio.id || index}>
                 <TableCell>{anuncio.valor_aluguel.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</TableCell>
                 <TableCell>{anuncio.valor_total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</TableCell>
+                <TableCell>{anuncio.bairro}</TableCell>
                 <TableCell>{anuncio.tamanho}</TableCell>
                 <TableCell>{anuncio.quartos}</TableCell>
                 <TableCell>{anuncio.banheiros}</TableCell>
