@@ -1,0 +1,35 @@
+[
+  {
+    "id": "28325",
+    "valor_aluguel": 4000,
+    "valor_total": 0,
+    "url_apartamento": "https://www.gralhaalugueis.com.br/imovel/aluguel+apartamento+3-quartos+trindade+florianopolis+sc+124,59m2+rs4000/28325",
+    "bairro": "",
+    "tamanho": 124.59,
+    "quartos": 3,
+    "banheiros": 1,
+    "garagem": 1
+  },
+  {
+    "id": "27297",
+    "valor_aluguel": 3850,
+    "valor_total": 0,
+    "url_apartamento": "https://www.gralhaalugueis.com.br/imovel/aluguel+apartamento+3-quartos+corrego-grande+florianopolis+sc+85m2+rs3850/27297",
+    "bairro": "",
+    "tamanho": 85,
+    "quartos": 3,
+    "banheiros": 1,
+    "garagem": 1
+  },
+  {
+    "id": "26862",
+    "valor_aluguel": 3200,
+    "valor_total": 0,
+    "url_apartamento": "https://www.gralhaalugueis.com.br/imovel/aluguel+apartamento+3-quartos+carvoeira+florianopolis+sc+74,32m2+rs3200/26862",
+    "bairro": "",
+    "tamanho": 74.32,
+    "quartos": 3,
+    "banheiros": 2,
+    "garagem": 1
+  }
+]
