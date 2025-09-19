@@ -2,51 +2,8 @@ import puppeteer, { Browser, Page } from 'puppeteer';
 
 import { BaseCrawler, type RentalListing } from './crawler';
 
-const IBAGY_URL =
-  'https://ibagy.com.br/aluguel/apartamento/florianopolis/trindade/com-vaga/?categoriagrupo=Residencial&finalidade=aluguel&tipo_residencial%5B%5D=apartamento&cidadebairro%5B%5D=florianopolis%2C%20agronomica&cidadebairro%5B%5D=florianopolis%2C%20carvoeira&cidadebairro%5B%5D=florianopolis%2C%20corrego-grande&cidadebairro%5B%5D=florianopolis%2C%20itacorubi&cidadebairro%5B%5D=florianopolis%2C%20joao-paulo&cidadebairro%5B%5D=florianopolis%2C%20monte-verde&cidadebairro%5B%5D=florianopolis%2C%20pantanal&cidadebairro%5B%5D=florianopolis%2C%20santa-monica&cidadebairro%5B%5D=florianopolis%2C%20trindade&vagas%5B%5D=1&valorvenda=0%2C1099999&valorlocacao=0%2C4000&filterpacote=Sim&area=70%2C509&codigo=&ordenar=maior_area_priv&pagina=1';
-
 const ITEMS_PER_PAGE = 12;
 const MAX_PAGES = 50;
-
-const cleanMoney = (value: string | null | undefined): string => {
-  if (!value) {
-    return '0';
-  }
-
-  return value
-    .replace(/R\$\s*/gi, '')
-    .replace(/[^0-9.,]/g, '')
-    .replace(/\s+/g, '')
-    .trim();
-};
-
-const parseMoney = (value: string | null | undefined): number => {
-  const cleaned = cleanMoney(value);
-  if (!cleaned) {
-    return 0;
-  }
-
-  const normalized = cleaned.replace(/\./g, '').replace(',', '.');
-  const parsed = Number.parseFloat(normalized);
-  return Number.isNaN(parsed) ? 0 : parsed;
-};
-
-const setPageDefaults = async (page: Page): Promise<void> => {
-  await page.setUserAgent(
-    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
-  );
-};
-
-const buildPageUrl = (pageNumber: number): string => {
-  const url = new URL(IBAGY_URL);
-  url.searchParams.set('pagina', pageNumber.toString());
-  return url.toString();
-};
-
-const navigateToListingsPage = async (page: Page, pageNumber: number): Promise<void> => {
-  await page.goto(buildPageUrl(pageNumber), { waitUntil: 'networkidle2', timeout: 90_000 });
-  await page.waitForSelector('.imovel-box-single', { timeout: 60_000 }).catch(() => null);
-};
 
 interface RawIbagyListing {
   id: string;
@@ -65,6 +22,48 @@ export class IbagyCrawler extends BaseCrawler {
   constructor() {
     super('ibagy', 'ibaggy_anuncio.json');
   }
+  baseURL =
+    'https://ibagy.com.br/aluguel/apartamento/florianopolis/trindade/com-vaga/?categoriagrupo=Residencial&finalidade=aluguel&tipo_residencial%5B%5D=apartamento&cidadebairro%5B%5D=florianopolis%2C%20agronomica&cidadebairro%5B%5D=florianopolis%2C%20carvoeira&cidadebairro%5B%5D=florianopolis%2C%20corrego-grande&cidadebairro%5B%5D=florianopolis%2C%20itacorubi&cidadebairro%5B%5D=florianopolis%2C%20joao-paulo&cidadebairro%5B%5D=florianopolis%2C%20monte-verde&cidadebairro%5B%5D=florianopolis%2C%20pantanal&cidadebairro%5B%5D=florianopolis%2C%20santa-monica&cidadebairro%5B%5D=florianopolis%2C%20trindade&vagas%5B%5D=1&valorvenda=0%2C1099999&valorlocacao=0%2C4000&filterpacote=Sim&area=70%2C509&codigo=&ordenar=maior_area_priv&pagina=1';
+
+  protected buildPageUrl = (pageNumber: number): string => {
+    const url = new URL(this.baseURL);
+    url.searchParams.set('pagina', pageNumber.toString());
+    return url.toString();
+  };
+
+  protected navigateToListingsPage = async (page: Page, pageNumber: number): Promise<void> => {
+    await page.goto(this.buildPageUrl(pageNumber), { waitUntil: 'networkidle2', timeout: 90_000 });
+    await page.waitForSelector('.imovel-box-single', { timeout: 60_000 }).catch(() => null);
+  };
+
+  protected setPageDefaults = async (page: Page): Promise<void> => {
+    await page.setUserAgent(
+      'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+    );
+  };
+
+  protected cleanMoney = (value: string | null | undefined): string => {
+    if (!value) {
+      return '0';
+    }
+
+    return value
+      .replace(/R\$\s*/gi, '')
+      .replace(/[^0-9.,]/g, '')
+      .replace(/\s+/g, '')
+      .trim();
+  };
+
+  protected parseMoney = (value: string | null | undefined): number => {
+    const cleaned = this.cleanMoney(value);
+    if (!cleaned) {
+      return 0;
+    }
+
+    const normalized = cleaned.replace(/\./g, '').replace(',', '.');
+    const parsed = Number.parseFloat(normalized);
+    return Number.isNaN(parsed) ? 0 : parsed;
+  };
 
   protected async scrape(): Promise<RentalListing[]> {
     let browser: Browser | undefined;
@@ -76,7 +75,7 @@ export class IbagyCrawler extends BaseCrawler {
       });
 
       const page = await browser.newPage();
-      await setPageDefaults(page);
+      await this.setPageDefaults(page);
 
       const aggregatedListings: RentalListing[] = [];
 
@@ -84,7 +83,7 @@ export class IbagyCrawler extends BaseCrawler {
       let totalItems: number | null = null;
 
       while (true) {
-        await navigateToListingsPage(page, currentPage);
+        await this.navigateToListingsPage(page, currentPage);
 
         const { listings: rawListings, totalItems: reportedTotal } = await page.evaluate(
           (): RawIbagyEvaluateResult => {
@@ -136,8 +135,8 @@ export class IbagyCrawler extends BaseCrawler {
 
         aggregatedListings.push(
           ...rawListings.map(listing => {
-            const valor_aluguel = parseMoney(listing.valor_aluguel);
-            const valor_total = parseMoney(listing.valor_total || listing.valor_aluguel);
+            const valor_aluguel = this.parseMoney(listing.valor_aluguel);
+            const valor_total = this.parseMoney(listing.valor_total || listing.valor_aluguel);
 
             return {
               id: listing.id,
