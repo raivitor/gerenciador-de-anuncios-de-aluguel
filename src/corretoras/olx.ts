@@ -1,5 +1,5 @@
 import puppeteer, { Browser, Page } from 'puppeteer';
-import { BaseCrawler, type RentalListing } from './crawler';
+import { BaseCrawler, type Apartamento } from './crawler';
 
 export class OlxCrawler extends BaseCrawler {
   baseURL =
@@ -40,7 +40,7 @@ export class OlxCrawler extends BaseCrawler {
     return parseFloat(cleaned) || 0;
   };
 
-  protected async scrape(): Promise<RentalListing[]> {
+  protected async scrape(): Promise<Apartamento[]> {
     let browser: Browser | undefined;
 
     try {
@@ -54,7 +54,7 @@ export class OlxCrawler extends BaseCrawler {
 
       let currentPage = 1;
       let totalItems = 0;
-      const listaAgregadaApto: RentalListing[] = [];
+      const listaAgregadaApto: Apartamento[] = [];
       while (true) {
         await this.navigateToListingsPage(page, currentPage);
         const { rawListaApto, totalBusca } = await page.evaluate(() => {

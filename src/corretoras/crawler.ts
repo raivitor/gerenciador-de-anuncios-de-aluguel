@@ -3,7 +3,7 @@ import { join } from 'node:path';
 
 import type { Tag } from '../app/types/tag';
 
-export interface RentalListing {
+export interface Apartamento {
   id: string;
   valor_aluguel: number;
   valor_total: number;
@@ -24,13 +24,13 @@ export abstract class BaseCrawler {
     return join(process.cwd(), 'src', 'data', this.outputFileName);
   }
 
-  protected async save(listings: RentalListing[]): Promise<void> {
+  protected async save(listings: Apartamento[]): Promise<void> {
     await writeFile(this.outputPath, JSON.stringify(listings, null, 2), 'utf-8');
   }
 
-  protected abstract scrape(): Promise<RentalListing[]>;
+  protected abstract scrape(): Promise<Apartamento[]>;
 
-  public async run(): Promise<RentalListing[]> {
+  public async run(): Promise<Apartamento[]> {
     const listings = await this.scrape();
     await this.save(listings);
     return listings;

@@ -2,7 +2,7 @@ import * as cheerio from 'cheerio';
 import axios from 'axios';
 import type { CheerioAPI, Cheerio } from 'cheerio';
 
-import { BaseCrawler, type RentalListing } from './crawler';
+import { BaseCrawler, type Apartamento } from './crawler';
 
 interface Filtros {
   valueType: boolean;
@@ -58,13 +58,13 @@ export class CreditoRealCrawler extends BaseCrawler {
     super('creditoReal', 'credito_real_anuncio.json');
   }
 
-  protected async scrape(): Promise<RentalListing[]> {
+  protected async scrape(): Promise<Apartamento[]> {
     const url = `${this.baseURL}?filters=${encodeFilters(filtros)}&orderBy=2`;
 
     const { data: html } = await axios.get<string>(url);
     const $: CheerioAPI = cheerio.load(html);
 
-    const listAlugueis: RentalListing[] = $('#teste .bRuoBA a')
+    const listAlugueis: Apartamento[] = $('#teste .bRuoBA a')
       .map((_, el) => {
         const $el = $(el);
         const href = $el.attr('href') ?? '';

@@ -1,9 +1,6 @@
 import puppeteer, { Browser, Page } from 'puppeteer';
 
-import { BaseCrawler, type RentalListing } from './crawler';
-
-const ITEMS_PER_PAGE = 12;
-const MAX_PAGES = 50;
+import { BaseCrawler, type Apartamento } from './crawler';
 
 interface RawIbagyListing {
   id: string;
@@ -22,6 +19,8 @@ export class IbagyCrawler extends BaseCrawler {
   constructor() {
     super('ibagy', 'ibaggy_anuncio.json');
   }
+  ITEMS_PER_PAGE = 12;
+  MAX_PAGES = 50;
   baseURL =
     'https://ibagy.com.br/aluguel/apartamento/florianopolis/trindade/com-vaga/?categoriagrupo=Residencial&finalidade=aluguel&tipo_residencial%5B%5D=apartamento&cidadebairro%5B%5D=florianopolis%2C%20agronomica&cidadebairro%5B%5D=florianopolis%2C%20carvoeira&cidadebairro%5B%5D=florianopolis%2C%20corrego-grande&cidadebairro%5B%5D=florianopolis%2C%20itacorubi&cidadebairro%5B%5D=florianopolis%2C%20joao-paulo&cidadebairro%5B%5D=florianopolis%2C%20monte-verde&cidadebairro%5B%5D=florianopolis%2C%20pantanal&cidadebairro%5B%5D=florianopolis%2C%20santa-monica&cidadebairro%5B%5D=florianopolis%2C%20trindade&vagas%5B%5D=1&valorvenda=0%2C1099999&valorlocacao=0%2C4000&filterpacote=Sim&area=70%2C509&codigo=&ordenar=maior_area_priv&pagina=1';
 
@@ -65,7 +64,7 @@ export class IbagyCrawler extends BaseCrawler {
     return Number.isNaN(parsed) ? 0 : parsed;
   };
 
-  protected async scrape(): Promise<RentalListing[]> {
+  protected async scrape(): Promise<Apartamento[]> {
     let browser: Browser | undefined;
 
     try {
@@ -77,7 +76,7 @@ export class IbagyCrawler extends BaseCrawler {
       const page = await browser.newPage();
       await this.setPageDefaults(page);
 
-      const aggregatedListings: RentalListing[] = [];
+      const aggregatedListings: Apartamento[] = [];
 
       let currentPage = 1;
       let totalItems: number | null = null;
@@ -144,11 +143,11 @@ export class IbagyCrawler extends BaseCrawler {
               valor_total,
               url_apartamento: listing.url_apartamento,
               observacao: listing.observacao,
-            } satisfies RentalListing;
+            } satisfies Apartamento;
           })
         );
 
-        if (totalItems === null && rawListings.length < ITEMS_PER_PAGE) {
+        if (totalItems === null && rawListings.length < this.ITEMS_PER_PAGE) {
           break;
         }
 
@@ -161,13 +160,13 @@ export class IbagyCrawler extends BaseCrawler {
         currentPage += 1;
 
         if (totalItems !== null) {
-          const maxPages = Math.ceil(totalItems / ITEMS_PER_PAGE);
+          const maxPages = Math.ceil(totalItems / this.ITEMS_PER_PAGE);
           if (currentPage > maxPages) {
             break;
           }
-        } else if (currentPage > MAX_PAGES) {
+        } else if (currentPage > this.MAX_PAGES) {
           console.warn(
-            `Stopped pagination after reaching the safety limit of ${MAX_PAGES} pages without a reported total.`
+            `Stopped pagination after reaching the safety limit of ${this.MAX_PAGES} pages without a reported total.`
           );
           break;
         }

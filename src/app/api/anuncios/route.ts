@@ -3,14 +3,14 @@ import { join } from 'node:path';
 
 import { NextResponse } from 'next/server';
 
-import type { RentalListing } from '@/corretoras/crawler';
+import type { Apartamento } from '@/corretoras/crawler';
 
 const dataDir = join(process.cwd(), 'src', 'data');
 const creditoRealFile = join(dataDir, 'credito_real_anuncio.json');
 const ibagyFile = join(dataDir, 'ibaggy_anuncio.json');
 const oxlFile = join(dataDir, 'olx_anuncio.json');
 
-export async function GET(): Promise<NextResponse<RentalListing[]>> {
+export async function GET(): Promise<NextResponse<Apartamento[]>> {
   try {
     const [creditoRealRaw, ibagyRaw, oxlRaw] = await Promise.all([
       readFile(creditoRealFile, 'utf-8'),
@@ -18,11 +18,11 @@ export async function GET(): Promise<NextResponse<RentalListing[]>> {
       readFile(oxlFile, 'utf-8'),
     ]);
 
-    const creditoRealListings = JSON.parse(creditoRealRaw) as RentalListing[];
-    const ibagyListings = JSON.parse(ibagyRaw) as RentalListing[];
-    const oxlListings = JSON.parse(oxlRaw) as RentalListing[];
+    const creditoRealListings = JSON.parse(creditoRealRaw) as Apartamento[];
+    const ibagyListings = JSON.parse(ibagyRaw) as Apartamento[];
+    const oxlListings = JSON.parse(oxlRaw) as Apartamento[];
 
-    const combinedListings: RentalListing[] = [
+    const combinedListings: Apartamento[] = [
       ...creditoRealListings,
       ...ibagyListings,
       ...oxlListings,

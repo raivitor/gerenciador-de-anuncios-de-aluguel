@@ -16,10 +16,10 @@ import {
   Button,
 } from '@mui/material';
 import type { Tag } from './types/tag';
-import type { RentalListing } from '@/corretoras/crawler';
+import type { Apartamento } from '@/corretoras/crawler';
 
 export default function Home() {
-  const [anuncios, setAnuncios] = useState<RentalListing[]>([]);
+  const [anuncios, setAnuncios] = useState<Apartamento[]>([]);
 
   const tagsDisponiveis = useMemo<Tag[]>(() => ['Não', 'Entrar em contato', 'Agendado', 'Visitado'], []);
 
