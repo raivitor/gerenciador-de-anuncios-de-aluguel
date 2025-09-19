@@ -5,7 +5,7 @@ import type { Apartamento } from '@/crawlers/core/types';
 
 export class OlxCrawler extends PuppeteerCrawler {
   constructor() {
-    super('olx', 'olx_anuncio.json');
+    super('olx');
   }
 
   baseURL =

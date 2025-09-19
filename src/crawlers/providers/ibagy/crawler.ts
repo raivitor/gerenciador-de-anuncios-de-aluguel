@@ -5,7 +5,7 @@ import type { Apartamento } from '@/crawlers/core/types';
 
 export class IbagyCrawler extends PuppeteerCrawler {
   constructor() {
-    super('ibagy', 'ibagy_anuncio.json');
+    super('ibagy');
   }
 
   baseURL =

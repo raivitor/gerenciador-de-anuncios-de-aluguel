@@ -18,7 +18,7 @@ export class CreditoRealCrawler extends BaseCrawler {
   baseURL = 'https://www.creditoreal.com.br/alugueis/residencial';
 
   constructor() {
-    super('creditoReal', 'credito_real_anuncio.json');
+    super('creditoReal');
   }
 
   protected async scrape(): Promise<Apartamento[]> {

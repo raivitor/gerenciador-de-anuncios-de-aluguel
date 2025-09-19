@@ -5,7 +5,7 @@ import type { Apartamento } from '@/crawlers/core/types';
 
 export class DaltonAndradeCrawler extends PuppeteerCrawler {
   constructor() {
-    super('daltonandrade', 'daltonandrade_anuncio.json');
+    super('daltonandrade');
   }
 
   baseURL =

@@ -4,8 +4,11 @@ import { join } from 'node:path';
 import type { Apartamento } from './types';
 
 export abstract class BaseCrawler {
-  constructor(public readonly name: string, private readonly outputFileName: string) {}
+  constructor(public readonly name: string) {
+    this.outputFileName = `${name}_anuncio.json`;
+  }
 
+  private readonly outputFileName: string;
   abstract baseURL: string;
 
   protected get outputPath(): string {
