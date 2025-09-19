@@ -2,45 +2,10 @@ import * as cheerio from 'cheerio';
 import axios from 'axios';
 import type { CheerioAPI, Cheerio } from 'cheerio';
 
-import { BaseCrawler, type Apartamento } from './crawler';
+import { BaseCrawler } from '@/crawlers/core/base-crawler';
+import type { Apartamento } from '@/crawlers/core/types';
 
-interface Filtros {
-  valueType: boolean;
-  imovelTypes: string[];
-  neighborhoods: string[];
-  cityState: string;
-  finalValue: number;
-  areaInitialValue: number;
-  parking: number;
-}
-
-const filtros: Filtros = {
-  valueType: true,
-  imovelTypes: [
-    'Apartamento Garden',
-    'Cobertura',
-    'Casa em Condomínio',
-    'Casa Geminada',
-    'Casa Sobrado',
-    'Apartamento',
-  ],
-  neighborhoods: [
-    'Agronômica',
-    'Carvoeira',
-    'Córrego Grande',
-    'Itacorubi',
-    'João Paulo',
-    'Monte Verde',
-    'Pantanal',
-    'Santa Mônica',
-    'Trindade',
-    'Parque São Jorge',
-  ],
-  cityState: 'Florianópolis_SC',
-  finalValue: 4000,
-  areaInitialValue: 70,
-  parking: 1,
-};
+import { encodeFilters, filters } from './filters';
 
 const toNumber = (text: string): number => {
   const n = parseInt(text.replace(/[^\d]/g, ''), 10);
@@ -48,8 +13,6 @@ const toNumber = (text: string): number => {
 };
 
 const getTextNumber = ($el: Cheerio<any>): number => toNumber($el.text().trim());
-
-const encodeFilters = (f: Filtros): string => encodeURIComponent(JSON.stringify(f));
 
 export class CreditoRealCrawler extends BaseCrawler {
   baseURL = 'https://www.creditoreal.com.br/alugueis/residencial';
@@ -59,7 +22,7 @@ export class CreditoRealCrawler extends BaseCrawler {
   }
 
   protected async scrape(): Promise<Apartamento[]> {
-    const url = `${this.baseURL}?filters=${encodeFilters(filtros)}&orderBy=2`;
+    const url = `${this.baseURL}?filters=${encodeFilters(filters)}&orderBy=2`;
 
     const { data: html } = await axios.get<string>(url);
     const $: CheerioAPI = cheerio.load(html);
@@ -76,7 +39,7 @@ export class CreditoRealCrawler extends BaseCrawler {
           valor_total: getTextNumber($el.find('section > div > div > label')),
           url_apartamento: `https://www.creditoreal.com.br${href}`,
           observacao: '',
-        };
+        } satisfies Apartamento;
       })
       .get();
 

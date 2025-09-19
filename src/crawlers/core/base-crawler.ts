@@ -1,25 +1,13 @@
 import { writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
-import type { Tag } from '../app/types/tag';
-
-export interface Apartamento {
-  id: string;
-  valor_aluguel: number;
-  valor_total: number;
-  url_apartamento: string;
-  bairro?: string;
-  tamanho?: number;
-  quartos?: number;
-  banheiros?: number;
-  garagem?: number;
-  observacao?: string;
-  tag?: Tag;
-}
+import type { Apartamento } from './types';
 
 export abstract class BaseCrawler {
   constructor(public readonly name: string, private readonly outputFileName: string) {}
+
   abstract baseURL: string;
+
   protected get outputPath(): string {
     return join(process.cwd(), 'src', 'data', this.outputFileName);
   }

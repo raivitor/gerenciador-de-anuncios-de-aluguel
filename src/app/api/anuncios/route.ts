@@ -3,7 +3,7 @@ import { join } from 'node:path';
 
 import { NextResponse } from 'next/server';
 
-import type { Apartamento } from '@/corretoras/crawler';
+import type { Apartamento } from '@/crawlers/core/types';
 
 const dataDir = join(process.cwd(), 'src', 'data');
 const creditoRealFile = join(dataDir, 'credito_real_anuncio.json');

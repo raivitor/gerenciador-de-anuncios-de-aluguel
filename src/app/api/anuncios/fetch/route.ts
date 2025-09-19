@@ -1,10 +1,6 @@
 import { NextResponse } from 'next/server';
 
-import creditoRealCrawler from '@/corretoras/creditoReal';
-import ibagyCrawler from '@/corretoras/ibagy';
-import olxCrawler from '@/corretoras/olx';
-import daltonCrawler from '@/corretoras/dalton';
-import type { BaseCrawler } from '@/corretoras/crawler';
+import crawlers from '@/crawlers/registry';
 
 interface CrawlerResult {
   name: string;
@@ -12,8 +8,6 @@ interface CrawlerResult {
   count?: number;
   error?: string;
 }
-
-const crawlers: BaseCrawler[] = [creditoRealCrawler, ibagyCrawler, olxCrawler, daltonCrawler];
 
 export async function POST(): Promise<NextResponse<{ results: CrawlerResult[] }>> {
   const results: CrawlerResult[] = [];

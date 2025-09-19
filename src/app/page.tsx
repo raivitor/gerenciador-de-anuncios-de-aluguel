@@ -16,7 +16,7 @@ import {
   Button,
 } from '@mui/material';
 import type { Tag } from './types/tag';
-import type { Apartamento } from '@/corretoras/crawler';
+import type { Apartamento } from '@/crawlers/core/types';
 
 export default function Home() {
   const [anuncios, setAnuncios] = useState<Apartamento[]>([]);
