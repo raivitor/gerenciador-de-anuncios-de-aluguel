@@ -69,7 +69,8 @@ export class OlxCrawler extends BaseCrawler {
 
       const listings = rawListings.map((item: any) => {
         const condominio = this.parseFloat(this.getValueByKey(item.properties, 'condominio'));
-        const iptu = this.parseFloat(this.getValueByKey(item.properties, 'iptu'));
+        const rawIptu = this.parseFloat(this.getValueByKey(item.properties, 'iptu'));
+        const iptu = rawIptu > 500 ? rawIptu / 12 : rawIptu;
         const valor_aluguel = this.parseFloat(
           String(item?.priceValue || '0')
             .replace(/[^\d,.-]/g, '')
