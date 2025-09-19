@@ -2,13 +2,13 @@ import puppeteer, { Browser, Page } from 'puppeteer';
 
 import { BaseCrawler, type Apartamento } from './crawler';
 
-export class IbagyCrawler extends BaseCrawler {
+export class DaltonAndradeCrawler extends BaseCrawler {
   constructor() {
-    super('ibagy', 'ibaggy_anuncio.json');
+    super('daltonandrade', 'daltonandrade_anuncio.json');
   }
 
   baseURL =
-    'https://ibagy.com.br/aluguel/apartamento/florianopolis/trindade/com-vaga/?categoriagrupo=Residencial&finalidade=aluguel&tipo_residencial%5B%5D=apartamento&cidadebairro%5B%5D=florianopolis%2C%20agronomica&cidadebairro%5B%5D=florianopolis%2C%20carvoeira&cidadebairro%5B%5D=florianopolis%2C%20corrego-grande&cidadebairro%5B%5D=florianopolis%2C%20itacorubi&cidadebairro%5B%5D=florianopolis%2C%20joao-paulo&cidadebairro%5B%5D=florianopolis%2C%20monte-verde&cidadebairro%5B%5D=florianopolis%2C%20pantanal&cidadebairro%5B%5D=florianopolis%2C%20santa-monica&cidadebairro%5B%5D=florianopolis%2C%20trindade&vagas%5B%5D=1&valorvenda=0%2C1099999&valorlocacao=0%2C4000&filterpacote=Sim&area=70%2C509&codigo=&ordenar=maior_area_priv&pagina=1';
+    'https://daltonandrade.com.br/aluguel/apartamento/florianopolis/trindade/com-vaga/?categoriagrupo=Residencial&finalidade=aluguel&tipo_residencial%5B%5D=apartamento&cidadebairro%5B%5D=florianopolis%2C%20agronomica&cidadebairro%5B%5D=florianopolis%2C%20carvoeira&cidadebairro%5B%5D=florianopolis%2C%20corrego-grande&cidadebairro%5B%5D=florianopolis%2C%20itacorubi&cidadebairro%5B%5D=florianopolis%2C%20joao-paulo&cidadebairro%5B%5D=florianopolis%2C%20monte-verde&cidadebairro%5B%5D=florianopolis%2C%20pantanal&cidadebairro%5B%5D=florianopolis%2C%20santa-monica&cidadebairro%5B%5D=florianopolis%2C%20trindade&vagas%5B%5D=1&valorvenda=0%2C1099999&valorlocacao=0%2C4000&filterpacote=Sim&area=70%2C509&codigo=&ordenar=maior_area_priv&pagina=1';
 
   protected buildPageUrl = (pageNumber: number): string => {
     const url = new URL(this.baseURL);
@@ -159,6 +159,6 @@ export class IbagyCrawler extends BaseCrawler {
   }
 }
 
-const ibagyCrawler = new IbagyCrawler();
+const daltonAndradeCrawler = new DaltonAndradeCrawler();
 
-export default ibagyCrawler;
+export default daltonAndradeCrawler;

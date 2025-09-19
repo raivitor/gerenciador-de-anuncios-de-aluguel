@@ -7,7 +7,7 @@ import type { Apartamento } from '@/corretoras/crawler';
 
 const dataDir = join(process.cwd(), 'src', 'data');
 const creditoRealFile = join(dataDir, 'credito_real_anuncio.json');
-const ibagyFile = join(dataDir, 'ibaggy_anuncio.json');
+const ibagyFile = join(dataDir, 'ibagy_anuncio.json');
 const oxlFile = join(dataDir, 'olx_anuncio.json');
 
 export async function GET(): Promise<NextResponse<Apartamento[]>> {
