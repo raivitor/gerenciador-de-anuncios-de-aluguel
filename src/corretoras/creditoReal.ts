@@ -52,13 +52,14 @@ const getTextNumber = ($el: Cheerio<any>): number => toNumber($el.text().trim())
 const encodeFilters = (f: Filtros): string => encodeURIComponent(JSON.stringify(f));
 
 export class CreditoRealCrawler extends BaseCrawler {
+  baseURL = 'https://www.creditoreal.com.br/alugueis/residencial';
+
   constructor() {
     super('creditoReal', 'credito_real_anuncio.json');
   }
 
   protected async scrape(): Promise<RentalListing[]> {
-    const baseURL = 'https://www.creditoreal.com.br/alugueis/residencial?filters=';
-    const url = `${baseURL}${encodeFilters(filtros)}&orderBy=2`;
+    const url = `${this.baseURL}?filters=${encodeFilters(filtros)}&orderBy=2`;
 
     const { data: html } = await axios.get<string>(url);
     const $: CheerioAPI = cheerio.load(html);

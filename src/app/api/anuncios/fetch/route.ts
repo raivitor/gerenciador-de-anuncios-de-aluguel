@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 
 import creditoRealCrawler from '@/corretoras/creditoReal';
 import ibagyCrawler from '@/corretoras/ibaggy';
+import olxCrawler from '@/corretoras/olx';
 import type { BaseCrawler } from '@/corretoras/crawler';
 
 interface CrawlerResult {
@@ -11,7 +12,11 @@ interface CrawlerResult {
   error?: string;
 }
 
-const crawlers: BaseCrawler[] = [creditoRealCrawler, ibagyCrawler];
+const crawlers: BaseCrawler[] = [
+  //creditoRealCrawler,
+  //ibagyCrawler,
+  olxCrawler,
+];
 
 export async function POST(): Promise<NextResponse<{ results: CrawlerResult[] }>> {
   const results: CrawlerResult[] = [];

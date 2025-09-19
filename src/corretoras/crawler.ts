@@ -8,13 +8,17 @@ export interface RentalListing {
   valor_aluguel: number;
   valor_total: number;
   url_apartamento: string;
-  observacao: string;
+  tamanho?: string;
+  quartos?: string;
+  banheiros?: string;
+  garagem?: string;
+  observacao?: string;
   tag?: Tag;
 }
 
 export abstract class BaseCrawler {
   constructor(public readonly name: string, private readonly outputFileName: string) {}
-
+  abstract baseURL: string;
   protected get outputPath(): string {
     return join(process.cwd(), 'src', 'data', this.outputFileName);
   }

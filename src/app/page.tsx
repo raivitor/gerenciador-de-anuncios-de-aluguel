@@ -16,18 +16,10 @@ import {
   Button,
 } from '@mui/material';
 import type { Tag } from './types/tag';
-
-interface Anuncio {
-  id: number | string;
-  valor_aluguel: number;
-  valor_total: number;
-  url_apartamento: string;
-  observacao: string;
-  tag: Tag | '';
-}
+import type { RentalListing } from '@/corretoras/crawler';
 
 export default function Home() {
-  const [anuncios, setAnuncios] = useState<Anuncio[]>([]);
+  const [anuncios, setAnuncios] = useState<RentalListing[]>([]);
 
   const tagsDisponiveis = useMemo<Tag[]>(() => ['Não', 'Entrar em contato', 'Agendado', 'Visitado'], []);
 
@@ -79,6 +71,10 @@ export default function Home() {
             <TableRow>
               <TableCell>Valor Aluguel</TableCell>
               <TableCell>Valor Total</TableCell>
+              <TableCell>Tamanho</TableCell>
+              <TableCell>Quartos</TableCell>
+              <TableCell>Banheiros</TableCell>
+              <TableCell>Garagem</TableCell>
               <TableCell>Observação</TableCell>
               <TableCell>Tag</TableCell>
               <TableCell>Link</TableCell>
@@ -89,6 +85,10 @@ export default function Home() {
               <TableRow key={anuncio.id || index}>
                 <TableCell>{anuncio.valor_aluguel.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</TableCell>
                 <TableCell>{anuncio.valor_total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</TableCell>
+                <TableCell>{anuncio.tamanho}</TableCell>
+                <TableCell>{anuncio.quartos}</TableCell>
+                <TableCell>{anuncio.banheiros}</TableCell>
+                <TableCell>{anuncio.garagem}</TableCell>
                 <TableCell>
                   <TextField
                     value={anuncio.observacao}
