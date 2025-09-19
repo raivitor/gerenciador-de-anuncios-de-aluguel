@@ -97,10 +97,10 @@ export class OlxCrawler extends BaseCrawler {
             valor_total: valor_aluguel + condominio + iptu,
             url_apartamento: apto.url_apartamento,
             bairro: apto.bairro,
-            tamanho: this.getValueByKey(apto.properties, 'size'),
-            quartos: this.getValueByKey(apto.properties, 'rooms'),
-            banheiros: this.getValueByKey(apto.properties, 'bathrooms'),
-            garagem: this.getValueByKey(apto.properties, 'garage_spaces'),
+            tamanho: Number(this.getValueByKey(apto.properties, 'size')),
+            quartos: Number(this.getValueByKey(apto.properties, 'rooms')),
+            banheiros: Number(this.getValueByKey(apto.properties, 'bathrooms')),
+            garagem: Number(this.getValueByKey(apto.properties, 'garage_spaces')),
           } satisfies Apartamento;
         });
 

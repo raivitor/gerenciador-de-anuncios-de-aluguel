@@ -4,62 +4,97 @@
     "valor_aluguel": 2600,
     "valor_total": 3890.11,
     "url_apartamento": "https://ibagy.com.br/imovel/80089/apartamento-2-quartos-nia-domo-carvoeira-florianopolis/",
-    "observacao": ""
+    "bairro": "Carvoeira",
+    "tamanho": 121,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1
   },
   {
     "id": "84444",
     "valor_aluguel": 3200,
     "valor_total": 3996.92,
     "url_apartamento": "https://ibagy.com.br/imovel/84444/apartamento-2-quartos-imperio-do-sol-trindade-florianopolis/",
-    "observacao": ""
+    "bairro": "Trindade",
+    "tamanho": 92,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1
   },
   {
     "id": "104178",
     "valor_aluguel": 2800,
     "valor_total": 3515.8,
     "url_apartamento": "https://ibagy.com.br/imovel/104178/apartamento-2-quartos-oasis-da-ilha-corrego-grande-florianopolis/",
-    "observacao": ""
+    "bairro": "Córrego Grande",
+    "tamanho": 85,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1
   },
   {
     "id": "127458",
     "valor_aluguel": 2700,
     "valor_total": 3576.43,
     "url_apartamento": "https://ibagy.com.br/imovel/127458/apartamento-3-quartos-genebra-trindade-florianopolis/",
-    "observacao": ""
+    "bairro": "Trindade",
+    "tamanho": 80,
+    "quartos": 3,
+    "banheiros": 1,
+    "garagem": 1
   },
   {
     "id": "129119",
     "valor_aluguel": 3200,
     "valor_total": 3793.07,
     "url_apartamento": "https://ibagy.com.br/imovel/129119/apartamento-3-quartos-jardim-trindade-carvoeira-florianopolis/",
-    "observacao": ""
+    "bairro": "Carvoeira",
+    "tamanho": 76,
+    "quartos": 3,
+    "banheiros": 2,
+    "garagem": 1
   },
   {
     "id": "128989",
     "valor_aluguel": 2700,
     "valor_total": 3578.99,
     "url_apartamento": "https://ibagy.com.br/imovel/128989/apartamento-2-quartos-caminho-da-lagoa-itacorubi-florianopolis/",
-    "observacao": ""
+    "bairro": "Itacorubi",
+    "tamanho": 75,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1
   },
   {
     "id": "130064",
     "valor_aluguel": 3800,
     "valor_total": 3844.91,
     "url_apartamento": "https://ibagy.com.br/imovel/130064/apartamento-1-quarto-alberto-de-santiago-residence-joao-paulo-florianopolis/",
-    "observacao": ""
+    "bairro": "João Paulo",
+    "tamanho": 71,
+    "banheiros": 2,
+    "garagem": 1
   },
   {
     "id": "129232",
     "valor_aluguel": 2700,
     "valor_total": 3815.48,
     "url_apartamento": "https://ibagy.com.br/imovel/129232/apartamento-2-quartos-coimbra-%E2%80%93-desembargador-vitor-lima-trindade-florianopolis/",
-    "observacao": ""
+    "bairro": "Trindade",
+    "tamanho": 84,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1
   },
   {
     "id": "108738",
     "valor_aluguel": 2500,
     "valor_total": 3251.75,
     "url_apartamento": "https://ibagy.com.br/imovel/108738/apartamento-3-quartos-conjunto-residencial-agronomica-agronomica-florianopolis/",
-    "observacao": ""
+    "bairro": "Agronômica",
+    "tamanho": 73,
+    "quartos": 3,
+    "banheiros": 1,
+    "garagem": 1
   }
 ]

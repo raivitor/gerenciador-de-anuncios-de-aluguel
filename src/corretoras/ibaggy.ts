@@ -61,6 +61,14 @@ export class IbagyCrawler extends BaseCrawler {
             return digits ? parseInt(digits, 10) : 0;
           };
 
+          const normalizeKey = (key: string) =>
+            key
+              .normalize('NFD')
+              .replace(/[\u0300-\u036f]/g, '')
+              .replace(/\s+/g, '_')
+              .replace('.', '')
+              .toLowerCase();
+
           const cards = document.querySelectorAll<HTMLDivElement>('.imovel-box-single');
 
           const rawListaApto = Array.from(cards).map(card => {
@@ -77,11 +85,36 @@ export class IbagyCrawler extends BaseCrawler {
               card.querySelector<HTMLAnchorElement>("a[href*='/imovel/']")?.href ||
               '';
 
+            const endereco =
+              card.querySelector<HTMLElement>('h3[itemprop="streetAddress"]')?.innerText.trim() ||
+              '';
+            const partes = endereco.split(',');
+            const bairro = partes[2]?.split('-')[0].trim() || '';
+
+            const container = card.querySelector('.property-amenities.amenities-main');
+            const divs = container?.querySelectorAll(':scope > div') || [];
+
+            const properties = Array.from(divs).reduce((acc, div) => {
+              const rawKey = div.querySelector('small')?.innerText.trim() || '';
+              const key = normalizeKey(rawKey);
+
+              let value = div.querySelector('span')?.innerText.trim() || '';
+              value = value.replace(/[^\d]/g, '');
+              acc[key] = Number(value);
+
+              return acc;
+            }, {} as Record<string, number>);
+
             return {
               id: urlLink.split('imovel/')[1]?.split('/')?.[0] ?? '',
               valor_aluguel: aluguelRaw || '0',
               valor_total: totalRaw || aluguelRaw || '0',
               url_apartamento: urlLink || '',
+              bairro: bairro,
+              tamanho: properties.privat,
+              quartos: properties.quartos,
+              banheiros: properties.suite ? properties.suite + 1 : 1,
+              garagem: properties.vaga,
             };
           });
 
@@ -103,6 +136,11 @@ export class IbagyCrawler extends BaseCrawler {
             valor_aluguel,
             valor_total,
             url_apartamento: apto.url_apartamento,
+            bairro: apto.bairro,
+            tamanho: apto.tamanho,
+            quartos: apto.quartos,
+            banheiros: apto.banheiros,
+            garagem: apto.garagem,
           } satisfies Apartamento;
         });
 

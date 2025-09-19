@@ -9,10 +9,10 @@ export interface Apartamento {
   valor_total: number;
   url_apartamento: string;
   bairro?: string;
-  tamanho?: string;
-  quartos?: string;
-  banheiros?: string;
-  garagem?: string;
+  tamanho?: number;
+  quartos?: number;
+  banheiros?: number;
+  garagem?: number;
   observacao?: string;
   tag?: Tag;
 }
