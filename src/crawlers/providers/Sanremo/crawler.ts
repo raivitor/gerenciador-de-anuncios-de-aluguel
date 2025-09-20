@@ -75,7 +75,7 @@ export class SanRemoCrawler extends PuppeteerCrawler {
     await this.navigateToListingsPage(page);
     //this.scrollToBottom(page);
 
-    const { rawListaApto, totalBusca } = await page.evaluate(() => {
+    const { rawListaApto } = await page.evaluate(() => {
       const baseURL = 'https://www.sanremoimoveis.com.br';
       const totalResultados =
         document

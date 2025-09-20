@@ -14,14 +14,32 @@ import {
   TextField,
   MenuItem,
   Button,
+  Slider,
 } from '@mui/material';
 import type { Tag } from './types/tag';
 import type { Apartamento } from '@/crawlers/core/types';
 
 export default function Home() {
   const [anuncios, setAnuncios] = useState<Apartamento[]>([]);
+  const [filtros, setFiltros] = useState({
+    bairro: '',
+    tamanho: 70,
+    quartos: '',
+    banheiros: '',
+    garagem: '',
+  });
 
   const tagsDisponiveis = useMemo<Tag[]>(() => ['Não', 'Entrar em contato', 'Agendado', 'Visitado'], []);
+
+  // Calcula opções únicas
+  const opcoesQuartos = useMemo(() => [...new Set(anuncios.map(a => a.quartos).filter(Boolean))].sort((a, b) => (a || 0) - (b || 0)), [anuncios]);
+  const opcoesBanheiros = useMemo(() => [...new Set(anuncios.map(a => a.banheiros).filter(Boolean))].sort((a, b) => (a || 0) - (b || 0)), [anuncios]);
+  const opcoesGaragem = useMemo(() => [...new Set(anuncios.map(a => a.garagem).filter(Boolean))].sort((a, b) => (a || 0) - (b || 0)), [anuncios]);
+  const opcoesBairros = useMemo(
+    () => [...new Set(anuncios.map(a => a.bairro).filter(b => b && b.trim() !== ''))].sort(),
+    [anuncios]
+  );
+  const tamanhoMaximo = useMemo(() => Math.max(...anuncios.map(a => a.tamanho || 0)), [anuncios]);
 
   const handleObservacaoChange = (index: number, observacao: string) => {
     setAnuncios(prev =>
@@ -59,6 +77,18 @@ export default function Home() {
     }
   };
 
+  // Filtra os anúncios conforme os filtros
+  const anunciosFiltrados = useMemo(() => {
+    return anuncios.filter(anuncio => {
+      const bairroMatch = filtros.bairro === '' || anuncio.bairro?.toLowerCase().includes(filtros.bairro.toLowerCase());
+      const tamanhoMatch = (anuncio.tamanho || 0) >= filtros.tamanho;
+      const quartosMatch = filtros.quartos === '' || anuncio.quartos === Number(filtros.quartos);
+      const banheirosMatch = filtros.banheiros === '' || anuncio.banheiros === Number(filtros.banheiros);
+      const garagemMatch = filtros.garagem === '' || anuncio.garagem === Number(filtros.garagem);
+      return bairroMatch && tamanhoMatch && quartosMatch && banheirosMatch && garagemMatch;
+    });
+  }, [anuncios, filtros]);
+
   return (
     <main>
       <Typography variant='h4' component='h1' gutterBottom>
@@ -71,18 +101,85 @@ export default function Home() {
             <TableRow>
               <TableCell>Valor Aluguel</TableCell>
               <TableCell>Valor Total</TableCell>
-              <TableCell>Bairro</TableCell>
-              <TableCell>Tamanho</TableCell>
-              <TableCell>Quartos</TableCell>
-              <TableCell>Banheiros</TableCell>
-              <TableCell>Garagem</TableCell>
+              <TableCell>
+                Bairro
+                <TextField
+                  select
+                  value={filtros.bairro}
+                  onChange={e => setFiltros(f => ({ ...f, bairro: e.target.value }))}
+                  size='small'
+                  fullWidth
+                >
+                  <MenuItem value=''>Todos</MenuItem>
+                  {opcoesBairros.map(bairro => (
+                    <MenuItem key={bairro} value={bairro}>{bairro}</MenuItem>
+                  ))}
+                </TextField>
+              </TableCell>
+              <TableCell>
+                Tamanho: {filtros.tamanho}m²
+                <Slider
+                  value={filtros.tamanho}
+                  onChange={(_, value) => setFiltros(f => ({ ...f, tamanho: value as number }))}
+                  min={70}
+                  max={tamanhoMaximo}
+                  step={5}
+                  valueLabelDisplay="auto"
+                  valueLabelFormat={(value) => `${value}m²`}
+                />
+              </TableCell>
+              <TableCell>
+                Quartos
+                <TextField
+                  select
+                  value={filtros.quartos}
+                  onChange={e => setFiltros(f => ({ ...f, quartos: e.target.value }))}
+                  size='small'
+                  fullWidth
+                >
+                  <MenuItem value=''>Todos</MenuItem>
+                  {opcoesQuartos.map(q => (
+                    <MenuItem key={q} value={q}>{q}</MenuItem>
+                  ))}
+                </TextField>
+              </TableCell>
+              <TableCell>
+                Banheiros
+                <TextField
+                  select
+                  value={filtros.banheiros}
+                  onChange={e => setFiltros(f => ({ ...f, banheiros: e.target.value }))}
+                  size='small'
+                  fullWidth
+                >
+                  <MenuItem value=''>Todos</MenuItem>
+                  {opcoesBanheiros.map(b => (
+                    <MenuItem key={b} value={b}>{b}</MenuItem>
+                  ))}
+                </TextField>
+              </TableCell>
+              <TableCell>
+                Garagem
+                <TextField
+                  select
+                  value={filtros.garagem}
+                  onChange={e => setFiltros(f => ({ ...f, garagem: e.target.value }))}
+                  size='small'
+                  fullWidth
+                >
+                  <MenuItem value=''>Todos</MenuItem>
+                  {opcoesGaragem.map(g => (
+                    <MenuItem key={g} value={g}>{g}</MenuItem>
+                  ))}
+                </TextField>
+              </TableCell>
               <TableCell>Observação</TableCell>
               <TableCell>Tag</TableCell>
               <TableCell>Link</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
-            {anuncios.map((anuncio, index) => (
+            {anunciosFiltrados.map((anuncio, index) => (
               <TableRow key={anuncio.id || index}>
                 <TableCell>{anuncio.valor_aluguel.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</TableCell>
                 <TableCell>{anuncio.valor_total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</TableCell>
