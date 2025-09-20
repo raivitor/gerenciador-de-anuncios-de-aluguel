@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState, useCallback } from 'react';
 import {
   Link,
   Table,
@@ -15,12 +15,17 @@ import {
   MenuItem,
   Button,
   Slider,
+  Pagination,
+  Box,
 } from '@mui/material';
 import type { Tag } from './types/tag';
 import type { Apartamento } from '@/crawlers/core/types';
 
 export default function Home() {
   const [anuncios, setAnuncios] = useState<Apartamento[]>([]);
+  const [totalAnuncios, setTotalAnuncios] = useState(0);
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 10;
   const [filtros, setFiltros] = useState({
     bairro: '',
     tamanho: 70,
@@ -31,63 +36,101 @@ export default function Home() {
 
   const tagsDisponiveis = useMemo<Tag[]>(() => ['Não', 'Entrar em contato', 'Agendado', 'Visitado'], []);
 
-  // Calcula opções únicas
-  const opcoesQuartos = useMemo(() => [...new Set(anuncios.map(a => a.quartos).filter(Boolean))].sort((a, b) => (a || 0) - (b || 0)), [anuncios]);
-  const opcoesBanheiros = useMemo(() => [...new Set(anuncios.map(a => a.banheiros).filter(Boolean))].sort((a, b) => (a || 0) - (b || 0)), [anuncios]);
-  const opcoesGaragem = useMemo(() => [...new Set(anuncios.map(a => a.garagem).filter(Boolean))].sort((a, b) => (a || 0) - (b || 0)), [anuncios]);
-  const opcoesBairros = useMemo(
-    () => [...new Set(anuncios.map(a => a.bairro).filter(b => b && b.trim() !== ''))].sort(),
-    [anuncios]
-  );
-  const tamanhoMaximo = useMemo(() => Math.max(...anuncios.map(a => a.tamanho || 0)), [anuncios]);
-
-  const handleObservacaoChange = (index: number, observacao: string) => {
-    setAnuncios(prev =>
-      prev.map((anuncio, idx) => (idx === index ? { ...anuncio, observacao } : anuncio))
-    );
-  };
-
-  const handleTagChange = (index: number, tag: Tag | '') => {
-    setAnuncios(prev => prev.map((anuncio, idx) => (idx === index ? { ...anuncio, tag } : anuncio)));
-  };
+  const [allAnuncios, setAllAnuncios] = useState<Apartamento[]>([]);
 
   useEffect(() => {
-    fetch('/api/anuncios')
+    fetch('/api/anuncios?all=true')
       .then(res => res.json())
-      .then(data => setAnuncios(data))
-      .catch(err => console.error('Erro ao buscar anúncios', err));
+      .then(data => setAllAnuncios(data.anuncios || data))
+      .catch(err => console.error('Erro ao buscar dados para filtros', err));
   }, []);
 
-  const atualizarDados = async () => {
+  const opcoesQuartos = useMemo(() => [...new Set(allAnuncios.map(a => a.quartos).filter(Boolean))].sort((a, b) => (a || 0) - (b || 0)), [allAnuncios]);
+  const opcoesBanheiros = useMemo(() => [...new Set(allAnuncios.map(a => a.banheiros).filter(Boolean))].sort((a, b) => (a || 0) - (b || 0)), [allAnuncios]);
+  const opcoesGaragem = useMemo(() => [...new Set(allAnuncios.map(a => a.garagem).filter(Boolean))].sort((a, b) => (a || 0) - (b || 0)), [allAnuncios]);
+  const opcoesBairros = useMemo(
+    () => [...new Set(allAnuncios.map(a => a.bairro).filter(b => b && b.trim() !== ''))].sort(),
+    [allAnuncios]
+  );
+  const tamanhoMaximo = useMemo(() => Math.max(...allAnuncios.map(a => a.tamanho || 0)), [allAnuncios]);
+
+  const handleObservacaoChange = useCallback((index: number, observacao: string) => {
+    const anuncioAtual = anuncios[index];
+    if (!anuncioAtual || anuncioAtual.observacao === observacao) return;
+
+    fetch('/api/anuncios', {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({id: anuncioAtual.id, observacao}),
+    }).catch(err => console.error('Erro ao salvar anotações', err));
+
+    setAnuncios(prev => {
+      const novosAnuncios = [...prev];
+      novosAnuncios[index] = { ...novosAnuncios[index], observacao };
+      return novosAnuncios;
+    });
+  }, [anuncios]);
+
+  const handleTagChange = useCallback((index: number, tag: Tag | '') => {
+    const anuncioAtual = anuncios[index];
+    if (!anuncioAtual || anuncioAtual.tag === tag) return; // Evita atualizações desnecessárias
+
+    setAnuncios(prev => {
+      const novosAnuncios = [...prev];
+      novosAnuncios[index] = { ...novosAnuncios[index], tag };
+      return novosAnuncios;
+    });
+
+    fetch('/api/anuncios', {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({id: anuncioAtual.id, tag}),
+    }).catch(err => console.error('Erro ao salvar anotações', err));
+  }, [anuncios]);
+
+  const atualizarDados = useCallback(async () => {
     try {
       const response = await fetch('/api/anuncios/fetch', {
         method: 'POST',
       });
       const result = await response.json();
       if (result.ok) {
-        // Recarrega os anúncios após a atualização
-        const anunciosResponse = await fetch('/api/anuncios');
-        const anunciosData = await anunciosResponse.json();
-        setAnuncios(anunciosData);
+        setCurrentPage(1);
       } else {
         console.error('Erro ao atualizar dados:', result.error);
       }
     } catch (err) {
       console.error('Erro ao atualizar dados:', err);
     }
-  };
+  }, []);
 
-  // Filtra os anúncios conforme os filtros
-  const anunciosFiltrados = useMemo(() => {
-    return anuncios.filter(anuncio => {
-      const bairroMatch = filtros.bairro === '' || anuncio.bairro?.toLowerCase().includes(filtros.bairro.toLowerCase());
-      const tamanhoMatch = (anuncio.tamanho || 0) >= filtros.tamanho;
-      const quartosMatch = filtros.quartos === '' || anuncio.quartos === Number(filtros.quartos);
-      const banheirosMatch = filtros.banheiros === '' || anuncio.banheiros === Number(filtros.banheiros);
-      const garagemMatch = filtros.garagem === '' || anuncio.garagem === Number(filtros.garagem);
-      return bairroMatch && tamanhoMatch && quartosMatch && banheirosMatch && garagemMatch;
-    });
-  }, [anuncios, filtros]);
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [filtros]);
+
+  useEffect(() => {
+    const url = new URL('/api/anuncios', window.location.origin);
+    url.searchParams.set('page', currentPage.toString());
+    url.searchParams.set('limit', itemsPerPage.toString());
+
+    if (filtros.bairro) url.searchParams.set('bairro', filtros.bairro);
+    if (filtros.quartos) url.searchParams.set('quartos', filtros.quartos);
+    if (filtros.banheiros) url.searchParams.set('banheiros', filtros.banheiros);
+    if (filtros.garagem) url.searchParams.set('garagem', filtros.garagem);
+    if (filtros.tamanho > 70) url.searchParams.set('tamanho', filtros.tamanho.toString());
+
+    fetch(url.toString())
+      .then(res => res.json())
+      .then(data => {
+        setAnuncios(data.anuncios);
+        setTotalAnuncios(data.total);
+      })
+      .catch(err => console.error('Erro ao buscar anúncios', err));
+  }, [currentPage, filtros]);
+
+  const handlePageChange = (event: React.ChangeEvent<unknown>, page: number) => {
+    setCurrentPage(page);
+  };
 
   return (
     <main>
@@ -179,7 +222,7 @@ export default function Home() {
             </TableRow>
           </TableHead>
           <TableBody>
-            {anunciosFiltrados.map((anuncio, index) => (
+            {anuncios.map((anuncio, index) => (
               <TableRow key={anuncio.id || index}>
                 <TableCell>{anuncio.valor_aluguel.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</TableCell>
                 <TableCell>{anuncio.valor_total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</TableCell>
@@ -190,7 +233,7 @@ export default function Home() {
                 <TableCell>{anuncio.garagem}</TableCell>
                 <TableCell>
                   <TextField
-                    value={anuncio.observacao}
+                    value={anuncio.observacao || ''}
                     onChange={event => handleObservacaoChange(index, event.target.value)}
                     fullWidth
                     size='small'
@@ -200,7 +243,7 @@ export default function Home() {
                 <TableCell>
                   <TextField
                     select
-                    value={anuncio.tag}
+                    value={anuncio.tag || ''}
                     fullWidth
                     size='small'
                     onChange={event => handleTagChange(index, event.target.value as Tag | '')}
@@ -223,6 +266,16 @@ export default function Home() {
           </TableBody>
         </Table>
       </TableContainer>
+      <Box display="flex" justifyContent="center" mt={2}>
+        <Pagination
+          count={Math.ceil(totalAnuncios / itemsPerPage)}
+          page={currentPage}
+          onChange={handlePageChange}
+          color="primary"
+          showFirstButton
+          showLastButton
+        />
+      </Box>
     </main>
   );
 }
