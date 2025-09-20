@@ -11,6 +11,14 @@ export abstract class BaseCrawler {
   private readonly outputFileName: string;
   abstract baseURL: string;
 
+  public getOutputFileName(fullFilename = false): string {
+    if (fullFilename) {
+      const dataDir = join(process.cwd(), 'src', 'data');
+      return join(dataDir, this.outputFileName);
+    }
+    return this.outputFileName;
+  }
+
   protected get outputPath(): string {
     return join(process.cwd(), 'src', 'data', this.outputFileName);
   }
