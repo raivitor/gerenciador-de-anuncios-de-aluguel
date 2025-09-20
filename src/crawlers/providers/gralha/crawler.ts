@@ -118,17 +118,45 @@ export class GralhaCrawler extends PuppeteerCrawler {
       };
     });
 
-    const listaApartamento = rawListaApto.map(card => ({
-      id: card.id,
-      valor_aluguel: this.parseFloat(card.valor_aluguel),
-      valor_total: 0,
-      url_apartamento: card.url_apartamento,
-      bairro: '',
-      tamanho: Number(card.tamanho),
-      quartos: this.parseFloat(card.quartos),
-      banheiros: this.parseFloat(card.banheiros),
-      garagem: this.parseFloat(card.garagem),
-    }));
+    const listaApartamento: Apartamento[] = [];
+    for (const card of rawListaApto) {
+      await page.goto(card.url_apartamento, { waitUntil: 'networkidle2', timeout: 60_000 });
+      await page
+        .waitForSelector('.BoxFloat_Values_Complementation', { timeout: 30_000 })
+        .catch(() => null);
+
+      const { iptu, condominio, bairro } = await page.evaluate(() => {
+        const boxValores = document.querySelector('.BoxFloat_Values_Complementation');
+        const boxInformacoes = document.querySelectorAll('div.DetailProperty_About_Text p');
+        let iptu = 0,
+          condominio = 0,
+          bairro = '';
+
+        if (boxValores) {
+          const iptuText = boxValores.querySelector('p:nth-child(1) strong')?.textContent || '';
+          const condominioText =
+            boxValores.querySelector('p:nth-child(2) strong')?.textContent || '';
+          iptu = this.parseFloat(iptuText.replace(/[^\d,]/g, ''));
+          condominio = this.parseFloat(condominioText.replace(/[^\d,]/g, ''));
+        }
+        if (boxInformacoes) {
+          bairro = boxInformacoes[2]?.querySelector<HTMLElement>('b')?.textContent || '0';
+        }
+        return { iptu, condominio, bairro };
+      });
+
+      listaApartamento.push({
+        id: card.id,
+        valor_aluguel: this.parseFloat(card.valor_aluguel),
+        valor_total: this.parseFloat(card.valor_aluguel) + condominio + iptu,
+        url_apartamento: card.url_apartamento,
+        bairro,
+        tamanho: Number(card.tamanho),
+        quartos: this.parseFloat(card.quartos),
+        banheiros: this.parseFloat(card.banheiros),
+        garagem: this.parseFloat(card.garagem),
+      });
+    }
     console.log('listaApartamento', listaApartamento.length);
     return listaApartamento;
   }
