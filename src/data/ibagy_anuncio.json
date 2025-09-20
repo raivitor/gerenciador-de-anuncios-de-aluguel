@@ -2,12 +2,23 @@
   {
     "id": "80089",
     "valor_aluguel": 2600,
-    "valor_total": 3890.11,
+    "valor_total": 3892.25,
     "url_apartamento": "https://ibagy.com.br/imovel/80089/apartamento-2-quartos-nia-domo-carvoeira-florianopolis/",
     "bairro": "Carvoeira",
     "tamanho": 121,
     "quartos": 2,
     "banheiros": 1,
+    "garagem": 1
+  },
+  {
+    "id": "105219",
+    "valor_aluguel": 2500,
+    "valor_total": 2559.89,
+    "url_apartamento": "https://ibagy.com.br/imovel/105219/apartamento-3-quartos-luiz-henrique-rosa-pantanal-florianopolis/",
+    "bairro": "Pantanal",
+    "tamanho": 92,
+    "quartos": 3,
+    "banheiros": 2,
     "garagem": 1
   },
   {
@@ -55,9 +66,20 @@
     "garagem": 1
   },
   {
+    "id": "106006",
+    "valor_aluguel": 2800,
+    "valor_total": 3847.06,
+    "url_apartamento": "https://ibagy.com.br/imovel/106006/apartamento-3-quartos-solar-ponta-do-coral-trindade-florianopolis/",
+    "bairro": "Trindade",
+    "tamanho": 75,
+    "quartos": 3,
+    "banheiros": 1,
+    "garagem": 1
+  },
+  {
     "id": "128989",
     "valor_aluguel": 2700,
-    "valor_total": 3578.99,
+    "valor_total": 3581.13,
     "url_apartamento": "https://ibagy.com.br/imovel/128989/apartamento-2-quartos-caminho-da-lagoa-itacorubi-florianopolis/",
     "bairro": "Itacorubi",
     "tamanho": 75,
@@ -68,7 +90,7 @@
   {
     "id": "130064",
     "valor_aluguel": 3800,
-    "valor_total": 3844.91,
+    "valor_total": 3847.05,
     "url_apartamento": "https://ibagy.com.br/imovel/130064/apartamento-1-quarto-alberto-de-santiago-residence-joao-paulo-florianopolis/",
     "bairro": "João Paulo",
     "tamanho": 71,

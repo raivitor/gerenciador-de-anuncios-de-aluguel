@@ -23,8 +23,8 @@
   },
   {
     "id": 1437663888,
-    "valor_aluguel": 2890,
-    "valor_total": 4280,
+    "valor_aluguel": 3400,
+    "valor_total": 4790,
     "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/descubra-a-harmonia-entre-conforto-e-localizacao-no-apartamento-garden-com-terraco-em-flor-1437663888",
     "bairro": "Trindade",
     "tamanho": 141,
@@ -430,17 +430,6 @@
     "garagem": 1
   },
   {
-    "id": 1431886863,
-    "valor_aluguel": 3100,
-    "valor_total": 4344,
-    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/locacao-apartamento-florianopolis-sc-1431886863",
-    "bairro": "Trindade",
-    "tamanho": 124,
-    "quartos": 3,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
     "id": 1431790510,
     "valor_aluguel": 2500,
     "valor_total": 3358,
@@ -463,15 +452,6 @@
     "garagem": 1
   },
   {
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0
-  },
-  {
     "id": 1431499041,
     "valor_aluguel": 3200,
     "valor_total": 3778.3333333333335,
@@ -481,6 +461,15 @@
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1
+  },
+  {
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0
   },
   {
     "id": 1430640469,
@@ -527,17 +516,6 @@
     "garagem": 1
   },
   {
-    "id": 1429075520,
-    "valor_aluguel": 3600,
-    "valor_total": 4240,
-    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-de-2-dormitorios-na-trindade-1429075520",
-    "bairro": "Trindade",
-    "tamanho": 72,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
     "id": 1428735011,
     "valor_aluguel": 4000,
     "valor_total": 4930,
@@ -547,15 +525,6 @@
     "quartos": 3,
     "banheiros": 1,
     "garagem": 1
-  },
-  {
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0
   },
   {
     "id": 1428166066,
@@ -578,6 +547,15 @@
     "quartos": 2,
     "banheiros": 2,
     "garagem": 2
+  },
+  {
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0
   },
   {
     "id": 1427192281,
@@ -609,6 +587,28 @@
     "bairro": "Trindade",
     "tamanho": 82,
     "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1
+  },
+  {
+    "id": 1426004697,
+    "valor_aluguel": 3800,
+    "valor_total": 4484.166666666667,
+    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/trindade-apartamento-2-quartos-sendo-1-suite-1426004697",
+    "bairro": "Trindade",
+    "tamanho": 72,
+    "quartos": 2,
+    "banheiros": 3,
+    "garagem": 1
+  },
+  {
+    "id": 1425869297,
+    "valor_aluguel": 3900,
+    "valor_total": 4874,
+    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/3-dormitorios-1-suite-garagem-na-trindade-s-1425869297",
+    "bairro": "Trindade",
+    "tamanho": 130,
+    "quartos": 3,
     "banheiros": 2,
     "garagem": 1
   }
