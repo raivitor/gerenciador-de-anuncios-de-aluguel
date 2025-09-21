@@ -127,7 +127,9 @@ export class SanRemoCrawler extends PuppeteerCrawler {
 
       const { iptu, condominio, bairro } = await page.evaluate(() => {
         const boxValores = document.querySelector('.BoxFloat_Values_Complementation');
-        const boxInformacoes = document.querySelectorAll('div.DetailProperty_About_Text p');
+        const boxEndereco = document.querySelector(
+          'div.DetailProperty_Address_Label h2'
+        )?.textContent;
         let iptu = 0,
           condominio = 0,
           bairro = '';
@@ -139,8 +141,8 @@ export class SanRemoCrawler extends PuppeteerCrawler {
           iptu = this.parseFloat(iptuText.replace(/[^\d,]/g, ''));
           condominio = this.parseFloat(condominioText.replace(/[^\d,]/g, ''));
         }
-        if (boxInformacoes) {
-          bairro = boxInformacoes[2]?.querySelector<HTMLElement>('b')?.textContent || '0';
+        if (boxEndereco) {
+          bairro = boxEndereco.split(' - ')[1].split(',')[0].trim();
         }
         return { iptu, condominio, bairro };
       });
