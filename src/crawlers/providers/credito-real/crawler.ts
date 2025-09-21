@@ -34,14 +34,33 @@ export class CreditoRealCrawler extends BaseCrawler {
         const [, idFromHref = ''] = href.split('-cod-');
 
         return {
-          id: idFromHref,
+          id: `${this.name}_${String(idFromHref)}`,
           valor_aluguel: getTextNumber($el.find('section > div > div > p[type="text.body"]')),
           valor_total: getTextNumber($el.find('section > div > div > label')),
           url_apartamento: `https://www.creditoreal.com.br${href}`,
-          observacao: '',
         } satisfies Apartamento;
       })
       .get();
+
+    for (const apartamento of listAlugueis) {
+      const { data: html } = await axios.get<string>(apartamento.url_apartamento);
+      const $: CheerioAPI = cheerio.load(html);
+
+      const bairro = $('ul.sc-ce6dfd33-0 a[href*="/bairro/"]').first().text().trim();
+
+      apartamento.bairro = bairro;
+
+      const infoList = $('ul.sc-8f61197d-0.huQLXI p.sc-8c367b3a-1.jkcvKL')
+        .map((_, el) => $(el).text().trim())
+        .get();
+
+      infoList.forEach((info: string) => {
+        if (info.includes('m²')) apartamento.tamanho = toNumber(info);
+        else if (info.includes('quarto')) apartamento.quartos = toNumber(info);
+        else if (info.includes('banheiro')) apartamento.banheiros = toNumber(info);
+        else if (info.includes('vaga')) apartamento.garagem = toNumber(info);
+      });
+    }
 
     return listAlugueis;
   }
