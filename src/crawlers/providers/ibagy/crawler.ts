@@ -108,7 +108,7 @@ export class IbagyCrawler extends PuppeteerCrawler {
         const valor_total = this.parseFloat(apto.valor_total || apto.valor_aluguel);
 
         return {
-          id: apto.id,
+          id: `${this.name}_${String(apto.id)}`,
           valor_aluguel,
           valor_total,
           url_apartamento: apto.url_apartamento,

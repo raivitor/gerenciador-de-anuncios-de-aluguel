@@ -74,7 +74,7 @@ export class GralhaCrawler extends PuppeteerCrawler {
 
   protected async scrapeWithPage(page: Page): Promise<Apartamento[]> {
     await this.navigateToListingsPage(page);
-    this.scrollToBottom(page);
+    //this.scrollToBottom(page);
 
     const { rawListaApto } = await page.evaluate(() => {
       const totalResultados =
@@ -146,7 +146,7 @@ export class GralhaCrawler extends PuppeteerCrawler {
       });
 
       listaApartamento.push({
-        id: card.id,
+        id: `${this.name}_${String(card.id)}`,
         valor_aluguel: this.parseFloat(card.valor_aluguel),
         valor_total: this.parseFloat(card.valor_aluguel) + condominio + iptu,
         url_apartamento: card.url_apartamento,

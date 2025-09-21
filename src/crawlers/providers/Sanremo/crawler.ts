@@ -146,7 +146,7 @@ export class SanRemoCrawler extends PuppeteerCrawler {
       });
 
       listaApartamento.push({
-        id: card.id,
+        id: `${this.name}_${String(card.id)}`,
         valor_aluguel: this.parseFloat(card.valor_aluguel),
         valor_total: this.parseFloat(card.valor_aluguel) + condominio + iptu,
         url_apartamento: card.url_apartamento,

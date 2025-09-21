@@ -1,6 +1,6 @@
 [
   {
-    "id": "SRAP4564",
+    "id": "sanremo_SRAP4564",
     "valor_aluguel": 3800,
     "valor_total": 4530,
     "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+itacorubi+florianopolis+sc+72m2+rs3800/4564",
@@ -11,7 +11,7 @@
     "garagem": 1
   },
   {
-    "id": "SRAP2127",
+    "id": "sanremo_SRAP2127",
     "valor_aluguel": 3700,
     "valor_total": 4475,
     "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+trindade+florianopolis+sc+85m2+rs3700/2127",
@@ -22,7 +22,7 @@
     "garagem": 1
   },
   {
-    "id": "SRAP4149",
+    "id": "sanremo_SRAP4149",
     "valor_aluguel": 3200,
     "valor_total": 4000,
     "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+3-quartos+carvoeira+florianopolis+sc+74m2+rs3200/4149",
@@ -33,7 +33,7 @@
     "garagem": 1
   },
   {
-    "id": "SRAP4478",
+    "id": "sanremo_SRAP4478",
     "valor_aluguel": 3950,
     "valor_total": 4900,
     "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+itacorubi+florianopolis+sc+90m2+rs3950/4478",
@@ -44,7 +44,7 @@
     "garagem": 1
   },
   {
-    "id": "SRAP4462",
+    "id": "sanremo_SRAP4462",
     "valor_aluguel": 3600,
     "valor_total": 4587,
     "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+3-quartos+corrego-grande+florianopolis+sc+82m2+rs3600/4462",
@@ -55,7 +55,7 @@
     "garagem": 1
   },
   {
-    "id": "SRAP4459",
+    "id": "sanremo_SRAP4459",
     "valor_aluguel": 3300,
     "valor_total": 4387,
     "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+3-quartos+trindade+florianopolis+sc+85m2+rs3300/4459",
@@ -66,7 +66,7 @@
     "garagem": 1
   },
   {
-    "id": "SRAP4203",
+    "id": "sanremo_SRAP4203",
     "valor_aluguel": 3200,
     "valor_total": 3969,
     "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+trindade+florianopolis+sc+82m2+rs3200/4203",
@@ -77,7 +77,7 @@
     "garagem": 1
   },
   {
-    "id": "SRAP4336",
+    "id": "sanremo_SRAP4336",
     "valor_aluguel": 3800,
     "valor_total": 4505,
     "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+trindade+florianopolis+sc+72m2+rs3800/4336",
@@ -88,7 +88,7 @@
     "garagem": 1
   },
   {
-    "id": "SRAP4018",
+    "id": "sanremo_SRAP4018",
     "valor_aluguel": 3800,
     "valor_total": 7767,
     "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/venda+apartamento+3-quartos+trindade+florianopolis+sc+73m2+rs780000/4018",

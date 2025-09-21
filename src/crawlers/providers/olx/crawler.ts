@@ -45,7 +45,7 @@ export class OlxCrawler extends PuppeteerCrawler {
         const json = document.querySelector<HTMLElement>('#__NEXT_DATA__')?.innerText;
         const aptoDados = json ? JSON.parse(json).props.pageProps.ads : [];
         const rawListaApto = aptoDados.map((item: any) => ({
-          id: item.listId,
+          id: String(item.listId),
           priceValue: item.priceValue,
           url_apartamento: item.friendlyUrl,
           properties: item.properties,
@@ -70,7 +70,7 @@ export class OlxCrawler extends PuppeteerCrawler {
             .replace(',', '.')
         );
         return {
-          id: apto.id,
+          id: `${this.name}_${String(apto.id)}`,
           valor_aluguel,
           valor_total: valor_aluguel + condominio + iptu,
           url_apartamento: apto.url_apartamento,
