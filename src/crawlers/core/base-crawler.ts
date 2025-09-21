@@ -27,6 +27,14 @@ export abstract class BaseCrawler {
     await writeFile(this.outputPath, JSON.stringify(listings, null, 2), 'utf-8');
   }
 
+  protected parseFloat(value: string): number {
+    const cleaned = value
+      .replace(/[^\d,.-]/g, '')
+      .replace('.', '')
+      .replace(',', '.');
+    return Number.parseFloat(cleaned) || 0;
+  }
+
   protected abstract scrape(): Promise<Apartamento[]>;
 
   public async run(): Promise<Apartamento[]> {

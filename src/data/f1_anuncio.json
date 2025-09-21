@@ -1,0 +1,101 @@
+[
+  {
+    "id": "f1_1956314",
+    "valor_aluguel": 2900,
+    "valor_total": 3576.08,
+    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-residencial-ouro-verde-de-2-quartos-no-bairro-carvoeira-florianopolis-1956314/",
+    "bairro": "Carvoeira",
+    "tamanho": 88,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1
+  },
+  {
+    "id": "f1_1958092",
+    "valor_aluguel": 3200,
+    "valor_total": 3930,
+    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-residencial-acores-de-2-quartos-no-bairro-itacorubi-florianopolis-1958092/",
+    "bairro": "Itacorubi",
+    "tamanho": 85,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1
+  },
+  {
+    "id": "f1_1956732",
+    "valor_aluguel": 3300,
+    "valor_total": 4045,
+    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-green-park-de-2-quartos-no-bairro-itacorubi-florianopolis-1956732/",
+    "bairro": "Itacorubi",
+    "tamanho": 90,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1
+  },
+  {
+    "id": "f1_10928",
+    "valor_aluguel": 3500,
+    "valor_total": 4300,
+    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-encostas-do-poente-de-3-quartos-no-bairro-carvoeira-florianopolis-10928/",
+    "bairro": "Carvoeira",
+    "tamanho": 80,
+    "quartos": 3,
+    "banheiros": 2,
+    "garagem": 1
+  },
+  {
+    "id": "f1_1956903",
+    "valor_aluguel": 3800,
+    "valor_total": 4613,
+    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-athenas-park-de-2-quartos-no-bairro-pantanal-florianopolis-1956903/",
+    "bairro": "Pantanal",
+    "tamanho": 80,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1
+  },
+  {
+    "id": "f1_1957157",
+    "valor_aluguel": 3800,
+    "valor_total": 4070.1,
+    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-viva-trindade-de-1-quarto-no-bairro-trindade-florianopolis-1957157/",
+    "bairro": "Trindade",
+    "tamanho": 70,
+    "quartos": 1,
+    "banheiros": 1,
+    "garagem": 0
+  },
+  {
+    "id": "f1_1957287",
+    "valor_aluguel": 3800,
+    "valor_total": 4569.54,
+    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-edificio-scarlett-de-2-quartos-no-bairro-trindade-florianopolis-1957287/",
+    "bairro": "Trindade",
+    "tamanho": 85,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1
+  },
+  {
+    "id": "f1_1957914",
+    "valor_aluguel": 4000,
+    "valor_total": 4850,
+    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-residencial-sangiovese-de-2-quartos-no-bairro-pantanal-florianopolis-1957914/",
+    "bairro": "Pantanal",
+    "tamanho": 103,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 2
+  },
+  {
+    "id": "f1_1957958",
+    "valor_aluguel": 4000,
+    "valor_total": 5100,
+    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-residencial-dolomiti-de-3-quartos-no-bairro-itacorubi-florianopolis-1957958/",
+    "bairro": "Itacorubi",
+    "tamanho": 100,
+    "quartos": 3,
+    "banheiros": 3,
+    "garagem": 1
+  }
+]

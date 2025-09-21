@@ -18,14 +18,6 @@ export abstract class PuppeteerCrawler extends BaseCrawler {
     await page.setUserAgent(DEFAULT_USER_AGENT);
   }
 
-  protected parseFloat(value: string): number {
-    const cleaned = value
-      .replace(/[^\d,.-]/g, '')
-      .replace('.', '')
-      .replace(',', '.');
-    return Number.parseFloat(cleaned) || 0;
-  }
-
   protected abstract scrapeWithPage(page: Page): Promise<Apartamento[]>;
 
   protected async scrape(): Promise<Apartamento[]> {
