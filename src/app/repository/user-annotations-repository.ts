@@ -136,7 +136,11 @@ class UserAnnotationsRepository {
       string,
       { observacao?: string; tag?: Tag }
     >;
-    annotations[id] = { observacao, tag };
+
+    if (!annotations[id]) annotations[id] = {};
+
+    if (observacao) annotations[id].observacao = observacao;
+    if (tag) annotations[id].tag = tag;
     const dataDir = join(process.cwd(), 'src', 'data');
     await writeFile(join(dataDir, 'anotacoes.json'), JSON.stringify(annotations, null, 2), 'utf-8');
   }

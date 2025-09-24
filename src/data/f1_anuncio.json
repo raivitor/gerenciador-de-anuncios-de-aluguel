@@ -11,6 +11,17 @@
     "garagem": 1
   },
   {
+    "id": "f1_1958107",
+    "valor_aluguel": 3150,
+    "valor_total": 4100,
+    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-edificio-manuela-de-2-quartos-no-bairro-pantanal-florianopolis-1958107/",
+    "bairro": "Pantanal",
+    "tamanho": 70,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1
+  },
+  {
     "id": "f1_1958092",
     "valor_aluguel": 3200,
     "valor_total": 3930,
@@ -55,23 +66,23 @@
     "garagem": 1
   },
   {
-    "id": "f1_1957157",
-    "valor_aluguel": 3800,
-    "valor_total": 4070.1,
-    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-viva-trindade-de-1-quarto-no-bairro-trindade-florianopolis-1957157/",
-    "bairro": "Trindade",
-    "tamanho": 70,
-    "quartos": 1,
-    "banheiros": 1,
-    "garagem": 0
-  },
-  {
     "id": "f1_1957287",
     "valor_aluguel": 3800,
     "valor_total": 4569.54,
     "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-edificio-scarlett-de-2-quartos-no-bairro-trindade-florianopolis-1957287/",
     "bairro": "Trindade",
     "tamanho": 85,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1
+  },
+  {
+    "id": "f1_1958105",
+    "valor_aluguel": 3800,
+    "valor_total": 4790,
+    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-maria-eduarda-de-2-quartos-no-bairro-pantanal-florianopolis-1958105/",
+    "bairro": "Pantanal",
+    "tamanho": 90,
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1
@@ -86,16 +97,5 @@
     "quartos": 2,
     "banheiros": 2,
     "garagem": 2
-  },
-  {
-    "id": "f1_1957958",
-    "valor_aluguel": 4000,
-    "valor_total": 5100,
-    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-residencial-dolomiti-de-3-quartos-no-bairro-itacorubi-florianopolis-1957958/",
-    "bairro": "Itacorubi",
-    "tamanho": 100,
-    "quartos": 3,
-    "banheiros": 3,
-    "garagem": 1
   }
 ]

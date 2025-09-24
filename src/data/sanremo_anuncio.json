@@ -1,9 +1,9 @@
 [
   {
     "id": "sanremo_SRAP4564",
-    "valor_aluguel": 3800,
-    "valor_total": 4530,
-    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+itacorubi+florianopolis+sc+72m2+rs3800/4564",
+    "valor_aluguel": 3200,
+    "valor_total": 3930,
+    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+itacorubi+florianopolis+sc+72m2+rs3200/4564",
     "bairro": "Itacorubi",
     "tamanho": 72,
     "quartos": 2,
@@ -11,14 +11,25 @@
     "garagem": 1
   },
   {
-    "id": "sanremo_SRAP2127",
-    "valor_aluguel": 3700,
-    "valor_total": 4475,
-    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+trindade+florianopolis+sc+85m2+rs3700/2127",
-    "bairro": "Trindade",
-    "tamanho": 85,
+    "id": "sanremo_SRAP4492",
+    "valor_aluguel": 3990,
+    "valor_total": 4940,
+    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+pantanal+florianopolis+sc+74m2+rs3990/4492",
+    "bairro": "Pantanal",
+    "tamanho": 74,
     "quartos": 2,
-    "banheiros": 0,
+    "banheiros": 2,
+    "garagem": 2
+  },
+  {
+    "id": "sanremo_SRAP4496",
+    "valor_aluguel": 3400,
+    "valor_total": 4065,
+    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+itacorubi+florianopolis+sc+71m2+rs3400/4496",
+    "bairro": "Itacorubi",
+    "tamanho": 71,
+    "quartos": 2,
+    "banheiros": 1,
     "garagem": 1
   },
   {
@@ -77,20 +88,9 @@
     "garagem": 1
   },
   {
-    "id": "sanremo_SRAP4336",
-    "valor_aluguel": 3800,
-    "valor_total": 4505,
-    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+trindade+florianopolis+sc+72m2+rs3800/4336",
-    "bairro": "Trindade",
-    "tamanho": 72,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
     "id": "sanremo_SRAP4018",
     "valor_aluguel": 3800,
-    "valor_total": 7767,
+    "valor_total": 4657,
     "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/venda+apartamento+3-quartos+trindade+florianopolis+sc+73m2+rs780000/4018",
     "bairro": "Trindade",
     "tamanho": 73,

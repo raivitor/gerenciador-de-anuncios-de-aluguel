@@ -34,7 +34,7 @@ export default function Home() {
     garagem: '',
   });
 
-  const tagsDisponiveis = useMemo<Tag[]>(() => ['Não', 'Entrar em contato', 'Agendado', 'Visitado'], []);
+  const tagsDisponiveis = useMemo<Tag[]>(() => ['Não', 'Talvez', 'Agendar', 'Agendado', 'Visitado'], []);
 
   const [allAnuncios, setAllAnuncios] = useState<Apartamento[]>([]);
 
@@ -71,7 +71,7 @@ export default function Home() {
     });
   }, [anuncios]);
 
-  const handleTagChange = useCallback((index: number, tag: Tag | '') => {
+  const handleTagChange = useCallback((index: number, tag: Tag) => {
     const anuncioAtual = anuncios[index];
     if (!anuncioAtual || anuncioAtual.tag === tag) return; // Evita atualizações desnecessárias
 
@@ -246,7 +246,7 @@ export default function Home() {
                     value={anuncio.tag || ''}
                     fullWidth
                     size='small'
-                    onChange={event => handleTagChange(index, event.target.value as Tag | '')}
+                    onChange={event => handleTagChange(index, event.target.value as Tag)}
                   >
                     <MenuItem value=''>Selecione…</MenuItem>
                     {tagsDisponiveis.map(tag => (

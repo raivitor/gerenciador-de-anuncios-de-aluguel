@@ -1,16 +1,5 @@
 [
   {
-    "id": "gralha_28325",
-    "valor_aluguel": 4000,
-    "valor_total": 4930,
-    "url_apartamento": "https://www.gralhaalugueis.com.br/imovel/aluguel+apartamento+3-quartos+trindade+florianopolis+sc+124,59m2+rs4000/28325",
-    "bairro": "Trindade",
-    "tamanho": 124.59,
-    "quartos": 3,
-    "banheiros": 1,
-    "garagem": 1
-  },
-  {
     "id": "gralha_27297",
     "valor_aluguel": 3850,
     "valor_total": 4450,

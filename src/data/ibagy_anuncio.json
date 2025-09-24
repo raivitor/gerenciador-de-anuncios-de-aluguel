@@ -13,7 +13,7 @@
   {
     "id": "ibagy_105219",
     "valor_aluguel": 2500,
-    "valor_total": 2559.89,
+    "valor_total": 3980.01,
     "url_apartamento": "https://ibagy.com.br/imovel/105219/apartamento-3-quartos-luiz-henrique-rosa-pantanal-florianopolis/",
     "bairro": "Pantanal",
     "tamanho": 92,
@@ -22,20 +22,9 @@
     "garagem": 1
   },
   {
-    "id": "ibagy_84444",
-    "valor_aluguel": 3200,
-    "valor_total": 3996.92,
-    "url_apartamento": "https://ibagy.com.br/imovel/84444/apartamento-2-quartos-imperio-do-sol-trindade-florianopolis/",
-    "bairro": "Trindade",
-    "tamanho": 92,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
     "id": "ibagy_104178",
     "valor_aluguel": 2800,
-    "valor_total": 3515.8,
+    "valor_total": 3563.38,
     "url_apartamento": "https://ibagy.com.br/imovel/104178/apartamento-2-quartos-oasis-da-ilha-corrego-grande-florianopolis/",
     "bairro": "Córrego Grande",
     "tamanho": 85,
@@ -68,7 +57,7 @@
   {
     "id": "ibagy_106006",
     "valor_aluguel": 2800,
-    "valor_total": 3847.06,
+    "valor_total": 3940.51,
     "url_apartamento": "https://ibagy.com.br/imovel/106006/apartamento-3-quartos-solar-ponta-do-coral-trindade-florianopolis/",
     "bairro": "Trindade",
     "tamanho": 75,
@@ -78,13 +67,24 @@
   },
   {
     "id": "ibagy_128989",
-    "valor_aluguel": 2700,
-    "valor_total": 3581.13,
+    "valor_aluguel": 2600,
+    "valor_total": 3481.13,
     "url_apartamento": "https://ibagy.com.br/imovel/128989/apartamento-2-quartos-caminho-da-lagoa-itacorubi-florianopolis/",
     "bairro": "Itacorubi",
     "tamanho": 75,
     "quartos": 2,
     "banheiros": 1,
+    "garagem": 1
+  },
+  {
+    "id": "ibagy_120341",
+    "valor_aluguel": 3500,
+    "valor_total": 3549.19,
+    "url_apartamento": "https://ibagy.com.br/imovel/120341/apartamento-2-quartos-villa-milano-trindade-florianopolis/",
+    "bairro": "Trindade",
+    "tamanho": 74,
+    "quartos": 2,
+    "banheiros": 2,
     "garagem": 1
   },
   {
@@ -98,6 +98,17 @@
     "garagem": 1
   },
   {
+    "id": "ibagy_84444",
+    "valor_aluguel": 3200,
+    "valor_total": 3996.92,
+    "url_apartamento": "https://ibagy.com.br/imovel/84444/apartamento-2-quartos-imperio-do-sol-trindade-florianopolis/",
+    "bairro": "Trindade",
+    "tamanho": 92,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1
+  },
+  {
     "id": "ibagy_129232",
     "valor_aluguel": 2700,
     "valor_total": 3815.48,
@@ -106,17 +117,6 @@
     "tamanho": 84,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1
-  },
-  {
-    "id": "ibagy_108738",
-    "valor_aluguel": 2500,
-    "valor_total": 3251.75,
-    "url_apartamento": "https://ibagy.com.br/imovel/108738/apartamento-3-quartos-conjunto-residencial-agronomica-agronomica-florianopolis/",
-    "bairro": "Agronômica",
-    "tamanho": 73,
-    "quartos": 3,
-    "banheiros": 1,
     "garagem": 1
   }
 ]

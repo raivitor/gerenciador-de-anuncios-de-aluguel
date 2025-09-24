@@ -51,6 +51,7 @@ export async function GET(
 export async function PUT(request: Request): Promise<NextResponse> {
   try {
     const body = await request.json();
+    console.log(body);
     await repository.writeAnnotations(body);
     return NextResponse.json([], { status: 201 });
   } catch (error) {
