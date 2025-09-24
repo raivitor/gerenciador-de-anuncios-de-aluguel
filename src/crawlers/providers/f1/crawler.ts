@@ -1,6 +1,6 @@
 import * as cheerio from 'cheerio';
 import axios from 'axios';
-import type { CheerioAPI, Cheerio } from 'cheerio';
+import type { CheerioAPI } from 'cheerio';
 
 import { BaseCrawler } from '@/crawlers/core/base-crawler';
 import type { Apartamento } from '@/crawlers/core/types';

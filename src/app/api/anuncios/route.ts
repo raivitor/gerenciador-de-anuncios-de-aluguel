@@ -26,7 +26,7 @@ export async function GET(
 
     // Remove undefined filters
     const cleanFilters = Object.fromEntries(
-      Object.entries(filters).filter(([_, value]) => value !== undefined)
+      Object.entries(filters).filter(([, value]) => value !== undefined)
     );
 
     const result = await repository.readAnnotations({
