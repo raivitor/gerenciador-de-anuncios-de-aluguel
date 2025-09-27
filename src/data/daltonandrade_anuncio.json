@@ -1,11 +1,33 @@
 [
   {
-    "id": "daltonandrade_9612",
-    "valor_aluguel": 3000,
-    "valor_total": 3996,
-    "url_apartamento": "https://daltonandrade.com.br/imovel/9612/apartamento-2-quartos-trindade-florianopolis/",
+    "id": "daltonandrade_9666",
+    "valor_aluguel": 3500,
+    "valor_total": 4425,
+    "url_apartamento": "https://daltonandrade.com.br/imovel/9666/apartamento-2-quartos-trindade-florianopolis/",
     "bairro": "",
-    "tamanho": 71,
+    "tamanho": 80,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1
+  },
+  {
+    "id": "daltonandrade_7282",
+    "valor_aluguel": 3300,
+    "valor_total": 4080,
+    "url_apartamento": "https://daltonandrade.com.br/imovel/7282/apartamento-2-quartos-agronomica-florianopolis/",
+    "bairro": "",
+    "tamanho": 72,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1
+  },
+  {
+    "id": "daltonandrade_7175",
+    "valor_aluguel": 3500,
+    "valor_total": 4485,
+    "url_apartamento": "https://daltonandrade.com.br/imovel/7175/apartamento-2-quartos-trindade-florianopolis/",
+    "bairro": "",
+    "tamanho": 70,
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1

@@ -32,7 +32,7 @@ export class SanRemoCrawler extends PuppeteerCrawler {
 
     url.searchParams.set('suggest', suggestParam);
     url.searchParams.set('finalidade', 'aluguel');
-    url.searchParams.set('valorMaximo', '4000');
+    url.searchParams.set('valorMaximo', '5000');
     url.searchParams.set('vagas', '1, 2, 3, 4');
     url.searchParams.set('areaMinima', '70');
     url.searchParams.set('tipos', 'apartamento');

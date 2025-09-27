@@ -45,12 +45,23 @@
   },
   {
     "id": "f1_10928",
-    "valor_aluguel": 3500,
-    "valor_total": 4300,
+    "valor_aluguel": 3400,
+    "valor_total": 4200,
     "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-encostas-do-poente-de-3-quartos-no-bairro-carvoeira-florianopolis-10928/",
     "bairro": "Carvoeira",
     "tamanho": 80,
     "quartos": 3,
+    "banheiros": 2,
+    "garagem": 1
+  },
+  {
+    "id": "f1_1958141",
+    "valor_aluguel": 3400,
+    "valor_total": 4170,
+    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-ilhas-gregas-de-2-quartos-no-bairro-carvoeira-florianopolis-1958141/",
+    "bairro": "Carvoeira",
+    "tamanho": 85,
+    "quartos": 2,
     "banheiros": 2,
     "garagem": 1
   },
@@ -86,16 +97,5 @@
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1
-  },
-  {
-    "id": "f1_1957914",
-    "valor_aluguel": 4000,
-    "valor_total": 4850,
-    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-residencial-sangiovese-de-2-quartos-no-bairro-pantanal-florianopolis-1957914/",
-    "bairro": "Pantanal",
-    "tamanho": 103,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 2
   }
 ]

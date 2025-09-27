@@ -31,7 +31,7 @@ export const filters: CreditoRealFilters = {
     'Parque São Jorge',
   ],
   cityState: 'Florianópolis_SC',
-  finalValue: 4000,
+  finalValue: 5000,
   areaInitialValue: 70,
   parking: 1,
 };
