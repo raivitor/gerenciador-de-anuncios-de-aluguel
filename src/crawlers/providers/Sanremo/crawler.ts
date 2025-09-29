@@ -31,11 +31,11 @@ export class SanRemoCrawler extends PuppeteerCrawler {
     suggestParam = this.escapeUnicode(suggestParam);
 
     url.searchParams.set('suggest', suggestParam);
-    url.searchParams.set('finalidade', 'aluguel');
-    url.searchParams.set('valorMaximo', '5000');
-    url.searchParams.set('vagas', '1, 2, 3, 4');
-    url.searchParams.set('areaMinima', '70');
-    url.searchParams.set('tipos', 'apartamento');
+    url.searchParams.set('finalidade', filtro.finalidade);
+    url.searchParams.set('valorMaximo', filtro.valorMaximo.toString());
+    url.searchParams.set('vagas', filtro.vagas);
+    url.searchParams.set('areaMinima', filtro.areaMinima.toString());
+    url.searchParams.set('tipos', filtro.tipos);
 
     return url.toString();
   }

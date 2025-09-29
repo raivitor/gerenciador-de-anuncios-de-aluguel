@@ -88,17 +88,6 @@
     "garagem": 1
   },
   {
-    "id": "sanremo_SRAP4492",
-    "valor_aluguel": 3990,
-    "valor_total": 4940,
-    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+pantanal+florianopolis+sc+74m2+rs3990/4492",
-    "bairro": "Pantanal",
-    "tamanho": 74,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 2
-  },
-  {
     "id": "sanremo_SRAP4496",
     "valor_aluguel": 3400,
     "valor_total": 4065,
@@ -110,17 +99,6 @@
     "garagem": 1
   },
   {
-    "id": "sanremo_SRAP4506",
-    "valor_aluguel": 4400,
-    "valor_total": 5420,
-    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+3-quartos+corrego-grande+florianopolis+sc+105m2+rs4400/4506",
-    "bairro": "Córrego Grande",
-    "tamanho": 105,
-    "quartos": 3,
-    "banheiros": 2,
-    "garagem": 2
-  },
-  {
     "id": "sanremo_SRAP4525",
     "valor_aluguel": 4800,
     "valor_total": 5941,
@@ -129,6 +107,28 @@
     "tamanho": 77,
     "quartos": 2,
     "banheiros": 2,
+    "garagem": 1
+  },
+  {
+    "id": "sanremo_SRAP3031",
+    "valor_aluguel": 4800,
+    "valor_total": 5603,
+    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+3-quartos+pantanal+florianopolis+sc+83m2+rs4800/3031",
+    "bairro": "Pantanal",
+    "tamanho": 83,
+    "quartos": 3,
+    "banheiros": 2,
+    "garagem": 1
+  },
+  {
+    "id": "sanremo_SRAP4149",
+    "valor_aluguel": 3200,
+    "valor_total": 4000,
+    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+3-quartos+carvoeira+florianopolis+sc+74m2+rs3200/4149",
+    "bairro": "Carvoeira",
+    "tamanho": 74,
+    "quartos": 3,
+    "banheiros": 1,
     "garagem": 1
   }
 ]

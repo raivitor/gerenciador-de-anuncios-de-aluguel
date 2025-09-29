@@ -14,7 +14,7 @@
   },
   "ibagy_105219": {
     "observacao": "gostei",
-    "tag": "Agendar"
+    "tag": "Não"
   },
   "creditoReal_cr79623": {
     "observacao": "Achei meio feio. De frente para rua, vai fazer muito barulho",
@@ -44,7 +44,7 @@
   },
   "olx_1436203088": {
     "tag": "Talvez",
-    "observacao": "foi  visitado"
+    "observacao": "foi  visitado, ver garagem "
   },
   "olx_1426913362": {
     "observacao": "cozinha estranha mas dá para ver",
@@ -66,10 +66,10 @@
   },
   "ibagy_127458": {
     "observacao": "condominio aberto",
-    "tag": "Talvez"
+    "tag": "Não"
   },
   "creditoReal_cr83589": {
-    "tag": "Talvez",
+    "tag": "Não",
     "observacao": "não gostei muito mas dá pra olhar"
   },
   "olx_1434004991": {
@@ -100,17 +100,19 @@
     "tag": "Agendar"
   },
   "creditoReal_cr83253": {
-    "tag": "Agendar"
+    "tag": "Não"
   },
   "olx_1433363123": {
-    "observacao": "repetido"
+    "observacao": "repetido",
+    "tag": "Não"
   },
   "olx_1433401682": {
     "tag": "Agendar",
     "observacao": "honesto"
   },
   "ibagy_128989": {
-    "observacao": "já visitamos né?"
+    "observacao": "talvez barulhento",
+    "tag": "Talvez"
   },
   "ibagy_104178": {
     "observacao": "em frente a quadra, vai ter muito barulho",
@@ -146,5 +148,91 @@
   "ibagy_84444": {
     "observacao": "gostei muito",
     "tag": "Agendar"
+  },
+  "gralha_28340": {
+    "tag": "Não",
+    "observacao": "muito velho, feio e geometria esquisita"
+  },
+  "olx_1439626055": {
+    "tag": "Agendar"
+  },
+  "olx_1433701500": {
+    "tag": "Agendar"
+  },
+  "creditoReal_cr83645": {
+    "tag": "Agendar"
+  },
+  "creditoReal_cr88328": {
+    "tag": "Agendar"
+  },
+  "ibagy_129119": {
+    "tag": "Agendar"
+  },
+  "olx_1439981819": {
+    "tag": "Agendar",
+    "observacao": "prioridade"
+  },
+  "creditoReal_cr80889": {
+    "tag": "Agendar"
+  },
+  "ibagy_130064": {
+    "tag": "Não"
+  },
+  "sanremo_SRAP4564": {
+    "observacao": "repetido"
+  },
+  "ibagy_105816": {
+    "observacao": "repetido"
+  },
+  "sanremo_SRAP4203": {
+    "tag": "Agendar"
+  },
+  "gralha_26862": {
+    "tag": "Não"
+  },
+  "sanremo_SRAP4149": {
+    "tag": "Não"
+  },
+  "f1_1956732": {
+    "tag": "Agendar"
+  },
+  "sanremo_SRAP4496": {
+    "tag": "Agendar"
+  },
+  "creditoReal_cr83400": {
+    "tag": "Agendar"
+  },
+  "daltonandrade_7282": {
+    "tag": "Agendar"
+  },
+  "creditoReal_cr113738": {
+    "tag": "Não"
+  },
+  "ibagy_118684": {
+    "tag": "Agendar"
+  },
+  "olx_1435943245": {
+    "tag": "Não"
+  },
+  "creditoReal_cr82858": {
+    "tag": "Não"
+  },
+  "olx_1437663888": {
+    "tag": "Agendar"
+  },
+  "gralha_28388": {
+    "tag": "Agendar"
+  },
+  "sanremo_SRAP4580": {
+    "tag": "Não"
+  },
+  "sanremo_SRAP2244": {
+    "tag": "Agendar"
+  },
+  "gralha_28250": {
+    "tag": "Não"
+  },
+  "olx_1435687136": {
+    "tag": "Não"
   }
 }
