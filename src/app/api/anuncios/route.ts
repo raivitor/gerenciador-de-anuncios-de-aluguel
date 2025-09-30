@@ -22,6 +22,7 @@ export async function GET(
       banheiros: searchParams.get('banheiros') || undefined,
       garagem: searchParams.get('garagem') || undefined,
       tamanho: searchParams.get('tamanho') || undefined,
+      tag: searchParams.get('tag') || undefined,
     };
 
     // Remove undefined filters

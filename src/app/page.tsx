@@ -32,6 +32,7 @@ export default function Home() {
     quartos: '',
     banheiros: '',
     garagem: '',
+    tag: '',
   });
 
   const tagsDisponiveis = useMemo<Tag[]>(() => ['Não', 'Talvez', 'Agendar', 'Agendado', 'Visitado'], []);
@@ -118,6 +119,7 @@ export default function Home() {
     if (filtros.banheiros) url.searchParams.set('banheiros', filtros.banheiros);
     if (filtros.garagem) url.searchParams.set('garagem', filtros.garagem);
     if (filtros.tamanho > 70) url.searchParams.set('tamanho', filtros.tamanho.toString());
+    if (filtros.tag) url.searchParams.set('tag', filtros.tag);
 
     fetch(url.toString())
       .then(res => res.json())
@@ -217,7 +219,20 @@ export default function Home() {
                 </TextField>
               </TableCell>
               <TableCell>Observação</TableCell>
-              <TableCell>Tag</TableCell>
+              <TableCell>Tag
+                <TextField
+                  select
+                  value={filtros.tag}
+                  onChange={e => setFiltros(f => ({ ...f, tag: e.target.value }))}
+                  size='small'
+                  fullWidth
+                >
+                  <MenuItem value=''>Todas</MenuItem>
+                  {tagsDisponiveis.map(tag => (
+                    <MenuItem key={tag} value={tag}>{tag}</MenuItem>
+                  ))}
+                </TextField>
+              </TableCell>
               <TableCell>Link</TableCell>
             </TableRow>
           </TableHead>

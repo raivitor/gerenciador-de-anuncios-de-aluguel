@@ -55,6 +55,7 @@ class UserAnnotationsRepository {
       banheiros?: string;
       garagem?: string;
       tamanho?: string;
+      tag?: string;
     }
   ): Apartamento[] {
     return list.filter(anuncio => {
@@ -64,7 +65,10 @@ class UserAnnotationsRepository {
       const quartosMatch = !filters.quartos || anuncio.quartos === Number(filters.quartos);
       const banheirosMatch = !filters.banheiros || anuncio.banheiros === Number(filters.banheiros);
       const garagemMatch = !filters.garagem || anuncio.garagem === Number(filters.garagem);
-      return bairroMatch && tamanhoMatch && quartosMatch && banheirosMatch && garagemMatch;
+      const tagMatch = !filters.tag || anuncio.tag === filters.tag;
+      return (
+        bairroMatch && tamanhoMatch && quartosMatch && banheirosMatch && garagemMatch && tagMatch
+      );
     });
   }
 
@@ -90,6 +94,7 @@ class UserAnnotationsRepository {
       banheiros?: string;
       garagem?: string;
       tamanho?: string;
+      tag?: string;
     };
     all?: boolean;
   }) {
