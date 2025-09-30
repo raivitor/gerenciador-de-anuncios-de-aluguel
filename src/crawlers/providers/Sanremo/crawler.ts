@@ -159,7 +159,6 @@ export class SanRemoCrawler extends PuppeteerCrawler {
         garagem: this.parseFloat(card.garagem),
       });
     }
-    console.log('listaApartamento', listaApartamento.length);
     return listaApartamento;
   }
 }
