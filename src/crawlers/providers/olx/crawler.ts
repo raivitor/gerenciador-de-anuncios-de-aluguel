@@ -9,7 +9,7 @@ export class OlxCrawler extends PuppeteerCrawler {
   }
 
   baseURL =
-    'https://www.olx.com.br/imoveis/aluguel/estado-sc/florianopolis-e-regiao/leste/trindade?pe=5000&gsp=1&gsp=2&ss=70&ret=1020';
+    'https://www.olx.com.br/imoveis/aluguel/apartamentos/estado-sc/florianopolis-e-regiao/leste?pe=5000&gsp=1&gsp=2&ss=70';
 
   protected buildPageUrl(pageNumber: number): string {
     const url = new URL(this.baseURL);
