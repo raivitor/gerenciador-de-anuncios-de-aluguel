@@ -21,8 +21,7 @@ const getIconBoxNumber = (label: string, $: CheerioAPI): number => {
 };
 
 export class F1Crawler extends BaseCrawler {
-  baseURL =
-    'https://f1ciaimobiliaria.com.br/imoveis-para-alugar/?jsf=jet-engine:pesquisa&tax=tipo-de-imovel:8;cidade:61,92,71,34,36,74,63,47,45&meta=area!range:70_1000;valor-do-aluguel!range:1000_5000&sort=orderby:meta_value_num;order:ASC;meta_key:valor-do-aluguel';
+  baseURL = `https://f1ciaimobiliaria.com.br/imoveis-para-alugar/?jsf=jet-engine:pesquisa&tax=tipo-de-imovel:8;cidade:61,92,71,34,36,74,63,47,45&meta=area!range:${this.minSize}_1000;valor-do-aluguel!range:1000_${this.maxValue}&sort=orderby:meta_value_num;order:ASC;meta_key:valor-do-aluguel`;
 
   constructor() {
     super('f1');

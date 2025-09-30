@@ -8,8 +8,7 @@ export class OlxCrawler extends PuppeteerCrawler {
     super('olx');
   }
 
-  baseURL =
-    'https://www.olx.com.br/imoveis/aluguel/apartamentos/estado-sc/florianopolis-e-regiao/leste?pe=5000&gsp=1&gsp=2&ss=70';
+  baseURL = `https://www.olx.com.br/imoveis/aluguel/apartamentos/estado-sc/florianopolis-e-regiao/leste?pe=${this.maxValue}&gsp=1&gsp=2&ss=${this.minSize}`;
 
   protected buildPageUrl(pageNumber: number): string {
     const url = new URL(this.baseURL);

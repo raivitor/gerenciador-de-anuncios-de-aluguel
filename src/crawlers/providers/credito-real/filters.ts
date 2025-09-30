@@ -1,3 +1,5 @@
+import { DEFAULT_MAX_VALUE, DEFAULT_MIN_SIZE } from '@/crawlers/core/base-crawler';
+
 export interface CreditoRealFilters {
   valueType: boolean;
   imovelTypes: string[];
@@ -31,8 +33,8 @@ export const filters: CreditoRealFilters = {
     'Parque São Jorge',
   ],
   cityState: 'Florianópolis_SC',
-  finalValue: 5000,
-  areaInitialValue: 70,
+  finalValue: DEFAULT_MAX_VALUE,
+  areaInitialValue: DEFAULT_MIN_SIZE,
   parking: 1,
 };
 

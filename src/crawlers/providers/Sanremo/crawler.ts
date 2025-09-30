@@ -32,9 +32,9 @@ export class SanRemoCrawler extends PuppeteerCrawler {
 
     url.searchParams.set('suggest', suggestParam);
     url.searchParams.set('finalidade', filtro.finalidade);
-    url.searchParams.set('valorMaximo', filtro.valorMaximo.toString());
+    url.searchParams.set('valorMaximo', this.maxValue.toString());
     url.searchParams.set('vagas', filtro.vagas);
-    url.searchParams.set('areaMinima', filtro.areaMinima.toString());
+    url.searchParams.set('areaMinima', this.minSize.toString());
     url.searchParams.set('tipos', filtro.tipos);
 
     return url.toString();

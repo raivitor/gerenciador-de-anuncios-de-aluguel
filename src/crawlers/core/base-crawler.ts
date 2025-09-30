@@ -3,7 +3,13 @@ import { join } from 'node:path';
 
 import type { Apartamento } from './types';
 
+export const DEFAULT_MIN_SIZE = 70;
+export const DEFAULT_MAX_VALUE = 4000;
+
 export abstract class BaseCrawler {
+  protected readonly minSize = DEFAULT_MIN_SIZE;
+  protected readonly maxValue = DEFAULT_MAX_VALUE;
+
   constructor(public readonly name: string) {
     this.outputFileName = `${name}_anuncio.json`;
   }

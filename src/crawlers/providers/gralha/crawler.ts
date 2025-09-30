@@ -33,9 +33,9 @@ export class GralhaCrawler extends PuppeteerCrawler {
 
     url.searchParams.set('suggest', suggestParam);
     url.searchParams.set('finalidade', 'aluguel');
-    url.searchParams.set('valorMaximo', '5000');
+    url.searchParams.set('valorMaximo', this.maxValue.toString());
     url.searchParams.set('vagas', '1, 2, 3, 4');
-    url.searchParams.set('areaMinima', '70');
+    url.searchParams.set('areaMinima', this.minSize.toString());
     url.searchParams.set('tipos', 'apartamento');
 
     return url.toString();

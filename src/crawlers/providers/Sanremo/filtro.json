@@ -138,7 +138,5 @@
   ],
   "finalidade": "aluguel",
   "tipos": "apartamento",
-  "valorMaximo": 5000,
-  "vagas": "1",
-  "areaMinima": 70
+  "vagas": "1"
 }
