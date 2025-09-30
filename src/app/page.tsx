@@ -290,7 +290,7 @@ export default function Home() {
                   <TextField
                     select
                     value={anuncio.nota ?? ''}
-                    onChange={event => handleNotaChange(index, event.target.value)}
+                    onBlur={event => handleNotaChange(index, event.target.value)}
                     fullWidth
                     size='small'
                   >

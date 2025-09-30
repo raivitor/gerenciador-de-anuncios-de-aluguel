@@ -145,7 +145,7 @@ class UserAnnotationsRepository {
     id: string;
     observacao?: string;
     tag?: Tag;
-    nota?: number;
+    nota?: number | null;
   }) {
     const rawAnnotation = await this.getAnnotation();
     const annotations = JSON.parse(rawAnnotation) as Record<
@@ -157,8 +157,25 @@ class UserAnnotationsRepository {
 
     if (observacao !== undefined) annotations[id].observacao = observacao;
     if (tag !== undefined) annotations[id].tag = tag;
-    if (nota !== undefined) annotations[id].nota = nota;
+    if (nota === null) {
+      // Remove nota do objeto se for null
+      if ('nota' in annotations[id]) delete annotations[id].nota;
+    } else if (nota !== undefined) {
+      annotations[id].nota = nota;
+    }
+
+    // Remove propriedades undefined/null do objeto antes de salvar
+    Object.keys(annotations).forEach(key => {
+      Object.keys(annotations[key]).forEach(prop => {
+        const obj = annotations[key] as Record<string, any>;
+        if (obj[prop] === undefined) {
+          delete obj[prop];
+        }
+      });
+    });
+
     const dataDir = join(process.cwd(), 'src', 'data');
+    // Escreve o arquivo de forma atômica
     await writeFile(join(dataDir, 'anotacoes.json'), JSON.stringify(annotations, null, 2), 'utf-8');
   }
 }
