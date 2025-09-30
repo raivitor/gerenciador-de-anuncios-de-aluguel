@@ -1,0 +1,101 @@
+[
+  {
+    "id": "duda_32893",
+    "valor_aluguel": 3200,
+    "valor_total": 6330,
+    "url_apartamento": "https://dudaimoveis.com.br/imovel/32893/apartamento-3-quartos-trindade-florianopolis/",
+    "bairro": "Trindade",
+    "tamanho": 75,
+    "quartos": 3,
+    "banheiros": 2,
+    "garagem": 1
+  },
+  {
+    "id": "duda_12520",
+    "valor_aluguel": 3200,
+    "valor_total": 4970,
+    "url_apartamento": "https://dudaimoveis.com.br/imovel/12520/apartamento-2-quartos-trindade-florianopolis/",
+    "bairro": "Trindade",
+    "tamanho": 90,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1
+  },
+  {
+    "id": "duda_32576",
+    "valor_aluguel": 3500,
+    "valor_total": 6900,
+    "url_apartamento": "https://dudaimoveis.com.br/imovel/32576/apartamento-3-quartos-trindade-florianopolis/",
+    "bairro": "Trindade",
+    "tamanho": 89,
+    "quartos": 3,
+    "banheiros": 2,
+    "garagem": 1
+  },
+  {
+    "id": "duda_37606",
+    "valor_aluguel": 3800,
+    "valor_total": 5830,
+    "url_apartamento": "https://dudaimoveis.com.br/imovel/37606/apartamento-3-quartos-trindade-florianopolis/",
+    "bairro": "Trindade",
+    "tamanho": 122,
+    "quartos": 3,
+    "banheiros": 2,
+    "garagem": 1
+  },
+  {
+    "id": "duda_5450",
+    "valor_aluguel": 2800,
+    "valor_total": 4920,
+    "url_apartamento": "https://dudaimoveis.com.br/imovel/5450/apartamento-2-quartos-corrego-grande-florianopolis/",
+    "bairro": "Córrego Grande",
+    "tamanho": 75,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1
+  },
+  {
+    "id": "duda_51690",
+    "valor_aluguel": 3100,
+    "valor_total": 4247.8,
+    "url_apartamento": "https://dudaimoveis.com.br/imovel/51690/apartamento-2-quartos-carvoeira-florianopolis/",
+    "bairro": "Carvoeira",
+    "tamanho": 171,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1
+  },
+  {
+    "id": "duda_51398",
+    "valor_aluguel": 3200,
+    "valor_total": 5423,
+    "url_apartamento": "https://dudaimoveis.com.br/imovel/51398/apartamento-3-quartos-carvoeira-florianopolis/",
+    "bairro": "Carvoeira",
+    "tamanho": 80,
+    "quartos": 3,
+    "banheiros": 2,
+    "garagem": 1
+  },
+  {
+    "id": "duda_24753",
+    "valor_aluguel": 3200,
+    "valor_total": 5020,
+    "url_apartamento": "https://dudaimoveis.com.br/imovel/24753/apartamento-3-quartos-trindade-florianopolis/",
+    "bairro": "Trindade",
+    "tamanho": 75,
+    "quartos": 3,
+    "banheiros": 2,
+    "garagem": 1
+  },
+  {
+    "id": "duda_25971",
+    "valor_aluguel": 3500,
+    "valor_total": 6500,
+    "url_apartamento": "https://dudaimoveis.com.br/imovel/25971/apartamento-2-quartos-agronomica-florianopolis/",
+    "bairro": "Agronômica",
+    "tamanho": 70,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1
+  }
+]
