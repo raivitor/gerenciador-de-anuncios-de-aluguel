@@ -271,5 +271,43 @@
     "observacao": "Salão de Festas,",
     "nota": 4,
     "tag": "Agendar"
+  },
+  "olx_1439832256": {
+    "tag": "Não",
+    "observacao": "Saco dos Limões"
+  },
+  "olx_1440088275": {
+    "tag": "Não"
+  },
+  "olx_1439937339": {
+    "tag": "Não"
+  },
+  "olx_1439953507": {
+    "observacao": "repetido",
+    "tag": "Não"
+  },
+  "olx_1440619002": {
+    "observacao": "talvez terreo?",
+    "nota": 3,
+    "tag": "Agendar"
+  },
+  "olx_1440266030": {
+    "tag": "Agendar",
+    "nota": 3
+  },
+  "olx_1439399022": {
+    "observacao": "repetido",
+    "tag": "Não"
+  },
+  "olx_1439090206": {
+    "observacao": "repetido",
+    "tag": "Não"
+  },
+  "olx_1439133179": {
+    "tag": "Agendar",
+    "nota": 3
+  },
+  "olx_1440556532": {
+    "observacao": "repetido"
   }
 }
