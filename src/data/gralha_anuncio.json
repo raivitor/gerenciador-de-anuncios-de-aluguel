@@ -1,5 +1,16 @@
 [
   {
+    "id": "gralha_28386",
+    "valor_aluguel": 4500,
+    "valor_total": 5323,
+    "url_apartamento": "https://www.gralhaalugueis.com.br/imovel/aluguel+apartamento+3-quartos+trindade+florianopolis+sc+92m2+rs4500/28386",
+    "bairro": "0",
+    "tamanho": 92,
+    "quartos": 3,
+    "banheiros": 2,
+    "garagem": 1
+  },
+  {
     "id": "gralha_28414",
     "valor_aluguel": 4000,
     "valor_total": 4837,

@@ -58,7 +58,8 @@
     "observacao": "falta adicionar informação"
   },
   "olx_1439408740": {
-    "observacao": "falta adicionar informação"
+    "observacao": "repetido",
+    "tag": "Não"
   },
   "olx_1430607931": {
     "observacao": "gostei bastante",
@@ -73,7 +74,8 @@
     "observacao": "não gostei muito mas dá pra olhar"
   },
   "olx_1434004991": {
-    "observacao": "repetido"
+    "observacao": "repetido",
+    "tag": "Não"
   },
   "ibagy_129232": {
     "observacao": "estou pronto para morar",
@@ -84,20 +86,23 @@
     "observacao": "gostei que tem quadra"
   },
   "olx_1438705644": {
-    "tag": "Agendar",
-    "observacao": "repetido"
+    "tag": "Não",
+    "observacao": "repetido",
+    "nota": 2
   },
   "olx_1437900397": {
     "observacao": "estou pronto para morar",
     "tag": "Agendar"
   },
   "olx_1436838690": {
-    "observacao": "varanda enorme, gostei bastante",
-    "tag": "Agendar"
+    "observacao": "repetido",
+    "tag": "Não",
+    "nota": null
   },
   "ibagy_106006": {
     "observacao": "parece ter bastante sol",
-    "tag": "Agendar"
+    "tag": "Agendar",
+    "nota": 2
   },
   "creditoReal_cr83253": {
     "tag": "Não"
@@ -120,7 +125,8 @@
   },
   "creditoReal_cr114464": {
     "observacao": "parece ser bem novinho, gostei",
-    "tag": "Agendar"
+    "tag": "Agendar",
+    "nota": 2
   },
   "f1_1956314": {
     "observacao": "acho que já fui nesse...",
@@ -138,8 +144,9 @@
     "tag": "Agendar"
   },
   "ibagy_80089": {
-    "observacao": "varanda enorme",
-    "tag": "Agendar"
+    "observacao": "varanda enorme mas é na subida da carvoeira",
+    "tag": "Agendar",
+    "nota": 3
   },
   "f1_1958092": {
     "observacao": "aí tamos falando de elite",
@@ -147,45 +154,61 @@
   },
   "ibagy_84444": {
     "observacao": "gostei muito",
-    "tag": "Agendar"
+    "tag": "Agendar",
+    "nota": 4
   },
   "gralha_28340": {
     "tag": "Não",
     "observacao": "muito velho, feio e geometria esquisita"
   },
   "olx_1439626055": {
-    "tag": "Agendar"
+    "tag": "Agendar",
+    "nota": 3,
+    "observacao": "Tem piscina e é na trindade"
   },
   "olx_1433701500": {
-    "tag": "Agendar"
+    "tag": "Agendar",
+    "nota": 2
   },
   "creditoReal_cr83645": {
-    "tag": "Agendar"
+    "tag": "Agendar",
+    "observacao": "salão de festas e vaga de garagem coberta",
+    "nota": 3
   },
   "creditoReal_cr88328": {
-    "tag": "Agendar"
+    "tag": "Agendar",
+    "observacao": "vaga de garagem coberta, mas sem espaço",
+    "nota": 2
   },
   "ibagy_129119": {
-    "tag": "Agendar"
+    "tag": "Agendar",
+    "nota": 3,
+    "observacao": "Churrasqueira e cozinha completa"
   },
   "olx_1439981819": {
-    "tag": "Agendar",
-    "observacao": "prioridade"
+    "tag": "Não",
+    "observacao": "repetido",
+    "nota": null
   },
   "creditoReal_cr80889": {
-    "tag": "Agendar"
+    "tag": ""
   },
   "ibagy_130064": {
     "tag": "Não"
   },
   "sanremo_SRAP4564": {
-    "observacao": "repetido"
+    "observacao": "Elite",
+    "nota": 5,
+    "tag": "Agendar"
   },
   "ibagy_105816": {
-    "observacao": "repetido"
+    "observacao": "prioridade",
+    "nota": 4,
+    "tag": "Agendar"
   },
   "sanremo_SRAP4203": {
-    "tag": "Agendar"
+    "tag": "Agendar",
+    "nota": 4
   },
   "gralha_26862": {
     "tag": "Não"
@@ -194,22 +217,27 @@
     "tag": "Não"
   },
   "f1_1956732": {
-    "tag": "Agendar"
+    "tag": "Agendar",
+    "nota": 4
   },
   "sanremo_SRAP4496": {
-    "tag": "Agendar"
+    "tag": "Agendar",
+    "nota": 4
   },
   "creditoReal_cr83400": {
     "tag": "Agendar"
   },
   "daltonandrade_7282": {
-    "tag": "Agendar"
+    "tag": "Agendar",
+    "nota": 4
   },
   "creditoReal_cr113738": {
-    "tag": "Não"
+    "tag": "Não",
+    "nota": null
   },
   "ibagy_118684": {
-    "tag": "Agendar"
+    "tag": "Agendar",
+    "nota": 3
   },
   "olx_1435943245": {
     "tag": "Não"
@@ -234,5 +262,14 @@
   },
   "olx_1435687136": {
     "tag": "Não"
+  },
+  "ibagy_102966": {
+    "tag": "Não",
+    "observacao": "Rua do pantanal que só sobe"
+  },
+  "ibagy_113167": {
+    "observacao": "Salão de Festas,",
+    "nota": 4,
+    "tag": "Agendar"
   }
 }

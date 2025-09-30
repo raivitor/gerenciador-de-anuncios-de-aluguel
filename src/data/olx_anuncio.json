@@ -1,5 +1,16 @@
 [
   {
+    "id": "olx_1440959895",
+    "valor_aluguel": 4500,
+    "valor_total": 5324,
+    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-3-quartos-trindade-1440959895",
+    "bairro": "Trindade",
+    "tamanho": 92,
+    "quartos": 3,
+    "banheiros": 2,
+    "garagem": 1
+  },
+  {
     "id": "olx_1440490611",
     "valor_aluguel": 3800,
     "valor_total": 4887,
@@ -9,17 +20,6 @@
     "quartos": 4,
     "banheiros": 2,
     "garagem": 2
-  },
-  {
-    "id": "olx_1440441783",
-    "valor_aluguel": 3500,
-    "valor_total": 4212,
-    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-trindade-02-dormitorios-01-suite-1440441783",
-    "bairro": "Trindade",
-    "tamanho": 71,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1
   },
   {
     "id": "olx_1440365896",

@@ -23,6 +23,7 @@ export async function GET(
       garagem: searchParams.get('garagem') || undefined,
       tamanho: searchParams.get('tamanho') || undefined,
       tag: searchParams.get('tag') || undefined,
+      nota: searchParams.get('nota') || undefined,
     };
 
     // Remove undefined filters

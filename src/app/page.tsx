@@ -33,7 +33,9 @@ export default function Home() {
     banheiros: '',
     garagem: '',
     tag: '',
+    nota: '',
   });
+  const opcoesNotas = useMemo(() => ['', 1, 2, 3, 4, 5], []);
 
   const tagsDisponiveis = useMemo<Tag[]>(() => ['Não', 'Talvez', 'Agendar', 'Agendado', 'Visitado'], []);
 
@@ -95,10 +97,10 @@ export default function Home() {
         method: 'POST',
       });
       const result = await response.json();
-      if (result.ok) {
+      if (response.ok && (result.ok === undefined || result.ok === true)) {
         setCurrentPage(1);
       } else {
-        console.error('Erro ao atualizar dados:', result.error);
+        console.error('Erro ao atualizar dados:', result.error ?? result);
       }
     } catch (err) {
       console.error('Erro ao atualizar dados:', err);
@@ -120,6 +122,7 @@ export default function Home() {
     if (filtros.garagem) url.searchParams.set('garagem', filtros.garagem);
     if (filtros.tamanho > 70) url.searchParams.set('tamanho', filtros.tamanho.toString());
     if (filtros.tag) url.searchParams.set('tag', filtros.tag);
+    if (filtros.nota) url.searchParams.set('nota', filtros.nota);
 
     fetch(url.toString())
       .then(res => res.json())
@@ -133,6 +136,29 @@ export default function Home() {
   const handlePageChange = (event: React.ChangeEvent<unknown>, page: number) => {
     setCurrentPage(page);
   };
+
+  // ...
+  // Adiciona handleNotaChange antes do return
+  const handleNotaChange = useCallback((index: number, nota: string) => {
+    const anuncioAtual = anuncios[index];
+    if (!anuncioAtual || anuncioAtual.nota === Number(nota)) return;
+    setAnuncios(prev => {
+      const novosAnuncios = [...prev];
+      const novo = { ...novosAnuncios[index] };
+      if (nota === '') {
+        delete novo.nota;
+      } else {
+        novo.nota = Number(nota);
+      }
+      novosAnuncios[index] = novo;
+      return novosAnuncios;
+    });
+    fetch('/api/anuncios', {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(nota === '' ? { id: anuncioAtual.id, nota: null } : { id: anuncioAtual.id, nota: Number(nota) }),
+    }).catch(err => console.error('Erro ao salvar nota', err));
+  }, [anuncios]);
 
   return (
     <main>
@@ -218,6 +244,20 @@ export default function Home() {
                   ))}
                 </TextField>
               </TableCell>
+              <TableCell>Nota
+                <TextField
+                  select
+                  value={filtros.nota}
+                  onChange={e => setFiltros(f => ({ ...f, nota: e.target.value }))}
+                  size='small'
+                  fullWidth
+                >
+                  <MenuItem value=''>Todas</MenuItem>
+                  {[1,2,3,4,5].map(nota => (
+                    <MenuItem key={nota} value={nota}>{nota}</MenuItem>
+                  ))}
+                </TextField>
+              </TableCell>
               <TableCell>Observação</TableCell>
               <TableCell>Tag
                 <TextField
@@ -248,11 +288,28 @@ export default function Home() {
                 <TableCell>{anuncio.garagem}</TableCell>
                 <TableCell>
                   <TextField
+                    select
+                    value={anuncio.nota ?? ''}
+                    onChange={event => handleNotaChange(index, event.target.value)}
+                    fullWidth
+                    size='small'
+                  >
+                    <MenuItem value=''>Selecione…</MenuItem>
+                    {[1,2,3,4,5].map(nota => (
+                      <MenuItem key={nota} value={nota}>{nota}</MenuItem>
+                    ))}
+                  </TextField>
+                </TableCell>
+                <TableCell>
+                  <TextField
                     value={anuncio.observacao || ''}
                     onChange={event => handleObservacaoChange(index, event.target.value)}
                     fullWidth
                     size='small'
                     placeholder='Adicionar observação'
+                    multiline
+                    minRows={2}
+                    maxRows={8}
                   />
                 </TableCell>
                 <TableCell>

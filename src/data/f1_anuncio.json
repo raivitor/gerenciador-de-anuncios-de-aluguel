@@ -22,17 +22,6 @@
     "garagem": 1
   },
   {
-    "id": "f1_1958092",
-    "valor_aluguel": 3200,
-    "valor_total": 3930,
-    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-residencial-acores-de-2-quartos-no-bairro-itacorubi-florianopolis-1958092/",
-    "bairro": "Itacorubi",
-    "tamanho": 85,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1
-  },
-  {
     "id": "f1_1956732",
     "valor_aluguel": 3300,
     "valor_total": 4045,
@@ -45,8 +34,8 @@
   },
   {
     "id": "f1_10928",
-    "valor_aluguel": 3400,
-    "valor_total": 4200,
+    "valor_aluguel": 3300,
+    "valor_total": 4100,
     "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-encostas-do-poente-de-3-quartos-no-bairro-carvoeira-florianopolis-10928/",
     "bairro": "Carvoeira",
     "tamanho": 80,
@@ -61,17 +50,6 @@
     "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-ilhas-gregas-de-2-quartos-no-bairro-carvoeira-florianopolis-1958141/",
     "bairro": "Carvoeira",
     "tamanho": 85,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
-    "id": "f1_1956903",
-    "valor_aluguel": 3800,
-    "valor_total": 4613,
-    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-athenas-park-de-2-quartos-no-bairro-pantanal-florianopolis-1956903/",
-    "bairro": "Pantanal",
-    "tamanho": 80,
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1
@@ -96,6 +74,28 @@
     "tamanho": 90,
     "quartos": 2,
     "banheiros": 2,
+    "garagem": 1
+  },
+  {
+    "id": "f1_1957914",
+    "valor_aluguel": 4000,
+    "valor_total": 4850,
+    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-residencial-sangiovese-de-2-quartos-no-bairro-pantanal-florianopolis-1957914/",
+    "bairro": "Pantanal",
+    "tamanho": 103,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 2
+  },
+  {
+    "id": "f1_1957958",
+    "valor_aluguel": 4000,
+    "valor_total": 5100,
+    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-residencial-dolomiti-de-3-quartos-no-bairro-itacorubi-florianopolis-1957958/",
+    "bairro": "Itacorubi",
+    "tamanho": 100,
+    "quartos": 3,
+    "banheiros": 3,
     "garagem": 1
   }
 ]

@@ -11,6 +11,16 @@
     "garagem": 1
   },
   {
+    "id": "ibagy_113167",
+    "valor_aluguel": 3000,
+    "valor_total": 3898.2,
+    "url_apartamento": "https://ibagy.com.br/imovel/113167/apartamento-2-quartos-villa-marianna-itacorubi-florianopolis/",
+    "bairro": "Itacorubi",
+    "tamanho": 98,
+    "quartos": 2,
+    "banheiros": 2
+  },
+  {
     "id": "ibagy_86882",
     "valor_aluguel": 3600,
     "valor_total": 4721.7,
@@ -44,6 +54,17 @@
     "garagem": 1
   },
   {
+    "id": "ibagy_102966",
+    "valor_aluguel": 1350,
+    "valor_total": 1409.89,
+    "url_apartamento": "https://ibagy.com.br/imovel/102966/apartamento-3-quartos-luiz-henrique-rosa-pantanal-florianopolis/",
+    "bairro": "Pantanal",
+    "tamanho": 92,
+    "quartos": 3,
+    "banheiros": 2,
+    "garagem": 1
+  },
+  {
     "id": "ibagy_84444",
     "valor_aluguel": 3200,
     "valor_total": 3996.92,
@@ -68,22 +89,11 @@
   {
     "id": "ibagy_102694",
     "valor_aluguel": 3600,
-    "valor_total": 4495.66,
+    "valor_total": 4521.05,
     "url_apartamento": "https://ibagy.com.br/imovel/102694/apartamento-2-quartos-maison-du-flamboyant-itacorubi-florianopolis/",
     "bairro": "Itacorubi",
     "tamanho": 86,
     "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
-    "id": "ibagy_89077",
-    "valor_aluguel": 3100,
-    "valor_total": 4606.53,
-    "url_apartamento": "https://ibagy.com.br/imovel/89077/apartamento-3-quartos-dona-augusta-trindade-florianopolis/",
-    "bairro": "Trindade",
-    "tamanho": 85,
-    "quartos": 3,
     "banheiros": 2,
     "garagem": 1
   },
@@ -187,7 +197,7 @@
   {
     "id": "ibagy_104714",
     "valor_aluguel": 3500,
-    "valor_total": 4488.94,
+    "valor_total": 4489.02,
     "url_apartamento": "https://ibagy.com.br/imovel/104714/apartamento-2-quartos-solar-de-evora-itacorubi-florianopolis/",
     "bairro": "Itacorubi",
     "tamanho": 75,
@@ -219,8 +229,8 @@
   },
   {
     "id": "ibagy_128989",
-    "valor_aluguel": 2600,
-    "valor_total": 3481.13,
+    "valor_aluguel": 2500,
+    "valor_total": 3381.13,
     "url_apartamento": "https://ibagy.com.br/imovel/128989/apartamento-2-quartos-caminho-da-lagoa-itacorubi-florianopolis/",
     "bairro": "Itacorubi",
     "tamanho": 75,
@@ -231,7 +241,7 @@
   {
     "id": "ibagy_130321",
     "valor_aluguel": 3800,
-    "valor_total": 4635.49,
+    "valor_total": 4684.68,
     "url_apartamento": "https://ibagy.com.br/imovel/130321/apartamento-2-quartos-porto-do-itacorubi-itacorubi-florianopolis/",
     "bairro": "Itacorubi",
     "tamanho": 75,
@@ -251,22 +261,22 @@
     "garagem": 1
   },
   {
-    "id": "ibagy_130313",
-    "valor_aluguel": 3700,
-    "valor_total": 4648.92,
-    "url_apartamento": "https://ibagy.com.br/imovel/130313/apartamento-2-quartos-boulevard-trindade-trindade-florianopolis/",
-    "bairro": "Trindade",
+    "id": "ibagy_96714",
+    "valor_aluguel": 3800,
+    "valor_total": 4687.7,
+    "url_apartamento": "https://ibagy.com.br/imovel/96714/apartamento-2-quartos-reggio-di-calabria-pantanal-florianopolis/",
+    "bairro": "Pantanal",
     "tamanho": 74,
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1
   },
   {
-    "id": "ibagy_96714",
-    "valor_aluguel": 3800,
-    "valor_total": 4687.7,
-    "url_apartamento": "https://ibagy.com.br/imovel/96714/apartamento-2-quartos-reggio-di-calabria-pantanal-florianopolis/",
-    "bairro": "Pantanal",
+    "id": "ibagy_130313",
+    "valor_aluguel": 3700,
+    "valor_total": 4698.11,
+    "url_apartamento": "https://ibagy.com.br/imovel/130313/apartamento-2-quartos-boulevard-trindade-trindade-florianopolis/",
+    "bairro": "Trindade",
     "tamanho": 74,
     "quartos": 2,
     "banheiros": 2,
@@ -345,6 +355,17 @@
     "tamanho": 85,
     "quartos": 2,
     "banheiros": 1,
+    "garagem": 1
+  },
+  {
+    "id": "ibagy_89077",
+    "valor_aluguel": 3100,
+    "valor_total": 4606.53,
+    "url_apartamento": "https://ibagy.com.br/imovel/89077/apartamento-3-quartos-dona-augusta-trindade-florianopolis/",
+    "bairro": "Trindade",
+    "tamanho": 85,
+    "quartos": 3,
+    "banheiros": 2,
     "garagem": 1
   }
 ]

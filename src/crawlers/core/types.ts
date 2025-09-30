@@ -12,4 +12,5 @@ export interface Apartamento {
   garagem?: number;
   observacao?: string;
   tag?: Tag;
+  nota?: number;
 }

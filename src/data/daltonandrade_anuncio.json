@@ -1,5 +1,15 @@
 [
   {
+    "id": "daltonandrade_9728",
+    "valor_aluguel": 3500,
+    "valor_total": 4498,
+    "url_apartamento": "https://daltonandrade.com.br/imovel/9728/apartamento-3-quartos-itacorubi-florianopolis/",
+    "bairro": "",
+    "tamanho": 93,
+    "quartos": 3,
+    "banheiros": 2
+  },
+  {
     "id": "daltonandrade_9666",
     "valor_aluguel": 3500,
     "valor_total": 4425,

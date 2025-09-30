@@ -34,7 +34,7 @@ class UserAnnotationsRepository {
       const rawAnnotation = await this.getAnnotation();
       const annotations = JSON.parse(rawAnnotation) as Record<
         string,
-        { observacao?: string; tag?: Tag }
+        { observacao?: string; tag?: Tag; nota?: number }
       >;
       return list.map(item => {
         if (annotations[item.id]) {
@@ -56,6 +56,7 @@ class UserAnnotationsRepository {
       garagem?: string;
       tamanho?: string;
       tag?: string;
+      nota?: string;
     }
   ): Apartamento[] {
     return list.filter(anuncio => {
@@ -66,8 +67,15 @@ class UserAnnotationsRepository {
       const banheirosMatch = !filters.banheiros || anuncio.banheiros === Number(filters.banheiros);
       const garagemMatch = !filters.garagem || anuncio.garagem === Number(filters.garagem);
       const tagMatch = !filters.tag || anuncio.tag === filters.tag;
+      const notaMatch = !filters.nota || anuncio.nota === Number(filters.nota);
       return (
-        bairroMatch && tamanhoMatch && quartosMatch && banheirosMatch && garagemMatch && tagMatch
+        bairroMatch &&
+        tamanhoMatch &&
+        quartosMatch &&
+        banheirosMatch &&
+        garagemMatch &&
+        tagMatch &&
+        notaMatch
       );
     });
   }
@@ -95,6 +103,7 @@ class UserAnnotationsRepository {
       garagem?: string;
       tamanho?: string;
       tag?: string;
+      nota?: string;
     };
     all?: boolean;
   }) {
@@ -131,21 +140,24 @@ class UserAnnotationsRepository {
     id,
     observacao,
     tag,
+    nota,
   }: {
     id: string;
     observacao?: string;
     tag?: Tag;
+    nota?: number;
   }) {
     const rawAnnotation = await this.getAnnotation();
     const annotations = JSON.parse(rawAnnotation) as Record<
       string,
-      { observacao?: string; tag?: Tag }
+      { observacao?: string; tag?: Tag; nota?: number }
     >;
 
     if (!annotations[id]) annotations[id] = {};
 
-    if (observacao) annotations[id].observacao = observacao;
-    if (tag) annotations[id].tag = tag;
+    if (observacao !== undefined) annotations[id].observacao = observacao;
+    if (tag !== undefined) annotations[id].tag = tag;
+    if (nota !== undefined) annotations[id].nota = nota;
     const dataDir = join(process.cwd(), 'src', 'data');
     await writeFile(join(dataDir, 'anotacoes.json'), JSON.stringify(annotations, null, 2), 'utf-8');
   }
