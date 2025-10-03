@@ -1,5 +1,27 @@
 [
   {
+    "id": "f1_1958110",
+    "valor_aluguel": 2300,
+    "valor_total": 2870,
+    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-residencial-arquipelago-de-1-quarto-no-bairro-trindade-florianopolis-1958110/",
+    "bairro": "Trindade",
+    "tamanho": 65,
+    "quartos": 1,
+    "banheiros": 1,
+    "garagem": 0
+  },
+  {
+    "id": "f1_1955831",
+    "valor_aluguel": 2800,
+    "valor_total": 3480,
+    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-residencial-royal-park-de-2-quartos-no-bairro-carvoeira-florianopolis-1955831/",
+    "bairro": "Carvoeira",
+    "tamanho": 68,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1
+  },
+  {
     "id": "f1_1956314",
     "valor_aluguel": 2900,
     "valor_total": 3576.08,
@@ -55,47 +77,25 @@
     "garagem": 1
   },
   {
-    "id": "f1_1957287",
-    "valor_aluguel": 3800,
-    "valor_total": 4569.54,
-    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-edificio-scarlett-de-2-quartos-no-bairro-trindade-florianopolis-1957287/",
-    "bairro": "Trindade",
-    "tamanho": 85,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
-    "id": "f1_1958105",
-    "valor_aluguel": 3800,
-    "valor_total": 4790,
-    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-maria-eduarda-de-2-quartos-no-bairro-pantanal-florianopolis-1958105/",
-    "bairro": "Pantanal",
-    "tamanho": 90,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
-    "id": "f1_1957914",
-    "valor_aluguel": 4000,
-    "valor_total": 4850,
-    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-residencial-sangiovese-de-2-quartos-no-bairro-pantanal-florianopolis-1957914/",
-    "bairro": "Pantanal",
-    "tamanho": 103,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 2
-  },
-  {
-    "id": "f1_1957958",
-    "valor_aluguel": 4000,
-    "valor_total": 5100,
-    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-residencial-dolomiti-de-3-quartos-no-bairro-itacorubi-florianopolis-1957958/",
+    "id": "f1_10504",
+    "valor_aluguel": 3500,
+    "valor_total": 4238.37,
+    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-costa-del-mare-de-1-quarto-no-bairro-itacorubi-florianopolis-10504/",
     "bairro": "Itacorubi",
-    "tamanho": 100,
-    "quartos": 3,
-    "banheiros": 3,
+    "tamanho": 70,
+    "quartos": 1,
+    "banheiros": 1,
+    "garagem": 1
+  },
+  {
+    "id": "f1_1958128",
+    "valor_aluguel": 3600,
+    "valor_total": 4190,
+    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-smart-studios-de-1-quarto-no-bairro-joao-paulo-florianopolis-1958128/",
+    "bairro": "João Paulo",
+    "tamanho": 68,
+    "quartos": 1,
+    "banheiros": 1,
     "garagem": 1
   }
 ]

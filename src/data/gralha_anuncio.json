@@ -1,16 +1,5 @@
 [
   {
-    "id": "gralha_28386",
-    "valor_aluguel": 4500,
-    "valor_total": 5323,
-    "url_apartamento": "https://www.gralhaalugueis.com.br/imovel/aluguel+apartamento+3-quartos+trindade+florianopolis+sc+92m2+rs4500/28386",
-    "bairro": "0",
-    "tamanho": 92,
-    "quartos": 3,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
     "id": "gralha_28414",
     "valor_aluguel": 4000,
     "valor_total": 4837,
@@ -20,17 +9,6 @@
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1
-  },
-  {
-    "id": "gralha_28388",
-    "valor_aluguel": 4200,
-    "valor_total": 5535,
-    "url_apartamento": "https://www.gralhaalugueis.com.br/imovel/aluguel+apartamento+2-quartos+itacorubi+florianopolis+sc+116,48m2+rs4200/28388",
-    "bairro": "Itacorubi",
-    "tamanho": 116.48,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 2
   },
   {
     "id": "gralha_28340",
@@ -44,15 +22,15 @@
     "garagem": 1
   },
   {
-    "id": "gralha_28250",
-    "valor_aluguel": 4500,
-    "valor_total": 5645,
-    "url_apartamento": "https://www.gralhaalugueis.com.br/imovel/aluguel+apartamento+3-quartos+joao-paulo+florianopolis+sc+99,6m2+rs4500/28250",
-    "bairro": "João Paulo",
-    "tamanho": 99.6,
-    "quartos": 3,
-    "banheiros": 2,
-    "garagem": 2
+    "id": "gralha_27972",
+    "valor_aluguel": 3350,
+    "valor_total": 4100,
+    "url_apartamento": "https://www.gralhaalugueis.com.br/imovel/aluguel+apartamento+2-quartos+itacorubi+florianopolis+sc+68m2+rs3350/27972",
+    "bairro": "Itacorubi",
+    "tamanho": 68,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1
   },
   {
     "id": "gralha_27297",

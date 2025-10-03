@@ -1,13 +1,68 @@
 [
   {
-    "id": "sanremo_SRAP3396",
-    "valor_aluguel": 4900,
-    "valor_total": 5779,
-    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+agronomica+florianopolis+sc+72m2+rs4900/3396",
-    "bairro": "Agronômica",
-    "tamanho": 72,
+    "id": "sanremo_SRAP4635",
+    "valor_aluguel": 3000,
+    "valor_total": 3890,
+    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+itacorubi+florianopolis+sc+98m2+rs3000/4635",
+    "bairro": "Itacorubi",
+    "tamanho": 98,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1
+  },
+  {
+    "id": "sanremo_SRAP2433",
+    "valor_aluguel": 3800,
+    "valor_total": 4470,
+    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+itacorubi+florianopolis+sc+70m2+rs3800/2433",
+    "bairro": "Itacorubi",
+    "tamanho": 70,
     "quartos": 2,
     "banheiros": 2,
+    "garagem": 1
+  },
+  {
+    "id": "sanremo_SRAP2661",
+    "valor_aluguel": 3500,
+    "valor_total": 4328,
+    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+pantanal+florianopolis+sc+65m2+rs3500/2661",
+    "bairro": "Pantanal",
+    "tamanho": 65,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1
+  },
+  {
+    "id": "sanremo_SRAP4623",
+    "valor_aluguel": 3600,
+    "valor_total": 4280,
+    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+itacorubi+florianopolis+sc+65m2+rs3600/4623",
+    "bairro": "Itacorubi",
+    "tamanho": 65,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1
+  },
+  {
+    "id": "sanremo_SRAP4437",
+    "valor_aluguel": 3450,
+    "valor_total": 4411,
+    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+corrego-grande+florianopolis+sc+65m2+rs3450/4437",
+    "bairro": "Córrego Grande",
+    "tamanho": 65,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1
+  },
+  {
+    "id": "sanremo_SRAP4581",
+    "valor_aluguel": 2700,
+    "valor_total": 3499,
+    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+carvoeira+florianopolis+sc+69m2+rs2700/4581",
+    "bairro": "Carvoeira",
+    "tamanho": 69,
+    "quartos": 2,
+    "banheiros": 1,
     "garagem": 1
   },
   {
@@ -22,14 +77,14 @@
     "garagem": 1
   },
   {
-    "id": "sanremo_SRAP4599",
-    "valor_aluguel": 4900,
-    "valor_total": 5835,
-    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+corrego-grande+florianopolis+sc+94m2+rs4900/4599",
+    "id": "sanremo_SRAP4587",
+    "valor_aluguel": 3400,
+    "valor_total": 4195,
+    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+corrego-grande+florianopolis+sc+67m2+rs3400/4587",
     "bairro": "Córrego Grande",
-    "tamanho": 94,
+    "tamanho": 67,
     "quartos": 2,
-    "banheiros": 2,
+    "banheiros": 1,
     "garagem": 1
   },
   {
@@ -44,50 +99,6 @@
     "garagem": 1
   },
   {
-    "id": "sanremo_SRAP4468",
-    "valor_aluguel": 4200,
-    "valor_total": 5084,
-    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+trindade+florianopolis+sc+77,9m2+rs4200/4468",
-    "bairro": "Trindade",
-    "tamanho": 77.9,
-    "quartos": 2,
-    "banheiros": 0,
-    "garagem": 1
-  },
-  {
-    "id": "sanremo_SRAP2244",
-    "valor_aluguel": 5000,
-    "valor_total": 6030,
-    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+3-quartos+trindade+florianopolis+sc+110m2+rs5000/2244",
-    "bairro": "Trindade",
-    "tamanho": 110,
-    "quartos": 3,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
-    "id": "sanremo_SRAP4580",
-    "valor_aluguel": 4600,
-    "valor_total": 5673,
-    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+itacorubi+florianopolis+sc+113m2+rs4600/4580",
-    "bairro": "Itacorubi",
-    "tamanho": 113,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
-    "id": "sanremo_SRAP4564",
-    "valor_aluguel": 3200,
-    "valor_total": 3930,
-    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+itacorubi+florianopolis+sc+72m2+rs3200/4564",
-    "bairro": "Itacorubi",
-    "tamanho": 72,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1
-  },
-  {
     "id": "sanremo_SRAP4496",
     "valor_aluguel": 3400,
     "valor_total": 4065,
@@ -96,17 +107,6 @@
     "tamanho": 71,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 1
-  },
-  {
-    "id": "sanremo_SRAP4525",
-    "valor_aluguel": 4800,
-    "valor_total": 5941,
-    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+itacorubi+florianopolis+sc+77m2+rs4800/4525",
-    "bairro": "Itacorubi",
-    "tamanho": 77,
-    "quartos": 2,
-    "banheiros": 2,
     "garagem": 1
   },
   {

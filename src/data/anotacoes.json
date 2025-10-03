@@ -13,7 +13,7 @@
     "tag": "Não"
   },
   "ibagy_105219": {
-    "observacao": "gostei",
+    "observacao": "rua que só sob",
     "tag": "Não"
   },
   "creditoReal_cr79623": {
@@ -55,7 +55,8 @@
     "tag": "Não"
   },
   "ibagy_120341": {
-    "observacao": "falta adicionar informação"
+    "observacao": "falta adicionar informação",
+    "tag": "Talvez"
   },
   "olx_1439408740": {
     "observacao": "repetido",
@@ -197,7 +198,7 @@
     "tag": "Não"
   },
   "sanremo_SRAP4564": {
-    "observacao": "Elite",
+    "observacao": "Cabô",
     "nota": 5,
     "tag": "Agendar"
   },
@@ -309,5 +310,113 @@
   },
   "olx_1440556532": {
     "observacao": "repetido"
+  },
+  "olx_1441946398": {
+    "tag": "Não",
+    "observacao": "lagoa e 1 quarto"
+  },
+  "f1_10504": {
+    "tag": "Não",
+    "observacao": "1 quarto"
+  },
+  "f1_1958128": {
+    "tag": "Não",
+    "observacao": "1 quarto"
+  },
+  "olx_1440249696": {
+    "tag": "Não",
+    "observacao": "1 quarto"
+  },
+  "creditoReal_cr115170": {
+    "tag": "Não",
+    "observacao": "1 quarto"
+  },
+  "f1_1958110": {
+    "tag": "Não",
+    "observacao": "1 quarto"
+  },
+  "olx_1441791862": {
+    "observacao": "MUITO BOM",
+    "tag": "Agendar",
+    "nota": 5
+  },
+  "daltonandrade_9717": {
+    "tag": "Não"
+  },
+  "creditoReal_cr81215": {
+    "observacao": "Promissor, falta mais fotos",
+    "tag": "Agendar"
+  },
+  "olx_1440475134": {
+    "observacao": "repetido",
+    "tag": "Não"
+  },
+  "ibagy_117990": {
+    "tag": "Não"
+  },
+  "olx_1441216922": {
+    "observacao": "falta foto",
+    "tag": "Talvez"
+  },
+  "f1_1955831": {
+    "observacao": "Churrasqueira, garagem coberta, alto",
+    "tag": "Agendar"
+  },
+  "sanremo_SRAP4581": {
+    "tag": "Não"
+  },
+  "olx_1441022686": {
+    "tag": "Agendar"
+  },
+  "creditoReal_cr79404": {
+    "tag": "Talvez"
+  },
+  "creditoReal_cr94802": {
+    "tag": "Talvez",
+    "observacao": "Terreo?"
+  },
+  "creditoReal_cr80640": {
+    "tag": "Não",
+    "observacao": "Frente a quadra"
+  },
+  "olx_1437972401": {
+    "tag": "Não",
+    "observacao": "Lagoa"
+  },
+  "ibagy_94243": {
+    "observacao": "só sobe",
+    "tag": "Não"
+  },
+  "olx_1441217544": {
+    "tag": "Não",
+    "observacao": "repetido"
+  },
+  "olx_1441407079": {
+    "tag": "Não"
+  },
+  "olx_1439246451": {
+    "tag": "Agendar",
+    "observacao": "Paula morava aqui, é bem bom",
+    "nota": 4
+  },
+  "sanremo_SRAP4635": {
+    "tag": "Agendar",
+    "nota": 3
+  },
+  "ibagy_128115": {
+    "tag": "Agendar",
+    "observacao": "garagem coberta, quadra, churraasqueira"
+  },
+  "olx_1441816341": {
+    "observacao": "repetido",
+    "tag": "Não"
+  },
+  "ibagy_130010": {
+    "observacao": "rua que só sobe",
+    "tag": "Não"
+  },
+  "creditoReal_cr80083": {
+    "observacao": "Falta foto",
+    "tag": "Talvez"
   }
 }

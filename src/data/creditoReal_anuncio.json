@@ -1,5 +1,16 @@
 [
   {
+    "id": "creditoReal_cr115170",
+    "valor_aluguel": 2600,
+    "valor_total": 3100,
+    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-trindade-florianopolis-cod-cr115170",
+    "bairro": "Trindade",
+    "tamanho": 65,
+    "quartos": 1,
+    "banheiros": 1,
+    "garagem": 1
+  },
+  {
     "id": "creditoReal_cr79623",
     "valor_aluguel": 2500,
     "valor_total": 3173,
@@ -8,6 +19,50 @@
     "tamanho": 72,
     "quartos": 2,
     "banheiros": 1,
+    "garagem": 1
+  },
+  {
+    "id": "creditoReal_cr81215",
+    "valor_aluguel": 2600,
+    "valor_total": 3343,
+    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-carvoeira-florianopolis-cod-cr81215",
+    "bairro": "Carvoeira",
+    "tamanho": 66,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1
+  },
+  {
+    "id": "creditoReal_cr79404",
+    "valor_aluguel": 2800,
+    "valor_total": 3544,
+    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-carvoeira-florianopolis-cod-cr79404",
+    "bairro": "Carvoeira",
+    "tamanho": 65,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1
+  },
+  {
+    "id": "creditoReal_cr94802",
+    "valor_aluguel": 2700,
+    "valor_total": 3548,
+    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-trindade-florianopolis-cod-cr94802",
+    "bairro": "Trindade",
+    "tamanho": 66,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1
+  },
+  {
+    "id": "creditoReal_cr80640",
+    "valor_aluguel": 2700,
+    "valor_total": 3557,
+    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-trindade-florianopolis-cod-cr80640",
+    "bairro": "Trindade",
+    "tamanho": 66,
+    "quartos": 2,
+    "banheiros": 2,
     "garagem": 1
   },
   {
@@ -66,6 +121,17 @@
     "garagem": 1
   },
   {
+    "id": "creditoReal_cr80083",
+    "valor_aluguel": 3200,
+    "valor_total": 3979,
+    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-itacorubi-florianopolis-cod-cr80083",
+    "bairro": "Itacorubi",
+    "tamanho": 71,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1
+  },
+  {
     "id": "creditoReal_cr113738",
     "valor_aluguel": 3300,
     "valor_total": 4083,
@@ -85,6 +151,17 @@
     "tamanho": 75,
     "quartos": 2,
     "banheiros": 2,
+    "garagem": 1
+  },
+  {
+    "id": "creditoReal_cr105178",
+    "valor_aluguel": 3600,
+    "valor_total": 4280,
+    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-itacorubi-florianopolis-cod-cr105178",
+    "bairro": "Itacorubi",
+    "tamanho": 65,
+    "quartos": 2,
+    "banheiros": 1,
     "garagem": 1
   },
   {
@@ -116,83 +193,6 @@
     "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-corrego-grande-florianopolis-cod-cr82858",
     "bairro": "Córrego Grande",
     "tamanho": 140,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
-    "id": "creditoReal_cr110613",
-    "valor_aluguel": 3600,
-    "valor_total": 4417,
-    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-trindade-florianopolis-cod-cr110613",
-    "bairro": "Trindade",
-    "tamanho": 75,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
-    "id": "creditoReal_cr80284",
-    "valor_aluguel": 3500,
-    "valor_total": 4548,
-    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-corrego-grande-florianopolis-cod-cr80284",
-    "bairro": "Córrego Grande",
-    "tamanho": 95,
-    "quartos": 3,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
-    "id": "creditoReal_cr79674",
-    "valor_aluguel": 3700,
-    "valor_total": 4600,
-    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-itacorubi-florianopolis-cod-cr79674",
-    "bairro": "Itacorubi",
-    "tamanho": 70,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1
-  },
-  {
-    "id": "creditoReal_cr84110",
-    "valor_aluguel": 4100,
-    "valor_total": 4850,
-    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-corrego-grande-florianopolis-cod-cr84110",
-    "bairro": "Córrego Grande",
-    "tamanho": 83,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
-    "id": "creditoReal_cr77250",
-    "valor_aluguel": 4000,
-    "valor_total": 4898,
-    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-pantanal-florianopolis-cod-cr77250",
-    "bairro": "Pantanal",
-    "tamanho": 78,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
-    "id": "creditoReal_cr112550",
-    "valor_aluguel": 4500,
-    "valor_total": 4900,
-    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-itacorubi-florianopolis-cod-cr112550",
-    "bairro": "Itacorubi",
-    "tamanho": 80,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
-    "id": "creditoReal_cr114206",
-    "valor_aluguel": 3950,
-    "valor_total": 5050,
-    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-itacorubi-florianopolis-cod-cr114206",
-    "bairro": "Itacorubi",
-    "tamanho": 90,
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1

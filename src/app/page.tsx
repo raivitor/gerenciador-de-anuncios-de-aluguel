@@ -35,7 +35,6 @@ export default function Home() {
     tag: '',
     nota: '',
   });
-  const opcoesNotas = useMemo(() => ['', 1, 2, 3, 4, 5], []);
 
   const tagsDisponiveis = useMemo<Tag[]>(() => ['Não', 'Talvez', 'Agendar', 'Agendado', 'Visitado'], []);
 
@@ -290,7 +289,7 @@ export default function Home() {
                   <TextField
                     select
                     value={anuncio.nota ?? ''}
-                    onBlur={event => handleNotaChange(index, event.target.value)}
+                    onChange={event => handleNotaChange(index, event.target.value)}
                     fullWidth
                     size='small'
                   >

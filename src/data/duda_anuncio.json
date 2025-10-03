@@ -1,5 +1,16 @@
 [
   {
+    "id": "duda_6645",
+    "valor_aluguel": 3000,
+    "valor_total": 5205,
+    "url_apartamento": "https://dudaimoveis.com.br/imovel/6645/apartamento-2-quartos-corrego-grande-florianopolis/",
+    "bairro": "Córrego Grande",
+    "tamanho": 65,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1
+  },
+  {
     "id": "duda_32893",
     "valor_aluguel": 3200,
     "valor_total": 6330,

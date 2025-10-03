@@ -13,7 +13,7 @@
   {
     "id": "ibagy_113167",
     "valor_aluguel": 3000,
-    "valor_total": 3898.2,
+    "valor_total": 3954.48,
     "url_apartamento": "https://ibagy.com.br/imovel/113167/apartamento-2-quartos-villa-marianna-itacorubi-florianopolis/",
     "bairro": "Itacorubi",
     "tamanho": 98,
@@ -21,23 +21,12 @@
     "banheiros": 2
   },
   {
-    "id": "ibagy_86882",
-    "valor_aluguel": 3600,
-    "valor_total": 4721.7,
-    "url_apartamento": "https://ibagy.com.br/imovel/86882/apartamento-3-quartos-itamaraca-corrego-grande-florianopolis/",
-    "bairro": "Corrego Grande",
-    "tamanho": 98,
-    "quartos": 3,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
-    "id": "ibagy_130099",
-    "valor_aluguel": 4200,
-    "valor_total": 4959.89,
-    "url_apartamento": "https://ibagy.com.br/imovel/130099/apartamento-3-quartos-vila-real-trindade-florianopolis/",
-    "bairro": "Trindade",
-    "tamanho": 93,
+    "id": "ibagy_102966",
+    "valor_aluguel": 3400,
+    "valor_total": 3459.89,
+    "url_apartamento": "https://ibagy.com.br/imovel/102966/apartamento-3-quartos-luiz-henrique-rosa-pantanal-florianopolis/",
+    "bairro": "Pantanal",
+    "tamanho": 92,
     "quartos": 3,
     "banheiros": 2,
     "garagem": 1
@@ -54,103 +43,6 @@
     "garagem": 1
   },
   {
-    "id": "ibagy_102966",
-    "valor_aluguel": 1350,
-    "valor_total": 1409.89,
-    "url_apartamento": "https://ibagy.com.br/imovel/102966/apartamento-3-quartos-luiz-henrique-rosa-pantanal-florianopolis/",
-    "bairro": "Pantanal",
-    "tamanho": 92,
-    "quartos": 3,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
-    "id": "ibagy_84444",
-    "valor_aluguel": 3200,
-    "valor_total": 3996.92,
-    "url_apartamento": "https://ibagy.com.br/imovel/84444/apartamento-2-quartos-imperio-do-sol-trindade-florianopolis/",
-    "bairro": "Trindade",
-    "tamanho": 92,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
-    "id": "ibagy_77328",
-    "valor_aluguel": 3400,
-    "valor_total": 4583.25,
-    "url_apartamento": "https://ibagy.com.br/imovel/77328/apartamento-3-quartos-rozane-trindade-florianopolis/",
-    "bairro": "Trindade",
-    "tamanho": 88,
-    "quartos": 3,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
-    "id": "ibagy_102694",
-    "valor_aluguel": 3600,
-    "valor_total": 4521.05,
-    "url_apartamento": "https://ibagy.com.br/imovel/102694/apartamento-2-quartos-maison-du-flamboyant-itacorubi-florianopolis/",
-    "bairro": "Itacorubi",
-    "tamanho": 86,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
-    "id": "ibagy_130248",
-    "valor_aluguel": 3800,
-    "valor_total": 4562.73,
-    "url_apartamento": "https://ibagy.com.br/imovel/130248/apartamento-2-quartos-oasis-da-ilha-corrego-grande-florianopolis/",
-    "bairro": "Córrego Grande",
-    "tamanho": 85,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1
-  },
-  {
-    "id": "ibagy_128603",
-    "valor_aluguel": 3200,
-    "valor_total": 4153.47,
-    "url_apartamento": "https://ibagy.com.br/imovel/128603/apartamento-2-quartos-granville-trindade-florianopolis/",
-    "bairro": "Trindade",
-    "tamanho": 82,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1
-  },
-  {
-    "id": "ibagy_129215",
-    "valor_aluguel": 3600,
-    "valor_total": 4353.47,
-    "url_apartamento": "https://ibagy.com.br/imovel/129215/apartamento-2-quartos-florentina-trindade-florianopolis/",
-    "bairro": "Trindade",
-    "tamanho": 82,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
-    "id": "ibagy_115467",
-    "valor_aluguel": 4800,
-    "valor_total": 4853.47,
-    "url_apartamento": "https://ibagy.com.br/imovel/115467/apartamento-3-quartos-plaza-espa%C3%B1a-%E2%80%93-itacorubi-itacorubi-florianopolis/",
-    "bairro": "Itacorubi",
-    "tamanho": 81,
-    "quartos": 3,
-    "banheiros": 2
-  },
-  {
-    "id": "ibagy_106555",
-    "valor_aluguel": 3600,
-    "valor_total": 4851.18,
-    "url_apartamento": "https://ibagy.com.br/imovel/106555/apartamento-2-quartos-residencial-ampiezza-joao-paulo-florianopolis/",
-    "bairro": "João Paulo",
-    "tamanho": 80,
-    "quartos": 2,
-    "banheiros": 2
-  },
-  {
     "id": "ibagy_127458",
     "valor_aluguel": 2700,
     "valor_total": 3576.43,
@@ -162,28 +54,6 @@
     "garagem": 1
   },
   {
-    "id": "ibagy_111532",
-    "valor_aluguel": 3700,
-    "valor_total": 4859.49,
-    "url_apartamento": "https://ibagy.com.br/imovel/111532/apartamento-2-quartos-residencial-arezzo-joao-paulo-florianopolis/",
-    "bairro": "João Paulo",
-    "tamanho": 76,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
-    "id": "ibagy_123061",
-    "valor_aluguel": 4500,
-    "valor_total": 4949.19,
-    "url_apartamento": "https://ibagy.com.br/imovel/123061/apartamento-2-quartos-.-itacorubi-florianopolis/",
-    "bairro": "Itacorubi",
-    "tamanho": 76,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
     "id": "ibagy_129119",
     "valor_aluguel": 3200,
     "valor_total": 3793.07,
@@ -191,17 +61,6 @@
     "bairro": "Carvoeira",
     "tamanho": 76,
     "quartos": 3,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
-    "id": "ibagy_104714",
-    "valor_aluguel": 3500,
-    "valor_total": 4489.02,
-    "url_apartamento": "https://ibagy.com.br/imovel/104714/apartamento-2-quartos-solar-de-evora-itacorubi-florianopolis/",
-    "bairro": "Itacorubi",
-    "tamanho": 75,
-    "quartos": 2,
     "banheiros": 2,
     "garagem": 1
   },
@@ -239,56 +98,12 @@
     "garagem": 1
   },
   {
-    "id": "ibagy_130321",
-    "valor_aluguel": 3800,
-    "valor_total": 4684.68,
-    "url_apartamento": "https://ibagy.com.br/imovel/130321/apartamento-2-quartos-porto-do-itacorubi-itacorubi-florianopolis/",
-    "bairro": "Itacorubi",
-    "tamanho": 75,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
     "id": "ibagy_120341",
     "valor_aluguel": 3500,
     "valor_total": 3549.19,
     "url_apartamento": "https://ibagy.com.br/imovel/120341/apartamento-2-quartos-villa-milano-trindade-florianopolis/",
     "bairro": "Trindade",
     "tamanho": 74,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
-    "id": "ibagy_96714",
-    "valor_aluguel": 3800,
-    "valor_total": 4687.7,
-    "url_apartamento": "https://ibagy.com.br/imovel/96714/apartamento-2-quartos-reggio-di-calabria-pantanal-florianopolis/",
-    "bairro": "Pantanal",
-    "tamanho": 74,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
-    "id": "ibagy_130313",
-    "valor_aluguel": 3700,
-    "valor_total": 4698.11,
-    "url_apartamento": "https://ibagy.com.br/imovel/130313/apartamento-2-quartos-boulevard-trindade-trindade-florianopolis/",
-    "bairro": "Trindade",
-    "tamanho": 74,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
-    "id": "ibagy_90762",
-    "valor_aluguel": 3200,
-    "valor_total": 4406.93,
-    "url_apartamento": "https://ibagy.com.br/imovel/90762/apartamento-2-quartos-ilha-razzoli-trindade-florianopolis/",
-    "bairro": "Trindade",
-    "tamanho": 72,
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1
@@ -304,19 +119,9 @@
     "garagem": 1
   },
   {
-    "id": "ibagy_77836",
-    "valor_aluguel": 3800,
-    "valor_total": 4934.51,
-    "url_apartamento": "https://ibagy.com.br/imovel/77836/apartamento-4-quartos-jardim-trindade-carvoeira-florianopolis/",
-    "bairro": "Carvoeira",
-    "tamanho": 71,
-    "quartos": 4,
-    "banheiros": 2
-  },
-  {
     "id": "ibagy_118684",
-    "valor_aluguel": 3400,
-    "valor_total": 4090.59,
+    "valor_aluguel": 3200,
+    "valor_total": 3890.59,
     "url_apartamento": "https://ibagy.com.br/imovel/118684/apartamento-2-quartos-central-park.-itacorubi-florianopolis/",
     "bairro": "Itacorubi",
     "tamanho": 71,
@@ -325,23 +130,45 @@
     "garagem": 1
   },
   {
-    "id": "ibagy_113225",
-    "valor_aluguel": 3200,
-    "valor_total": 4254.84,
-    "url_apartamento": "https://ibagy.com.br/imovel/113225/apartamento-2-quartos-porto-da-trindade-trindade-florianopolis/",
-    "bairro": "Trindade",
-    "tamanho": 71,
+    "id": "ibagy_117990",
+    "valor_aluguel": 2500,
+    "valor_total": 3344.84,
+    "url_apartamento": "https://ibagy.com.br/imovel/117990/apartamento-2-quartos-saint-bernard-%E2%80%93-carvoeira-carvoeira-florianopolis/",
+    "bairro": "Carvoeira",
+    "tamanho": 69,
     "quartos": 2,
-    "banheiros": 2,
+    "banheiros": 1,
     "garagem": 1
   },
   {
-    "id": "ibagy_128752",
-    "valor_aluguel": 3700,
-    "valor_total": 4694.1,
-    "url_apartamento": "https://ibagy.com.br/imovel/128752/apartamento-2-quartos-chambord-itacorubi-florianopolis/",
-    "bairro": "Itacorubi",
-    "tamanho": 70,
+    "id": "ibagy_130010",
+    "valor_aluguel": 3200,
+    "valor_total": 3985.46,
+    "url_apartamento": "https://ibagy.com.br/imovel/130010/apartamento-2-quartos-residencial-palmas-de-maiorca-pantanal-florianopolis/",
+    "bairro": "Pantanal",
+    "tamanho": 65,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1
+  },
+  {
+    "id": "ibagy_128115",
+    "valor_aluguel": 3000,
+    "valor_total": 3892.9,
+    "url_apartamento": "https://ibagy.com.br/imovel/128115/apartamento-2-quartos-brida-pantanal-florianopolis/",
+    "bairro": "Pantanal",
+    "tamanho": 65,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1
+  },
+  {
+    "id": "ibagy_84444",
+    "valor_aluguel": 3200,
+    "valor_total": 3996.92,
+    "url_apartamento": "https://ibagy.com.br/imovel/84444/apartamento-2-quartos-imperio-do-sol-trindade-florianopolis/",
+    "bairro": "Trindade",
+    "tamanho": 92,
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1
@@ -358,13 +185,13 @@
     "garagem": 1
   },
   {
-    "id": "ibagy_89077",
-    "valor_aluguel": 3100,
-    "valor_total": 4606.53,
-    "url_apartamento": "https://ibagy.com.br/imovel/89077/apartamento-3-quartos-dona-augusta-trindade-florianopolis/",
-    "bairro": "Trindade",
-    "tamanho": 85,
-    "quartos": 3,
+    "id": "ibagy_94243",
+    "valor_aluguel": 3000,
+    "valor_total": 3782.91,
+    "url_apartamento": "https://ibagy.com.br/imovel/94243/apartamento-2-quartos-ambar-pantanal-florianopolis/",
+    "bairro": "Pantanal",
+    "tamanho": 69,
+    "quartos": 2,
     "banheiros": 2,
     "garagem": 1
   }
