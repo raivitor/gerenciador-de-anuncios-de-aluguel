@@ -82,7 +82,7 @@ export class DudaCrawler extends PuppeteerCrawler {
             id: urlLink.split('imovel/')[1]?.split('/')?.[0] ?? '',
             valor_aluguel: aluguelRaw || '0',
             condominio: condominioRaw || '0',
-            iptuRaw: iptuRaw || '0',
+            iptuRaw: this.parseFloat(iptuRaw) > 500 ? (this.parseFloat(iptuRaw) / 12) : this.parseFloat(iptuRaw) || 0,
             url_apartamento: urlLink || '',
             bairro: bairro,
             tamanho: properties.privat,
@@ -104,7 +104,7 @@ export class DudaCrawler extends PuppeteerCrawler {
       const listaApto = rawListaApto.map(apto => {
         const valor_aluguel = this.parseFloat(apto.valor_aluguel);
         const valor_total =
-          this.parseFloat(apto.condominio) + this.parseFloat(apto.iptuRaw) + valor_aluguel;
+          this.parseFloat(apto.condominio) + apto.iptuRaw + valor_aluguel;
 
         return {
           id: `${this.name}_${String(apto.id)}`,
