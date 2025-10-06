@@ -13,7 +13,7 @@
     "tag": "Não"
   },
   "ibagy_105219": {
-    "observacao": "rua que só sob",
+    "observacao": "rua que só sobe",
     "tag": "Não"
   },
   "creditoReal_cr79623": {
@@ -67,7 +67,7 @@
     "tag": "Agendar"
   },
   "ibagy_127458": {
-    "observacao": "condominio aberto",
+    "observacao": "condominio aberto,",
     "tag": "Não"
   },
   "creditoReal_cr83589": {
@@ -212,10 +212,12 @@
     "nota": 4
   },
   "gralha_26862": {
-    "tag": "Não"
+    "tag": "Não",
+    "observacao": "rua que só vai e apertado"
   },
   "sanremo_SRAP4149": {
-    "tag": "Não"
+    "tag": "Não",
+    "observacao": "rua que só vai e apertado"
   },
   "f1_1956732": {
     "tag": "Agendar",
@@ -234,7 +236,8 @@
   },
   "creditoReal_cr113738": {
     "tag": "Não",
-    "nota": null
+    "nota": null,
+    "observacao": "rua que só sobe"
   },
   "ibagy_118684": {
     "tag": "Agendar",
@@ -293,8 +296,8 @@
     "tag": "Agendar"
   },
   "olx_1440266030": {
-    "tag": "Agendar",
-    "nota": 3
+    "tag": "Não",
+    "observacao": "rua que só sobe"
   },
   "olx_1439399022": {
     "observacao": "repetido",
@@ -345,7 +348,8 @@
   },
   "creditoReal_cr81215": {
     "observacao": "Promissor, falta mais fotos",
-    "tag": "Agendar"
+    "tag": "Agendar",
+    "nota": 2
   },
   "olx_1440475134": {
     "observacao": "repetido",
@@ -360,13 +364,15 @@
   },
   "f1_1955831": {
     "observacao": "Churrasqueira, garagem coberta, alto",
-    "tag": "Agendar"
+    "tag": "Agendar",
+    "nota": 3
   },
   "sanremo_SRAP4581": {
     "tag": "Não"
   },
   "olx_1441022686": {
-    "tag": "Agendar"
+    "tag": "Não",
+    "observacao": "repetido"
   },
   "creditoReal_cr79404": {
     "tag": "Talvez"
@@ -427,10 +433,12 @@
     "tag": "Não"
   },
   "duda_5450": {
-    "tag": "Agendar"
+    "tag": "Agendar",
+    "nota": 4
   },
   "duda_12520": {
-    "tag": "Agendar"
+    "tag": "Agendar",
+    "nota": 4
   },
   "duda_6645": {
     "tag": "Não"
@@ -448,7 +456,8 @@
     "tag": "Não"
   },
   "olx_1440628841": {
-    "tag": "Não"
+    "tag": "Não",
+    "observacao": "caro e sem nada"
   },
   "duda_32893": {
     "tag": "Talvez"
@@ -464,7 +473,8 @@
     "observacao": "https://maps.app.goo.gl/p4BAQm4cx8B38j5b9"
   },
   "f1_10928": {
-    "tag": "Não"
+    "tag": "Não",
+    "observacao": "rua que só vai"
   },
   "olx_1439957082": {
     "tag": "Não"
@@ -483,5 +493,17 @@
   },
   "olx_1440445723": {
     "observacao": "repetido"
+  },
+  "duda_24753": {
+    "nota": 3,
+    "observacao": "jardim trindade com foto ruim",
+    "tag": "Agendar"
+  },
+  "duda_32576": {
+    "observacao": "chuv gás, bem vazio",
+    "tag": "Agendar"
+  },
+  "duda_37606": {
+    "tag": "Agendar"
   }
 }
