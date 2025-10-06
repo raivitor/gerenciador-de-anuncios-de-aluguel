@@ -13,4 +13,5 @@ export interface Apartamento {
   observacao?: string;
   tag?: Tag;
   nota?: number;
+  corretora?: string;
 }

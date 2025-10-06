@@ -157,6 +157,7 @@ export class SanRemoCrawler extends PuppeteerCrawler {
         quartos: this.parseFloat(card.quartos),
         banheiros: this.parseFloat(card.banheiros),
         garagem: this.parseFloat(card.garagem),
+        corretora: this.name,
       });
     }
     return listaApartamento;

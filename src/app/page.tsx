@@ -32,6 +32,7 @@ export default function Home() {
     quartos: '',
     banheiros: '',
     garagem: '',
+    corretora: '',
     tag: '',
     nota: '',
   });
@@ -55,6 +56,10 @@ export default function Home() {
     [allAnuncios]
   );
   const tamanhoMaximo = useMemo(() => Math.max(...allAnuncios.map(a => a.tamanho || 0)), [allAnuncios]);
+  const opcoesCorretoras = useMemo(
+    () => [...new Set(allAnuncios.map(a => a.corretora).filter(c => c && c.trim() !== ''))].sort(),
+    [allAnuncios]
+  );
 
   const handleObservacaoChange = useCallback((index: number, observacao: string) => {
     const anuncioAtual = anuncios[index];
@@ -115,13 +120,14 @@ export default function Home() {
     url.searchParams.set('page', currentPage.toString());
     url.searchParams.set('limit', itemsPerPage.toString());
 
-    if (filtros.bairro) url.searchParams.set('bairro', filtros.bairro);
-    if (filtros.quartos) url.searchParams.set('quartos', filtros.quartos);
-    if (filtros.banheiros) url.searchParams.set('banheiros', filtros.banheiros);
-    if (filtros.garagem) url.searchParams.set('garagem', filtros.garagem);
-    if (filtros.tamanho > 70) url.searchParams.set('tamanho', filtros.tamanho.toString());
-    if (filtros.tag) url.searchParams.set('tag', filtros.tag);
-    if (filtros.nota) url.searchParams.set('nota', filtros.nota);
+  if (filtros.bairro) url.searchParams.set('bairro', filtros.bairro);
+  if (filtros.quartos) url.searchParams.set('quartos', filtros.quartos);
+  if (filtros.banheiros) url.searchParams.set('banheiros', filtros.banheiros);
+  if (filtros.garagem) url.searchParams.set('garagem', filtros.garagem);
+  if (filtros.corretora) url.searchParams.set('corretora', filtros.corretora);
+  if (filtros.tamanho > 70) url.searchParams.set('tamanho', filtros.tamanho.toString());
+  if (filtros.tag) url.searchParams.set('tag', filtros.tag);
+  if (filtros.nota) url.searchParams.set('nota', filtros.nota);
 
     fetch(url.toString())
       .then(res => res.json())
@@ -243,6 +249,21 @@ export default function Home() {
                   ))}
                 </TextField>
               </TableCell>
+              <TableCell>
+                Corretora
+                <TextField
+                  select
+                  value={filtros.corretora}
+                  onChange={e => setFiltros(f => ({ ...f, corretora: e.target.value }))}
+                  size='small'
+                  fullWidth
+                >
+                  <MenuItem value=''>Todas</MenuItem>
+                  {opcoesCorretoras.map(corretora => (
+                    <MenuItem key={corretora} value={corretora}>{corretora}</MenuItem>
+                  ))}
+                </TextField>
+              </TableCell>
               <TableCell>Nota
                 <TextField
                   select
@@ -285,6 +306,7 @@ export default function Home() {
                 <TableCell>{anuncio.quartos}</TableCell>
                 <TableCell>{anuncio.banheiros}</TableCell>
                 <TableCell>{anuncio.garagem}</TableCell>
+                <TableCell>{anuncio.corretora}</TableCell>
                 <TableCell>
                   <TextField
                     select

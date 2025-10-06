@@ -78,6 +78,7 @@ export class OlxCrawler extends PuppeteerCrawler {
           quartos: Number(this.getValueByKey(apto.properties, 'rooms')),
           banheiros: Number(this.getValueByKey(apto.properties, 'bathrooms')),
           garagem: Number(this.getValueByKey(apto.properties, 'garage_spaces')),
+          corretora: this.name,
         } satisfies Apartamento;
       });
 

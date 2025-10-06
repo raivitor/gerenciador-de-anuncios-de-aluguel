@@ -54,6 +54,7 @@ class UserAnnotationsRepository {
       quartos?: string;
       banheiros?: string;
       garagem?: string;
+      corretora?: string;
       tamanho?: string;
       tag?: string;
       nota?: string;
@@ -66,6 +67,7 @@ class UserAnnotationsRepository {
       const quartosMatch = !filters.quartos || anuncio.quartos === Number(filters.quartos);
       const banheirosMatch = !filters.banheiros || anuncio.banheiros === Number(filters.banheiros);
       const garagemMatch = !filters.garagem || anuncio.garagem === Number(filters.garagem);
+      const corretoraMatch = !filters.corretora || anuncio.corretora === filters.corretora;
       const tagMatch = !filters.tag || anuncio.tag === filters.tag;
       const notaMatch = !filters.nota || anuncio.nota === Number(filters.nota);
       return (
@@ -74,6 +76,7 @@ class UserAnnotationsRepository {
         quartosMatch &&
         banheirosMatch &&
         garagemMatch &&
+        corretoraMatch &&
         tagMatch &&
         notaMatch
       );
@@ -101,6 +104,7 @@ class UserAnnotationsRepository {
       quartos?: string;
       banheiros?: string;
       garagem?: string;
+      corretora?: string;
       tamanho?: string;
       tag?: string;
       nota?: string;

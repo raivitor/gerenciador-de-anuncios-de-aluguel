@@ -1,5 +1,17 @@
 [
   {
+    "id": "gralha_28426",
+    "valor_aluguel": 3990,
+    "valor_total": 4721,
+    "url_apartamento": "https://www.gralhaalugueis.com.br/imovel/aluguel+apartamento+2-quartos+corrego-grande+florianopolis+sc+82,68m2+rs3990/28426",
+    "bairro": "0",
+    "tamanho": 82.68,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "gralha"
+  },
+  {
     "id": "gralha_28414",
     "valor_aluguel": 4000,
     "valor_total": 4837,
@@ -8,7 +20,8 @@
     "tamanho": 96.01,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "gralha"
   },
   {
     "id": "gralha_28340",
@@ -19,7 +32,8 @@
     "tamanho": 77.69,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "gralha"
   },
   {
     "id": "gralha_27972",
@@ -30,7 +44,8 @@
     "tamanho": 68,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "gralha"
   },
   {
     "id": "gralha_27297",
@@ -41,7 +56,8 @@
     "tamanho": 85,
     "quartos": 3,
     "banheiros": 1,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "gralha"
   },
   {
     "id": "gralha_26862",
@@ -52,6 +68,7 @@
     "tamanho": 74.32,
     "quartos": 3,
     "banheiros": 2,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "gralha"
   }
 ]

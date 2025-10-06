@@ -116,6 +116,7 @@ export class DaltonAndradeCrawler extends PuppeteerCrawler {
           quartos: apto.quartos,
           banheiros: apto.banheiros,
           garagem: apto.garagem,
+          corretora: this.name,
         } satisfies Apartamento;
       });
 

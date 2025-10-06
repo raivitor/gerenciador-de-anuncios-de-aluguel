@@ -8,7 +8,8 @@
     "tamanho": 98,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "sanremo"
   },
   {
     "id": "sanremo_SRAP2433",
@@ -19,7 +20,8 @@
     "tamanho": 70,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "sanremo"
   },
   {
     "id": "sanremo_SRAP2661",
@@ -30,7 +32,8 @@
     "tamanho": 65,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "sanremo"
   },
   {
     "id": "sanremo_SRAP4623",
@@ -41,7 +44,8 @@
     "tamanho": 65,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "sanremo"
   },
   {
     "id": "sanremo_SRAP4437",
@@ -52,7 +56,8 @@
     "tamanho": 65,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "sanremo"
   },
   {
     "id": "sanremo_SRAP4581",
@@ -63,7 +68,8 @@
     "tamanho": 69,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "sanremo"
   },
   {
     "id": "sanremo_SRAP4619",
@@ -74,7 +80,8 @@
     "tamanho": 83,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "sanremo"
   },
   {
     "id": "sanremo_SRAP4587",
@@ -85,7 +92,8 @@
     "tamanho": 67,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "sanremo"
   },
   {
     "id": "sanremo_SRAP4203",
@@ -96,7 +104,8 @@
     "tamanho": 82,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "sanremo"
   },
   {
     "id": "sanremo_SRAP4496",
@@ -107,7 +116,8 @@
     "tamanho": 71,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "sanremo"
   },
   {
     "id": "sanremo_SRAP4149",
@@ -118,7 +128,8 @@
     "tamanho": 74,
     "quartos": 3,
     "banheiros": 1,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "sanremo"
   },
   {
     "id": "sanremo_SRAP4478",
@@ -129,6 +140,7 @@
     "tamanho": 90,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "sanremo"
   }
 ]

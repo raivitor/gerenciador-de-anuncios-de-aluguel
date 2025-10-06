@@ -8,7 +8,32 @@
     "tamanho": 70,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_1438178793",
+    "valor_aluguel": 3700,
+    "valor_total": 4763,
+    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-para-alugar-no-corrego-grande-florianopolis-1438178793",
+    "bairro": "Córrego Grande",
+    "tamanho": 92,
+    "quartos": 3,
+    "banheiros": 2,
+    "garagem": 2,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_1441999082",
+    "valor_aluguel": 3000,
+    "valor_total": 3868,
+    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/itacorubi-apartamento-2-quartos-sendo-1-suite-1441999082",
+    "bairro": "Itacorubi",
+    "tamanho": 98,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1441958848",
@@ -19,7 +44,8 @@
     "tamanho": 74,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1441946398",
@@ -30,7 +56,19 @@
     "tamanho": 75,
     "quartos": 1,
     "banheiros": 1,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
+    "corretora": "olx"
   },
   {
     "id": "olx_1441836140",
@@ -41,7 +79,8 @@
     "tamanho": 74,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1441816341",
@@ -52,17 +91,8 @@
     "tamanho": 71,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1
-  },
-  {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1441791862",
@@ -73,7 +103,8 @@
     "tamanho": 73,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1441633980",
@@ -84,7 +115,8 @@
     "tamanho": 70,
     "quartos": 2,
     "banheiros": 3,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1441570778",
@@ -95,7 +127,19 @@
     "tamanho": 72,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
+    "corretora": "olx"
   },
   {
     "id": "olx_1437972401",
@@ -106,7 +150,8 @@
     "tamanho": 89,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1441407079",
@@ -117,28 +162,8 @@
     "tamanho": 70,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1
-  },
-  {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0
-  },
-  {
-    "id": "olx_1441378063",
-    "valor_aluguel": 3600,
-    "valor_total": 4258.333333333333,
-    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/itacorubi-apartamento-2-quartos-1441378063",
-    "bairro": "Itacorubi",
-    "tamanho": 65,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1441354201",
@@ -149,7 +174,8 @@
     "tamanho": 76,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1441276264",
@@ -160,7 +186,8 @@
     "tamanho": 99,
     "quartos": 3,
     "banheiros": 2,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1441220474",
@@ -171,7 +198,8 @@
     "tamanho": 69,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 2
+    "garagem": 2,
+    "corretora": "olx"
   },
   {
     "id": "olx_1441217544",
@@ -182,7 +210,8 @@
     "tamanho": 98,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 2
+    "garagem": 2,
+    "corretora": "olx"
   },
   {
     "id": "olx_1441216922",
@@ -193,7 +222,19 @@
     "tamanho": 92,
     "quartos": 3,
     "banheiros": 1,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
+    "corretora": "olx"
   },
   {
     "id": "olx_1441075577",
@@ -204,17 +245,8 @@
     "tamanho": 93,
     "quartos": 3,
     "banheiros": 2,
-    "garagem": 2
-  },
-  {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0
+    "garagem": 2,
+    "corretora": "olx"
   },
   {
     "id": "olx_1441036903",
@@ -225,7 +257,8 @@
     "tamanho": 83,
     "quartos": 2,
     "banheiros": 3,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1441034666",
@@ -236,7 +269,8 @@
     "tamanho": 70,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1441023994",
@@ -247,7 +281,8 @@
     "tamanho": 83,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1441022686",
@@ -258,7 +293,8 @@
     "tamanho": 75,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1440628841",
@@ -269,7 +305,8 @@
     "tamanho": 85,
     "quartos": 3,
     "banheiros": 2,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1440619002",
@@ -280,7 +317,19 @@
     "tamanho": 70,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
+    "corretora": "olx"
   },
   {
     "id": "olx_1440556532",
@@ -291,17 +340,8 @@
     "tamanho": 90,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 1
-  },
-  {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1440490611",
@@ -312,7 +352,8 @@
     "tamanho": 71,
     "quartos": 4,
     "banheiros": 2,
-    "garagem": 2
+    "garagem": 2,
+    "corretora": "olx"
   },
   {
     "id": "olx_1440475134",
@@ -323,7 +364,8 @@
     "tamanho": 66,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1440445723",
@@ -334,7 +376,8 @@
     "tamanho": 73,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1440386131",
@@ -345,7 +388,8 @@
     "tamanho": 65,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1440328330",
@@ -356,7 +400,8 @@
     "tamanho": 68,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1440278062",
@@ -367,7 +412,19 @@
     "tamanho": 74,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
+    "corretora": "olx"
   },
   {
     "id": "olx_1440266030",
@@ -378,17 +435,8 @@
     "tamanho": 92,
     "quartos": 3,
     "banheiros": 2,
-    "garagem": 1
-  },
-  {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1440249696",
@@ -399,7 +447,8 @@
     "tamanho": 65,
     "quartos": 1,
     "banheiros": 1,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1440088275",
@@ -410,7 +459,8 @@
     "tamanho": 73,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1440021365",
@@ -421,7 +471,8 @@
     "tamanho": 96,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1439981819",
@@ -432,7 +483,8 @@
     "tamanho": 75,
     "quartos": 3,
     "banheiros": 1,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1439957082",
@@ -443,7 +495,8 @@
     "tamanho": 85,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1439953507",
@@ -454,7 +507,19 @@
     "tamanho": 70,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
+    "corretora": "olx"
   },
   {
     "id": "olx_1439937339",
@@ -465,17 +530,8 @@
     "tamanho": 73,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 1
-  },
-  {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1439832256",
@@ -486,7 +542,8 @@
     "tamanho": 87,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1439828727",
@@ -497,7 +554,8 @@
     "tamanho": 68,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1439680724",
@@ -508,7 +566,8 @@
     "tamanho": 66,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 2
+    "garagem": 2,
+    "corretora": "olx"
   },
   {
     "id": "olx_1439626055",
@@ -519,7 +578,8 @@
     "tamanho": 70,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1439502832",
@@ -530,7 +590,8 @@
     "tamanho": 65,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1439408740",
@@ -541,7 +602,19 @@
     "tamanho": 74,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
+    "corretora": "olx"
   },
   {
     "id": "olx_1439399022",
@@ -552,17 +625,8 @@
     "tamanho": 71,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 1
-  },
-  {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1439392876",
@@ -573,7 +637,8 @@
     "tamanho": 67,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1439259641",
@@ -584,7 +649,8 @@
     "tamanho": 73,
     "quartos": 2,
     "banheiros": 3,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1439246451",
@@ -595,7 +661,8 @@
     "tamanho": 78,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
   },
   {
     "id": "olx_1439219352",
@@ -606,17 +673,7 @@
     "tamanho": 70,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 1
-  },
-  {
-    "id": "olx_1439133179",
-    "valor_aluguel": 3400,
-    "valor_total": 4027,
-    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-02-quartos-no-itacorubi-1439133179",
-    "bairro": "Itacorubi",
-    "tamanho": 72,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1
+    "garagem": 1,
+    "corretora": "olx"
   }
 ]

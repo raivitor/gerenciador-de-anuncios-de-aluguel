@@ -8,6 +8,7 @@ import gralhaCrawler from '@/crawlers/providers/gralha';
 import sanRemoCrawler from '@/crawlers/providers/Sanremo';
 import f1Crawler from './providers/f1';
 import dudaCrawler from './providers/duda';
+import realizarCrawler from './providers/realizar';
 
 export const crawlers: BaseCrawler[] = [
   creditoRealCrawler,
@@ -18,6 +19,7 @@ export const crawlers: BaseCrawler[] = [
   sanRemoCrawler,
   f1Crawler,
   dudaCrawler,
+  // realizarCrawler,
 ];
 
 export { creditoRealCrawler };
@@ -28,5 +30,6 @@ export { gralhaCrawler };
 export { sanRemoCrawler };
 export { f1Crawler };
 export { dudaCrawler };
+export { realizarCrawler };
 
 export default crawlers;

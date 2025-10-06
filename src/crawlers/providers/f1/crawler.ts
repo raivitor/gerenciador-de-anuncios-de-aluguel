@@ -71,6 +71,7 @@ export class F1Crawler extends BaseCrawler {
         quartos: getIconBoxNumber('Quartos', $),
         banheiros: getIconBoxNumber('Banheiros', $),
         garagem: getIconBoxNumber('Garagens', $),
+        corretora: this.name,
       });
     }
 

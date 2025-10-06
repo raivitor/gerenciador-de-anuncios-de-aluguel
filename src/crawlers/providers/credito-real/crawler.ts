@@ -38,6 +38,7 @@ export class CreditoRealCrawler extends BaseCrawler {
           valor_aluguel: getTextNumber($el.find('section > div > div > p[type="text.body"]')),
           valor_total: getTextNumber($el.find('section > div > div > label')),
           url_apartamento: `https://www.creditoreal.com.br${href}`,
+          corretora: this.name,
         } satisfies Apartamento;
       })
       .get();

@@ -21,6 +21,7 @@ export async function GET(
       quartos: searchParams.get('quartos') || undefined,
       banheiros: searchParams.get('banheiros') || undefined,
       garagem: searchParams.get('garagem') || undefined,
+      corretora: searchParams.get('corretora') || undefined,
       tamanho: searchParams.get('tamanho') || undefined,
       tag: searchParams.get('tag') || undefined,
       nota: searchParams.get('nota') || undefined,
