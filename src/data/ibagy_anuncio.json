@@ -23,10 +23,10 @@
     "corretora": "ibagy"
   },
   {
-    "id": "ibagy_102966",
-    "valor_aluguel": 3400,
-    "valor_total": 3459.89,
-    "url_apartamento": "https://ibagy.com.br/imovel/102966/apartamento-3-quartos-luiz-henrique-rosa-pantanal-florianopolis/",
+    "id": "ibagy_105219",
+    "valor_aluguel": 2500,
+    "valor_total": 3980.01,
+    "url_apartamento": "https://ibagy.com.br/imovel/105219/apartamento-3-quartos-luiz-henrique-rosa-pantanal-florianopolis/",
     "bairro": "Pantanal",
     "tamanho": 92,
     "quartos": 3,
@@ -35,10 +35,10 @@
     "corretora": "ibagy"
   },
   {
-    "id": "ibagy_105219",
-    "valor_aluguel": 2500,
-    "valor_total": 3980.01,
-    "url_apartamento": "https://ibagy.com.br/imovel/105219/apartamento-3-quartos-luiz-henrique-rosa-pantanal-florianopolis/",
+    "id": "ibagy_102966",
+    "valor_aluguel": 3400,
+    "valor_total": 3459.89,
+    "url_apartamento": "https://ibagy.com.br/imovel/102966/apartamento-3-quartos-luiz-henrique-rosa-pantanal-florianopolis/",
     "bairro": "Pantanal",
     "tamanho": 92,
     "quartos": 3,
@@ -154,6 +154,18 @@
     "corretora": "ibagy"
   },
   {
+    "id": "ibagy_119227",
+    "valor_aluguel": 3400,
+    "valor_total": 3447.05,
+    "url_apartamento": "https://ibagy.com.br/imovel/119227/apartamento-2-quartos-caravaggio-trindade-florianopolis/",
+    "bairro": "Trindade",
+    "tamanho": 70,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "ibagy"
+  },
+  {
     "id": "ibagy_117990",
     "valor_aluguel": 2500,
     "valor_total": 3344.84,
@@ -170,18 +182,6 @@
     "valor_aluguel": 3200,
     "valor_total": 3985.46,
     "url_apartamento": "https://ibagy.com.br/imovel/130010/apartamento-2-quartos-residencial-palmas-de-maiorca-pantanal-florianopolis/",
-    "bairro": "Pantanal",
-    "tamanho": 65,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "ibagy"
-  },
-  {
-    "id": "ibagy_128115",
-    "valor_aluguel": 3000,
-    "valor_total": 3892.9,
-    "url_apartamento": "https://ibagy.com.br/imovel/128115/apartamento-2-quartos-brida-pantanal-florianopolis/",
     "bairro": "Pantanal",
     "tamanho": 65,
     "quartos": 2,

@@ -156,18 +156,6 @@
     "garagem": 1
   },
   {
-    "id": "creditoReal_cr83198",
-    "valor_aluguel": 3200,
-    "valor_total": 4153,
-    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-joao-paulo-florianopolis-cod-cr83198",
-    "corretora": "creditoReal",
-    "bairro": "João Paulo",
-    "tamanho": 75,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
     "id": "creditoReal_cr105178",
     "valor_aluguel": 3600,
     "valor_total": 4280,
