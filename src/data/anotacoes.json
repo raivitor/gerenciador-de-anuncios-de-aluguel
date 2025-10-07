@@ -118,7 +118,7 @@
   },
   "ibagy_128989": {
     "observacao": "talvez barulhento",
-    "tag": "Talvez"
+    "tag": "Não"
   },
   "ibagy_104178": {
     "observacao": "em frente a quadra, vai ter muito barulho",
@@ -155,7 +155,7 @@
   },
   "ibagy_84444": {
     "observacao": "gostei muito",
-    "tag": "Agendar",
+    "tag": "Agendado",
     "nota": 4
   },
   "gralha_28340": {
@@ -182,7 +182,7 @@
     "nota": 2
   },
   "ibagy_129119": {
-    "tag": "Agendar",
+    "tag": "Visitado",
     "nota": 3,
     "observacao": "Churrasqueira e cozinha completa"
   },
@@ -205,7 +205,7 @@
   "ibagy_105816": {
     "observacao": "prioridade, Salão de Festas, churrasqueira cond, ",
     "nota": 4,
-    "tag": "Agendar"
+    "tag": "Agendado"
   },
   "sanremo_SRAP4203": {
     "tag": "Agendar",
@@ -312,7 +312,8 @@
     "nota": 3
   },
   "olx_1440556532": {
-    "observacao": "repetido"
+    "observacao": "repetido",
+    "tag": "Não"
   },
   "olx_1441946398": {
     "tag": "Não",
@@ -348,7 +349,7 @@
   },
   "creditoReal_cr81215": {
     "observacao": "Promissor, falta mais fotos",
-    "tag": "Agendar",
+    "tag": "Talvez",
     "nota": 2
   },
   "olx_1440475134": {
@@ -466,7 +467,8 @@
     "tag": "Agendar"
   },
   "olx_1441836140": {
-    "observacao": "talvez repetido"
+    "observacao": "talvez repetido",
+    "tag": "Talvez"
   },
   "f1_1958107": {
     "tag": "Agendar",
@@ -492,7 +494,8 @@
     "tag": "Talvez"
   },
   "olx_1440445723": {
-    "observacao": "repetido"
+    "observacao": "repetido",
+    "tag": "Não"
   },
   "duda_24753": {
     "nota": 3,
@@ -504,6 +507,100 @@
     "tag": "Agendar"
   },
   "duda_37606": {
+    "tag": "Agendar"
+  },
+  "ibagy_119227": {
+    "observacao": "fala foto",
+    "tag": "Talvez"
+  },
+  "olx_1442900172": {
+    "tag": "Talvez",
+    "observacao": "novo"
+  },
+  "olx_1440386131": {
+    "tag": "Não",
+    "observacao": "repetido"
+  },
+  "sanremo_SRAP2661": {
+    "tag": "Agendar"
+  },
+  "olx_1442143327": {
+    "observacao": "1 quarto",
+    "tag": "Não"
+  },
+  "duda_51690": {
+    "tag": "Agendar",
+    "nota": 4
+  },
+  "olx_1440278062": {
+    "tag": "Agendar",
+    "nota": 4
+  },
+  "olx_1441378063": {
+    "tag": "Não",
+    "observacao": "repetido"
+  },
+  "creditoReal_cr105178": {
+    "tag": "Não"
+  },
+  "ibagy_96556": {
+    "tag": "Não"
+  },
+  "ibagy_77369": {
+    "tag": "Talvez",
+    "observacao": "falta adicionar informação"
+  },
+  "ibagy_128603": {
+    "tag": "Agendar",
+    "nota": 4
+  },
+  "ibagy_77328": {
+    "tag": "Agendar",
+    "nota": 3
+  },
+  "ibagy_90762": {
+    "observacao": "será?",
+    "tag": "Talvez"
+  },
+  "ibagy_113225": {
+    "tag": "Talvez"
+  },
+  "ibagy_130248": {
+    "observacao": "",
+    "tag": "Talvez"
+  },
+  "ibagy_129978": {
+    "tag": "Agendar",
+    "nota": 4
+  },
+  "sanremo_SRAP4623": {
+    "tag": "Não"
+  },
+  "creditoReal_cr80389": {
+    "tag": "Talvez"
+  },
+  "creditoReal_cr108234": {
+    "tag": "Não"
+  },
+  "olx_1441958848": {
+    "tag": "Agendar"
+  },
+  "ibagy_121578": {
+    "tag": "Agendar",
+    "nota": 4
+  },
+  "ibagy_129215": {
+    "nota": 3,
+    "tag": "Agendar"
+  },
+  "ibagy_125160": {
+    "tag": "Não"
+  },
+  "ibagy_130313": {
+    "tag": "Agendar",
+    "nota": 4
+  },
+  "sanremo_SRAP4478": {
     "tag": "Agendar"
   }
 }

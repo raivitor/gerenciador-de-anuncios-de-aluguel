@@ -60,18 +60,6 @@
     "corretora": "f1"
   },
   {
-    "id": "f1_10928",
-    "valor_aluguel": 3300,
-    "valor_total": 4100,
-    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-encostas-do-poente-de-3-quartos-no-bairro-carvoeira-florianopolis-10928/",
-    "bairro": "Carvoeira",
-    "tamanho": 80,
-    "quartos": 3,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "f1"
-  },
-  {
     "id": "f1_1958319",
     "valor_aluguel": 3390,
     "valor_total": 4507,
@@ -102,6 +90,18 @@
     "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-costa-del-mare-de-1-quarto-no-bairro-itacorubi-florianopolis-10504/",
     "bairro": "Itacorubi",
     "tamanho": 70,
+    "quartos": 1,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "f1"
+  },
+  {
+    "id": "f1_1958128",
+    "valor_aluguel": 3600,
+    "valor_total": 4190,
+    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-smart-studios-de-1-quarto-no-bairro-joao-paulo-florianopolis-1958128/",
+    "bairro": "João Paulo",
+    "tamanho": 68,
     "quartos": 1,
     "banheiros": 1,
     "garagem": 1,

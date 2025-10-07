@@ -202,5 +202,17 @@
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1
+  },
+  {
+    "id": "creditoReal_cr110613",
+    "valor_aluguel": 3600,
+    "valor_total": 4417,
+    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-trindade-florianopolis-cod-cr110613",
+    "corretora": "creditoReal",
+    "bairro": "Trindade",
+    "tamanho": 75,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1
   }
 ]

@@ -37,7 +37,7 @@
   {
     "id": "ibagy_102966",
     "valor_aluguel": 3400,
-    "valor_total": 3459.89,
+    "valor_total": 4350.3,
     "url_apartamento": "https://ibagy.com.br/imovel/102966/apartamento-3-quartos-luiz-henrique-rosa-pantanal-florianopolis/",
     "bairro": "Pantanal",
     "tamanho": 92,
@@ -47,14 +47,62 @@
     "corretora": "ibagy"
   },
   {
-    "id": "ibagy_104178",
-    "valor_aluguel": 2800,
-    "valor_total": 3563.38,
-    "url_apartamento": "https://ibagy.com.br/imovel/104178/apartamento-2-quartos-oasis-da-ilha-corrego-grande-florianopolis/",
+    "id": "ibagy_77328",
+    "valor_aluguel": 2990,
+    "valor_total": 4173.25,
+    "url_apartamento": "https://ibagy.com.br/imovel/77328/apartamento-3-quartos-rozane-trindade-florianopolis/",
+    "bairro": "Trindade",
+    "tamanho": 88,
+    "quartos": 3,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "ibagy"
+  },
+  {
+    "id": "ibagy_121578",
+    "valor_aluguel": 3500,
+    "valor_total": 4343.63,
+    "url_apartamento": "https://ibagy.com.br/imovel/121578/apartamento-2-quartos-boulevard-trindade-trindade-florianopolis/",
+    "bairro": "Trindade",
+    "tamanho": 87,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "ibagy"
+  },
+  {
+    "id": "ibagy_130248",
+    "valor_aluguel": 3500,
+    "valor_total": 4262.73,
+    "url_apartamento": "https://ibagy.com.br/imovel/130248/apartamento-2-quartos-oasis-da-ilha-corrego-grande-florianopolis/",
     "bairro": "Córrego Grande",
     "tamanho": 85,
     "quartos": 2,
     "banheiros": 1,
+    "garagem": 1,
+    "corretora": "ibagy"
+  },
+  {
+    "id": "ibagy_128603",
+    "valor_aluguel": 3200,
+    "valor_total": 4153.47,
+    "url_apartamento": "https://ibagy.com.br/imovel/128603/apartamento-2-quartos-granville-trindade-florianopolis/",
+    "bairro": "Trindade",
+    "tamanho": 82,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "ibagy"
+  },
+  {
+    "id": "ibagy_129215",
+    "valor_aluguel": 3600,
+    "valor_total": 4353.47,
+    "url_apartamento": "https://ibagy.com.br/imovel/129215/apartamento-2-quartos-florentina-trindade-florianopolis/",
+    "bairro": "Trindade",
+    "tamanho": 82,
+    "quartos": 2,
+    "banheiros": 2,
     "garagem": 1,
     "corretora": "ibagy"
   },
@@ -78,6 +126,18 @@
     "bairro": "Carvoeira",
     "tamanho": 76,
     "quartos": 3,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "ibagy"
+  },
+  {
+    "id": "ibagy_104714",
+    "valor_aluguel": 3450,
+    "valor_total": 4439.02,
+    "url_apartamento": "https://ibagy.com.br/imovel/104714/apartamento-2-quartos-solar-de-evora-itacorubi-florianopolis/",
+    "bairro": "Itacorubi",
+    "tamanho": 75,
+    "quartos": 2,
     "banheiros": 2,
     "garagem": 1,
     "corretora": "ibagy"
@@ -121,10 +181,46 @@
   {
     "id": "ibagy_120341",
     "valor_aluguel": 3500,
-    "valor_total": 3549.19,
+    "valor_total": 4098.43,
     "url_apartamento": "https://ibagy.com.br/imovel/120341/apartamento-2-quartos-villa-milano-trindade-florianopolis/",
     "bairro": "Trindade",
     "tamanho": 74,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "ibagy"
+  },
+  {
+    "id": "ibagy_130313",
+    "valor_aluguel": 3700,
+    "valor_total": 4378.11,
+    "url_apartamento": "https://ibagy.com.br/imovel/130313/apartamento-2-quartos-boulevard-trindade-trindade-florianopolis/",
+    "bairro": "Trindade",
+    "tamanho": 74,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "ibagy"
+  },
+  {
+    "id": "ibagy_77369",
+    "valor_aluguel": 3300,
+    "valor_total": 4134.82,
+    "url_apartamento": "https://ibagy.com.br/imovel/77369/apartamento-2-quartos-jardim-america-trindade-florianopolis/",
+    "bairro": "Trindade",
+    "tamanho": 74,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "ibagy"
+  },
+  {
+    "id": "ibagy_90762",
+    "valor_aluguel": 3000,
+    "valor_total": 4206.93,
+    "url_apartamento": "https://ibagy.com.br/imovel/90762/apartamento-2-quartos-ilha-razzoli-trindade-florianopolis/",
+    "bairro": "Trindade",
+    "tamanho": 72,
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,
@@ -154,6 +250,18 @@
     "corretora": "ibagy"
   },
   {
+    "id": "ibagy_113225",
+    "valor_aluguel": 3200,
+    "valor_total": 4254.84,
+    "url_apartamento": "https://ibagy.com.br/imovel/113225/apartamento-2-quartos-porto-da-trindade-trindade-florianopolis/",
+    "bairro": "Trindade",
+    "tamanho": 71,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "ibagy"
+  },
+  {
     "id": "ibagy_119227",
     "valor_aluguel": 3400,
     "valor_total": 3447.05,
@@ -166,6 +274,29 @@
     "corretora": "ibagy"
   },
   {
+    "id": "ibagy_118712",
+    "valor_aluguel": 3400,
+    "valor_total": 4488.53,
+    "url_apartamento": "https://ibagy.com.br/imovel/118712/apartamento-2-quartos-plaza-saint-tropez-itacorubi-florianopolis/",
+    "bairro": "Itacorubi",
+    "tamanho": 69,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "ibagy"
+  },
+  {
+    "id": "ibagy_125160",
+    "valor_aluguel": 3200,
+    "valor_total": 4361.47,
+    "url_apartamento": "https://ibagy.com.br/imovel/125160/apartamento-2-quartos-villa-anchieta-corrego-grande-florianopolis/",
+    "bairro": "Córrego Grande",
+    "tamanho": 69,
+    "quartos": 2,
+    "banheiros": 1,
+    "corretora": "ibagy"
+  },
+  {
     "id": "ibagy_117990",
     "valor_aluguel": 2500,
     "valor_total": 3344.84,
@@ -174,6 +305,52 @@
     "tamanho": 69,
     "quartos": 2,
     "banheiros": 1,
+    "garagem": 1,
+    "corretora": "ibagy"
+  },
+  {
+    "id": "ibagy_90799",
+    "valor_aluguel": 3200,
+    "valor_total": 4425.58,
+    "url_apartamento": "https://ibagy.com.br/imovel/90799/apartamento-2-quartos-ilha-razolli-trindade-florianopolis/",
+    "bairro": "Trindade",
+    "tamanho": 68,
+    "quartos": 2,
+    "banheiros": 2,
+    "corretora": "ibagy"
+  },
+  {
+    "id": "ibagy_96556",
+    "valor_aluguel": 3000,
+    "valor_total": 4012.43,
+    "url_apartamento": "https://ibagy.com.br/imovel/96556/apartamento-2-quartos-boulevard-oriano-joao-paulo-florianopolis/",
+    "bairro": "João Paulo",
+    "tamanho": 67,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "ibagy"
+  },
+  {
+    "id": "ibagy_129626",
+    "valor_aluguel": 3500,
+    "valor_total": 4423.52,
+    "url_apartamento": "https://ibagy.com.br/imovel/129626/apartamento-2-quartos-recanto-verde-corrego-grande-florianopolis/",
+    "bairro": "Córrego Grande",
+    "tamanho": 65,
+    "quartos": 2,
+    "banheiros": 1,
+    "corretora": "ibagy"
+  },
+  {
+    "id": "ibagy_129978",
+    "valor_aluguel": 3500,
+    "valor_total": 4278.63,
+    "url_apartamento": "https://ibagy.com.br/imovel/129978/apartamento-2-quartos-residencial-camelias-carvoeira-florianopolis/",
+    "bairro": "Carvoeira",
+    "tamanho": 65,
+    "quartos": 2,
+    "banheiros": 2,
     "garagem": 1,
     "corretora": "ibagy"
   },
@@ -198,6 +375,18 @@
     "tamanho": 92,
     "quartos": 2,
     "banheiros": 2,
+    "garagem": 1,
+    "corretora": "ibagy"
+  },
+  {
+    "id": "ibagy_104178",
+    "valor_aluguel": 2800,
+    "valor_total": 3563.38,
+    "url_apartamento": "https://ibagy.com.br/imovel/104178/apartamento-2-quartos-oasis-da-ilha-corrego-grande-florianopolis/",
+    "bairro": "Córrego Grande",
+    "tamanho": 85,
+    "quartos": 2,
+    "banheiros": 1,
     "garagem": 1,
     "corretora": "ibagy"
   },
