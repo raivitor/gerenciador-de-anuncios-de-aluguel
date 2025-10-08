@@ -1,8 +1,8 @@
 [
   {
     "id": "creditoReal_cr115170",
-    "valor_aluguel": 2600,
-    "valor_total": 3100,
+    "valor_aluguel": 2400,
+    "valor_total": 2900,
     "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-trindade-florianopolis-cod-cr115170",
     "corretora": "creditoReal",
     "bairro": "Trindade",
@@ -168,6 +168,18 @@
     "garagem": 1
   },
   {
+    "id": "creditoReal_cr78415",
+    "valor_aluguel": 3500,
+    "valor_total": 4304,
+    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-itacorubi-florianopolis-cod-cr78415",
+    "corretora": "creditoReal",
+    "bairro": "Itacorubi",
+    "tamanho": 75,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1
+  },
+  {
     "id": "creditoReal_cr80389",
     "valor_aluguel": 3400,
     "valor_total": 4310,
@@ -199,18 +211,6 @@
     "corretora": "creditoReal",
     "bairro": "Córrego Grande",
     "tamanho": 140,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
-    "id": "creditoReal_cr110613",
-    "valor_aluguel": 3600,
-    "valor_total": 4417,
-    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-trindade-florianopolis-cod-cr110613",
-    "corretora": "creditoReal",
-    "bairro": "Trindade",
-    "tamanho": 75,
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1

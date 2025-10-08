@@ -1,13 +1,96 @@
 [
   {
-    "id": "olx_1439161517",
-    "valor_aluguel": 4400,
-    "valor_total": 5170,
-    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-2-quartos-c-suite-1-vaga-na-beira-mar-1439161517",
-    "bairro": "Pantanal",
-    "tamanho": 73,
+    "id": "olx_1443319367",
+    "valor_aluguel": 4500,
+    "valor_total": 5330,
+    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-2-quarto-s-no-bairro-lagoa-da-conceicao-1443319367",
+    "bairro": "Lagoa da Conceição",
+    "tamanho": 66,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_1439957082",
+    "valor_aluguel": 3800,
+    "valor_total": 3920,
+    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-no-canto-da-lagoa-1439957082",
+    "bairro": "Lagoa da Conceição",
+    "tamanho": 85,
     "quartos": 2,
     "banheiros": 2,
+    "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_1443283443",
+    "valor_aluguel": 4100,
+    "valor_total": 4933,
+    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-padrao-residencial-pronto-para-morar-1443283443",
+    "bairro": "Itacorubi",
+    "tamanho": 69,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_1443266295",
+    "valor_aluguel": 3500,
+    "valor_total": 4500,
+    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/itacorubi-apartamento-2-quartos-sendo-1-suite-1443266295",
+    "bairro": "Itacorubi",
+    "tamanho": 90,
+    "quartos": 2,
+    "banheiros": 3,
+    "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_1443265945",
+    "valor_aluguel": 4500,
+    "valor_total": 5543.5,
+    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/trindade-apartamento-2-quartos-sendo-1-suite-1443265945",
+    "bairro": "Trindade",
+    "tamanho": 93,
+    "quartos": 2,
+    "banheiros": 3,
+    "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_1443232160",
+    "valor_aluguel": 3000,
+    "valor_total": 4025,
+    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-para-alugar-corrego-grande-florianopolis-1443232160",
+    "bairro": "Córrego Grande",
+    "tamanho": 85,
+    "quartos": 3,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_1441034666",
+    "valor_aluguel": 3500,
+    "valor_total": 4200,
+    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-para-alugar-corrego-grande-florianopolis-1441034666",
+    "bairro": "Córrego Grande",
+    "tamanho": 70,
+    "quartos": 2,
+    "banheiros": 1,
     "garagem": 1,
     "corretora": "olx"
   },
@@ -20,6 +103,53 @@
     "tamanho": 70,
     "quartos": 2,
     "banheiros": 2,
+    "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_1424071967",
+    "valor_aluguel": 3800,
+    "valor_total": 4650,
+    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-para-alugar-itacorubi-florianopolis-1424071967",
+    "bairro": "Itacorubi",
+    "tamanho": 75,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_1443205285",
+    "valor_aluguel": 4200,
+    "valor_total": 4957,
+    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-com-2-dormitorios-para-alugar-79-m-por-r-4-956-74-mes-itacorubi-florian-1443205285",
+    "bairro": "Itacorubi",
+    "tamanho": 80,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_1443123704",
+    "valor_aluguel": 4000,
+    "valor_total": 4850,
+    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/imovel-para-aluguel-com-66-metros-quadrados-com-2-quartos-em-itacorubi-florianopolis-s-1443123704",
+    "bairro": "Itacorubi",
+    "tamanho": 66,
+    "quartos": 2,
+    "banheiros": 1,
     "garagem": 1,
     "corretora": "olx"
   },
@@ -60,17 +190,6 @@
     "corretora": "olx"
   },
   {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0,
-    "corretora": "olx"
-  },
-  {
     "id": "olx_1442931158",
     "valor_aluguel": 4400,
     "valor_total": 5432.083333333333,
@@ -107,6 +226,17 @@
     "corretora": "olx"
   },
   {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
+    "corretora": "olx"
+  },
+  {
     "id": "olx_1437972401",
     "valor_aluguel": 3500,
     "valor_total": 3628,
@@ -128,17 +258,6 @@
     "quartos": 2,
     "banheiros": 2,
     "garagem": 2,
-    "corretora": "olx"
-  },
-  {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0,
     "corretora": "olx"
   },
   {
@@ -190,30 +309,6 @@
     "corretora": "olx"
   },
   {
-    "id": "olx_1439957082",
-    "valor_aluguel": 3800,
-    "valor_total": 3920,
-    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-no-canto-da-lagoa-1439957082",
-    "bairro": "Lagoa da Conceição",
-    "tamanho": 85,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "olx"
-  },
-  {
-    "id": "olx_1424071967",
-    "valor_aluguel": 3800,
-    "valor_total": 4650,
-    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-para-alugar-itacorubi-florianopolis-1424071967",
-    "bairro": "Itacorubi",
-    "tamanho": 75,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "olx"
-  },
-  {
     "id": "olx_1442378262",
     "valor_aluguel": 3400,
     "valor_total": 3400,
@@ -239,7 +334,7 @@
   {
     "id": "olx_1442374341",
     "valor_aluguel": 4350,
-    "valor_total": 5898,
+    "valor_total": 5926,
     "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/excelente-apartamento-3-dormitorio-s-em-itacorubi-florianopolis-1442374341",
     "bairro": "Itacorubi",
     "tamanho": 78,
@@ -297,24 +392,24 @@
     "corretora": "olx"
   },
   {
-    "id": "olx_1441962304",
-    "valor_aluguel": 4300,
-    "valor_total": 5070,
-    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-2-quartos-no-bairro-itacorubi-florianopolis-1441962304",
+    "id": "olx_1441999082",
+    "valor_aluguel": 3000,
+    "valor_total": 3868,
+    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/itacorubi-apartamento-2-quartos-sendo-1-suite-1441999082",
     "bairro": "Itacorubi",
-    "tamanho": 68,
+    "tamanho": 98,
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,
     "corretora": "olx"
   },
   {
-    "id": "olx_1441958848",
-    "valor_aluguel": 3520,
-    "valor_total": 4320,
-    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-2-dormitorios-com-garagem-itacorubi-1441958848",
+    "id": "olx_1441962304",
+    "valor_aluguel": 4300,
+    "valor_total": 5070,
+    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-2-quartos-no-bairro-itacorubi-florianopolis-1441962304",
     "bairro": "Itacorubi",
-    "tamanho": 74,
+    "tamanho": 68,
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,
@@ -329,6 +424,18 @@
     "quartos": 0,
     "banheiros": 0,
     "garagem": 0,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_1441958848",
+    "valor_aluguel": 3520,
+    "valor_total": 4320,
+    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-2-dormitorios-com-garagem-itacorubi-1441958848",
+    "bairro": "Itacorubi",
+    "tamanho": 74,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
     "corretora": "olx"
   },
   {
@@ -404,6 +511,17 @@
     "corretora": "olx"
   },
   {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
+    "corretora": "olx"
+  },
+  {
     "id": "olx_1441620627",
     "valor_aluguel": 4500,
     "valor_total": 5405,
@@ -413,17 +531,6 @@
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,
-    "corretora": "olx"
-  },
-  {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0,
     "corretora": "olx"
   },
   {
@@ -475,6 +582,18 @@
     "corretora": "olx"
   },
   {
+    "id": "olx_1441374133",
+    "valor_aluguel": 4500,
+    "valor_total": 5666.666666666667,
+    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/trindade-apartamento-2-quartos-sendo-1-suite-1441374133",
+    "bairro": "Trindade",
+    "tamanho": 100,
+    "quartos": 2,
+    "banheiros": 3,
+    "garagem": 1,
+    "corretora": "olx"
+  },
+  {
     "id": "olx_1441354201",
     "valor_aluguel": 3800,
     "valor_total": 4850,
@@ -484,6 +603,17 @@
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
     "corretora": "olx"
   },
   {
@@ -511,17 +641,6 @@
     "corretora": "olx"
   },
   {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0,
-    "corretora": "olx"
-  },
-  {
     "id": "olx_1441220474",
     "valor_aluguel": 3200,
     "valor_total": 4280,
@@ -546,18 +665,6 @@
     "corretora": "olx"
   },
   {
-    "id": "olx_1441216922",
-    "valor_aluguel": 3400,
-    "valor_total": 3400,
-    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-em-pantanal-1441216922",
-    "bairro": "Pantanal",
-    "tamanho": 92,
-    "quartos": 3,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "olx"
-  },
-  {
     "id": "olx_1441216907",
     "valor_aluguel": 4300,
     "valor_total": 5019,
@@ -565,113 +672,6 @@
     "bairro": "Itacorubi",
     "tamanho": 68,
     "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "olx"
-  },
-  {
-    "id": "olx_1441141279",
-    "valor_aluguel": 4400,
-    "valor_total": 5385,
-    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-corrego-grande-03-dormitorios-01-suite-1441141279",
-    "bairro": "Córrego Grande",
-    "tamanho": 105,
-    "quartos": 3,
-    "banheiros": 2,
-    "garagem": 2,
-    "corretora": "olx"
-  },
-  {
-    "id": "olx_1439596111",
-    "valor_aluguel": 4500,
-    "valor_total": 5410,
-    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/aluga-se-apto-no-itacorubi-3-quartos-com-suite-1439596111",
-    "bairro": "Itacorubi",
-    "tamanho": 88,
-    "quartos": 3,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "olx"
-  },
-  {
-    "id": "olx_1441075577",
-    "valor_aluguel": 3500,
-    "valor_total": 4498,
-    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-para-locacao-no-bairro-itacorubi-93-m-3-quartos-2-banheiros-1441075577",
-    "bairro": "Itacorubi",
-    "tamanho": 93,
-    "quartos": 3,
-    "banheiros": 2,
-    "garagem": 2,
-    "corretora": "olx"
-  },
-  {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0,
-    "corretora": "olx"
-  },
-  {
-    "id": "olx_1441036903",
-    "valor_aluguel": 4000,
-    "valor_total": 4733.333333333333,
-    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/corrego-grande-apartamento-2-quartos-sendo-1-suite-1441036903",
-    "bairro": "Córrego Grande",
-    "tamanho": 83,
-    "quartos": 2,
-    "banheiros": 3,
-    "garagem": 1,
-    "corretora": "olx"
-  },
-  {
-    "id": "olx_1441034666",
-    "valor_aluguel": 3500,
-    "valor_total": 4200,
-    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-para-alugar-corrego-grande-florianopolis-1441034666",
-    "bairro": "Córrego Grande",
-    "tamanho": 70,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "olx"
-  },
-  {
-    "id": "olx_1441023994",
-    "valor_aluguel": 3990,
-    "valor_total": 4740,
-    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-2-quartos-no-bairro-corrego-grande-florianopolis-1441023994",
-    "bairro": "Córrego Grande",
-    "tamanho": 83,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "olx"
-  },
-  {
-    "id": "olx_1441022686",
-    "valor_aluguel": 2800,
-    "valor_total": 3526.6666666666665,
-    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-em-frente-a-ufsc-1441022686",
-    "bairro": "Córrego Grande",
-    "tamanho": 75,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "olx"
-  },
-  {
-    "id": "olx_1440959895",
-    "valor_aluguel": 4500,
-    "valor_total": 5324,
-    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-3-quartos-trindade-1440959895",
-    "bairro": "Trindade",
-    "tamanho": 92,
-    "quartos": 3,
     "banheiros": 2,
     "garagem": 1,
     "corretora": "olx"

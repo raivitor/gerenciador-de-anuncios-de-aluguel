@@ -317,7 +317,7 @@
   },
   "olx_1441946398": {
     "tag": "Não",
-    "observacao": "lagoa e 1 quarto"
+    "observacao": "Lagoa"
   },
   "f1_10504": {
     "tag": "Não",
@@ -399,7 +399,8 @@
     "observacao": "repetido"
   },
   "olx_1441407079": {
-    "tag": "Não"
+    "tag": "Não",
+    "observacao": "Lagoa"
   },
   "olx_1439246451": {
     "tag": "Agendar",
@@ -430,7 +431,7 @@
     "tag": "Não"
   },
   "olx_1442378262": {
-    "observacao": "falta foto",
+    "observacao": "repetido",
     "tag": "Não"
   },
   "duda_5450": {
@@ -467,8 +468,8 @@
     "tag": "Agendar"
   },
   "olx_1441836140": {
-    "observacao": "talvez repetido",
-    "tag": "Talvez"
+    "observacao": "repetido",
+    "tag": "Não"
   },
   "f1_1958107": {
     "tag": "Agendar",
@@ -479,7 +480,8 @@
     "observacao": "rua que só vai"
   },
   "olx_1439957082": {
-    "tag": "Não"
+    "tag": "Não",
+    "observacao": "Lagoa"
   },
   "olx_1440328330": {
     "tag": "Agendar"
@@ -510,7 +512,7 @@
     "tag": "Agendar"
   },
   "ibagy_119227": {
-    "observacao": "fala foto",
+    "observacao": "falta foto",
     "tag": "Talvez"
   },
   "olx_1442900172": {
@@ -602,5 +604,12 @@
   },
   "sanremo_SRAP4478": {
     "tag": "Agendar"
+  },
+  "olx_1443232160": {
+    "tag": "Não"
+  },
+  "olx_1441220474": {
+    "observacao": "repetido",
+    "tag": "Não"
   }
 }
