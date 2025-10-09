@@ -68,7 +68,7 @@
   },
   "ibagy_127458": {
     "observacao": "condominio aberto,",
-    "tag": "Não"
+    "tag": "Agendar"
   },
   "creditoReal_cr83589": {
     "tag": "Não",
@@ -101,7 +101,7 @@
     "nota": null
   },
   "ibagy_106006": {
-    "observacao": "parece ter bastante sol",
+    "observacao": "parece ter bastante sol, rua do elevado",
     "tag": "Agendar",
     "nota": 2
   },
@@ -462,7 +462,8 @@
     "observacao": "caro e sem nada"
   },
   "duda_32893": {
-    "tag": "Talvez"
+    "tag": "Visitado",
+    "observacao": "12 aptos, 1o andar, tem grades em todas as janelas. Salão de festas pequeno mas tem churras."
   },
   "gralha_27972": {
     "tag": "Agendar"
@@ -501,8 +502,8 @@
   },
   "duda_24753": {
     "nota": 3,
-    "observacao": "jardim trindade com foto ruim",
-    "tag": "Agendar"
+    "observacao": "jardim trindade com foto ruim. Condominio desmoronando",
+    "tag": "Visitado"
   },
   "duda_32576": {
     "observacao": "chuv gás, bem vazio",
@@ -606,10 +607,88 @@
     "tag": "Agendar"
   },
   "olx_1443232160": {
-    "tag": "Não"
+    "tag": "Não",
+    "observacao": "repetido"
   },
   "olx_1441220474": {
     "observacao": "repetido",
     "tag": "Não"
+  },
+  "olx_1443648303": {
+    "observacao": "repetido",
+    "tag": "Não"
+  },
+  "gralha_28436": {
+    "observacao": "rua só sobe",
+    "tag": "Não"
+  },
+  "f1_1958351": {
+    "tag": "Agendar"
+  },
+  "olx_1441875372": {
+    "observacao": "1 quarto",
+    "tag": "Não"
+  },
+  "creditoReal_cr113214": {
+    "observacao": "1 quarto",
+    "tag": "Não"
+  },
+  "creditoReal_cr83907": {
+    "observacao": "1 quarto",
+    "tag": "Não"
+  },
+  "creditoReal_cr82959": {
+    "observacao": "1 quarto",
+    "tag": "Não"
+  },
+  "olx_1442366973": {
+    "observacao": "1 quarto",
+    "tag": "Não"
+  },
+  "olx_1443173504": {
+    "observacao": "1 quarto",
+    "tag": "Não"
+  },
+  "f1_1958041": {
+    "observacao": "1 quarto",
+    "tag": "Não"
+  },
+  "f1_1957515": {
+    "observacao": "1 quarto",
+    "tag": "Não"
+  },
+  "gralha_28065": {
+    "observacao": "1 quarto",
+    "tag": "Não"
+  },
+  "sanremo_SRAP1774": {
+    "observacao": "1 quarto",
+    "tag": "Não"
+  },
+  "olx_1442221865": {
+    "observacao": "1 quarto",
+    "tag": "Não"
+  },
+  "olx_1441625532": {
+    "observacao": "1 quarto",
+    "tag": "Não"
+  },
+  "olx_1443028632": {
+    "observacao": "1 quarto",
+    "tag": "Não"
+  },
+  "olx_1442930991": {
+    "observacao": "1 quarto",
+    "tag": "Não"
+  },
+  "gralha_27900": {
+    "observacao": "1 quarto",
+    "tag": "Não"
+  },
+  "olx_1440985230": {
+    "observacao": "muito simples"
+  },
+  "ibagy_103350": {
+    "tag": "Agendar"
   }
 }

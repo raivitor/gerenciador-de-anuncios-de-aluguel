@@ -1,61 +1,24 @@
 [
   {
-    "id": "daltonandrade_9728",
-    "valor_aluguel": 3500,
-    "valor_total": 4498,
-    "url_apartamento": "https://daltonandrade.com.br/imovel/9728/apartamento-3-quarto-itacorubi-florianopolis/",
-    "bairro": "",
-    "tamanho": 93,
-    "quartos": 3,
-    "banheiros": 2,
-    "corretora": "daltonandrade"
-  },
-  {
-    "id": "daltonandrade_9666",
-    "valor_aluguel": 3500,
-    "valor_total": 4425,
-    "url_apartamento": "https://daltonandrade.com.br/imovel/9666/apartamento-2-quarto-trindade-florianopolis/",
-    "bairro": "",
-    "tamanho": 80,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "daltonandrade"
-  },
-  {
-    "id": "daltonandrade_7282",
-    "valor_aluguel": 3300,
-    "valor_total": 4080,
-    "url_apartamento": "https://daltonandrade.com.br/imovel/7282/apartamento-2-quarto-agronomica-florianopolis/",
-    "bairro": "",
-    "tamanho": 72,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "daltonandrade"
-  },
-  {
-    "id": "daltonandrade_7175",
-    "valor_aluguel": 3500,
-    "valor_total": 4485,
-    "url_apartamento": "https://daltonandrade.com.br/imovel/7175/apartamento-2-quarto-trindade-florianopolis/",
-    "bairro": "",
-    "tamanho": 70,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "daltonandrade"
-  },
-  {
     "id": "daltonandrade_9717",
     "valor_aluguel": 2500,
     "valor_total": 3090,
-    "url_apartamento": "https://daltonandrade.com.br/imovel/9717/apartamento-2-quarto-itacorubi-florianopolis/",
+    "url_apartamento": "https://daltonandrade.com.br/imovel/9717/apartamento-2-quartos-itacorubi-florianopolis/",
     "bairro": "",
     "tamanho": 60,
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1,
+    "corretora": "daltonandrade"
+  },
+  {
+    "id": "daltonandrade_7627",
+    "valor_aluguel": 3200,
+    "valor_total": 3812,
+    "url_apartamento": "https://daltonandrade.com.br/imovel/7627/apartamento-1-quarto-corrego-grande-florianopolis/",
+    "bairro": "",
+    "tamanho": 45,
+    "banheiros": 1,
     "corretora": "daltonandrade"
   }
 ]
