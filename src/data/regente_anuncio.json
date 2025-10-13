@@ -1,1 +1,74 @@
-[]
+[
+  {
+    "id": "A01358",
+    "valor_aluguel": 3500,
+    "valor_total": 4187,
+    "url_apartamento": "https://regenteimoveis.com.br/imovel/A01358/otimo-apartamento-de-3-dormitorios-no-bairro-pantanal-perto-da-ufsc",
+    "bairro": "Pantanal",
+    "tamanho": 99,
+    "quartos": 3,
+    "banheiros": 3,
+    "garagem": 1,
+    "corretora": "regente"
+  },
+  {
+    "id": "A03784",
+    "valor_aluguel": 3000,
+    "valor_total": 3632,
+    "url_apartamento": "https://regenteimoveis.com.br/imovel/A03784/excelente-apartamento-de-3-dormitorios-no-bairro-trindade-perto-da-ufsc",
+    "bairro": "Trindade",
+    "tamanho": 94.09,
+    "quartos": 3,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "regente"
+  },
+  {
+    "id": "A04035",
+    "valor_aluguel": 2500,
+    "valor_total": 3098,
+    "url_apartamento": "https://regenteimoveis.com.br/imovel/A04035/otimo-apartamento-de-3-dormitorios-no-bairro-capoeiras",
+    "bairro": "Capoeiras",
+    "tamanho": 88.15,
+    "quartos": 3,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "regente"
+  },
+  {
+    "id": "A04605",
+    "valor_aluguel": 3850,
+    "valor_total": 4570,
+    "url_apartamento": "https://regenteimoveis.com.br/imovel/A04605/excelente-apartamento-de-3-dormitorios-no-bairro-corrego-grande",
+    "bairro": "Córrego Grande",
+    "tamanho": 107.74,
+    "quartos": 3,
+    "banheiros": 3,
+    "garagem": 1,
+    "corretora": "regente"
+  },
+  {
+    "id": "A02035",
+    "valor_aluguel": 2900,
+    "valor_total": 3509,
+    "url_apartamento": "https://regenteimoveis.com.br/imovel/A02035/excelente-apartamento-de-3-dormitorios-no-bairro-trindade-perto-da-ufsc",
+    "bairro": "Trindade",
+    "tamanho": 0,
+    "quartos": 3,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "regente"
+  },
+  {
+    "id": "A02267",
+    "valor_aluguel": 3400,
+    "valor_total": 4094,
+    "url_apartamento": "https://regenteimoveis.com.br/imovel/A02267/otimo-apartamento-de-3-dormitorios-no-bairro-trindade-ao-lado-da-ufsc",
+    "bairro": "Carvoeira",
+    "tamanho": 84.3,
+    "quartos": 3,
+    "banheiros": 3,
+    "garagem": 1,
+    "corretora": "regente"
+  }
+]
