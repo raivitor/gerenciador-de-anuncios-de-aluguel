@@ -686,9 +686,19 @@
     "tag": "Não"
   },
   "olx_1440985230": {
-    "observacao": "muito simples"
+    "observacao": "muito simples",
+    "tag": "Não"
   },
   "ibagy_103350": {
+    "tag": "Agendar"
+  },
+  "gralha_28439": {
+    "tag": "Agendar"
+  },
+  "olx_1443409089": {
+    "tag": "Não"
+  },
+  "olx_1443681509": {
     "tag": "Agendar"
   }
 }

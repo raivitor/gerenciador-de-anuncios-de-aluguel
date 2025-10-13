@@ -13,8 +13,8 @@
   },
   {
     "id": "f1_1957573",
-    "valor_aluguel": 2700,
-    "valor_total": 3240,
+    "valor_aluguel": 2500,
+    "valor_total": 3070,
     "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-conjunto-habitacional-ilha-dos-acores-de-3-quartos-no-bairro-itacorubi-florianopolis-1957573/",
     "bairro": "Itacorubi",
     "tamanho": 60,
@@ -30,18 +30,6 @@
     "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-residencial-royal-park-de-2-quartos-no-bairro-carvoeira-florianopolis-1955831/",
     "bairro": "Carvoeira",
     "tamanho": 68,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "f1"
-  },
-  {
-    "id": "f1_1956314",
-    "valor_aluguel": 2900,
-    "valor_total": 3576.08,
-    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-residencial-ouro-verde-de-2-quartos-no-bairro-carvoeira-florianopolis-1956314/",
-    "bairro": "Carvoeira",
-    "tamanho": 88,
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1,
@@ -104,6 +92,18 @@
     "tamanho": 70,
     "quartos": 3,
     "banheiros": 1,
+    "garagem": 1,
+    "corretora": "f1"
+  },
+  {
+    "id": "f1_1958141",
+    "valor_aluguel": 3400,
+    "valor_total": 4170,
+    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-ilhas-gregas-de-2-quartos-no-bairro-carvoeira-florianopolis-1958141/",
+    "bairro": "Carvoeira",
+    "tamanho": 85,
+    "quartos": 2,
+    "banheiros": 2,
     "garagem": 1,
     "corretora": "f1"
   }

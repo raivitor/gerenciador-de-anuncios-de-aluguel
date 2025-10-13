@@ -3,7 +3,7 @@ import { join } from 'node:path';
 
 import type { Apartamento } from './types';
 
-export const DEFAULT_MIN_SIZE = 50;
+export const DEFAULT_MIN_SIZE = 60;
 export const DEFAULT_MAX_VALUE = 4000;
 
 export abstract class BaseCrawler {

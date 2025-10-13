@@ -144,7 +144,7 @@
   {
     "id": "ibagy_114064",
     "valor_aluguel": 3100,
-    "valor_total": 3602.7,
+    "valor_total": 3706.48,
     "url_apartamento": "https://ibagy.com.br/imovel/114064/apartamento-2-quartos-san-sebastian-%E2%80%93-itacorubi-itacorubi-florianopolis/",
     "bairro": "Itacorubi",
     "tamanho": 60,
@@ -225,18 +225,6 @@
     "corretora": "ibagy"
   },
   {
-    "id": "ibagy_129801",
-    "valor_aluguel": 3100,
-    "valor_total": 3736.36,
-    "url_apartamento": "https://ibagy.com.br/imovel/129801/apartamento-2-quartos-oasis-itacorubi-florianopolis/",
-    "bairro": "Itacorubi",
-    "tamanho": 55,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "ibagy"
-  },
-  {
     "id": "ibagy_122400",
     "valor_aluguel": 2650,
     "valor_total": 3747.18,
@@ -245,6 +233,18 @@
     "tamanho": 55,
     "quartos": 2,
     "banheiros": 2,
+    "garagem": 1,
+    "corretora": "ibagy"
+  },
+  {
+    "id": "ibagy_129801",
+    "valor_aluguel": 2950,
+    "valor_total": 3586.36,
+    "url_apartamento": "https://ibagy.com.br/imovel/129801/apartamento-2-quartos-oasis-itacorubi-florianopolis/",
+    "bairro": "Itacorubi",
+    "tamanho": 55,
+    "quartos": 2,
+    "banheiros": 1,
     "garagem": 1,
     "corretora": "ibagy"
   },
@@ -283,22 +283,11 @@
     "corretora": "ibagy"
   },
   {
-    "id": "ibagy_130431",
-    "valor_aluguel": 2500,
-    "valor_total": 2990.54,
-    "url_apartamento": "https://ibagy.com.br/imovel/130431/apartamento-1-quarto-cantabria-itacorubi-florianopolis/",
-    "bairro": "Itacorubi",
-    "tamanho": 50,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "ibagy"
-  },
-  {
-    "id": "ibagy_110856",
-    "valor_aluguel": 2650,
-    "valor_total": 3356.02,
-    "url_apartamento": "https://ibagy.com.br/imovel/110856/apartamento-2-quartos-ilha-dos-a%C3%A7ores-itacorubi-florianopolis/",
-    "bairro": "Itacorubi",
+    "id": "ibagy_130235",
+    "valor_aluguel": 2800,
+    "valor_total": 3600.59,
+    "url_apartamento": "https://ibagy.com.br/imovel/130235/apartamento-2-quartos-royal-park-carvoeira-florianopolis/",
+    "bairro": "Carvoeira",
     "tamanho": 50,
     "quartos": 2,
     "banheiros": 1,
@@ -306,11 +295,11 @@
     "corretora": "ibagy"
   },
   {
-    "id": "ibagy_130235",
-    "valor_aluguel": 2800,
-    "valor_total": 3600.59,
-    "url_apartamento": "https://ibagy.com.br/imovel/130235/apartamento-2-quartos-royal-park-carvoeira-florianopolis/",
-    "bairro": "Carvoeira",
+    "id": "ibagy_110856",
+    "valor_aluguel": 2500,
+    "valor_total": 3206.02,
+    "url_apartamento": "https://ibagy.com.br/imovel/110856/apartamento-2-quartos-ilha-dos-a%C3%A7ores-itacorubi-florianopolis/",
+    "bairro": "Itacorubi",
     "tamanho": 50,
     "quartos": 2,
     "banheiros": 1,
@@ -342,18 +331,6 @@
     "corretora": "ibagy"
   },
   {
-    "id": "ibagy_94243",
-    "valor_aluguel": 3000,
-    "valor_total": 3782.91,
-    "url_apartamento": "https://ibagy.com.br/imovel/94243/apartamento-2-quartos-ambar-pantanal-florianopolis/",
-    "bairro": "Pantanal",
-    "tamanho": 69,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "ibagy"
-  },
-  {
     "id": "ibagy_98031",
     "valor_aluguel": 2800,
     "valor_total": 3300.01,
@@ -374,6 +351,17 @@
     "tamanho": 59,
     "quartos": 2,
     "banheiros": 1,
+    "garagem": 1,
+    "corretora": "ibagy"
+  },
+  {
+    "id": "ibagy_130431",
+    "valor_aluguel": 2500,
+    "valor_total": 2990.54,
+    "url_apartamento": "https://ibagy.com.br/imovel/130431/apartamento-1-quarto-cantabria-itacorubi-florianopolis/",
+    "bairro": "Itacorubi",
+    "tamanho": 50,
+    "banheiros": 2,
     "garagem": 1,
     "corretora": "ibagy"
   }
