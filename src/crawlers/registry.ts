@@ -14,7 +14,7 @@ import regenteCrawler from './providers/regente';
 export const crawlers: BaseCrawler[] = [
   creditoRealCrawler,
   ibagyCrawler,
-  olxCrawler,
+  //olxCrawler,
   gralhaCrawler,
   daltonCrawler,
   sanRemoCrawler,

@@ -88,8 +88,7 @@
   },
   "olx_1438705644": {
     "tag": "Não",
-    "observacao": "repetido",
-    "nota": 2
+    "observacao": "repetido"
   },
   "olx_1437900397": {
     "observacao": "estou pronto para morar",
@@ -700,5 +699,58 @@
   },
   "olx_1443681509": {
     "tag": "Agendar"
+  },
+  "A04035": {
+    "tag": "Não",
+    "observacao": "em Capoeiras"
+  },
+  "A02035": {
+    "observacao": "64.56 m²"
+  },
+  "olx_1425313084": {
+    "tag": "Não",
+    "observacao": "repetido"
+  },
+  "olx_1429995147": {
+    "observacao": "repetido",
+    "tag": "Não"
+  },
+  "olx_1426879552": {
+    "observacao": "repetido",
+    "tag": "Não"
+  },
+  "olx_1443964801": {
+    "observacao": "repetido",
+    "tag": "Não"
+  },
+  "olx_1436417381": {
+    "observacao": "térreo?",
+    "tag": "Talvez"
+  },
+  "olx_1438705920": {
+    "observacao": "repetido",
+    "tag": "Não"
+  },
+  "olx_1418162940": {
+    "tag": "Talvez"
+  },
+  "olx_1432195611": {
+    "tag": "Visitado",
+    "observacao": "Muito bom mas localização a desejar"
+  },
+  "olx_1427192281": {
+    "observacao": "repetido",
+    "tag": "Não"
+  },
+  "olx_1437011155": {
+    "observacao": "repetido",
+    "tag": "Não"
+  },
+  "olx_1421201318": {
+    "tag": "Talvez"
+  },
+  "A01358": {
+    "observacao": "rua que só sobe",
+    "tag": "Não"
   }
 }

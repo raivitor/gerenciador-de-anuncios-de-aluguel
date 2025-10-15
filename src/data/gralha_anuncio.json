@@ -60,18 +60,6 @@
     "corretora": "gralha"
   },
   {
-    "id": "gralha_28065",
-    "valor_aluguel": 3250,
-    "valor_total": 3713,
-    "url_apartamento": "https://www.gralhaalugueis.com.br/imovel/aluguel+apartamento+1-quarto+carvoeira+florianopolis+sc+56,56m2+rs3250/28065",
-    "bairro": "Carvoeira",
-    "tamanho": 56.56,
-    "quartos": 1,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "gralha"
-  },
-  {
     "id": "gralha_27972",
     "valor_aluguel": 3350,
     "valor_total": 4100,
@@ -84,18 +72,6 @@
     "corretora": "gralha"
   },
   {
-    "id": "gralha_27900",
-    "valor_aluguel": 3700,
-    "valor_total": 5215,
-    "url_apartamento": "https://www.gralhaalugueis.com.br/imovel/aluguel+apartamento+1-quarto+agronomica+florianopolis+sc+56,84m2+rs3700/27900",
-    "bairro": "Agronômica",
-    "tamanho": 56.84,
-    "quartos": 1,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "gralha"
-  },
-  {
     "id": "gralha_27297",
     "valor_aluguel": 3850,
     "valor_total": 4450,
@@ -103,30 +79,6 @@
     "bairro": "Córrego Grande",
     "tamanho": 85,
     "quartos": 3,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "gralha"
-  },
-  {
-    "id": "gralha_26306",
-    "valor_aluguel": 3600,
-    "valor_total": 4360,
-    "url_apartamento": "https://www.gralhaalugueis.com.br/imovel/aluguel+apartamento+2-quartos+carvoeira+florianopolis+sc+59,57m2+rs3600/26306",
-    "bairro": "Carvoeira",
-    "tamanho": 59.57,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "gralha"
-  },
-  {
-    "id": "gralha_26247",
-    "valor_aluguel": 3200,
-    "valor_total": 4160,
-    "url_apartamento": "https://www.gralhaalugueis.com.br/imovel/aluguel+apartamento+2-quartos+trindade+florianopolis+sc+59,46m2+rs3200/26247",
-    "bairro": "Trindade",
-    "tamanho": 59.46,
-    "quartos": 2,
     "banheiros": 1,
     "garagem": 1,
     "corretora": "gralha"

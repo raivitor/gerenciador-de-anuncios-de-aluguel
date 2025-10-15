@@ -8,7 +8,7 @@ export class OlxCrawler extends PuppeteerCrawler {
     super('olx');
   }
 
-  baseURL = `https://www.olx.com.br/imoveis/aluguel/apartamentos/estado-sc/florianopolis-e-regiao/leste?pe=${this.maxValue}&gsp=1&gsp=2&ss=${this.minSize}`;
+  baseURL = `https://www.olx.com.br/imoveis/aluguel/apartamentos/estado-sc/florianopolis-e-regiao/leste?pe=${this.maxValue}&gsp=1&gsp=2&ros=3&ros=4`;
 
   protected buildPageUrl(pageNumber: number): string {
     const url = new URL(this.baseURL);
@@ -18,7 +18,7 @@ export class OlxCrawler extends PuppeteerCrawler {
 
   protected async navigateToListingsPage(page: Page, pageNumber: number): Promise<void> {
     const url = this.buildPageUrl(pageNumber);
-    await page.goto(url, { waitUntil: 'networkidle2', timeout: 90_000 });
+    await page.goto(url, { waitUntil: 'networkidle2', timeout: 120_000 });
     await page.waitForSelector('h1.olx-text--bold', { timeout: 60_000 }).catch(() => null);
   }
 
