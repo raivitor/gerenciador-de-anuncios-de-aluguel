@@ -67,7 +67,6 @@ export class RegenteCrawler extends BaseCrawler {
     do {
       const currentFilters = { ...filters, pagina: paginaAtual };
       const url = `${this.baseURL}?${encodeFilters(currentFilters)}`;
-      console.log(`Fetching página ${paginaAtual}/${totalPaginas}:`, url);
 
       try {
         const response = await axios.get<RegenteApiResponse>(url);
@@ -116,7 +115,6 @@ export class RegenteCrawler extends BaseCrawler {
           listAlugueis.push(aluguel);
         }
 
-        console.log(`Página ${paginaAtual}: ${apartamentos.length} apartamentos encontrados`);
         paginaAtual++;
 
         // Pequeno delay entre requisições para não sobrecarregar a API
@@ -129,7 +127,6 @@ export class RegenteCrawler extends BaseCrawler {
       }
     } while (paginaAtual <= totalPaginas);
 
-    console.log(`Total de apartamentos coletados: ${listAlugueis.length}`);
     return listAlugueis;
   }
 }

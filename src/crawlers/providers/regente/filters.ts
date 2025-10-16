@@ -37,14 +37,14 @@ export const filters: RegenteFilters = {
 export const encodeFilters = (regenteFilters: RegenteFilters): string => {
   const params = new URLSearchParams();
 
-  if (regenteFilters.quartos) params.append('quartos', regenteFilters.quartos.toString());
+  //if (regenteFilters.quartos) params.append('quartos', regenteFilters.quartos.toString());
   if (regenteFilters.vagas) params.append('vagas', regenteFilters.vagas.toString());
   params.append('finalidade', regenteFilters.finalidade);
   params.append('codigo', regenteFilters.codigo);
   params.append('tipo_imovel', regenteFilters.tipo_imovel);
   params.append('preco_min', regenteFilters.preco_min);
   params.append('preco_max', regenteFilters.preco_max.toString());
-  //params.append('area_min', regenteFilters.area_min.toString());
+  params.append('area_min', regenteFilters.area_min.toString());
   params.append('area_max', regenteFilters.area_max);
   params.append('pagina', regenteFilters.pagina.toString());
   params.append('quantidade', regenteFilters.quantidade.toString());

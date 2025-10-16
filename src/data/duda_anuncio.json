@@ -72,6 +72,17 @@
     "corretora": "duda"
   },
   {
+    "id": "duda_31955",
+    "valor_aluguel": 2000,
+    "valor_total": 2430,
+    "url_apartamento": "https://dudaimoveis.com.br/imovel/31955/apartamento-1-quarto-carvoeira-florianopolis/",
+    "bairro": "Carvoeira",
+    "tamanho": 60,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "duda"
+  },
+  {
     "id": "duda_5450",
     "valor_aluguel": 2800,
     "valor_total": 3400,

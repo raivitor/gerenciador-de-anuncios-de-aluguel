@@ -752,5 +752,10 @@
   "A01358": {
     "observacao": "rua que só sobe",
     "tag": "Não"
+  },
+  "creditoReal_cr81013": {
+    "observacao": "interessant",
+    "tag": "Agendado",
+    "nota": 3
   }
 }

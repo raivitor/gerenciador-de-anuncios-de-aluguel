@@ -84,18 +84,6 @@
     "garagem": 1
   },
   {
-    "id": "creditoReal_cr81813",
-    "valor_aluguel": 3000,
-    "valor_total": 3619,
-    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-itacorubi-florianopolis-cod-cr81813",
-    "corretora": "creditoReal",
-    "bairro": "Itacorubi",
-    "tamanho": 67,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1
-  },
-  {
     "id": "creditoReal_cr85136",
     "valor_aluguel": 2800,
     "valor_total": 3678,
@@ -103,6 +91,18 @@
     "corretora": "creditoReal",
     "bairro": "Pantanal",
     "tamanho": 62,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1
+  },
+  {
+    "id": "creditoReal_cr81813",
+    "valor_aluguel": 2950,
+    "valor_total": 3683,
+    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-itacorubi-florianopolis-cod-cr81813",
+    "corretora": "creditoReal",
+    "bairro": "Itacorubi",
+    "tamanho": 67,
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1
@@ -192,6 +192,18 @@
     "garagem": 1
   },
   {
+    "id": "creditoReal_cr81013",
+    "valor_aluguel": 3300,
+    "valor_total": 4008,
+    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-corrego-grande-florianopolis-cod-cr81013",
+    "corretora": "creditoReal",
+    "bairro": "Córrego Grande",
+    "tamanho": 90,
+    "quartos": 3,
+    "banheiros": 1,
+    "garagem": 1
+  },
+  {
     "id": "creditoReal_cr113738",
     "valor_aluguel": 3300,
     "valor_total": 4083,
@@ -201,18 +213,6 @@
     "tamanho": 96,
     "quartos": 3,
     "banheiros": 2,
-    "garagem": 1
-  },
-  {
-    "id": "creditoReal_cr105178",
-    "valor_aluguel": 3600,
-    "valor_total": 4280,
-    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-itacorubi-florianopolis-cod-cr105178",
-    "corretora": "creditoReal",
-    "bairro": "Itacorubi",
-    "tamanho": 65,
-    "quartos": 2,
-    "banheiros": 1,
     "garagem": 1
   }
 ]

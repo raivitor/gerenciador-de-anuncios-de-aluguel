@@ -60,8 +60,8 @@
   },
   {
     "id": "ibagy_106006",
-    "valor_aluguel": 2800,
-    "valor_total": 3940.51,
+    "valor_aluguel": 2600,
+    "valor_total": 3740.51,
     "url_apartamento": "https://ibagy.com.br/imovel/106006/apartamento-3-quartos-solar-ponta-do-coral-trindade-florianopolis/",
     "bairro": "Trindade",
     "tamanho": 75,
@@ -83,6 +83,17 @@
     "corretora": "ibagy"
   },
   {
+    "id": "ibagy_130577",
+    "valor_aluguel": 2800,
+    "valor_total": 3147.05,
+    "url_apartamento": "https://ibagy.com.br/imovel/130577/apartamento-2-quartos-agronomica-florianopolis/",
+    "bairro": "Agronomica",
+    "tamanho": 72,
+    "quartos": 2,
+    "banheiros": 1,
+    "corretora": "ibagy"
+  },
+  {
     "id": "ibagy_130064",
     "valor_aluguel": 3800,
     "valor_total": 3847.05,
@@ -90,18 +101,6 @@
     "bairro": "João Paulo",
     "tamanho": 71,
     "banheiros": 2,
-    "garagem": 1,
-    "corretora": "ibagy"
-  },
-  {
-    "id": "ibagy_130010",
-    "valor_aluguel": 3200,
-    "valor_total": 3985.46,
-    "url_apartamento": "https://ibagy.com.br/imovel/130010/apartamento-2-quartos-residencial-palmas-de-maiorca-pantanal-florianopolis/",
-    "bairro": "Pantanal",
-    "tamanho": 65,
-    "quartos": 2,
-    "banheiros": 1,
     "garagem": 1,
     "corretora": "ibagy"
   },
@@ -171,6 +170,18 @@
     "url_apartamento": "https://ibagy.com.br/imovel/128989/apartamento-2-quartos-caminho-da-lagoa-itacorubi-florianopolis/",
     "bairro": "Itacorubi",
     "tamanho": 75,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "ibagy"
+  },
+  {
+    "id": "ibagy_130010",
+    "valor_aluguel": 3200,
+    "valor_total": 3985.46,
+    "url_apartamento": "https://ibagy.com.br/imovel/130010/apartamento-2-quartos-residencial-palmas-de-maiorca-pantanal-florianopolis/",
+    "bairro": "Pantanal",
+    "tamanho": 65,
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1,
