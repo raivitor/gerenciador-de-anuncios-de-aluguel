@@ -1,0 +1,74 @@
+[
+  {
+    "id": "AP3111-QUB",
+    "valor_aluguel": 2450,
+    "valor_total": 3128.18,
+    "url_apartamento": "https://www.quadraimobiliaria.com.br/imovel/apartamento-florianopolis-2-quartos-60-m/AP3111-QUB",
+    "bairro": "Itacorubi",
+    "tamanho": 60,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "quadra"
+  },
+  {
+    "id": "AP3112-QUB",
+    "valor_aluguel": 2500,
+    "valor_total": 3178.18,
+    "url_apartamento": "https://www.quadraimobiliaria.com.br/imovel/apartamento-florianopolis-2-quartos-60-m/AP3112-QUB",
+    "bairro": "Itacorubi",
+    "tamanho": 60,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "quadra"
+  },
+  {
+    "id": "AP1465-QUB",
+    "valor_aluguel": 2600,
+    "valor_total": 3107.96,
+    "url_apartamento": "https://www.quadraimobiliaria.com.br/imovel/apartamento-florianopolis-2-quartos-64-m/AP1465-QUB",
+    "bairro": "Itacorubi",
+    "tamanho": 64,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "quadra"
+  },
+  {
+    "id": "AP2808-QUB",
+    "valor_aluguel": 3100,
+    "valor_total": 3936.36,
+    "url_apartamento": "https://www.quadraimobiliaria.com.br/imovel/apartamento-florianopolis-3-quartos-85-m/AP2808-QUB",
+    "bairro": "Itacorubi",
+    "tamanho": 85,
+    "quartos": 3,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "quadra"
+  },
+  {
+    "id": "AP3070-QUB",
+    "valor_aluguel": 3500,
+    "valor_total": 0,
+    "url_apartamento": "https://www.quadraimobiliaria.com.br/imovel/apartamento-florianopolis-2-quartos-67-m/AP3070-QUB",
+    "bairro": "Trindade",
+    "tamanho": 669,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "quadra"
+  },
+  {
+    "id": "AP3134-QUB",
+    "valor_aluguel": 3500,
+    "valor_total": 3530.63,
+    "url_apartamento": "https://www.quadraimobiliaria.com.br/imovel/apartamento-florianopolis-2-quartos-70-m/AP3134-QUB",
+    "bairro": "Córrego Grande",
+    "tamanho": 70,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "quadra"
+  }
+]

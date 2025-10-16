@@ -705,7 +705,8 @@
     "observacao": "em Capoeiras"
   },
   "A02035": {
-    "observacao": "64.56 m²"
+    "observacao": "64.56 m²",
+    "tag": "Agendar"
   },
   "olx_1425313084": {
     "tag": "Não",
@@ -757,5 +758,16 @@
     "observacao": "interessant",
     "tag": "Agendado",
     "nota": 3
+  },
+  "A03784": {
+    "tag": "Agendar"
+  },
+  "A02267": {
+    "tag": "Agendar"
+  },
+  "AP2808-QUB": {
+    "tag": "Visitado",
+    "nota": 4,
+    "observacao": "Meio longe de tudo "
   }
 }

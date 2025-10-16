@@ -10,18 +10,20 @@ import f1Crawler from './providers/f1';
 import dudaCrawler from './providers/duda';
 import realizarCrawler from './providers/realizar';
 import regenteCrawler from './providers/regente';
+import quadraCrawler from './providers/quadra';
 
 export const crawlers: BaseCrawler[] = [
-  creditoRealCrawler,
-  ibagyCrawler,
-  gralhaCrawler,
-  daltonCrawler,
-  sanRemoCrawler,
-  f1Crawler,
-  dudaCrawler,
-  regenteCrawler,
-  // olxCrawler,
-  realizarCrawler,
+  // creditoRealCrawler,
+  // ibagyCrawler,
+  // gralhaCrawler,
+  // daltonCrawler,
+  // sanRemoCrawler,
+  // f1Crawler,
+  // dudaCrawler,
+  // regenteCrawler,
+  // // olxCrawler,
+  // realizarCrawler,
+  quadraCrawler,
 ];
 
 export { creditoRealCrawler };
