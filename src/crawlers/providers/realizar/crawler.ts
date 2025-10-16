@@ -68,80 +68,120 @@ export class RealizarCrawler extends PuppeteerCrawler {
     await this.navigateToListingsPage(page);
 
     const { rawListaApto } = await page.evaluate(() => {
-      const totalResultados =
-        document
-          .querySelector<HTMLElement>('span.text-base.font-normal')
-          ?.innerText.split(' de ')[1] || '0';
-
       const cards = document.querySelectorAll('div.mb-10 > div > a');
       const rawListaApto = Array.from(cards).map(card => {
-        const id = card.querySelector('.Tag_Content_Label')?.textContent?.trim() || '';
-
-        const valor_aluguel =
-          card.querySelector<HTMLElement>('.Offer_Price_ValueSpotlight')?.textContent || '0';
-
-        const url_apartamento =
-          card
-            .querySelector<HTMLElement>('a.Tag.Tag_Primary.__is-ripplelink')
-            ?.getAttribute('href') || '';
-
-        const lis = card.querySelectorAll<HTMLElement>('div.Card_Info_Properties_List > ul > li');
-        const tamanho =
-          lis[0]?.querySelector<HTMLElement>('span')?.textContent?.replace('m²', '').trim() || '0';
-        const quartos = lis[1]?.querySelector<HTMLElement>('span')?.textContent || '0';
-        const banheiros = lis[2]?.querySelector<HTMLElement>('span')?.textContent || '0';
-        const garagem = lis[3]?.querySelector<HTMLElement>('span')?.textContent || '0';
-
+        const href = card.getAttribute('href') || '';
         return {
-          id,
-          url_apartamento: `https://realizarimoveisfloripa.com.br${url_apartamento}`,
+          url_apartamento: `https://realizarimoveisfloripa.com.br${href}`,
         };
       });
 
-      return {
-        rawListaApto,
-        totalBusca: parseInt(totalResultados.replace(/\D/g, ''), 10) || 0,
-      };
+      return { rawListaApto };
     });
 
     const listaApartamento: Apartamento[] = [];
     for (const card of rawListaApto) {
       await page.goto(card.url_apartamento, { waitUntil: 'networkidle2', timeout: 60_000 });
-      await page
-        .waitForSelector('.BoxFloat_Values_Complementation', { timeout: 30_000 })
-        .catch(() => null);
+      await page.waitForSelector('section.flex.flex-col.gap-8', { timeout: 30_000 });
 
-      const { iptu, condominio, bairro } = await page.evaluate(() => {
-        const boxValores = document.querySelector('.BoxFloat_Values_Complementation');
-        const boxInformacoes = document.querySelectorAll('div.DetailProperty_About_Text p');
-        let iptu = 0,
-          condominio = 0,
-          bairro = '';
+      const { valor_aluguel, condominio, iptu, tamanho, quartos, banheiros, garagem, id, bairro } =
+        await page.evaluate(() => {
+          const id =
+            document
+              .querySelector('.bg-white.text-brand.py-1.px-3.text-xs.font-medium.rounded-full')
+              ?.textContent?.split(' ')[1]
+              .trim() || '';
+          const bairro =
+            document.querySelector('h3.text-sm.font-medium')?.textContent?.split(',')[0]?.trim() ||
+            '';
+          const boxValores = document.querySelectorAll('div.flex.flex-col.items-start.pb-6')[0];
+          let valor_aluguel = '',
+            condominio = '',
+            iptu = '';
+          let tamanho = 0,
+            quartos = 0,
+            banheiros = 0,
+            garagem = 0;
 
-        if (boxValores) {
-          const iptuText = boxValores.querySelector('p:nth-child(1) strong')?.textContent || '';
-          const condominioText =
-            boxValores.querySelector('p:nth-child(2) strong')?.textContent || '';
-          iptu = this.parseFloat(iptuText.replace(/[^\d,]/g, ''));
-          condominio = this.parseFloat(condominioText.replace(/[^\d,]/g, ''));
-        }
-        if (boxInformacoes) {
-          bairro = boxInformacoes[2]?.querySelector<HTMLElement>('b')?.textContent || '0';
-        }
-        return { iptu, condominio, bairro };
+          if (boxValores) {
+            // pega todos os spans que batem e usa sempre o último (p.ex. quando existe '/ mês' em um span filho)
+            const aluguelSpans = boxValores.querySelectorAll(
+              'span.flex-shrink-0.text-2xl.font-bold.pb-4'
+            );
+            valor_aluguel = aluguelSpans[aluguelSpans.length - 1]?.textContent || '';
+
+            const rows = boxValores.querySelectorAll('.py-3');
+            rows.forEach(row => {
+              const label =
+                row.querySelector('.flex-1 span')?.textContent?.trim().toLowerCase() || '';
+              const amountText = row.querySelectorAll('span')?.[1]?.textContent || '';
+
+              if (label.includes('condom')) {
+                condominio = amountText;
+              } else if (label.includes('iptu')) {
+                iptu = amountText;
+              }
+            });
+          }
+
+          const headers = Array.from(document.querySelectorAll('h4'));
+          const charHeader = headers.find(h =>
+            (h.textContent || '').toLowerCase().includes('caracter')
+          );
+          const container = charHeader ? charHeader.parentElement : null;
+          const list = container ? container.querySelector('ul') : null;
+          if (list) {
+            const items = Array.from(list.children);
+            items.forEach(item => {
+              const text = (item.textContent || '').replace(/\s+/g, ' ').trim().toLowerCase();
+
+              const areaMatch = text.match(/(\d+)\s*(?:m2|m²)/i);
+              if (areaMatch && (text.includes('privat') || text.includes('área'))) {
+                tamanho = parseInt(areaMatch[1], 10) || tamanho;
+              }
+
+              if (text.includes('dormit')) {
+                const n = text.match(/(\d+)/);
+                if (n) quartos = parseInt(n[1], 10) || quartos;
+              }
+
+              if (text.includes('banheiro')) {
+                const n = text.match(/(\d+)/);
+                if (n) banheiros = parseInt(n[1], 10) || banheiros;
+              }
+
+              if (text.includes('vaga')) {
+                const n = text.match(/(\d+)/);
+                if (n) garagem = parseInt(n[1], 10) || garagem;
+              }
+            });
+          }
+
+          return {
+            valor_aluguel,
+            condominio,
+            iptu,
+            tamanho,
+            quartos,
+            banheiros,
+            garagem,
+            id,
+            bairro,
+          };
+        });
+
+      listaApartamento.push({
+        id,
+        valor_aluguel: this.parseFloat(valor_aluguel),
+        valor_total:
+          this.parseFloat(valor_aluguel) + this.parseFloat(condominio) + this.parseFloat(iptu),
+        url_apartamento: card.url_apartamento,
+        bairro,
+        tamanho: Number(tamanho),
+        quartos: Number(quartos),
+        banheiros: Number(banheiros),
+        garagem: Number(garagem),
       });
-
-      // listaApartamento.push({
-      //   id: `${this.name}_${String(card.id)}`,
-      //   valor_aluguel: this.parseFloat(card.valor_aluguel),
-      //   valor_total: this.parseFloat(card.valor_aluguel) + condominio + iptu,
-      //   url_apartamento: card.url_apartamento,
-      //   bairro,
-      //   tamanho: Number(card.tamanho),
-      //   quartos: this.parseFloat(card.quartos),
-      //   banheiros: this.parseFloat(card.banheiros),
-      //   garagem: this.parseFloat(card.garagem),
-      // });
     }
     return listaApartamento;
   }

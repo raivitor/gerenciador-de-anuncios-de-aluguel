@@ -1,1 +1,101 @@
-[]
+[
+  {
+    "id": "6412",
+    "valor_aluguel": 3600,
+    "valor_total": 4280,
+    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-itacorubi-florianopolis-sc-2-quartos-65m2-6412",
+    "bairro": "Itacorubi",
+    "tamanho": 65,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1
+  },
+  {
+    "id": "6397",
+    "valor_aluguel": 3100,
+    "valor_total": 3820,
+    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-itacorubi-florianopolis-sc-1-quartos-85m2-6397",
+    "bairro": "Itacorubi",
+    "tamanho": 85,
+    "quartos": 1,
+    "banheiros": 1,
+    "garagem": 1
+  },
+  {
+    "id": "6329",
+    "valor_aluguel": 3500,
+    "valor_total": 4170,
+    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-carvoeira-florianopolis-sc-2-quartos-65m2-6329",
+    "bairro": "Carvoeira",
+    "tamanho": 65,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1
+  },
+  {
+    "id": "6383",
+    "valor_aluguel": 4000,
+    "valor_total": 5056,
+    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-pantanal-florianopolis-sc-2-quartos-70m2-6383",
+    "bairro": "Pantanal",
+    "tamanho": 70,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 2
+  },
+  {
+    "id": "6354",
+    "valor_aluguel": 3600,
+    "valor_total": 4664.08,
+    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-corrego-grande-florianopolis-sc-3-quartos-91m2-6354",
+    "bairro": "Córrego Grande",
+    "tamanho": 91,
+    "quartos": 3,
+    "banheiros": 2,
+    "garagem": 2
+  },
+  {
+    "id": "6305",
+    "valor_aluguel": 3990,
+    "valor_total": 4740,
+    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-corrego-grande-florianopolis-sc-2-quartos-83m2-6305",
+    "bairro": "Córrego Grande",
+    "tamanho": 83,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1
+  },
+  {
+    "id": "4027",
+    "valor_aluguel": 2700,
+    "valor_total": 3460,
+    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-carvoeira-florianopolis-sc-2-quartos-65m2-4027",
+    "bairro": "Carvoeira",
+    "tamanho": 65,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1
+  },
+  {
+    "id": "5696",
+    "valor_aluguel": 3300,
+    "valor_total": 3950,
+    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-carvoeira-florianopolis-sc-2-quartos-82m2-5696",
+    "bairro": "Carvoeira",
+    "tamanho": 82,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1
+  },
+  {
+    "id": "5577",
+    "valor_aluguel": 2700,
+    "valor_total": 3600,
+    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-corrego-grande-florianopolis-sc-2-quartos-75.09m2-5577",
+    "bairro": "Córrego Grande",
+    "tamanho": 75,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1
+  }
+]

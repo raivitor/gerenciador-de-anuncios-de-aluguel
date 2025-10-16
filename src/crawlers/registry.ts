@@ -14,14 +14,14 @@ import regenteCrawler from './providers/regente';
 export const crawlers: BaseCrawler[] = [
   creditoRealCrawler,
   ibagyCrawler,
-  //olxCrawler,
   gralhaCrawler,
   daltonCrawler,
   sanRemoCrawler,
   f1Crawler,
   dudaCrawler,
-  // realizarCrawler,
   regenteCrawler,
+  // olxCrawler,
+  realizarCrawler,
 ];
 
 export { creditoRealCrawler };
