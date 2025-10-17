@@ -4,7 +4,7 @@ import { join } from 'node:path';
 import type { Apartamento } from './types';
 
 export const DEFAULT_MIN_SIZE = 60;
-export const DEFAULT_MAX_VALUE = 4000;
+export const DEFAULT_MAX_VALUE = 4200;
 
 export abstract class BaseCrawler {
   protected readonly minSize = DEFAULT_MIN_SIZE;

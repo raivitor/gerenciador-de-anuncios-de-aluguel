@@ -1,5 +1,29 @@
 [
   {
+    "id": "A04856",
+    "valor_aluguel": 3000,
+    "valor_total": 3711,
+    "url_apartamento": "https://regenteimoveis.com.br/imovel/A04856/excelente-apartamento-de-2-dormitorios-no-bairro-centro",
+    "bairro": "Centro",
+    "tamanho": 75.3,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "regente"
+  },
+  {
+    "id": "A04853",
+    "valor_aluguel": 3990,
+    "valor_total": 10149,
+    "url_apartamento": "https://regenteimoveis.com.br/imovel/A04853/otimo-apartamento-mobiliado-de-2-dormitorios-no-bairro-corrego-grande",
+    "bairro": "Córrego Grande",
+    "tamanho": 103,
+    "quartos": 2,
+    "banheiros": 3,
+    "garagem": 1,
+    "corretora": "regente"
+  },
+  {
     "id": "A01358",
     "valor_aluguel": 3500,
     "valor_total": 4187,
@@ -8,6 +32,66 @@
     "tamanho": 99,
     "quartos": 3,
     "banheiros": 3,
+    "garagem": 1,
+    "corretora": "regente"
+  },
+  {
+    "id": "A04849",
+    "valor_aluguel": 3500,
+    "valor_total": 4226,
+    "url_apartamento": "https://regenteimoveis.com.br/imovel/A04849/otimo-apartamento-mobiliado-de-2-dormitorios-no-bairro-carvoeira-em-frente-a-ufsc",
+    "bairro": "Carvoeira",
+    "tamanho": 94.24,
+    "quartos": 2,
+    "banheiros": 3,
+    "garagem": 1,
+    "corretora": "regente"
+  },
+  {
+    "id": "A01623",
+    "valor_aluguel": 2900,
+    "valor_total": 3533,
+    "url_apartamento": "https://regenteimoveis.com.br/imovel/A01623/otimo-apartamento-de-2-dormitorios-no-bairro-pantanal",
+    "bairro": "Pantanal",
+    "tamanho": 99,
+    "quartos": 2,
+    "banheiros": 3,
+    "garagem": 1,
+    "corretora": "regente"
+  },
+  {
+    "id": "A04102",
+    "valor_aluguel": 3600,
+    "valor_total": 4622,
+    "url_apartamento": "https://regenteimoveis.com.br/imovel/A04102/excelente-apartamento-com-2-dormitorios-no-bairro-trindade",
+    "bairro": "Trindade",
+    "tamanho": 100.54,
+    "quartos": 2,
+    "banheiros": 3,
+    "garagem": 1,
+    "corretora": "regente"
+  },
+  {
+    "id": "A02405",
+    "valor_aluguel": 2800,
+    "valor_total": 3775,
+    "url_apartamento": "https://regenteimoveis.com.br/imovel/A02405/otimo-apartamento-de-2-dormitorios-no-bairro-trindade-perto-da-ufsc",
+    "bairro": "Trindade",
+    "tamanho": 66,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "regente"
+  },
+  {
+    "id": "A04832",
+    "valor_aluguel": 3100,
+    "valor_total": 4011,
+    "url_apartamento": "https://regenteimoveis.com.br/imovel/A04832/otimo-apartamento-de-2-dormitorios-no-bairro-trindade",
+    "bairro": "Trindade",
+    "tamanho": 82.69,
+    "quartos": 2,
+    "banheiros": 2,
     "garagem": 1,
     "corretora": "regente"
   },
@@ -24,6 +108,30 @@
     "corretora": "regente"
   },
   {
+    "id": "A04818",
+    "valor_aluguel": 4100,
+    "valor_total": 4850,
+    "url_apartamento": "https://regenteimoveis.com.br/imovel/A04818/otimo-studio-mobiliado-no-bairro-trindade-ao-lado-da-ufsc",
+    "bairro": "Trindade",
+    "tamanho": 70.43,
+    "quartos": 1,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "regente"
+  },
+  {
+    "id": "A02266",
+    "valor_aluguel": 3500,
+    "valor_total": 4385,
+    "url_apartamento": "https://regenteimoveis.com.br/imovel/A02266/excelente-apartamento-de-2-dormitorios-no-bairro-trindade",
+    "bairro": "Trindade",
+    "tamanho": 99.55,
+    "quartos": 2,
+    "banheiros": 3,
+    "garagem": 1,
+    "corretora": "regente"
+  },
+  {
     "id": "A04035",
     "valor_aluguel": 2500,
     "valor_total": 3098,
@@ -31,6 +139,54 @@
     "bairro": "Capoeiras",
     "tamanho": 88.15,
     "quartos": 3,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "regente"
+  },
+  {
+    "id": "A04784",
+    "valor_aluguel": 3300,
+    "valor_total": 4042,
+    "url_apartamento": "https://regenteimoveis.com.br/imovel/A04784/excelente-apartamento-de-2-dormitorios-no-bairro-carvoeira",
+    "bairro": "Carvoeira",
+    "tamanho": 89.18,
+    "quartos": 2,
+    "banheiros": 3,
+    "garagem": 1,
+    "corretora": "regente"
+  },
+  {
+    "id": "A04766",
+    "valor_aluguel": 3000,
+    "valor_total": 3740,
+    "url_apartamento": "https://regenteimoveis.com.br/imovel/A04766/otimo-apartamento-de-2-dormitorios-no-bairro-carvoeira-ao-lado-da-ufsc",
+    "bairro": "Carvoeira",
+    "tamanho": 89.18,
+    "quartos": 2,
+    "banheiros": 3,
+    "garagem": 1,
+    "corretora": "regente"
+  },
+  {
+    "id": "A04753",
+    "valor_aluguel": 3200,
+    "valor_total": 4020,
+    "url_apartamento": "https://regenteimoveis.com.br/imovel/A04753/otimo-apartamento-mobiliado-de-2-dormitorios-no-bairro-trindade",
+    "bairro": "Trindade",
+    "tamanho": 82.69,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "regente"
+  },
+  {
+    "id": "A04250",
+    "valor_aluguel": 3800,
+    "valor_total": 4805,
+    "url_apartamento": "https://regenteimoveis.com.br/imovel/A04250/excelente-apartamento-de-2-dormitorios-no-bairro-trindade",
+    "bairro": "Trindade",
+    "tamanho": 80.46,
+    "quartos": 2,
     "banheiros": 1,
     "garagem": 1,
     "corretora": "regente"
@@ -48,13 +204,13 @@
     "corretora": "regente"
   },
   {
-    "id": "A02035",
-    "valor_aluguel": 2900,
-    "valor_total": 3509,
-    "url_apartamento": "https://regenteimoveis.com.br/imovel/A02035/excelente-apartamento-de-3-dormitorios-no-bairro-trindade-perto-da-ufsc",
-    "bairro": "Trindade",
-    "tamanho": 0,
-    "quartos": 3,
+    "id": "A04286",
+    "valor_aluguel": 3400,
+    "valor_total": 4195,
+    "url_apartamento": "https://regenteimoveis.com.br/imovel/A04286/otimo-apartamento-de-2-dormitorios-no-bairro-corrego-grande",
+    "bairro": "Córrego Grande",
+    "tamanho": 78.05,
+    "quartos": 2,
     "banheiros": 1,
     "garagem": 1,
     "corretora": "regente"

@@ -13,16 +13,16 @@ import regenteCrawler from './providers/regente';
 import quadraCrawler from './providers/quadra';
 
 export const crawlers: BaseCrawler[] = [
-  // creditoRealCrawler,
-  // ibagyCrawler,
-  // gralhaCrawler,
-  // daltonCrawler,
-  // sanRemoCrawler,
-  // f1Crawler,
-  // dudaCrawler,
-  // regenteCrawler,
   // // olxCrawler,
-  // realizarCrawler,
+  creditoRealCrawler,
+  ibagyCrawler,
+  gralhaCrawler,
+  daltonCrawler,
+  sanRemoCrawler,
+  f1Crawler,
+  dudaCrawler,
+  regenteCrawler,
+  realizarCrawler,
   quadraCrawler,
 ];
 

@@ -100,8 +100,8 @@
     "nota": null
   },
   "ibagy_106006": {
-    "observacao": "parece ter bastante sol, rua do elevado",
-    "tag": "Agendar",
+    "observacao": "parece ter bastante sol, rua do elevado. Cond não tem nada",
+    "tag": "Talvez",
     "nota": 2
   },
   "creditoReal_cr83253": {
@@ -183,7 +183,7 @@
   "ibagy_129119": {
     "tag": "Visitado",
     "nota": 3,
-    "observacao": "Churrasqueira e cozinha completa"
+    "observacao": "Churrasqueira e cozinha completa. Predio afundando"
   },
   "olx_1439981819": {
     "tag": "Não",
@@ -202,9 +202,9 @@
     "tag": "Agendar"
   },
   "ibagy_105816": {
-    "observacao": "prioridade, Salão de Festas, churrasqueira cond, ",
+    "observacao": "prioridade, Salão de Festas, churrasqueira cond. Barulho de quadra atrás",
     "nota": 4,
-    "tag": "Agendado"
+    "tag": "Visitado"
   },
   "sanremo_SRAP4203": {
     "tag": "Agendar",
@@ -692,7 +692,8 @@
     "tag": "Agendar"
   },
   "gralha_28439": {
-    "tag": "Agendar"
+    "tag": "Não",
+    "observacao": "Térreo"
   },
   "olx_1443409089": {
     "tag": "Não"
@@ -755,15 +756,15 @@
     "tag": "Não"
   },
   "creditoReal_cr81013": {
-    "observacao": "interessant",
+    "observacao": "interessante",
     "tag": "Agendado",
     "nota": 3
   },
   "A03784": {
-    "tag": "Agendar"
+    "tag": "Agendado"
   },
   "A02267": {
-    "tag": "Agendar"
+    "tag": "Agendado"
   },
   "AP2808-QUB": {
     "tag": "Visitado",

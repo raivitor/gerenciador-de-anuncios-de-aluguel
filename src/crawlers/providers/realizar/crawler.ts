@@ -181,6 +181,7 @@ export class RealizarCrawler extends PuppeteerCrawler {
         quartos: Number(quartos),
         banheiros: Number(banheiros),
         garagem: Number(garagem),
+        corretora: this.name,
       });
     }
     return listaApartamento;

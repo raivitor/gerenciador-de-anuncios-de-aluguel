@@ -11,14 +11,14 @@
     "garagem": 1
   },
   {
-    "id": "6397",
-    "valor_aluguel": 3100,
-    "valor_total": 3820,
-    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-itacorubi-florianopolis-sc-1-quartos-85m2-6397",
-    "bairro": "Itacorubi",
-    "tamanho": 85,
-    "quartos": 1,
-    "banheiros": 1,
+    "id": "6421",
+    "valor_aluguel": 2800,
+    "valor_total": 3700,
+    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-corrego-grande-florianopolis-sc-2-quartos-69m2-6421",
+    "bairro": "Córrego Grande",
+    "tamanho": 69,
+    "quartos": 2,
+    "banheiros": 2,
     "garagem": 1
   },
   {
@@ -74,6 +74,17 @@
     "tamanho": 65,
     "quartos": 2,
     "banheiros": 1,
+    "garagem": 1
+  },
+  {
+    "id": "5973",
+    "valor_aluguel": 4200,
+    "valor_total": 5150,
+    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-pantanal-florianopolis-sc-2-quartos-74.44m2-5973",
+    "bairro": "Pantanal",
+    "tamanho": 74,
+    "quartos": 2,
+    "banheiros": 2,
     "garagem": 1
   },
   {
