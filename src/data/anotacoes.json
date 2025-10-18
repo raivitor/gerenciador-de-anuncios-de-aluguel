@@ -1,4 +1,7 @@
 {
+  "6354": {
+    "tag": "Não"
+  },
   "105219": {
     "tag": ""
   },
@@ -101,7 +104,7 @@
   },
   "ibagy_106006": {
     "observacao": "parece ter bastante sol, rua do elevado. Cond não tem nada",
-    "tag": "Talvez",
+    "tag": "Agendar",
     "nota": 2
   },
   "creditoReal_cr83253": {
@@ -438,8 +441,8 @@
     "nota": 4
   },
   "duda_12520": {
-    "tag": "Agendar",
-    "nota": 4
+    "tag": "Não",
+    "observacao": "vaga tranca outra"
   },
   "duda_6645": {
     "tag": "Não"
@@ -622,7 +625,8 @@
     "tag": "Não"
   },
   "f1_1958351": {
-    "tag": "Agendar"
+    "tag": "Agendar",
+    "nota": 3
   },
   "olx_1441875372": {
     "observacao": "1 quarto",
@@ -757,7 +761,7 @@
   },
   "creditoReal_cr81013": {
     "observacao": "interessante",
-    "tag": "Agendado",
+    "tag": "Visitado",
     "nota": 3
   },
   "A03784": {
@@ -770,5 +774,32 @@
     "tag": "Visitado",
     "nota": 4,
     "observacao": "Meio longe de tudo "
+  },
+  "A01623": {
+    "observacao": "rua só sobe",
+    "tag": "Não"
+  },
+  "A04766": {
+    "tag": "Não"
+  },
+  "gralha_27297": {
+    "tag": "Agendar"
+  },
+  "duda_52920": {
+    "observacao": "obra",
+    "tag": "Não"
+  },
+  "A04605": {
+    "tag": "Não",
+    "observacao": "cama muito apertada"
+  },
+  "sanremo_SRAP1940": {
+    "tag": "Não"
+  },
+  "sanremo_SRAP4719": {
+    "tag": "Não"
+  },
+  "duda_53028": {
+    "tag": "Agendar"
   }
 }
