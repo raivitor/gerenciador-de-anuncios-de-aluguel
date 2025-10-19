@@ -3,11 +3,12 @@ import { DEFAULT_MAX_VALUE, DEFAULT_MIN_SIZE } from '@/crawlers/core/base-crawle
 export interface CreditoRealFilters {
   valueType: boolean;
   imovelTypes: string[];
-  neighborhoods: string[];
-  cityState: string;
+  //neighborhoods: string[];
   finalValue: number;
-  areaInitialValue: number;
+  //areaInitialValue: number;
   parking: number;
+  bedrooms: number;
+  cityState: string;
 }
 
 export const filters: CreditoRealFilters = {
@@ -20,22 +21,23 @@ export const filters: CreditoRealFilters = {
     'Casa Sobrado',
     'Apartamento',
   ],
-  neighborhoods: [
-    'Agronômica',
-    'Carvoeira',
-    'Córrego Grande',
-    'Itacorubi',
-    'João Paulo',
-    'Monte Verde',
-    'Pantanal',
-    'Santa Mônica',
-    'Trindade',
-    'Parque São Jorge',
-  ],
+  // neighborhoods: [
+  //   'Agronômica',
+  //   'Carvoeira',
+  //   'Córrego Grande',
+  //   'Itacorubi',
+  //   'João Paulo',
+  //   'Monte Verde',
+  //   'Pantanal',
+  //   'Santa Mônica',
+  //   'Trindade',
+  //   'Parque São Jorge',
+  // ],
   cityState: 'Florianópolis_SC',
   finalValue: DEFAULT_MAX_VALUE,
-  areaInitialValue: DEFAULT_MIN_SIZE,
+  //areaInitialValue: DEFAULT_MIN_SIZE,
   parking: 1,
+  bedrooms: 3,
 };
 
 export const encodeFilters = (creditoRealFilters: CreditoRealFilters): string =>
