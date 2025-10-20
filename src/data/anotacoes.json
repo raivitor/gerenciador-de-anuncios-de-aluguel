@@ -801,5 +801,12 @@
   },
   "duda_53028": {
     "tag": "Agendar"
+  },
+  "LC65": {
+    "tag": "Não"
+  },
+  "LC195": {
+    "tag": "Agendar",
+    "nota": 4
   }
 }

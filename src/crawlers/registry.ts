@@ -12,6 +12,7 @@ import realizarCrawler from './providers/realizar';
 import regenteCrawler from './providers/regente';
 import quadraCrawler from './providers/quadra';
 import floripaImobCrawler from './providers/floripa-imob';
+import liderancaCrawler from './providers/lideranca';
 
 export const crawlers: BaseCrawler[] = [
   // // olxCrawler,
@@ -26,6 +27,7 @@ export const crawlers: BaseCrawler[] = [
   realizarCrawler,
   quadraCrawler,
   floripaImobCrawler,
+  liderancaCrawler,
 ];
 
 export { creditoRealCrawler };
