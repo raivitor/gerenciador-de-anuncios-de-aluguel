@@ -107,17 +107,6 @@
     "corretora": "ibagy"
   },
   {
-    "id": "ibagy_130577",
-    "valor_aluguel": 2800,
-    "valor_total": 3147.05,
-    "url_apartamento": "https://ibagy.com.br/imovel/130577/apartamento-2-quartos-agronomica-florianopolis/",
-    "bairro": "Agronomica",
-    "tamanho": 72,
-    "quartos": 2,
-    "banheiros": 1,
-    "corretora": "ibagy"
-  },
-  {
     "id": "ibagy_130064",
     "valor_aluguel": 3800,
     "valor_total": 3847.05,
@@ -244,18 +233,6 @@
     "tamanho": 65,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 1,
-    "corretora": "ibagy"
-  },
-  {
-    "id": "ibagy_94143",
-    "valor_aluguel": 3400,
-    "valor_total": 4170.33,
-    "url_apartamento": "https://ibagy.com.br/imovel/94143/apartamento-2-quartos-villa-milano-trindade-florianopolis/",
-    "bairro": "Trindade",
-    "tamanho": 64,
-    "quartos": 2,
-    "banheiros": 2,
     "garagem": 1,
     "corretora": "ibagy"
   }

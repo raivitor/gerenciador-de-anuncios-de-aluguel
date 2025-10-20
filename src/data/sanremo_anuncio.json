@@ -1,5 +1,17 @@
 [
   {
+    "id": "sanremo_SRAP4718",
+    "valor_aluguel": 3750,
+    "valor_total": 4510,
+    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+itacorubi+florianopolis+sc+76m2+rs3750/4718",
+    "bairro": "Itacorubi",
+    "tamanho": 76,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "sanremo"
+  },
+  {
     "id": "sanremo_SRAP3307",
     "valor_aluguel": 3500,
     "valor_total": 4160,
@@ -67,18 +79,6 @@
     "bairro": "Trindade",
     "tamanho": 80,
     "quartos": 3,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "sanremo"
-  },
-  {
-    "id": "sanremo_SRAP4718",
-    "valor_aluguel": 3750,
-    "valor_total": 4510,
-    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+itacorubi+florianopolis+sc+76m2+rs3750/4718",
-    "bairro": "Itacorubi",
-    "tamanho": 76,
-    "quartos": 2,
     "banheiros": 2,
     "garagem": 1,
     "corretora": "sanremo"

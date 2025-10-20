@@ -96,14 +96,14 @@
     "corretora": "f1"
   },
   {
-    "id": "f1_7900",
-    "valor_aluguel": 3400,
-    "valor_total": 4055,
-    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-plaza-saint-tropez-de-1-quarto-no-bairro-itacorubi-florianopolis-7900/",
-    "bairro": "Itacorubi",
-    "tamanho": 65,
-    "quartos": 1,
-    "banheiros": 2,
+    "id": "f1_1957670",
+    "valor_aluguel": 3500,
+    "valor_total": 4210,
+    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-palmas-de-maiorca-de-2-quartos-no-bairro-pantanal-florianopolis-1957670/",
+    "bairro": "Pantanal",
+    "tamanho": 76,
+    "quartos": 2,
+    "banheiros": 1,
     "garagem": 1,
     "corretora": "f1"
   }
