@@ -71,7 +71,8 @@
   },
   "ibagy_127458": {
     "observacao": "condominio aberto,",
-    "tag": "Agendar"
+    "tag": "Agendar",
+    "nota": 2
   },
   "creditoReal_cr83589": {
     "tag": "Não",
@@ -104,7 +105,7 @@
   },
   "ibagy_106006": {
     "observacao": "parece ter bastante sol, rua do elevado. Cond não tem nada",
-    "tag": "Agendar",
+    "tag": "Talvez",
     "nota": 2
   },
   "creditoReal_cr83253": {
@@ -625,8 +626,9 @@
     "tag": "Não"
   },
   "f1_1958351": {
-    "tag": "Agendar",
-    "nota": 3
+    "tag": "Não",
+    "nota": 3,
+    "observacao": "Térreo"
   },
   "olx_1441875372": {
     "observacao": "1 quarto",
@@ -765,7 +767,8 @@
     "nota": 3
   },
   "A03784": {
-    "tag": "Agendado"
+    "tag": "Agendado",
+    "nota": 2
   },
   "A02267": {
     "tag": "Agendado"
@@ -806,8 +809,9 @@
     "tag": "Não"
   },
   "LC195": {
-    "tag": "Agendar",
-    "nota": 4
+    "tag": "Visitado",
+    "nota": 4,
+    "observacao": "Não tem nada de condomínio"
   },
   "creditoReal_cr110889": {
     "tag": "Não"
@@ -819,9 +823,16 @@
     "tag": "Não"
   },
   "LC436": {
-    "tag": "Agendar"
+    "tag": "Não"
   },
   "creditoReal_cr109440": {
+    "tag": "Não"
+  },
+  "AP02425": {
+    "tag": "Visitado",
+    "observacao": "Muito barulho na rua, fora isso é muito bom. Não tem condominio"
+  },
+  "AP03314": {
     "tag": "Não"
   }
 }

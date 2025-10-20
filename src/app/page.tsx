@@ -17,6 +17,8 @@ import {
   Slider,
   Pagination,
   Box,
+  FormControlLabel,
+  Switch,
 } from '@mui/material';
 import type { Tag } from './types/tag';
 import type { Apartamento } from '@/crawlers/core/types';
@@ -36,6 +38,7 @@ export default function Home() {
     tag: '',
     nota: '',
   });
+  const [ocultarNao, setOcultarNao] = useState(true);
 
   const tagsDisponiveis = useMemo<Tag[]>(() => ['Não', 'Talvez', 'Agendar', 'Agendado', 'Visitado'], []);
 
@@ -113,7 +116,7 @@ export default function Home() {
 
   useEffect(() => {
     setCurrentPage(1);
-  }, [filtros]);
+  }, [filtros, ocultarNao]);
 
   useEffect(() => {
     const url = new URL('/api/anuncios', window.location.origin);
@@ -128,6 +131,7 @@ export default function Home() {
   if (filtros.tamanho > 70) url.searchParams.set('tamanho', filtros.tamanho.toString());
   if (filtros.tag) url.searchParams.set('tag', filtros.tag);
   if (filtros.nota) url.searchParams.set('nota', filtros.nota);
+  if (ocultarNao) url.searchParams.set('ocultarNao', 'true');
 
     fetch(url.toString())
       .then(res => res.json())
@@ -170,7 +174,13 @@ export default function Home() {
       <Typography variant='h4' component='h1' gutterBottom>
         Anúncios
       </Typography>
-      <Button onClick={() => atualizarDados()}>Atualizar dados</Button>
+      <Box display="flex" gap={2} alignItems="center" mb={2}>
+        <Button onClick={() => atualizarDados()}>Atualizar dados</Button>
+        <FormControlLabel
+          control={<Switch checked={ocultarNao} onChange={e => setOcultarNao(e.target.checked)} />}
+          label="Ocultar Não"
+        />
+      </Box>
       <TableContainer component={Paper}>
         <Table>
           <TableHead>

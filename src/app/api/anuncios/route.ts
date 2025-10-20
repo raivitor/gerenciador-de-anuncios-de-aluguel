@@ -25,6 +25,7 @@ export async function GET(
       tamanho: searchParams.get('tamanho') || undefined,
       tag: searchParams.get('tag') || undefined,
       nota: searchParams.get('nota') || undefined,
+      ocultarNao: searchParams.get('ocultarNao') || undefined,
     };
 
     // Remove undefined filters

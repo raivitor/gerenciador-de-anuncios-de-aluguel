@@ -58,6 +58,7 @@ class UserAnnotationsRepository {
       tamanho?: string;
       tag?: string;
       nota?: string;
+      ocultarNao?: string;
     }
   ): Apartamento[] {
     return list.filter(anuncio => {
@@ -70,6 +71,8 @@ class UserAnnotationsRepository {
       const corretoraMatch = !filters.corretora || anuncio.corretora === filters.corretora;
       const tagMatch = !filters.tag || anuncio.tag === filters.tag;
       const notaMatch = !filters.nota || anuncio.nota === Number(filters.nota);
+      const ocultarNaoMatch =
+        !filters.ocultarNao || filters.ocultarNao !== 'true' || anuncio.tag !== 'Não';
       return (
         bairroMatch &&
         tamanhoMatch &&
@@ -78,7 +81,8 @@ class UserAnnotationsRepository {
         garagemMatch &&
         corretoraMatch &&
         tagMatch &&
-        notaMatch
+        notaMatch &&
+        ocultarNaoMatch
       );
     });
   }
@@ -108,6 +112,7 @@ class UserAnnotationsRepository {
       tamanho?: string;
       tag?: string;
       nota?: string;
+      ocultarNao?: string;
     };
     all?: boolean;
   }) {
