@@ -13,6 +13,7 @@ import regenteCrawler from './providers/regente';
 import quadraCrawler from './providers/quadra';
 import floripaImobCrawler from './providers/floripa-imob';
 import liderancaCrawler from './providers/lideranca';
+import seiterCrawler from './providers/seiter';
 
 export const crawlers: BaseCrawler[] = [
   // // olxCrawler,
@@ -28,17 +29,7 @@ export const crawlers: BaseCrawler[] = [
   quadraCrawler,
   floripaImobCrawler,
   liderancaCrawler,
+  seiterCrawler,
 ];
-
-export { creditoRealCrawler };
-export { ibagyCrawler };
-export { olxCrawler };
-export { daltonCrawler };
-export { gralhaCrawler };
-export { sanRemoCrawler };
-export { f1Crawler };
-export { dudaCrawler };
-export { realizarCrawler };
-export { regenteCrawler };
 
 export default crawlers;
