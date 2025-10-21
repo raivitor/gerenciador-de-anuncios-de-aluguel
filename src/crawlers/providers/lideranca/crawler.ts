@@ -58,7 +58,7 @@ export class LiderancaCrawler extends PuppeteerCrawler {
               ?.textContent?.split(' ')[1]
               .trim() || '';
           const bairro =
-            document.querySelector('h3.text-sm.font-normal')?.textContent?.split(',')[0]?.trim() ||
+            document.querySelector('h3.text-sm.font-medium')?.textContent?.split(',')[0]?.trim() ||
             '';
           const boxValores = document.querySelectorAll('div.flex.flex-col.items-start.pb-6')[0];
           let valor_aluguel = '',

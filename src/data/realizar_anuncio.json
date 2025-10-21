@@ -1,10 +1,10 @@
 [
   {
-    "id": "6428",
-    "valor_aluguel": 3500,
-    "valor_total": 4220,
-    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-corrego-grande-florianopolis-sc-2-quartos-65m2-6428",
-    "bairro": "Córrego Grande",
+    "id": "6412",
+    "valor_aluguel": 3600,
+    "valor_total": 4280,
+    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-itacorubi-florianopolis-sc-2-quartos-65m2-6412",
+    "bairro": "Itacorubi",
     "tamanho": 65,
     "quartos": 2,
     "banheiros": 1,
@@ -12,11 +12,23 @@
     "corretora": "realizar"
   },
   {
-    "id": "6412",
-    "valor_aluguel": 3600,
-    "valor_total": 4280,
-    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-itacorubi-florianopolis-sc-2-quartos-65m2-6412",
-    "bairro": "Itacorubi",
+    "id": "4027",
+    "valor_aluguel": 2700,
+    "valor_total": 3460,
+    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-carvoeira-florianopolis-sc-2-quartos-65m2-4027",
+    "bairro": "Carvoeira",
+    "tamanho": 65,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "realizar"
+  },
+  {
+    "id": "6428",
+    "valor_aluguel": 3500,
+    "valor_total": 4220,
+    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-corrego-grande-florianopolis-sc-2-quartos-65m2-6428",
+    "bairro": "Córrego Grande",
     "tamanho": 65,
     "quartos": 2,
     "banheiros": 1,
@@ -80,18 +92,6 @@
     "tamanho": 83,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1,
-    "corretora": "realizar"
-  },
-  {
-    "id": "4027",
-    "valor_aluguel": 2700,
-    "valor_total": 3460,
-    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-carvoeira-florianopolis-sc-2-quartos-65m2-4027",
-    "bairro": "Carvoeira",
-    "tamanho": 65,
-    "quartos": 2,
-    "banheiros": 1,
     "garagem": 1,
     "corretora": "realizar"
   },

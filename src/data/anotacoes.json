@@ -70,8 +70,8 @@
     "tag": "Agendar"
   },
   "ibagy_127458": {
-    "observacao": "condominio aberto,",
-    "tag": "Agendar",
+    "observacao": "Está em reforma",
+    "tag": "Talvez",
     "nota": 2
   },
   "creditoReal_cr83589": {
@@ -509,11 +509,13 @@
     "tag": "Visitado"
   },
   "duda_32576": {
-    "observacao": "chuv gás, bem vazio",
-    "tag": "Agendar"
+    "observacao": "muito bom, mas caro",
+    "tag": "Visitado",
+    "nota": 4
   },
   "duda_37606": {
-    "tag": "Agendar"
+    "tag": "Visitado",
+    "nota": 3
   },
   "ibagy_119227": {
     "observacao": "falta foto",
@@ -786,7 +788,7 @@
     "tag": "Não"
   },
   "gralha_27297": {
-    "tag": "Agendar"
+    "tag": "Agendado"
   },
   "duda_52920": {
     "observacao": "obra",
@@ -803,10 +805,11 @@
     "tag": "Não"
   },
   "duda_53028": {
-    "tag": "Agendar"
+    "tag": "Visitado",
+    "nota": 4
   },
   "LC65": {
-    "tag": "Não"
+    "tag": "Agendar"
   },
   "LC195": {
     "tag": "Visitado",
@@ -823,7 +826,7 @@
     "tag": "Não"
   },
   "LC436": {
-    "tag": "Não"
+    "tag": "Agendar"
   },
   "creditoReal_cr109440": {
     "tag": "Não"

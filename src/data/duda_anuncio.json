@@ -119,18 +119,6 @@
     "corretora": "duda"
   },
   {
-    "id": "duda_6201",
-    "valor_aluguel": 2800,
-    "valor_total": 3370,
-    "url_apartamento": "https://dudaimoveis.com.br/imovel/6201/apartamento-2-quartos-trindade-florianopolis/",
-    "bairro": "Trindade",
-    "tamanho": 60,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "duda"
-  },
-  {
     "id": "duda_52595",
     "valor_aluguel": 2800,
     "valor_total": 3450,
@@ -139,6 +127,18 @@
     "tamanho": 61,
     "quartos": 2,
     "banheiros": 1,
+    "garagem": 1,
+    "corretora": "duda"
+  },
+  {
+    "id": "duda_6201",
+    "valor_aluguel": 2800,
+    "valor_total": 3370,
+    "url_apartamento": "https://dudaimoveis.com.br/imovel/6201/apartamento-2-quartos-trindade-florianopolis/",
+    "bairro": "Trindade",
+    "tamanho": 60,
+    "quartos": 2,
+    "banheiros": 2,
     "garagem": 1,
     "corretora": "duda"
   },
@@ -155,18 +155,6 @@
     "corretora": "duda"
   },
   {
-    "id": "duda_3334",
-    "valor_aluguel": 3200,
-    "valor_total": 3995,
-    "url_apartamento": "https://dudaimoveis.com.br/imovel/3334/apartamento-2-quartos-corrego-grande-florianopolis/",
-    "bairro": "Córrego Grande",
-    "tamanho": 60,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "duda"
-  },
-  {
     "id": "duda_24753",
     "valor_aluguel": 3200,
     "valor_total": 3620,
@@ -175,6 +163,18 @@
     "tamanho": 75,
     "quartos": 3,
     "banheiros": 2,
+    "garagem": 1,
+    "corretora": "duda"
+  },
+  {
+    "id": "duda_3334",
+    "valor_aluguel": 3200,
+    "valor_total": 3995,
+    "url_apartamento": "https://dudaimoveis.com.br/imovel/3334/apartamento-2-quartos-corrego-grande-florianopolis/",
+    "bairro": "Córrego Grande",
+    "tamanho": 60,
+    "quartos": 2,
+    "banheiros": 1,
     "garagem": 1,
     "corretora": "duda"
   },
@@ -224,17 +224,6 @@
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,
-    "corretora": "duda"
-  },
-  {
-    "id": "duda_52920",
-    "valor_aluguel": 3600,
-    "valor_total": 4469.55,
-    "url_apartamento": "https://dudaimoveis.com.br/imovel/52920/apartamento-3-quartos-corrego--grande-florianopolis/",
-    "bairro": "Córrego Grande",
-    "tamanho": 91,
-    "quartos": 3,
-    "banheiros": 2,
     "corretora": "duda"
   },
   {
