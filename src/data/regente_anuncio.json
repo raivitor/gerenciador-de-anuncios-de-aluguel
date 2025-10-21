@@ -60,18 +60,6 @@
     "corretora": "regente"
   },
   {
-    "id": "A01623",
-    "valor_aluguel": 2900,
-    "valor_total": 3533,
-    "url_apartamento": "https://regenteimoveis.com.br/imovel/A01623/otimo-apartamento-de-2-dormitorios-no-bairro-pantanal",
-    "bairro": "Pantanal",
-    "tamanho": 99,
-    "quartos": 2,
-    "banheiros": 3,
-    "garagem": 1,
-    "corretora": "regente"
-  },
-  {
     "id": "A04102",
     "valor_aluguel": 3600,
     "valor_total": 4622,

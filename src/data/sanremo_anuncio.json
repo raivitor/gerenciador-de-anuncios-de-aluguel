@@ -1,5 +1,41 @@
 [
   {
+    "id": "sanremo_SRAP4743",
+    "valor_aluguel": 3300,
+    "valor_total": 4170,
+    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+trindade+florianopolis+sc+74m2+rs3300/4743",
+    "bairro": "Trindade",
+    "tamanho": 74,
+    "quartos": 2,
+    "banheiros": 0,
+    "garagem": 1,
+    "corretora": "sanremo"
+  },
+  {
+    "id": "sanremo_SRAP4741",
+    "valor_aluguel": 3800,
+    "valor_total": 4800,
+    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+itacorubi+florianopolis+sc+90m2+rs3800/4741",
+    "bairro": "Itacorubi",
+    "tamanho": 90,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "sanremo"
+  },
+  {
+    "id": "sanremo_SRAP4727",
+    "valor_aluguel": 4200,
+    "valor_total": 5283,
+    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+corrego-grande+florianopolis+sc+80m2+rs4200/4727",
+    "bairro": "Córrego Grande",
+    "tamanho": 80,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "sanremo"
+  },
+  {
     "id": "sanremo_SRAP4718",
     "valor_aluguel": 3750,
     "valor_total": 4510,
@@ -60,18 +96,6 @@
     "corretora": "sanremo"
   },
   {
-    "id": "sanremo_SRAP4727",
-    "valor_aluguel": 4200,
-    "valor_total": 5283,
-    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+corrego-grande+florianopolis+sc+80m2+rs4200/4727",
-    "bairro": "Córrego Grande",
-    "tamanho": 80,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "sanremo"
-  },
-  {
     "id": "sanremo_SRAP1940",
     "valor_aluguel": 3900,
     "valor_total": 4650,
@@ -116,30 +140,6 @@
     "tamanho": 76,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 1,
-    "corretora": "sanremo"
-  },
-  {
-    "id": "sanremo_SRAP4707",
-    "valor_aluguel": 3000,
-    "valor_total": 3752,
-    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+corrego-grande+florianopolis+sc+75m2+rs3000/4707",
-    "bairro": "Córrego Grande",
-    "tamanho": 75,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "sanremo"
-  },
-  {
-    "id": "sanremo_SRAP3881",
-    "valor_aluguel": 3000,
-    "valor_total": 3902,
-    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+itacorubi+florianopolis+sc+60m2+rs3000/3881",
-    "bairro": "Itacorubi",
-    "tamanho": 60,
-    "quartos": 2,
-    "banheiros": 0,
     "garagem": 1,
     "corretora": "sanremo"
   }
