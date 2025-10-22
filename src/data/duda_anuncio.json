@@ -119,18 +119,6 @@
     "corretora": "duda"
   },
   {
-    "id": "duda_52595",
-    "valor_aluguel": 2800,
-    "valor_total": 3450,
-    "url_apartamento": "https://dudaimoveis.com.br/imovel/52595/apartamento-2-quartos-pantanal-florianopolis/",
-    "bairro": "Pantanal",
-    "tamanho": 61,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "duda"
-  },
-  {
     "id": "duda_6201",
     "valor_aluguel": 2800,
     "valor_total": 3370,
@@ -139,6 +127,18 @@
     "tamanho": 60,
     "quartos": 2,
     "banheiros": 2,
+    "garagem": 1,
+    "corretora": "duda"
+  },
+  {
+    "id": "duda_52595",
+    "valor_aluguel": 2800,
+    "valor_total": 3450,
+    "url_apartamento": "https://dudaimoveis.com.br/imovel/52595/apartamento-2-quartos-pantanal-florianopolis/",
+    "bairro": "Pantanal",
+    "tamanho": 61,
+    "quartos": 2,
+    "banheiros": 1,
     "garagem": 1,
     "corretora": "duda"
   },

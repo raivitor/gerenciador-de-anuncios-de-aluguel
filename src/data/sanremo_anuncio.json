@@ -1,5 +1,17 @@
 [
   {
+    "id": "sanremo_SRAP4437",
+    "valor_aluguel": 3450,
+    "valor_total": 4411,
+    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+corrego-grande+florianopolis+sc+65m2+rs3450/4437",
+    "bairro": "Córrego Grande",
+    "tamanho": 65,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "sanremo"
+  },
+  {
     "id": "sanremo_SRAP4743",
     "valor_aluguel": 3300,
     "valor_total": 4170,
@@ -64,18 +76,6 @@
     "valor_aluguel": 3500,
     "valor_total": 4160,
     "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+corrego-grande+florianopolis+sc+65m2+rs3500/3307",
-    "bairro": "Córrego Grande",
-    "tamanho": 65,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "sanremo"
-  },
-  {
-    "id": "sanremo_SRAP4437",
-    "valor_aluguel": 3450,
-    "valor_total": 4411,
-    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+corrego-grande+florianopolis+sc+65m2+rs3450/4437",
     "bairro": "Córrego Grande",
     "tamanho": 65,
     "quartos": 2,

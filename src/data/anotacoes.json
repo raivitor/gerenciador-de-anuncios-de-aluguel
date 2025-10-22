@@ -466,7 +466,8 @@
   },
   "duda_32893": {
     "tag": "Visitado",
-    "observacao": "12 aptos, 1o andar, tem grades em todas as janelas. Salão de festas pequeno mas tem churras."
+    "observacao": "12 aptos, 1o andar, tem grades em todas as janelas. Salão de festas pequeno mas tem churras.",
+    "nota": 3
   },
   "gralha_27972": {
     "tag": "Agendar"
@@ -788,7 +789,7 @@
     "tag": "Não"
   },
   "gralha_27297": {
-    "tag": "Agendado"
+    "tag": "Visitado"
   },
   "duda_52920": {
     "observacao": "obra",
