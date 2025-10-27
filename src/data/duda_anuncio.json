@@ -143,24 +143,24 @@
     "corretora": "duda"
   },
   {
-    "id": "duda_3334",
-    "valor_aluguel": 3200,
-    "valor_total": 3995,
-    "url_apartamento": "https://dudaimoveis.com.br/imovel/3334/apartamento-2-quartos-corrego-grande-florianopolis/",
-    "bairro": "Córrego Grande",
-    "tamanho": 60,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "duda"
-  },
-  {
     "id": "duda_15522",
     "valor_aluguel": 3200,
     "valor_total": 3850,
     "url_apartamento": "https://dudaimoveis.com.br/imovel/15522/apartamento-2-quartos-itacorubi-florianopolis/",
     "bairro": "Itacorubi",
     "tamanho": 65,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "duda"
+  },
+  {
+    "id": "duda_3334",
+    "valor_aluguel": 3200,
+    "valor_total": 3995,
+    "url_apartamento": "https://dudaimoveis.com.br/imovel/3334/apartamento-2-quartos-corrego-grande-florianopolis/",
+    "bairro": "Córrego Grande",
+    "tamanho": 60,
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1,
