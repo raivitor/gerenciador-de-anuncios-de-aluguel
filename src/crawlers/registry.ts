@@ -14,9 +14,10 @@ import quadraCrawler from './providers/quadra';
 import floripaImobCrawler from './providers/floripa-imob';
 import liderancaCrawler from './providers/lideranca';
 import seiterCrawler from './providers/seiter';
+import itacorubiCrawler from './providers/itacorubi';
 
 export const crawlers: BaseCrawler[] = [
-  // // olxCrawler,
+  olxCrawler,
   creditoRealCrawler,
   ibagyCrawler,
   gralhaCrawler,
@@ -30,6 +31,7 @@ export const crawlers: BaseCrawler[] = [
   floripaImobCrawler,
   liderancaCrawler,
   seiterCrawler,
+  itacorubiCrawler,
 ];
 
 export default crawlers;

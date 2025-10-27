@@ -4,49 +4,66 @@ import { PuppeteerCrawler } from '@/crawlers/core/puppeteer-crawler';
 import type { Apartamento } from '@/crawlers/core/types';
 
 export class LiderancaCrawler extends PuppeteerCrawler {
-  baseURL: string;
-  private readonly origin = 'https://liderancaimobiliaria.com.br';
+  baseURL = 'https://liderancaimobiliaria.com.br';
 
   constructor() {
     super('lideranca');
-    this.baseURL = this.buildBaseUrl();
   }
 
-  private buildBaseUrl(): string {
-    const url = new URL('/busca', this.origin);
+  private buildBaseUrl(pageNumber: number): string {
+    const url = new URL('/busca', this.baseURL);
     url.searchParams.set('finalidade', 'Aluguel');
     url.searchParams.set('cidade', 'Florianópolis');
     url.searchParams.set('dormitorios', '2');
     url.searchParams.set('vagas', '1');
     url.searchParams.set('max', this.maxValue.toFixed(2));
+    url.searchParams.set('page', pageNumber.toString());
     //url.searchParams.set('areaPrivativaMin', this.minSize.toFixed(2));
 
     return url.toString();
   }
 
-  protected async navigateToListingsPage(page: Page): Promise<void> {
-    console.log(`Navigating to listings page: ${this.baseURL}`);
-    await page.goto(this.baseURL, { waitUntil: 'networkidle2', timeout: 90_000 });
+  protected async navigateToListingsPage(page: Page, pageNumber: number): Promise<void> {
+    const url = this.buildBaseUrl(pageNumber);
+    console.log(this.name, url);
+    await page.goto(url, { waitUntil: 'networkidle2', timeout: 90_000 });
     await page.waitForSelector('.swiper-wrapper', { timeout: 60_000 });
   }
 
   protected async scrapeWithPage(page: Page): Promise<Apartamento[]> {
-    await this.navigateToListingsPage(page);
+    let currentPage = 1;
+    let totalItems = 0;
+    const listaAgregadaApto = [];
+    while (true) {
+      await this.navigateToListingsPage(page, currentPage);
 
-    const { rawListaApto } = await page.evaluate(() => {
-      const cards = document.querySelectorAll('div.mb-10 > div > a');
-      const rawListaApto = Array.from(cards).map(card => {
-        const href = card.getAttribute('href') || '';
-        return {
-          url_apartamento: `https://liderancaimobiliaria.com.br${href}`,
+      const { rawListaApto, totalBusca } = await page.evaluate(() => {
+        const getTotalItens = (doc: Document): number => {
+          const spanNode = doc.querySelector<HTMLElement>('span.text-base.font-normal');
+          if (!spanNode) return 0;
+          const match = spanNode.innerText.match(/de\s+(\d+)/);
+          return match ? parseInt(match[1], 10) : 0;
         };
-      });
 
-      return { rawListaApto };
-    });
-    console.log(rawListaApto);
+        const cards = document.querySelectorAll('div.mb-10 > div > a');
+        const rawListaApto = Array.from(cards).map(card => {
+          const href = card.getAttribute('href') || '';
+          return {
+            url_apartamento: `https://liderancaimobiliaria.com.br${href}`,
+          };
+        });
+
+        return { rawListaApto, totalBusca: getTotalItens(document) };
+      });
+      listaAgregadaApto.push(...rawListaApto);
+      if (!rawListaApto.length) break;
+      if (totalBusca > 0) totalItems = totalBusca;
+      if (listaAgregadaApto.length >= totalItems) break;
+      currentPage += 1;
+    }
+
     const listaApartamento: Apartamento[] = [];
-    for (const card of rawListaApto) {
+    for (const card of listaAgregadaApto) {
       await page.goto(card.url_apartamento, { waitUntil: 'networkidle2', timeout: 60_000 });
       await page.waitForSelector('section.flex.flex-col.gap-8', { timeout: 30_000 });
 
