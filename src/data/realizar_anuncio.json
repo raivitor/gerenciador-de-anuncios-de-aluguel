@@ -1,11 +1,35 @@
 [
   {
+    "id": "6478",
+    "valor_aluguel": 3000,
+    "valor_total": 3720,
+    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-carvoeira-florianopolis-sc-2-quartos-60m2-6478",
+    "bairro": "Carvoeira",
+    "tamanho": 60,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "realizar"
+  },
+  {
     "id": "6305",
-    "valor_aluguel": 3990,
-    "valor_total": 4740,
+    "valor_aluguel": 3800,
+    "valor_total": 4550,
     "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-corrego-grande-florianopolis-sc-2-quartos-83m2-6305",
     "bairro": "Córrego Grande",
     "tamanho": 83,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "realizar"
+  },
+  {
+    "id": "6329",
+    "valor_aluguel": 3500,
+    "valor_total": 4170,
+    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-carvoeira-florianopolis-sc-2-quartos-65m2-6329",
+    "bairro": "Carvoeira",
+    "tamanho": 65,
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,
@@ -48,30 +72,6 @@
     "corretora": "realizar"
   },
   {
-    "id": "6421",
-    "valor_aluguel": 2800,
-    "valor_total": 3700,
-    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-corrego-grande-florianopolis-sc-2-quartos-69m2-6421",
-    "bairro": "Córrego Grande",
-    "tamanho": 69,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "realizar"
-  },
-  {
-    "id": "6329",
-    "valor_aluguel": 3500,
-    "valor_total": 4170,
-    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-carvoeira-florianopolis-sc-2-quartos-65m2-6329",
-    "bairro": "Carvoeira",
-    "tamanho": 65,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "realizar"
-  },
-  {
     "id": "6383",
     "valor_aluguel": 4000,
     "valor_total": 5056,
@@ -79,18 +79,6 @@
     "bairro": "Pantanal",
     "tamanho": 70,
     "quartos": 2,
-    "banheiros": 2,
-    "garagem": 2,
-    "corretora": "realizar"
-  },
-  {
-    "id": "6354",
-    "valor_aluguel": 3600,
-    "valor_total": 4664.08,
-    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-corrego-grande-florianopolis-sc-3-quartos-91m2-6354",
-    "bairro": "Córrego Grande",
-    "tamanho": 91,
-    "quartos": 3,
     "banheiros": 2,
     "garagem": 2,
     "corretora": "realizar"

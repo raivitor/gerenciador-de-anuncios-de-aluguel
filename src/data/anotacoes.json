@@ -1,4 +1,7 @@
 {
+  "2372": {
+    "tag": "Não"
+  },
   "6354": {
     "tag": "Não"
   },
@@ -171,7 +174,7 @@
     "observacao": "Tem piscina e é na trindade"
   },
   "olx_1433701500": {
-    "tag": "Agendar",
+    "tag": "Não",
     "nota": 2
   },
   "creditoReal_cr83645": {
@@ -708,7 +711,7 @@
     "tag": "Não"
   },
   "olx_1443681509": {
-    "tag": "Agendar"
+    "tag": "Não"
   },
   "A04035": {
     "tag": "Não",
@@ -770,8 +773,9 @@
     "nota": 3
   },
   "A03784": {
-    "tag": "Agendado",
-    "nota": 2
+    "tag": "Visitado",
+    "nota": 2,
+    "observacao": "Garagem trancada"
   },
   "A02267": {
     "tag": "Agendado"
@@ -837,6 +841,49 @@
     "observacao": "Muito barulho na rua, fora isso é muito bom. Não tem condominio"
   },
   "AP03314": {
+    "tag": "Não"
+  },
+  "olx_1445301652": {
+    "tag": "Não"
+  },
+  "olx_1446993306": {
+    "tag": "Não"
+  },
+  "olx_1445301376": {
+    "tag": "Não"
+  },
+  "olx_1434710287": {
+    "tag": "Não"
+  },
+  "olx_1445589738": {
+    "tag": "Não"
+  },
+  "olx_1445293478": {
+    "tag": "Não"
+  },
+  "olx_1443865513": {
+    "tag": "Não"
+  },
+  "olx_1437473598": {
+    "tag": "Não"
+  },
+  "olx_1433409392": {
+    "tag": "Não"
+  },
+  "olx_1445301353": {
+    "tag": "Não"
+  },
+  "ibagy_124398": {
+    "tag": "Não",
+    "observacao": "Rua que só sobe"
+  },
+  "": {
+    "tag": "Não"
+  },
+  "A04866": {
+    "tag": "Não"
+  },
+  "olx_1447846689": {
     "tag": "Não"
   }
 }

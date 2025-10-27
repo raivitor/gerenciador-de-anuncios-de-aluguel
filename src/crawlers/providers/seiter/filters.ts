@@ -8,7 +8,7 @@ export interface SeiterFilters {
 }
 
 export const filters: SeiterFilters = {
-  bedrooms: 3,
+  bedrooms: 2,
   parking: 1,
   maxValue: DEFAULT_MAX_VALUE,
   quantity: 48,

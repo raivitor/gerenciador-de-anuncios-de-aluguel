@@ -1,5 +1,29 @@
 [
   {
+    "id": "creditoReal_cr113738",
+    "valor_aluguel": 2600,
+    "valor_total": 3383,
+    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-carvoeira-florianopolis-cod-cr113738",
+    "corretora": "creditoReal",
+    "bairro": "Carvoeira",
+    "tamanho": 96,
+    "quartos": 3,
+    "banheiros": 2,
+    "garagem": 1
+  },
+  {
+    "id": "creditoReal_cr77507",
+    "valor_aluguel": 2750,
+    "valor_total": 3449,
+    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-coqueiros-florianopolis-cod-cr77507",
+    "corretora": "creditoReal",
+    "bairro": "Coqueiros",
+    "tamanho": 84,
+    "quartos": 3,
+    "banheiros": 2,
+    "garagem": 1
+  },
+  {
     "id": "creditoReal_cr110889",
     "valor_aluguel": 2800,
     "valor_total": 3520,
@@ -12,18 +36,6 @@
     "garagem": 1
   },
   {
-    "id": "creditoReal_cr77507",
-    "valor_aluguel": 3000,
-    "valor_total": 3649,
-    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-coqueiros-florianopolis-cod-cr77507",
-    "corretora": "creditoReal",
-    "bairro": "Coqueiros",
-    "tamanho": 84,
-    "quartos": 3,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
     "id": "creditoReal_cr81013",
     "valor_aluguel": 3300,
     "valor_total": 4008,
@@ -33,18 +45,6 @@
     "tamanho": 90,
     "quartos": 3,
     "banheiros": 1,
-    "garagem": 1
-  },
-  {
-    "id": "creditoReal_cr113738",
-    "valor_aluguel": 3300,
-    "valor_total": 4083,
-    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-carvoeira-florianopolis-cod-cr113738",
-    "corretora": "creditoReal",
-    "bairro": "Carvoeira",
-    "tamanho": 96,
-    "quartos": 3,
-    "banheiros": 2,
     "garagem": 1
   },
   {

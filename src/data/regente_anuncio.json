@@ -1,5 +1,17 @@
 [
   {
+    "id": "A04866",
+    "valor_aluguel": 3000,
+    "valor_total": 3868,
+    "url_apartamento": "https://regenteimoveis.com.br/imovel/A04866/otimo-apartamento-de-2-dormitorios-no-bairro-coqueiros",
+    "bairro": "Coqueiros",
+    "tamanho": 89.05,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "regente"
+  },
+  {
     "id": "A04858",
     "valor_aluguel": 2900,
     "valor_total": 3540,
@@ -25,8 +37,8 @@
   },
   {
     "id": "A04853",
-    "valor_aluguel": 3990,
-    "valor_total": 10149,
+    "valor_aluguel": 3890,
+    "valor_total": 10049,
     "url_apartamento": "https://regenteimoveis.com.br/imovel/A04853/otimo-apartamento-mobiliado-de-2-dormitorios-no-bairro-corrego-grande",
     "bairro": "Córrego Grande",
     "tamanho": 103,

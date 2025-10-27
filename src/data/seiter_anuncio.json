@@ -1,14 +1,74 @@
 [
   {
-    "id": "AP03422",
-    "bairro": "CÓRREGO GRANDE",
-    "quartos": 3,
+    "id": "CO00122",
+    "bairro": "ITACORUBI",
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "tamanho": 115,
+    "valor_aluguel": 3950,
+    "valor_total": 4550,
+    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/itacorubi/cobertura/77606445",
+    "corretora": "seiter"
+  },
+  {
+    "id": "CO00121",
+    "bairro": "ITACORUBI",
+    "quartos": 2,
     "banheiros": 2,
     "garagem": 2,
-    "tamanho": 92,
-    "valor_aluguel": 3700,
-    "valor_total": 4763,
-    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/corrego-grande/apartamento/77446532",
+    "tamanho": 114,
+    "valor_aluguel": 3950,
+    "valor_total": 4550,
+    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/itacorubi/cobertura/77606388",
+    "corretora": "seiter"
+  },
+  {
+    "id": "CO00120",
+    "bairro": "ITACORUBI",
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "tamanho": 114,
+    "valor_aluguel": 3950,
+    "valor_total": 4550,
+    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/itacorubi/cobertura/77606321",
+    "corretora": "seiter"
+  },
+  {
+    "id": "CA00689",
+    "bairro": "CENTRO",
+    "quartos": 2,
+    "banheiros": 0,
+    "garagem": 1,
+    "tamanho": 82,
+    "valor_aluguel": 3500,
+    "valor_total": 3640,
+    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/centro/casa/77550072",
+    "corretora": "seiter"
+  },
+  {
+    "id": "AP03416",
+    "bairro": "ITACORUBI",
+    "quartos": 2,
+    "banheiros": 0,
+    "garagem": 1,
+    "tamanho": 48,
+    "valor_aluguel": 3200,
+    "valor_total": 3730,
+    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/itacorubi/apartamento/77435933",
+    "corretora": "seiter"
+  },
+  {
+    "id": "AP03332",
+    "bairro": "CENTRO",
+    "quartos": 2,
+    "banheiros": 0,
+    "garagem": 1,
+    "tamanho": 72,
+    "valor_aluguel": 3000,
+    "valor_total": 3710,
+    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/centro/apartamento/77196772",
     "corretora": "seiter"
   },
   {
@@ -36,6 +96,30 @@
     "corretora": "seiter"
   },
   {
+    "id": "AP02894",
+    "bairro": "ITACORUBI",
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "tamanho": 75,
+    "valor_aluguel": 3600,
+    "valor_total": 4450,
+    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/itacorubi/apartamento/74536385",
+    "corretora": "seiter"
+  },
+  {
+    "id": "AP02673",
+    "bairro": "ITACORUBI",
+    "quartos": 2,
+    "banheiros": 0,
+    "garagem": 1,
+    "tamanho": 66,
+    "valor_aluguel": 3950,
+    "valor_total": 4800,
+    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/itacorubi/apartamento/73915976",
+    "corretora": "seiter"
+  },
+  {
     "id": "AP02425",
     "bairro": "CÓRREGO GRANDE",
     "quartos": 3,
@@ -48,6 +132,30 @@
     "corretora": "seiter"
   },
   {
+    "id": "AP01626",
+    "bairro": "ITACORUBI",
+    "quartos": 2,
+    "banheiros": 0,
+    "garagem": 1,
+    "tamanho": 48,
+    "valor_aluguel": 2500,
+    "valor_total": 3102,
+    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/itacorubi/apartamento/70783487",
+    "corretora": "seiter"
+  },
+  {
+    "id": "AP01340",
+    "bairro": "ITACORUBI",
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "tamanho": 72,
+    "valor_aluguel": 3900,
+    "valor_total": 4688.33,
+    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/itacorubi/apartamento/70506305",
+    "corretora": "seiter"
+  },
+  {
     "id": "AP00980",
     "bairro": "CÓRREGO GRANDE",
     "quartos": 3,
@@ -57,6 +165,18 @@
     "valor_aluguel": 3400,
     "valor_total": 4360,
     "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/corrego-grande/apartamento/69214250",
+    "corretora": "seiter"
+  },
+  {
+    "id": "AP00623",
+    "bairro": "ITACORUBI",
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "tamanho": 74,
+    "valor_aluguel": 3990,
+    "valor_total": 4841.51,
+    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/itacorubi/apartamento/34795152",
     "corretora": "seiter"
   }
 ]

@@ -3,12 +3,12 @@ import type { Page } from 'puppeteer';
 import { PuppeteerCrawler } from '@/crawlers/core/puppeteer-crawler';
 import type { Apartamento } from '@/crawlers/core/types';
 
-export class LiderancaCrawler extends PuppeteerCrawler {
+export class ItacorubiCrawler extends PuppeteerCrawler {
   baseURL: string;
-  private readonly origin = 'https://liderancaimobiliaria.com.br';
+  private readonly origin = 'https://itacorubiimoveis.com.br/';
 
   constructor() {
-    super('lideranca');
+    super('itacorubi');
     this.baseURL = this.buildBaseUrl();
   }
 
@@ -16,16 +16,15 @@ export class LiderancaCrawler extends PuppeteerCrawler {
     const url = new URL('/busca', this.origin);
     url.searchParams.set('finalidade', 'Aluguel');
     url.searchParams.set('cidade', 'Florianópolis');
-    url.searchParams.set('dormitorios', '2');
     url.searchParams.set('vagas', '1');
     url.searchParams.set('max', this.maxValue.toFixed(2));
-    //url.searchParams.set('areaPrivativaMin', this.minSize.toFixed(2));
+    url.searchParams.set('areaPrivativaMin', this.minSize.toFixed(2));
+    //url.searchParams.set('dormitorios', 3);
 
     return url.toString();
   }
 
   protected async navigateToListingsPage(page: Page): Promise<void> {
-    console.log(`Navigating to listings page: ${this.baseURL}`);
     await page.goto(this.baseURL, { waitUntil: 'networkidle2', timeout: 90_000 });
     await page.waitForSelector('.swiper-wrapper', { timeout: 60_000 });
   }
@@ -38,13 +37,13 @@ export class LiderancaCrawler extends PuppeteerCrawler {
       const rawListaApto = Array.from(cards).map(card => {
         const href = card.getAttribute('href') || '';
         return {
-          url_apartamento: `https://liderancaimobiliaria.com.br${href}`,
+          url_apartamento: `https://itacorubiimoveis.com.br${href}`,
         };
       });
 
       return { rawListaApto };
     });
-    console.log(rawListaApto);
+
     const listaApartamento: Apartamento[] = [];
     for (const card of rawListaApto) {
       await page.goto(card.url_apartamento, { waitUntil: 'networkidle2', timeout: 60_000 });
@@ -154,6 +153,6 @@ export class LiderancaCrawler extends PuppeteerCrawler {
   }
 }
 
-const liderancaCrawler = new LiderancaCrawler();
+const itacorubiCrawler = new ItacorubiCrawler();
 
-export default liderancaCrawler;
+export default itacorubiCrawler;
