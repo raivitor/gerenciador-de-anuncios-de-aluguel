@@ -82,5 +82,17 @@
     "quartos": 3,
     "banheiros": 4,
     "garagem": 1
+  },
+  {
+    "id": "creditoReal_cr80021",
+    "valor_aluguel": 3600,
+    "valor_total": 4566,
+    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-agronomica-florianopolis-cod-cr80021",
+    "corretora": "creditoReal",
+    "bairro": "Agronômica",
+    "tamanho": 13,
+    "quartos": 3,
+    "banheiros": 2,
+    "garagem": 1
   }
 ]

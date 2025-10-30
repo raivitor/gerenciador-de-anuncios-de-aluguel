@@ -1,5 +1,17 @@
 [
   {
+    "id": "A03987",
+    "valor_aluguel": 3400,
+    "valor_total": 4198,
+    "url_apartamento": "https://regenteimoveis.com.br/imovel/A03987/otimo-apartamento-de-2-dormitorios-no-bairro-trindade",
+    "bairro": "Trindade",
+    "tamanho": 103.17,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "regente"
+  },
+  {
     "id": "A04866",
     "valor_aluguel": 3000,
     "valor_total": 3868,

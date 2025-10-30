@@ -1,5 +1,29 @@
 [
   {
+    "id": "5270",
+    "valor_aluguel": 3700,
+    "valor_total": 4969,
+    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/cobertura-trindade-florianopolis-sc-2-quartos-139m2-5270",
+    "bairro": "Trindade",
+    "tamanho": 139,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 2,
+    "corretora": "realizar"
+  },
+  {
+    "id": "5577",
+    "valor_aluguel": 3000,
+    "valor_total": 3900,
+    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-corrego-grande-florianopolis-sc-2-quartos-75.09m2-5577",
+    "bairro": "Córrego Grande",
+    "tamanho": 75,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "realizar"
+  },
+  {
     "id": "6478",
     "valor_aluguel": 3000,
     "valor_total": 3720,
@@ -104,18 +128,6 @@
     "tamanho": 82,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1,
-    "corretora": "realizar"
-  },
-  {
-    "id": "5577",
-    "valor_aluguel": 2700,
-    "valor_total": 3600,
-    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-corrego-grande-florianopolis-sc-2-quartos-75.09m2-5577",
-    "bairro": "Córrego Grande",
-    "tamanho": 75,
-    "quartos": 2,
-    "banheiros": 1,
     "garagem": 1,
     "corretora": "realizar"
   }

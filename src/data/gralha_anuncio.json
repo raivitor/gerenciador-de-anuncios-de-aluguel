@@ -25,26 +25,14 @@
   },
   {
     "id": "gralha_28426",
-    "valor_aluguel": 3990,
-    "valor_total": 4721,
-    "url_apartamento": "https://www.gralhaalugueis.com.br/imovel/aluguel+apartamento+2-quartos+corrego-grande+florianopolis+sc+82,68m2+rs3990/28426",
+    "valor_aluguel": 3890,
+    "valor_total": 4621,
+    "url_apartamento": "https://www.gralhaalugueis.com.br/imovel/aluguel+apartamento+2-quartos+corrego-grande+florianopolis+sc+82,68m2+rs3890/28426",
     "bairro": "Córrego Grande",
     "tamanho": 82.68,
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,
-    "corretora": "gralha"
-  },
-  {
-    "id": "gralha_28388",
-    "valor_aluguel": 4200,
-    "valor_total": 5535,
-    "url_apartamento": "https://www.gralhaalugueis.com.br/imovel/aluguel+apartamento+2-quartos+itacorubi+florianopolis+sc+116,48m2+rs4200/28388",
-    "bairro": "Itacorubi",
-    "tamanho": 116.48,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 2,
     "corretora": "gralha"
   },
   {
@@ -56,18 +44,6 @@
     "tamanho": 61.56,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 1,
-    "corretora": "gralha"
-  },
-  {
-    "id": "gralha_28340",
-    "valor_aluguel": 2800,
-    "valor_total": 3422,
-    "url_apartamento": "https://www.gralhaalugueis.com.br/imovel/aluguel+apartamento+2-quartos+trindade+florianopolis+sc+77,69m2+rs2800/28340",
-    "bairro": "Trindade",
-    "tamanho": 77.69,
-    "quartos": 2,
-    "banheiros": 2,
     "garagem": 1,
     "corretora": "gralha"
   },
