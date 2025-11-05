@@ -1,17 +1,5 @@
 [
   {
-    "id": "creditoReal_cr113738",
-    "valor_aluguel": 2600,
-    "valor_total": 3383,
-    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-carvoeira-florianopolis-cod-cr113738",
-    "corretora": "creditoReal",
-    "bairro": "Carvoeira",
-    "tamanho": 96,
-    "quartos": 3,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
     "id": "creditoReal_cr77507",
     "valor_aluguel": 2750,
     "valor_total": 3449,
@@ -31,6 +19,18 @@
     "corretora": "creditoReal",
     "bairro": "Estreito",
     "tamanho": 90,
+    "quartos": 3,
+    "banheiros": 1,
+    "garagem": 1
+  },
+  {
+    "id": "creditoReal_cr80690",
+    "valor_aluguel": 2900,
+    "valor_total": 3538,
+    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-trindade-florianopolis-cod-cr80690",
+    "corretora": "creditoReal",
+    "bairro": "Trindade",
+    "tamanho": 72,
     "quartos": 3,
     "banheiros": 1,
     "garagem": 1
@@ -67,6 +67,18 @@
     "corretora": "creditoReal",
     "bairro": "Córrego Grande",
     "tamanho": 86,
+    "quartos": 3,
+    "banheiros": 2,
+    "garagem": 1
+  },
+  {
+    "id": "creditoReal_cr77734",
+    "valor_aluguel": 3400,
+    "valor_total": 4496,
+    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-saco-dos-limoes-florianopolis-cod-cr77734",
+    "corretora": "creditoReal",
+    "bairro": "Saco Dos Limões",
+    "tamanho": 87,
     "quartos": 3,
     "banheiros": 2,
     "garagem": 1

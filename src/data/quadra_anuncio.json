@@ -1,8 +1,8 @@
 [
   {
     "id": "AP3111-QUB",
-    "valor_aluguel": 2450,
-    "valor_total": 3128.18,
+    "valor_aluguel": 2400,
+    "valor_total": 3055.27,
     "url_apartamento": "https://www.quadraimobiliaria.com.br/imovel/apartamento-florianopolis-2-quartos-60-m/AP3111-QUB",
     "bairro": "Itacorubi",
     "tamanho": 60,
@@ -30,6 +30,18 @@
     "url_apartamento": "https://www.quadraimobiliaria.com.br/imovel/apartamento-florianopolis-2-quartos-67-m/AP3070-QUB",
     "bairro": "Trindade",
     "tamanho": 669,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "quadra"
+  },
+  {
+    "id": "AP2598-QUB",
+    "valor_aluguel": 3500,
+    "valor_total": 4280.31,
+    "url_apartamento": "https://www.quadraimobiliaria.com.br/imovel/apartamento-florianopolis-2-quartos-74-m/AP2598-QUB",
+    "bairro": "Itacorubi",
+    "tamanho": 74,
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,

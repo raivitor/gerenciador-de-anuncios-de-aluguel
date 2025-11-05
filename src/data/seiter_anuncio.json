@@ -48,18 +48,6 @@
     "corretora": "seiter"
   },
   {
-    "id": "AP03314",
-    "bairro": "CANTO",
-    "quartos": 3,
-    "banheiros": 2,
-    "garagem": 1,
-    "tamanho": 94,
-    "valor_aluguel": 3300,
-    "valor_total": 3960,
-    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/canto/apartamento/77136309",
-    "corretora": "seiter"
-  },
-  {
     "id": "AP02957",
     "bairro": "ITACORUBI",
     "quartos": 3,
@@ -117,18 +105,6 @@
     "valor_aluguel": 2500,
     "valor_total": 3102,
     "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/itacorubi/apartamento/70783487",
-    "corretora": "seiter"
-  },
-  {
-    "id": "AP00980",
-    "bairro": "CÓRREGO GRANDE",
-    "quartos": 3,
-    "banheiros": 2,
-    "garagem": 1,
-    "tamanho": 90,
-    "valor_aluguel": 3400,
-    "valor_total": 4360,
-    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/corrego-grande/apartamento/69214250",
     "corretora": "seiter"
   },
   {

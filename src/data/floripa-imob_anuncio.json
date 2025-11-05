@@ -1,13 +1,25 @@
 [
   {
     "id": "",
-    "valor_aluguel": 3600,
-    "valor_total": 3750,
-    "url_apartamento": "https://floripaimobiliariasc.com.br/imovel/casa-rio-tavares-florianopolis-sc-2-quartos-180m2-534",
-    "bairro": "Rio Tavares",
-    "tamanho": 180,
+    "valor_aluguel": 2900,
+    "valor_total": 3065,
+    "url_apartamento": "https://floripaimobiliariasc.com.br/imovel/apartamento-campeche-florianopolis-sc-2-quartos-63m2-537",
+    "bairro": "Campeche",
+    "tamanho": 63,
     "quartos": 2,
     "banheiros": 1,
+    "garagem": 1,
+    "corretora": "floripa-imob"
+  },
+  {
+    "id": "",
+    "valor_aluguel": 3800,
+    "valor_total": 4752,
+    "url_apartamento": "https://floripaimobiliariasc.com.br/imovel/apartamento-kobrasol-sao-jose-sc-3-quartos-110m2-538",
+    "bairro": "Kobrasol",
+    "tamanho": 110,
+    "quartos": 3,
+    "banheiros": 2,
     "garagem": 1,
     "corretora": "floripa-imob"
   },

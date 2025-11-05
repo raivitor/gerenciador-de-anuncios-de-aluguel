@@ -1,5 +1,29 @@
 [
   {
+    "id": "ITA2538",
+    "valor_aluguel": 3800,
+    "valor_total": 4550,
+    "url_apartamento": "https://itacorubiimoveis.com.br/imovel/apartamento-itacorubi-florianopolis-sc-2-quartos-66.75m2-ITA2538",
+    "bairro": "Itacorubi",
+    "tamanho": 66,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "itacorubi"
+  },
+  {
+    "id": "ITA2543",
+    "valor_aluguel": 2700,
+    "valor_total": 3480,
+    "url_apartamento": "https://itacorubiimoveis.com.br/imovel/apartamento-carvoeira-florianopolis-sc-2-quartos-65m2-ITA2543",
+    "bairro": "Carvoeira",
+    "tamanho": 65,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "itacorubi"
+  },
+  {
     "id": "ITA2500",
     "valor_aluguel": 3350,
     "valor_total": 3970,
@@ -30,18 +54,6 @@
     "url_apartamento": "https://itacorubiimoveis.com.br/imovel/apartamento-itacorubi-florianopolis-sc-2-quartos-60.69m2-ITA2529",
     "bairro": "Itacorubi",
     "tamanho": 60,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "itacorubi"
-  },
-  {
-    "id": "ITA2517",
-    "valor_aluguel": 3900,
-    "valor_total": 4757.75,
-    "url_apartamento": "https://itacorubiimoveis.com.br/imovel/apartamento-itacorubi-florianopolis-sc-2-quartos-74.14m2-ITA2517",
-    "bairro": "Itacorubi",
-    "tamanho": 74,
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,
