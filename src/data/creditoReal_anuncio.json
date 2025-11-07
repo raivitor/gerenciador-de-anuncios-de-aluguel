@@ -1,8 +1,8 @@
 [
   {
     "id": "creditoReal_cr77507",
-    "valor_aluguel": 2750,
-    "valor_total": 3449,
+    "valor_aluguel": 2600,
+    "valor_total": 3299,
     "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-coqueiros-florianopolis-cod-cr77507",
     "corretora": "creditoReal",
     "bairro": "Coqueiros",
@@ -45,6 +45,18 @@
     "tamanho": 90,
     "quartos": 3,
     "banheiros": 1,
+    "garagem": 1
+  },
+  {
+    "id": "creditoReal_cr85020",
+    "valor_aluguel": 3000,
+    "valor_total": 4296,
+    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-ingleses-do-rio-vermelho-florianopolis-cod-cr85020",
+    "corretora": "creditoReal",
+    "bairro": "Ingleses Do Rio Vermelho",
+    "tamanho": 100,
+    "quartos": 3,
+    "banheiros": 2,
     "garagem": 1
   },
   {
@@ -93,6 +105,18 @@
     "tamanho": 180,
     "quartos": 3,
     "banheiros": 4,
+    "garagem": 1
+  },
+  {
+    "id": "creditoReal_cr79222",
+    "valor_aluguel": 3700,
+    "valor_total": 4505,
+    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-estreito-florianopolis-cod-cr79222",
+    "corretora": "creditoReal",
+    "bairro": "Estreito",
+    "tamanho": 92,
+    "quartos": 3,
+    "banheiros": 2,
     "garagem": 1
   },
   {

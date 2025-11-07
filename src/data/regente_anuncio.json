@@ -132,18 +132,6 @@
     "corretora": "regente"
   },
   {
-    "id": "A04818",
-    "valor_aluguel": 4100,
-    "valor_total": 4850,
-    "url_apartamento": "https://regenteimoveis.com.br/imovel/A04818/otimo-studio-mobiliado-no-bairro-trindade-ao-lado-da-ufsc",
-    "bairro": "Trindade",
-    "tamanho": 70.43,
-    "quartos": 1,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "regente"
-  },
-  {
     "id": "A02266",
     "valor_aluguel": 3500,
     "valor_total": 4385,

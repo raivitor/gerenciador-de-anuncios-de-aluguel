@@ -1,5 +1,41 @@
 [
   {
+    "id": "L41",
+    "valor_aluguel": 3800,
+    "valor_total": 4372.05,
+    "url_apartamento": "https://liderancaimobiliaria.com.br/imovel/apartamento-pantanal-florianopolis-sc-2-quartos-70.2m2-L41",
+    "bairro": "Pantanal",
+    "tamanho": 70,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "lideranca"
+  },
+  {
+    "id": "LC61",
+    "valor_aluguel": 3200,
+    "valor_total": 3936,
+    "url_apartamento": "https://liderancaimobiliaria.com.br/imovel/apartamento-carvoeira-florianopolis-sc-2-quartos-93.81m2-LC61",
+    "bairro": "Carvoeira",
+    "tamanho": 93,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "lideranca"
+  },
+  {
+    "id": "LC512",
+    "valor_aluguel": 2700,
+    "valor_total": 3334.54,
+    "url_apartamento": "https://liderancaimobiliaria.com.br/imovel/apartamento-carvoeira-florianopolis-sc-2-quartos-65m2-LC512",
+    "bairro": "Carvoeira",
+    "tamanho": 65,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "lideranca"
+  },
+  {
     "id": "LC515",
     "valor_aluguel": 3350,
     "valor_total": 4215,
@@ -60,18 +96,6 @@
     "corretora": "lideranca"
   },
   {
-    "id": "LC512",
-    "valor_aluguel": 2700,
-    "valor_total": 3334.54,
-    "url_apartamento": "https://liderancaimobiliaria.com.br/imovel/apartamento-carvoeira-florianopolis-sc-2-quartos-65m2-LC512",
-    "bairro": "Carvoeira",
-    "tamanho": 65,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "lideranca"
-  },
-  {
     "id": "LC506",
     "valor_aluguel": 3000,
     "valor_total": 3891.32,
@@ -108,18 +132,6 @@
     "corretora": "lideranca"
   },
   {
-    "id": "LC421",
-    "valor_aluguel": 2450,
-    "valor_total": 3028.9,
-    "url_apartamento": "https://liderancaimobiliaria.com.br/imovel/apartamento-itacorubi-florianopolis-sc-2-quartos-46.9m2-LC421",
-    "bairro": "Itacorubi",
-    "tamanho": 46,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "lideranca"
-  },
-  {
     "id": "LC435",
     "valor_aluguel": 4000,
     "valor_total": 4972.7,
@@ -128,30 +140,6 @@
     "tamanho": 96,
     "quartos": 3,
     "banheiros": 1,
-    "garagem": 1,
-    "corretora": "lideranca"
-  },
-  {
-    "id": "LC195",
-    "valor_aluguel": 3500,
-    "valor_total": 4185,
-    "url_apartamento": "https://liderancaimobiliaria.com.br/imovel/apartamento-carvoeira-florianopolis-sc-3-quartos-92m2-LC195",
-    "bairro": "Carvoeira",
-    "tamanho": 92,
-    "quartos": 3,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "lideranca"
-  },
-  {
-    "id": "LC472",
-    "valor_aluguel": 4150,
-    "valor_total": 5076,
-    "url_apartamento": "https://liderancaimobiliaria.com.br/imovel/apartamento-itacorubi-florianopolis-sc-3-quartos-93.64m2-LC472",
-    "bairro": "Itacorubi",
-    "tamanho": 93,
-    "quartos": 3,
-    "banheiros": 2,
     "garagem": 1,
     "corretora": "lideranca"
   },
@@ -189,18 +177,6 @@
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1,
-    "corretora": "lideranca"
-  },
-  {
-    "id": "LC464",
-    "valor_aluguel": 4200,
-    "valor_total": 5130,
-    "url_apartamento": "https://liderancaimobiliaria.com.br/imovel/apartamento-pantanal-florianopolis-sc-2-quartos-74m2-LC464",
-    "bairro": "Pantanal",
-    "tamanho": 74,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 2,
     "corretora": "lideranca"
   },
   {

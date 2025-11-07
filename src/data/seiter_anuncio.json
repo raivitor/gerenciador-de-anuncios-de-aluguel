@@ -48,6 +48,30 @@
     "corretora": "seiter"
   },
   {
+    "id": "CA00669",
+    "bairro": "TRINDADE",
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 2,
+    "tamanho": 90,
+    "valor_aluguel": 4200,
+    "valor_total": 4277.39,
+    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/trindade/casa/77454086",
+    "corretora": "seiter"
+  },
+  {
+    "id": "AP03360",
+    "bairro": "AGRONÔMICA",
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "tamanho": 61,
+    "valor_aluguel": 3900,
+    "valor_total": 4825,
+    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/agronomica/apartamento/77224287",
+    "corretora": "seiter"
+  },
+  {
     "id": "AP02957",
     "bairro": "ITACORUBI",
     "quartos": 3,
@@ -105,18 +129,6 @@
     "valor_aluguel": 2500,
     "valor_total": 3102,
     "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/itacorubi/apartamento/70783487",
-    "corretora": "seiter"
-  },
-  {
-    "id": "AP00623",
-    "bairro": "ITACORUBI",
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "tamanho": 74,
-    "valor_aluguel": 3990,
-    "valor_total": 4841.51,
-    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/itacorubi/apartamento/34795152",
     "corretora": "seiter"
   }
 ]
