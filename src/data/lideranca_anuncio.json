@@ -1,5 +1,17 @@
 [
   {
+    "id": "LC94",
+    "valor_aluguel": 4100,
+    "valor_total": 4793.2,
+    "url_apartamento": "https://liderancaimobiliaria.com.br/imovel/apartamento-carvoeira-florianopolis-sc-4-quartos-80m2-LC94",
+    "bairro": "Carvoeira",
+    "tamanho": 80,
+    "quartos": 4,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "lideranca"
+  },
+  {
     "id": "L41",
     "valor_aluguel": 3800,
     "valor_total": 4372.05,
@@ -80,18 +92,6 @@
     "tamanho": 129,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1,
-    "corretora": "lideranca"
-  },
-  {
-    "id": "LC436",
-    "valor_aluguel": 3300,
-    "valor_total": 4064.22,
-    "url_apartamento": "https://liderancaimobiliaria.com.br/imovel/apartamento-trindade-florianopolis-sc-3-quartos-52m2-LC436",
-    "bairro": "Trindade",
-    "tamanho": 52,
-    "quartos": 3,
-    "banheiros": 1,
     "garagem": 1,
     "corretora": "lideranca"
   },
@@ -188,18 +188,6 @@
     "tamanho": 70,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 1,
-    "corretora": "lideranca"
-  },
-  {
-    "id": "LC94",
-    "valor_aluguel": 4100,
-    "valor_total": 4793.2,
-    "url_apartamento": "https://liderancaimobiliaria.com.br/imovel/apartamento-carvoeira-florianopolis-sc-4-quartos-80m2-LC94",
-    "bairro": "Carvoeira",
-    "tamanho": 80,
-    "quartos": 4,
-    "banheiros": 2,
     "garagem": 1,
     "corretora": "lideranca"
   },

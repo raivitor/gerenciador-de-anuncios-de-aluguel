@@ -5,15 +5,6 @@
   "6354": {
     "tag": "Não"
   },
-  "105219": {
-    "tag": ""
-  },
-  "1432187349": {
-    "tag": ""
-  },
-  "1436637777": {
-    "observacao": ""
-  },
   "olx_1436637777": {
     "observacao": "cozinha muito apertada",
     "tag": "Não"
@@ -197,9 +188,6 @@
     "observacao": "repetido",
     "nota": null
   },
-  "creditoReal_cr80889": {
-    "tag": ""
-  },
   "ibagy_130064": {
     "tag": "Não"
   },
@@ -263,9 +251,6 @@
   },
   "sanremo_SRAP4580": {
     "tag": "Não"
-  },
-  "sanremo_SRAP2244": {
-    "tag": ""
   },
   "gralha_28250": {
     "tag": "Não"
@@ -578,7 +563,6 @@
     "tag": "Talvez"
   },
   "ibagy_130248": {
-    "observacao": "",
     "tag": "Talvez"
   },
   "ibagy_129978": {
@@ -877,9 +861,6 @@
     "tag": "Não",
     "observacao": "Rua que só sobe"
   },
-  "": {
-    "tag": "Não"
-  },
   "A04866": {
     "tag": "Não"
   },
@@ -897,5 +878,8 @@
   },
   "olx_1449677604": {
     "tag": "Não"
+  },
+  "ibagy_113990": {
+    "tag": "Talvez"
   }
 }

@@ -72,18 +72,6 @@
     "garagem": 1
   },
   {
-    "id": "creditoReal_cr108234",
-    "valor_aluguel": 3450,
-    "valor_total": 4312,
-    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-corrego-grande-florianopolis-cod-cr108234",
-    "corretora": "creditoReal",
-    "bairro": "Córrego Grande",
-    "tamanho": 86,
-    "quartos": 3,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
     "id": "creditoReal_cr77734",
     "valor_aluguel": 3400,
     "valor_total": 4496,

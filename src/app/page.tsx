@@ -30,7 +30,7 @@ export default function Home() {
   const itemsPerPage = 10;
   const [filtros, setFiltros] = useState({
     bairro: '',
-    tamanho: 70,
+    tamanho: 60,
     quartos: '',
     banheiros: '',
     garagem: '',

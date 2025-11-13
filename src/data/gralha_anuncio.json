@@ -1,5 +1,17 @@
 [
   {
+    "id": "gralha_28436",
+    "valor_aluguel": 2900,
+    "valor_total": 3566,
+    "url_apartamento": "https://www.gralhaalugueis.com.br/imovel/aluguel+apartamento+2-quartos+pantanal+florianopolis+sc+73m2+rs2900/28436",
+    "bairro": "Pantanal",
+    "tamanho": 73,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "gralha"
+  },
+  {
     "id": "gralha_28439",
     "valor_aluguel": 3000,
     "valor_total": 3553,
@@ -7,18 +19,6 @@
     "bairro": "Trindade",
     "tamanho": 67,
     "quartos": 3,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "gralha"
-  },
-  {
-    "id": "gralha_28436",
-    "valor_aluguel": 3000,
-    "valor_total": 3666,
-    "url_apartamento": "https://www.gralhaalugueis.com.br/imovel/aluguel+apartamento+2-quartos+pantanal+florianopolis+sc+73m2+rs3000/28436",
-    "bairro": "Pantanal",
-    "tamanho": 73,
-    "quartos": 2,
     "banheiros": 1,
     "garagem": 1,
     "corretora": "gralha"
@@ -33,6 +33,18 @@
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,
+    "corretora": "gralha"
+  },
+  {
+    "id": "gralha_28388",
+    "valor_aluguel": 4200,
+    "valor_total": 5535,
+    "url_apartamento": "https://www.gralhaalugueis.com.br/imovel/aluguel+apartamento+2-quartos+itacorubi+florianopolis+sc+116,48m2+rs4200/28388",
+    "bairro": "Itacorubi",
+    "tamanho": 116.48,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 2,
     "corretora": "gralha"
   },
   {
