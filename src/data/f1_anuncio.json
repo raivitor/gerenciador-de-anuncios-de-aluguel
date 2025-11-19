@@ -84,18 +84,6 @@
     "corretora": "f1"
   },
   {
-    "id": "f1_10504",
-    "valor_aluguel": 3500,
-    "valor_total": 4238.37,
-    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-costa-del-mare-de-1-quarto-no-bairro-itacorubi-florianopolis-10504/",
-    "bairro": "Itacorubi",
-    "tamanho": 70,
-    "quartos": 1,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "f1"
-  },
-  {
     "id": "f1_1957670",
     "valor_aluguel": 3500,
     "valor_total": 4210,
@@ -105,6 +93,18 @@
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1,
+    "corretora": "f1"
+  },
+  {
+    "id": "f1_1958530",
+    "valor_aluguel": 3500,
+    "valor_total": 4942,
+    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-ilha-razzoli-de-2-quartos-no-bairro-trindade-florianopolis-1958530/",
+    "bairro": "Trindade",
+    "tamanho": 138,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 2,
     "corretora": "f1"
   }
 ]

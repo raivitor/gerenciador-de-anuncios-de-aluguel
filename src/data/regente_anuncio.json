@@ -1,8 +1,8 @@
 [
   {
     "id": "A04407",
-    "valor_aluguel": 3200,
-    "valor_total": 3694,
+    "valor_aluguel": 2900,
+    "valor_total": 3394,
     "url_apartamento": "https://regenteimoveis.com.br/imovel/A04407/excelente-apartamento-mobiliado-de-1-dormitorio-no-bairro-carvoeira-ao-lado-da-ufsc",
     "bairro": "Carvoeira",
     "tamanho": 68.84,
@@ -50,7 +50,7 @@
   {
     "id": "A04853",
     "valor_aluguel": 3890,
-    "valor_total": 10049,
+    "valor_total": 4637.3,
     "url_apartamento": "https://regenteimoveis.com.br/imovel/A04853/otimo-apartamento-mobiliado-de-2-dormitorios-no-bairro-corrego-grande",
     "bairro": "Córrego Grande",
     "tamanho": 103,
@@ -85,8 +85,8 @@
   },
   {
     "id": "A04102",
-    "valor_aluguel": 3600,
-    "valor_total": 4622,
+    "valor_aluguel": 3300,
+    "valor_total": 4322,
     "url_apartamento": "https://regenteimoveis.com.br/imovel/A04102/excelente-apartamento-com-2-dormitorios-no-bairro-trindade",
     "bairro": "Trindade",
     "tamanho": 100.54,
@@ -116,18 +116,6 @@
     "tamanho": 82.69,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1,
-    "corretora": "regente"
-  },
-  {
-    "id": "A02266",
-    "valor_aluguel": 3500,
-    "valor_total": 4385,
-    "url_apartamento": "https://regenteimoveis.com.br/imovel/A02266/excelente-apartamento-de-2-dormitorios-no-bairro-trindade",
-    "bairro": "Trindade",
-    "tamanho": 99.55,
-    "quartos": 2,
-    "banheiros": 3,
     "garagem": 1,
     "corretora": "regente"
   },
@@ -193,8 +181,8 @@
   },
   {
     "id": "A04286",
-    "valor_aluguel": 3400,
-    "valor_total": 4195,
+    "valor_aluguel": 2950,
+    "valor_total": 3745,
     "url_apartamento": "https://regenteimoveis.com.br/imovel/A04286/otimo-apartamento-de-2-dormitorios-no-bairro-corrego-grande",
     "bairro": "Córrego Grande",
     "tamanho": 78.05,
@@ -217,8 +205,8 @@
   },
   {
     "id": "A02267",
-    "valor_aluguel": 3400,
-    "valor_total": 4094,
+    "valor_aluguel": 3100,
+    "valor_total": 3794,
     "url_apartamento": "https://regenteimoveis.com.br/imovel/A02267/otimo-apartamento-de-3-dormitorios-no-bairro-trindade-ao-lado-da-ufsc",
     "bairro": "Carvoeira",
     "tamanho": 84.3,

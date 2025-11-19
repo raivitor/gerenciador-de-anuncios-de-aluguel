@@ -1,5 +1,41 @@
 [
   {
+    "id": "6587",
+    "valor_aluguel": 3250,
+    "valor_total": 4360,
+    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-corrego-grande-florianopolis-sc-2-quartos-65m2-6587",
+    "bairro": "Córrego Grande",
+    "tamanho": 65,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "realizar"
+  },
+  {
+    "id": "6581",
+    "valor_aluguel": 4000,
+    "valor_total": 5518,
+    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-trindade-florianopolis-sc-3-quartos-105m2-6581",
+    "bairro": "Trindade",
+    "tamanho": 105,
+    "quartos": 3,
+    "banheiros": 2,
+    "garagem": 2,
+    "corretora": "realizar"
+  },
+  {
+    "id": "6573",
+    "valor_aluguel": 4200,
+    "valor_total": 5510,
+    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-itacorubi-florianopolis-sc-2-quartos-116m2-6573",
+    "bairro": "Itacorubi",
+    "tamanho": 116,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "realizar"
+  },
+  {
     "id": "4027",
     "valor_aluguel": 2400,
     "valor_total": 3160,
@@ -9,30 +45,6 @@
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1,
-    "corretora": "realizar"
-  },
-  {
-    "id": "6566",
-    "valor_aluguel": 3400,
-    "valor_total": 4240,
-    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-trindade-florianopolis-sc-2-quartos-68m2-6566",
-    "bairro": "Trindade",
-    "tamanho": 68,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "realizar"
-  },
-  {
-    "id": "6565",
-    "valor_aluguel": 3300,
-    "valor_total": 4060,
-    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-trindade-florianopolis-sc-2-quartos-71m2-6565",
-    "bairro": "Trindade",
-    "tamanho": 71,
-    "quartos": 2,
-    "banheiros": 3,
-    "garagem": 2,
     "corretora": "realizar"
   },
   {
@@ -128,18 +140,6 @@
     "tamanho": 83,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1,
-    "corretora": "realizar"
-  },
-  {
-    "id": "6428",
-    "valor_aluguel": 3500,
-    "valor_total": 4220,
-    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-corrego-grande-florianopolis-sc-2-quartos-65m2-6428",
-    "bairro": "Córrego Grande",
-    "tamanho": 65,
-    "quartos": 2,
-    "banheiros": 1,
     "garagem": 1,
     "corretora": "realizar"
   }

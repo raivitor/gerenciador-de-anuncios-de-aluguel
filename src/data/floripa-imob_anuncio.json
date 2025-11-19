@@ -1,6 +1,42 @@
 [
   {
     "id": "",
+    "valor_aluguel": 3000,
+    "valor_total": 3720,
+    "url_apartamento": "https://floripaimobiliariasc.com.br/imovel/apartamento-costeira-do-pirajubae-florianopolis-sc-2-quartos-60m2-551",
+    "bairro": "Costeira do Pirajubaé",
+    "tamanho": 60,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "floripa-imob"
+  },
+  {
+    "id": "",
+    "valor_aluguel": 4100,
+    "valor_total": 4589,
+    "url_apartamento": "https://floripaimobiliariasc.com.br/imovel/apartamento-barreiros-sao-jose-sc-2-quartos-79m2-60",
+    "bairro": "Barreiros",
+    "tamanho": 79,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "floripa-imob"
+  },
+  {
+    "id": "",
+    "valor_aluguel": 3700,
+    "valor_total": 4490,
+    "url_apartamento": "https://floripaimobiliariasc.com.br/imovel/apartamento-trindade-florianopolis-sc-2-quartos-78m2-2",
+    "bairro": "Trindade",
+    "tamanho": 78,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "floripa-imob"
+  },
+  {
+    "id": "",
     "valor_aluguel": 4150,
     "valor_total": 5035,
     "url_apartamento": "https://floripaimobiliariasc.com.br/imovel/apartamento-itacorubi-florianopolis-sc-2-quartos-68m2-550",
@@ -30,18 +66,6 @@
     "url_apartamento": "https://floripaimobiliariasc.com.br/imovel/apartamento-carvoeira-florianopolis-sc-2-quartos-56m2-491",
     "bairro": "Carvoeira",
     "tamanho": 56,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "floripa-imob"
-  },
-  {
-    "id": "",
-    "valor_aluguel": 3000,
-    "valor_total": 3720,
-    "url_apartamento": "https://floripaimobiliariasc.com.br/imovel/apartamento-costeira-do-pirajubae-florianopolis-sc-2-quartos-60m2-551",
-    "bairro": "Costeira do Pirajubaé",
-    "tamanho": 60,
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1,
@@ -116,30 +140,6 @@
     "tamanho": 57,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1,
-    "corretora": "floripa-imob"
-  },
-  {
-    "id": "",
-    "valor_aluguel": 1300,
-    "valor_total": 1817,
-    "url_apartamento": "https://floripaimobiliariasc.com.br/imovel/apartamento-bela-vista-palhoca-sc-2-quartos-56m2-477",
-    "bairro": "Bela Vista",
-    "tamanho": 56,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "floripa-imob"
-  },
-  {
-    "id": "",
-    "valor_aluguel": 1300,
-    "valor_total": 1827,
-    "url_apartamento": "https://floripaimobiliariasc.com.br/imovel/apartamento-bela-vista-palhoca-sc-2-quartos-56m2-476",
-    "bairro": "Bela Vista",
-    "tamanho": 56,
-    "quartos": 2,
-    "banheiros": 1,
     "garagem": 1,
     "corretora": "floripa-imob"
   }

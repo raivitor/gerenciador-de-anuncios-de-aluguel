@@ -12,14 +12,14 @@
     "corretora": "duda"
   },
   {
-    "id": "duda_6645",
-    "valor_aluguel": 2700,
-    "valor_total": 3485,
-    "url_apartamento": "https://dudaimoveis.com.br/imovel/6645/apartamento-2-quartos-corrego-grande-florianopolis/",
-    "bairro": "Córrego Grande",
-    "tamanho": 65,
+    "id": "duda_6407",
+    "valor_aluguel": 2800,
+    "valor_total": 3410,
+    "url_apartamento": "https://dudaimoveis.com.br/imovel/6407/apartamento-2-quartos-trindade-florianopolis/",
+    "bairro": "Trindade",
+    "tamanho": 70,
     "quartos": 2,
-    "banheiros": 1,
+    "banheiros": 2,
     "garagem": 1,
     "corretora": "duda"
   },
@@ -32,30 +32,6 @@
     "tamanho": 74,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 1,
-    "corretora": "duda"
-  },
-  {
-    "id": "duda_20417",
-    "valor_aluguel": 2800,
-    "valor_total": 3460,
-    "url_apartamento": "https://dudaimoveis.com.br/imovel/20417/apartamento-2-quartos-trindade-florianopolis/",
-    "bairro": "Trindade",
-    "tamanho": 66,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "duda"
-  },
-  {
-    "id": "duda_6407",
-    "valor_aluguel": 2800,
-    "valor_total": 3410,
-    "url_apartamento": "https://dudaimoveis.com.br/imovel/6407/apartamento-2-quartos-trindade-florianopolis/",
-    "bairro": "Trindade",
-    "tamanho": 70,
-    "quartos": 2,
-    "banheiros": 2,
     "garagem": 1,
     "corretora": "duda"
   },
@@ -144,18 +120,6 @@
     "corretora": "duda"
   },
   {
-    "id": "duda_6201",
-    "valor_aluguel": 2800,
-    "valor_total": 3370,
-    "url_apartamento": "https://dudaimoveis.com.br/imovel/6201/apartamento-2-quartos-trindade-florianopolis/",
-    "bairro": "Trindade",
-    "tamanho": 60,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "duda"
-  },
-  {
     "id": "duda_51690",
     "valor_aluguel": 3100,
     "valor_total": 4247.8,
@@ -210,6 +174,18 @@
     "url_apartamento": "https://dudaimoveis.com.br/imovel/21217/apartamento-2-quartos-itacorubi-florianopolis/",
     "bairro": "Itacorubi",
     "tamanho": 72,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "duda"
+  },
+  {
+    "id": "duda_6020",
+    "valor_aluguel": 3400,
+    "valor_total": 4100,
+    "url_apartamento": "https://dudaimoveis.com.br/imovel/6020/apartamento-2-quartos-joao-paulo-florianopolis/",
+    "bairro": "João Paulo",
+    "tamanho": 65,
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,

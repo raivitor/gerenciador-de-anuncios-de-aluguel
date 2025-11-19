@@ -48,18 +48,6 @@
     "garagem": 1
   },
   {
-    "id": "creditoReal_cr85020",
-    "valor_aluguel": 3000,
-    "valor_total": 4296,
-    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-ingleses-do-rio-vermelho-florianopolis-cod-cr85020",
-    "corretora": "creditoReal",
-    "bairro": "Ingleses Do Rio Vermelho",
-    "tamanho": 100,
-    "quartos": 3,
-    "banheiros": 2,
-    "garagem": 1
-  },
-  {
     "id": "creditoReal_cr80389",
     "valor_aluguel": 3400,
     "valor_total": 4310,
