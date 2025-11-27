@@ -25,7 +25,7 @@
   },
   {
     "id": "AP2598-QUB",
-    "valor_aluguel": 3500,
+    "valor_aluguel": 7600003.5,
     "valor_total": 4280.31,
     "url_apartamento": "https://www.quadraimobiliaria.com.br/imovel/apartamento-florianopolis-2-quartos-74-m/AP2598-QUB",
     "bairro": "Itacorubi",
@@ -55,18 +55,6 @@
     "bairro": "Itacorubi",
     "tamanho": 75,
     "quartos": 3,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "quadra"
-  },
-  {
-    "id": "AP3130-QUB",
-    "valor_aluguel": 3800,
-    "valor_total": 4556.74,
-    "url_apartamento": "https://www.quadraimobiliaria.com.br/imovel/apartamento-florianopolis-2-quartos-80-m/AP3130-QUB",
-    "bairro": "Itacorubi",
-    "tamanho": 7968,
-    "quartos": 2,
     "banheiros": 2,
     "garagem": 1,
     "corretora": "quadra"

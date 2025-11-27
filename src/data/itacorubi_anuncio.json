@@ -1,20 +1,20 @@
 [
   {
-    "id": "ITA2529",
-    "valor_aluguel": 4200,
-    "valor_total": 4748.38,
-    "url_apartamento": "https://itacorubiimoveis.com.br/imovel/apartamento-itacorubi-florianopolis-sc-2-quartos-60.69m2-ITA2529",
-    "bairro": "Itacorubi",
-    "tamanho": 60,
-    "quartos": 2,
+    "id": "ITA2578",
+    "valor_aluguel": 3800,
+    "valor_total": 5133,
+    "url_apartamento": "https://itacorubiimoveis.com.br/imovel/apartamento-centro-florianopolis-sc-3-quartos-92m2-ITA2578",
+    "bairro": "Centro",
+    "tamanho": 92,
+    "quartos": 3,
     "banheiros": 2,
     "garagem": 1,
     "corretora": "itacorubi"
   },
   {
     "id": "ITA2543",
-    "valor_aluguel": 2700,
-    "valor_total": 3480,
+    "valor_aluguel": 2400,
+    "valor_total": 3180,
     "url_apartamento": "https://itacorubiimoveis.com.br/imovel/apartamento-carvoeira-florianopolis-sc-2-quartos-65m2-ITA2543",
     "bairro": "Carvoeira",
     "tamanho": 65,
@@ -24,26 +24,14 @@
     "corretora": "itacorubi"
   },
   {
-    "id": "ITA2500",
-    "valor_aluguel": 3350,
-    "valor_total": 3970,
-    "url_apartamento": "https://itacorubiimoveis.com.br/imovel/apartamento-carvoeira-florianopolis-sc-2-quartos-82m2-ITA2500",
-    "bairro": "Carvoeira",
-    "tamanho": 82,
+    "id": "ITA2569",
+    "valor_aluguel": 3130,
+    "valor_total": 4020,
+    "url_apartamento": "https://itacorubiimoveis.com.br/imovel/apartamento-trindade-florianopolis-sc-2-quartos-70m2-ITA2569",
+    "bairro": "Trindade",
+    "tamanho": 70,
     "quartos": 2,
-    "banheiros": 2,
-    "garagem": 2,
-    "corretora": "itacorubi"
-  },
-  {
-    "id": "ITA2491",
-    "valor_aluguel": 3960,
-    "valor_total": 5040,
-    "url_apartamento": "https://itacorubiimoveis.com.br/imovel/cobertura-itacorubi-florianopolis-sc-2-quartos-114.25m2-ITA2491",
-    "bairro": "Itacorubi",
-    "tamanho": 114,
-    "quartos": 2,
-    "banheiros": 4,
+    "banheiros": 1,
     "garagem": 1,
     "corretora": "itacorubi"
   },
@@ -57,18 +45,6 @@
     "quartos": 3,
     "banheiros": 3,
     "garagem": 1,
-    "corretora": "itacorubi"
-  },
-  {
-    "id": "2372",
-    "valor_aluguel": 3900,
-    "valor_total": 4877.990000000001,
-    "url_apartamento": "https://itacorubiimoveis.com.br/imovel/apartamento-costeira-do-pirajubae-florianopolis-sc-2-quartos-64.98m2-2372",
-    "bairro": "Costeira do Pirajubae",
-    "tamanho": 64,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 2,
     "corretora": "itacorubi"
   }
 ]

@@ -1,11 +1,23 @@
 [
   {
-    "id": "A04407",
-    "valor_aluguel": 2900,
-    "valor_total": 3394,
-    "url_apartamento": "https://regenteimoveis.com.br/imovel/A04407/excelente-apartamento-mobiliado-de-1-dormitorio-no-bairro-carvoeira-ao-lado-da-ufsc",
+    "id": "A04126",
+    "valor_aluguel": 2500,
+    "valor_total": 3204,
+    "url_apartamento": "https://regenteimoveis.com.br/imovel/A04126/excelente-apartamento-de-2-dormitorios-no-bairro-itacorubi",
+    "bairro": "Itacorubi",
+    "tamanho": 52.62,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "regente"
+  },
+  {
+    "id": "A04865",
+    "valor_aluguel": 3100,
+    "valor_total": 3725,
+    "url_apartamento": "https://regenteimoveis.com.br/imovel/A04865/otimo-apartamento-de-1-dormitorio-no-bairro-carvoeira-perto-da-ufsc",
     "bairro": "Carvoeira",
-    "tamanho": 68.84,
+    "tamanho": 51.38,
     "quartos": 1,
     "banheiros": 1,
     "garagem": 1,
@@ -44,18 +56,6 @@
     "tamanho": 109,
     "quartos": 3,
     "banheiros": 2,
-    "garagem": 1,
-    "corretora": "regente"
-  },
-  {
-    "id": "A04853",
-    "valor_aluguel": 3890,
-    "valor_total": 4637.3,
-    "url_apartamento": "https://regenteimoveis.com.br/imovel/A04853/otimo-apartamento-mobiliado-de-2-dormitorios-no-bairro-corrego-grande",
-    "bairro": "Córrego Grande",
-    "tamanho": 103,
-    "quartos": 2,
-    "banheiros": 3,
     "garagem": 1,
     "corretora": "regente"
   },
@@ -152,18 +152,6 @@
     "tamanho": 89.18,
     "quartos": 2,
     "banheiros": 3,
-    "garagem": 1,
-    "corretora": "regente"
-  },
-  {
-    "id": "A04753",
-    "valor_aluguel": 2990,
-    "valor_total": 3810,
-    "url_apartamento": "https://regenteimoveis.com.br/imovel/A04753/otimo-apartamento-mobiliado-de-2-dormitorios-no-bairro-trindade",
-    "bairro": "Trindade",
-    "tamanho": 82.69,
-    "quartos": 2,
-    "banheiros": 2,
     "garagem": 1,
     "corretora": "regente"
   },

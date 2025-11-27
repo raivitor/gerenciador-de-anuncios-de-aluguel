@@ -1,5 +1,53 @@
 [
   {
+    "id": "6507",
+    "valor_aluguel": 3300,
+    "valor_total": 4025,
+    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/studio-carvoeira-florianopolis-sc-1-quartos-71m2-6507",
+    "bairro": "Carvoeira",
+    "tamanho": 71,
+    "quartos": 1,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "realizar"
+  },
+  {
+    "id": "6641",
+    "valor_aluguel": 3130,
+    "valor_total": 3980,
+    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-trindade-florianopolis-sc-2-quartos-70m2-6641",
+    "bairro": "Trindade",
+    "tamanho": 70,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "realizar"
+  },
+  {
+    "id": "6629",
+    "valor_aluguel": 3800,
+    "valor_total": 4940,
+    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-trindade-florianopolis-sc-2-quartos-68m2-6629",
+    "bairro": "Trindade",
+    "tamanho": 68,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 2,
+    "corretora": "realizar"
+  },
+  {
+    "id": "6599",
+    "valor_aluguel": 3500,
+    "valor_total": 4255,
+    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-itacorubi-florianopolis-sc-2-quartos-65m2-6599",
+    "bairro": "Itacorubi",
+    "tamanho": 65,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 2,
+    "corretora": "realizar"
+  },
+  {
     "id": "6587",
     "valor_aluguel": 3250,
     "valor_total": 4360,
@@ -8,30 +56,6 @@
     "tamanho": 65,
     "quartos": 2,
     "banheiros": 1,
-    "garagem": 1,
-    "corretora": "realizar"
-  },
-  {
-    "id": "6581",
-    "valor_aluguel": 4000,
-    "valor_total": 5518,
-    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-trindade-florianopolis-sc-3-quartos-105m2-6581",
-    "bairro": "Trindade",
-    "tamanho": 105,
-    "quartos": 3,
-    "banheiros": 2,
-    "garagem": 2,
-    "corretora": "realizar"
-  },
-  {
-    "id": "6573",
-    "valor_aluguel": 4200,
-    "valor_total": 5510,
-    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-itacorubi-florianopolis-sc-2-quartos-116m2-6573",
-    "bairro": "Itacorubi",
-    "tamanho": 116,
-    "quartos": 2,
-    "banheiros": 2,
     "garagem": 1,
     "corretora": "realizar"
   },
@@ -69,18 +93,6 @@
     "quartos": 2,
     "banheiros": 1,
     "garagem": 2,
-    "corretora": "realizar"
-  },
-  {
-    "id": "6507",
-    "valor_aluguel": 3300,
-    "valor_total": 4025,
-    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/studio-carvoeira-florianopolis-sc-1-quartos-71m2-6507",
-    "bairro": "Carvoeira",
-    "tamanho": 71,
-    "quartos": 1,
-    "banheiros": 1,
-    "garagem": 1,
     "corretora": "realizar"
   },
   {
@@ -126,18 +138,6 @@
     "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-carvoeira-florianopolis-sc-2-quartos-60m2-6478",
     "bairro": "Carvoeira",
     "tamanho": 60,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "realizar"
-  },
-  {
-    "id": "6305",
-    "valor_aluguel": 3800,
-    "valor_total": 4550,
-    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-corrego-grande-florianopolis-sc-2-quartos-83m2-6305",
-    "bairro": "Córrego Grande",
-    "tamanho": 83,
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,

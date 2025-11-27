@@ -25,8 +25,8 @@ export const filters: CreditoRealFilters = {
     'Trindade',
   ],
   cityState: 'Florianópolis_SC',
-  finalValue: 4000,
-  areaInitialValue: 60,
+  finalValue: DEFAULT_MAX_VALUE,
+  areaInitialValue: DEFAULT_MIN_SIZE,
   parking: 1,
 };
 
