@@ -2,6 +2,9 @@
   "2372": {
     "tag": "Não"
   },
+  "4027": {
+    "tag": "Talvez"
+  },
   "6354": {
     "tag": "Não"
   },
@@ -893,5 +896,89 @@
   },
   "duda_36571": {
     "tag": "Agendar"
+  },
+  "ibagy_117894": {
+    "tag": "Não"
+  },
+  "AP1465-QUB": {
+    "tag": "Talvez"
+  },
+  "ITA2543": {
+    "tag": "Talvez"
+  },
+  "A04126": {
+    "tag": "Agendar"
+  },
+  "creditoReal_cr97951": {
+    "tag": "Não"
+  },
+  "creditoReal_cr105282": {
+    "tag": "Não"
+  },
+  "creditoReal_cr24907": {
+    "tag": "Não"
+  },
+  "creditoReal_cr106796": {
+    "tag": "Não"
+  },
+  "creditoReal_cr106797": {
+    "tag": "Não"
+  },
+  "creditoReal_cr86055": {
+    "tag": "Não"
+  },
+  "creditoReal_cr115814": {
+    "tag": "Não"
+  },
+  "creditoReal_cr107746": {
+    "tag": "Não"
+  },
+  "creditoReal_cr108717": {
+    "tag": "Não"
+  },
+  "creditoReal_cr966": {
+    "tag": "Não"
+  },
+  "creditoReal_cr86003": {
+    "tag": "Não"
+  },
+  "creditoReal_cr85999": {
+    "tag": "Não"
+  },
+  "creditoReal_cr104069": {
+    "tag": "Não"
+  },
+  "creditoReal_cr104068": {
+    "tag": "Não"
+  },
+  "creditoReal_cr104067": {
+    "tag": "Não"
+  },
+  "creditoReal_cr103572": {
+    "tag": "Não"
+  },
+  "creditoReal_cr104066": {
+    "tag": "Não"
+  },
+  "olx_1457347560": {
+    "tag": "Não"
+  },
+  "ibagy_87712": {
+    "tag": "Agendar"
+  },
+  "AP2659-QUB": {
+    "tag": "Agendar"
+  },
+  "olx_1449115390": {
+    "tag": "Talvez"
+  },
+  "olx_1457984676": {
+    "tag": "Talvez"
+  },
+  "olx_1440490713": {
+    "tag": "Agendar"
+  },
+  "olx_1448996383": {
+    "tag": "Não"
   }
 }

@@ -1,5 +1,17 @@
 [
   {
+    "id": "AP2659-QUB",
+    "valor_aluguel": 2250,
+    "valor_total": 2981.67,
+    "url_apartamento": "https://www.quadraimobiliaria.com.br/imovel/apartamento-florianopolis-2-quartos-58-m/AP2659-QUB",
+    "bairro": "Carvoeira",
+    "tamanho": 58,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "quadra"
+  },
+  {
     "id": "AP1465-QUB",
     "valor_aluguel": 2600,
     "valor_total": 3107.96,
@@ -8,6 +20,18 @@
     "tamanho": 64,
     "quartos": 2,
     "banheiros": 1,
+    "garagem": 1,
+    "corretora": "quadra"
+  },
+  {
+    "id": "AP2598-QUB",
+    "valor_aluguel": 7600003.4,
+    "valor_total": 4180.31,
+    "url_apartamento": "https://www.quadraimobiliaria.com.br/imovel/apartamento-florianopolis-2-quartos-74-m/AP2598-QUB",
+    "bairro": "Itacorubi",
+    "tamanho": 74,
+    "quartos": 2,
+    "banheiros": 2,
     "garagem": 1,
     "corretora": "quadra"
   },
@@ -24,25 +48,13 @@
     "corretora": "quadra"
   },
   {
-    "id": "AP2598-QUB",
-    "valor_aluguel": 7600003.5,
-    "valor_total": 4280.31,
-    "url_apartamento": "https://www.quadraimobiliaria.com.br/imovel/apartamento-florianopolis-2-quartos-74-m/AP2598-QUB",
-    "bairro": "Itacorubi",
-    "tamanho": 74,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "quadra"
-  },
-  {
     "id": "AP3134-QUB",
     "valor_aluguel": 3500,
     "valor_total": 3530.63,
-    "url_apartamento": "https://www.quadraimobiliaria.com.br/imovel/apartamento-florianopolis-2-quartos-70-m/AP3134-QUB",
+    "url_apartamento": "https://www.quadraimobiliaria.com.br/imovel/apartamento-florianopolis-1-quarto-70-m/AP3134-QUB",
     "bairro": "Córrego Grande",
     "tamanho": 70,
-    "quartos": 2,
+    "quartos": 0,
     "banheiros": 1,
     "garagem": 1,
     "corretora": "quadra"

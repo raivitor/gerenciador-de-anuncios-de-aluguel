@@ -1,5 +1,17 @@
 [
   {
+    "id": "AP03535",
+    "bairro": "CARVOEIRA",
+    "quartos": 4,
+    "banheiros": 2,
+    "garagem": 1,
+    "tamanho": 91,
+    "valor_aluguel": 3350,
+    "valor_total": 4295,
+    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/carvoeira/apartamento/77758387",
+    "corretora": "seiter"
+  },
+  {
     "id": "AP03526",
     "bairro": "ITACORUBI",
     "quartos": 2,
@@ -36,51 +48,15 @@
     "corretora": "seiter"
   },
   {
-    "id": "AP02894",
+    "id": "AP02703",
     "bairro": "ITACORUBI",
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,
-    "tamanho": 75,
-    "valor_aluguel": 3600,
-    "valor_total": 4450,
-    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/itacorubi/apartamento/74536385",
-    "corretora": "seiter"
-  },
-  {
-    "id": "AP02673",
-    "bairro": "ITACORUBI",
-    "quartos": 2,
-    "banheiros": 0,
-    "garagem": 1,
-    "tamanho": 66,
-    "valor_aluguel": 3800,
-    "valor_total": 4650,
-    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/itacorubi/apartamento/73915976",
-    "corretora": "seiter"
-  },
-  {
-    "id": "AP02425",
-    "bairro": "CÓRREGO GRANDE",
-    "quartos": 3,
-    "banheiros": 2,
-    "garagem": 1,
-    "tamanho": 85,
-    "valor_aluguel": 3250,
-    "valor_total": 4100,
-    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/corrego-grande/apartamento/73411180",
-    "corretora": "seiter"
-  },
-  {
-    "id": "AP01855",
-    "bairro": "ITACORUBI",
-    "quartos": 2,
-    "banheiros": 0,
-    "garagem": 1,
-    "tamanho": 73,
-    "valor_aluguel": 2850,
-    "valor_total": 3630,
-    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/itacorubi/apartamento/71511589",
+    "tamanho": 74,
+    "valor_aluguel": 3100,
+    "valor_total": 3939.09,
+    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/itacorubi/apartamento/74002012",
     "corretora": "seiter"
   },
   {
