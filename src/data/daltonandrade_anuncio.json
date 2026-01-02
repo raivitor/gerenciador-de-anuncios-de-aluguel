@@ -1,14 +1,109 @@
 [
   {
-    "id": "daltonandrade_9717",
-    "valor_aluguel": 2500,
-    "valor_total": 3090,
-    "url_apartamento": "https://daltonandrade.com.br/imovel/9717/apartamento-2-quartos-itacorubi-florianopolis/",
+    "id": "daltonandrade_7205",
+    "valor_aluguel": 3100,
+    "valor_total": 3761,
+    "url_apartamento": "https://daltonandrade.com.br/imovel/7205/apartamento-2-quartos-universidade-florianopolis/",
     "bairro": "",
     "tamanho": 60,
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1,
+    "corretora": "daltonandrade"
+  },
+  {
+    "id": "daltonandrade_7143",
+    "valor_aluguel": 3000,
+    "valor_total": 3845,
+    "url_apartamento": "https://daltonandrade.com.br/imovel/7143/apartamento-3-quartos-centro-florianopolis/",
+    "bairro": "",
+    "tamanho": 64,
+    "quartos": 3,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "daltonandrade"
+  },
+  {
+    "id": "daltonandrade_7161",
+    "valor_aluguel": 3250,
+    "valor_total": 3860,
+    "url_apartamento": "https://daltonandrade.com.br/imovel/7161/apartamento-2-quartos-itacorubi-florianopolis/",
+    "bairro": "",
+    "tamanho": 68,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "daltonandrade"
+  },
+  {
+    "id": "daltonandrade_9666",
+    "valor_aluguel": 3100,
+    "valor_total": 4025,
+    "url_apartamento": "https://daltonandrade.com.br/imovel/9666/apartamento-2-quartos-trindade-florianopolis/",
+    "bairro": "",
+    "tamanho": 80,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "daltonandrade"
+  },
+  {
+    "id": "daltonandrade_7640",
+    "valor_aluguel": 3200,
+    "valor_total": 4276.3,
+    "url_apartamento": "https://daltonandrade.com.br/imovel/7640/apartamento-2-quartos-trindade-florianopolis/",
+    "bairro": "",
+    "tamanho": 71,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "daltonandrade"
+  },
+  {
+    "id": "daltonandrade_7182",
+    "valor_aluguel": 3300,
+    "valor_total": 4530,
+    "url_apartamento": "https://daltonandrade.com.br/imovel/7182/apartamento-2-quartos-centro-florianopolis/",
+    "bairro": "",
+    "tamanho": 90,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "daltonandrade"
+  },
+  {
+    "id": "daltonandrade_6613",
+    "valor_aluguel": 3800,
+    "valor_total": 4800,
+    "url_apartamento": "https://daltonandrade.com.br/imovel/6613/apartamento-2-quartos-corrego-grande-florianopolis/",
+    "bairro": "",
+    "tamanho": 73,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "daltonandrade"
+  },
+  {
+    "id": "daltonandrade_7250",
+    "valor_aluguel": 3800,
+    "valor_total": 5015,
+    "url_apartamento": "https://daltonandrade.com.br/imovel/7250/apartamento-3-quartos-trindade-florianopolis/",
+    "bairro": "",
+    "tamanho": 87,
+    "quartos": 3,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "daltonandrade"
+  },
+  {
+    "id": "daltonandrade_7485",
+    "valor_aluguel": 3500,
+    "valor_total": 5932,
+    "url_apartamento": "https://daltonandrade.com.br/imovel/7485/apartamento-2-quartos-trindade-florianopolis/",
+    "bairro": "",
+    "tamanho": 138,
+    "quartos": 2,
+    "banheiros": 2,
     "corretora": "daltonandrade"
   }
 ]
