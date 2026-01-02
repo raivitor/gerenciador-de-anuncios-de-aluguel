@@ -3,20 +3,23 @@ import type { Page } from 'puppeteer';
 import { PuppeteerCrawler } from '@/crawlers/core/puppeteer-crawler';
 import type { Apartamento } from '@/crawlers/core/types';
 
+import { encodeFilters, filters } from './filter';
+
 export class DudaCrawler extends PuppeteerCrawler {
   constructor() {
     super('duda');
   }
 
-  baseURL = `https://dudaimoveis.com.br/aluguel/apartamento/florianopolis/monte-verde/com-vaga/?categoriagrupo=Residencial&finalidade=aluguel&tipo_residencial%5B%5D=apartamento&cidadebairro%5B%5D=florianopolis%2C%20trindade&cidadebairro%5B%5D=florianopolis%2C%20joao-paulo&cidadebairro%5B%5D=florianopolis%2C%20itacorubi&cidadebairro%5B%5D=florianopolis%2C%20carvoeira&cidadebairro%5B%5D=florianopolis%2C%20corrego-grande&cidadebairro%5B%5D=florianopolis%2C%20pantanal&cidadebairro%5B%5D=florianopolis%2C%20agronomica&cidadebairro%5B%5D=florianopolis%2C%20monte-verde&vagas%5B%5D=1&valorvenda=0%2C1099999&valorlocacao=0%2C${this.maxValue}&area=${this.minSize}%2C509&codigo=&ordenar=exclusivosDesc&pagina=1`;
+  baseURL =
+    'https://dudaimoveis.com.br/aluguel/apartamento/florianopolis/2-3-dormitorios/com-vaga/';
+
   protected buildPageUrl(pageNumber: number): string {
-    const url = new URL(this.baseURL);
-    url.searchParams.set('pagina', pageNumber.toString());
-    return url.toString();
+    return `${this.baseURL}?${encodeFilters(filters)}&pagina=${pageNumber}`;
   }
 
   protected async navigateToListingsPage(page: Page, pageNumber: number): Promise<void> {
     const url = this.buildPageUrl(pageNumber);
+    console.log(url);
     await page.goto(url, { waitUntil: 'networkidle2', timeout: 90_000 });
     await page.waitForSelector('.imovel-box-single', { timeout: 60_000 }).catch(() => null);
   }
@@ -80,9 +83,9 @@ export class DudaCrawler extends PuppeteerCrawler {
 
           return {
             id: urlLink.split('imovel/')[1]?.split('/')?.[0] ?? '',
-            valor_aluguel: aluguelRaw || '0',
-            condominio: condominioRaw || '0',
-            iptuRaw: this.parseFloat(iptuRaw) > 500 ? (this.parseFloat(iptuRaw) / 12) : this.parseFloat(iptuRaw) || 0,
+            valor_aluguel: aluguelRaw,
+            condominio: condominioRaw,
+            iptu: iptuRaw,
             url_apartamento: urlLink || '',
             bairro: bairro,
             tamanho: properties.privat,
@@ -103,13 +106,16 @@ export class DudaCrawler extends PuppeteerCrawler {
 
       const listaApto = rawListaApto.map(apto => {
         const valor_aluguel = this.parseFloat(apto.valor_aluguel);
-        const valor_total =
-          this.parseFloat(apto.condominio) + apto.iptuRaw + valor_aluguel;
+        const condominio = this.parseFloat(apto.condominio);
+        let iptu = this.parseFloat(apto.iptu);
+
+        // Se o IPTU for muito alto, provavelmente é o valor anual
+        if (iptu > 500) iptu = iptu / 12;
 
         return {
           id: `${this.name}_${String(apto.id)}`,
           valor_aluguel,
-          valor_total,
+          valor_total: valor_aluguel + condominio + iptu,
           url_apartamento: apto.url_apartamento,
           bairro: apto.bairro,
           tamanho: apto.tamanho,

@@ -18,9 +18,9 @@ import itacorubiCrawler from './providers/itacorubi';
 
 export const crawlers: BaseCrawler[] = [
   // creditoRealCrawler,
-  daltonCrawler,
+  // daltonCrawler,
   // dudaCrawler,
-  // f1Crawler,
+  f1Crawler,
   // floripaImobCrawler,
   // gralhaCrawler,
   // olxCrawler,

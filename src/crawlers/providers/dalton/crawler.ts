@@ -84,8 +84,8 @@ export class DaltonAndradeCrawler extends PuppeteerCrawler {
 
           return {
             id: urlLink.split('imovel/')[1]?.split('/')?.[0] ?? '',
-            valor_aluguel: aluguelRaw || '0',
-            valor_total: totalRaw || aluguelRaw || '0',
+            valor_aluguel: aluguelRaw,
+            valor_total: totalRaw,
             url_apartamento: urlLink || '',
             bairro: bairro,
             tamanho: properties.privat,
