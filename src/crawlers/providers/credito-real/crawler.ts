@@ -27,7 +27,6 @@ export class CreditoRealCrawler extends BaseCrawler {
       if (page === 1) {
         const totalText = $('h1.sc-8c367b3a-6.dowwpi').text().trim();
         totalApartamentos = this.toNumber(totalText);
-        console.log(`creditoReal Total apartments found: ${totalApartamentos}`);
       }
 
       const pageItems: Apartamento[] = $('#teste .bRuoBA a')
