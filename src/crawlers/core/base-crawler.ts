@@ -1,5 +1,6 @@
 import { writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
+import type { Cheerio } from 'cheerio';
 
 import type { Apartamento } from './types';
 
@@ -40,6 +41,13 @@ export abstract class BaseCrawler {
       .replace(',', '.');
     return Number.parseFloat(cleaned) || 0;
   }
+
+  protected toNumber = (text: string): number => {
+    const n = parseInt(text.replace(/[^\d]/g, ''), 10);
+    return Number.isNaN(n) ? 0 : n;
+  };
+
+  protected getTextNumber = ($el: Cheerio<any>): number => this.toNumber($el.text().trim());
 
   protected abstract scrape(): Promise<Apartamento[]>;
 

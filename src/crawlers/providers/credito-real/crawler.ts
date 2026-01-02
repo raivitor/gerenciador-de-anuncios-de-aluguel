@@ -1,47 +1,62 @@
 import * as cheerio from 'cheerio';
 import axios from 'axios';
-import type { CheerioAPI, Cheerio } from 'cheerio';
+import type { CheerioAPI } from 'cheerio';
 
 import { BaseCrawler } from '@/crawlers/core/base-crawler';
 import type { Apartamento } from '@/crawlers/core/types';
 
 import { encodeFilters, filters } from './filters';
 
-const toNumber = (text: string): number => {
-  const n = parseInt(text.replace(/[^\d]/g, ''), 10);
-  return Number.isNaN(n) ? 0 : n;
-};
-
-const getTextNumber = ($el: Cheerio<any>): number => toNumber($el.text().trim());
-
 export class CreditoRealCrawler extends BaseCrawler {
-  baseURL = 'https://www.creditoreal.com.br/alugueis/residencial';
+  baseURL = 'https://www.creditoreal.com.br/alugueis/florianopolis-sc/apartamento-residencial';
 
   constructor() {
     super('creditoReal');
   }
 
   protected async scrape(): Promise<Apartamento[]> {
-    const url = `${this.baseURL}?filters=${encodeFilters(filters)}&orderBy=2`;
+    let page = 1;
+    let totalApartamentos = 0;
+    const listAlugueis: Apartamento[] = [];
 
-    const { data: html } = await axios.get<string>(url);
-    const $: CheerioAPI = cheerio.load(html);
+    while (true) {
+      const url = `${this.baseURL}?${encodeFilters(filters)}&orderBy=2&page=${page}`;
+      const { data: html } = await axios.get<string>(url);
+      const $: CheerioAPI = cheerio.load(html);
 
-    const listAlugueis: Apartamento[] = $('#teste .bRuoBA a')
-      .map((_, el) => {
-        const $el = $(el);
-        const href = $el.attr('href') ?? '';
-        const [, idFromHref = ''] = href.split('-cod-');
+      if (page === 1) {
+        const totalText = $('h1.sc-8c367b3a-6.dowwpi').text().trim();
+        totalApartamentos = this.toNumber(totalText);
+        console.log(`creditoReal Total apartments found: ${totalApartamentos}`);
+      }
 
-        return {
-          id: `${this.name}_${String(idFromHref)}`,
-          valor_aluguel: getTextNumber($el.find('section > div > div > p[type="text.body"]')),
-          valor_total: getTextNumber($el.find('section > div > div > label')),
-          url_apartamento: `https://www.creditoreal.com.br${href}`,
-          corretora: this.name,
-        } satisfies Apartamento;
-      })
-      .get();
+      const pageItems: Apartamento[] = $('#teste .bRuoBA a')
+        .map((_, el) => {
+          const $el = $(el);
+          const href = $el.attr('href') ?? '';
+          const [, idFromHref = ''] = href.split('-cod-');
+
+          return {
+            id: `${this.name}_${String(idFromHref)}`,
+            valor_aluguel: this.getTextNumber(
+              $el.find('section > div > div > p[type="text.body"]')
+            ),
+            valor_total: this.getTextNumber($el.find('section > div > div > label')),
+            url_apartamento: href.startsWith('http')
+              ? href
+              : `https://www.creditoreal.com.br${href}`,
+            corretora: this.name,
+          } satisfies Apartamento;
+        })
+        .get();
+
+      listAlugueis.push(...pageItems);
+
+      if (listAlugueis.length >= totalApartamentos || pageItems.length === 0) {
+        break;
+      }
+      page++;
+    }
 
     for (const apartamento of listAlugueis) {
       const { data: html } = await axios.get<string>(apartamento.url_apartamento);
@@ -56,10 +71,10 @@ export class CreditoRealCrawler extends BaseCrawler {
         .get();
 
       infoList.forEach((info: string) => {
-        if (info.includes('m²')) apartamento.tamanho = toNumber(info);
-        else if (info.includes('quarto')) apartamento.quartos = toNumber(info);
-        else if (info.includes('banheiro')) apartamento.banheiros = toNumber(info);
-        else if (info.includes('vaga')) apartamento.garagem = toNumber(info);
+        if (info.includes('m²')) apartamento.tamanho = this.toNumber(info);
+        else if (info.includes('quarto')) apartamento.quartos = this.toNumber(info);
+        else if (info.includes('banheiro')) apartamento.banheiros = this.toNumber(info);
+        else if (info.includes('vaga')) apartamento.garagem = this.toNumber(info);
       });
     }
 
