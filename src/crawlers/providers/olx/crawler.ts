@@ -1,23 +1,33 @@
-import type { Page } from 'puppeteer';
+import type { Page, LaunchOptions } from 'puppeteer';
 
 import { PuppeteerCrawler } from '@/crawlers/core/puppeteer-crawler';
 import type { Apartamento } from '@/crawlers/core/types';
+
+import { encodeFilters, filters } from './filter';
 
 export class OlxCrawler extends PuppeteerCrawler {
   constructor() {
     super('olx');
   }
 
-  baseURL = `https://www.olx.com.br/imoveis/aluguel/apartamentos/estado-sc/florianopolis-e-regiao/leste?pe=${this.maxValue}&gsp=1&gsp=2&ros=3&ros=4`;
+  protected getLaunchOptions(): LaunchOptions {
+    const options = super.getLaunchOptions();
+    return {
+      ...options,
+      args: [...(options.args || []), '--ignore-certificate-errors'],
+    };
+  }
+
+  baseURL =
+    'https://www.olx.com.br/imoveis/aluguel/apartamentos/estado-sc/florianopolis-e-regiao/leste';
 
   protected buildPageUrl(pageNumber: number): string {
-    const url = new URL(this.baseURL);
-    url.searchParams.set('o', pageNumber.toString());
-    return url.toString();
+    return `${this.baseURL}?${encodeFilters(filters)}&o=${pageNumber}`;
   }
 
   protected async navigateToListingsPage(page: Page, pageNumber: number): Promise<void> {
     const url = this.buildPageUrl(pageNumber);
+    console.log(`Navigating to OLX page: ${url}`);
     await page.goto(url, { waitUntil: 'networkidle2', timeout: 120_000 });
     await page.waitForSelector('h1.olx-text--bold', { timeout: 60_000 }).catch(() => null);
   }
@@ -36,11 +46,12 @@ export class OlxCrawler extends PuppeteerCrawler {
       await this.navigateToListingsPage(page, currentPage);
 
       const { rawListaApto, totalBusca } = await page.evaluate(() => {
-        const totalResultados =
-          document
-            .querySelector<HTMLElement>('text-neutral-110')
-            ?.innerText.split(' ')
-            .slice(-2, -1)[0] || '0';
+        const totalElement = document.querySelector('.text-neutral-110');
+        const totalText = totalElement?.textContent || '';
+        // Extrai o número que vem depois de "de" (ex: "1 - 50 de 209 resultados")
+        const match = totalText.match(/de\s+(\d+)/i);
+        const totalResultados = match ? match[1] : '0';
+
         const json = document.querySelector<HTMLElement>('#__NEXT_DATA__')?.innerText;
         const aptoDados = json ? JSON.parse(json).props.pageProps.ads : [];
         const rawListaApto = aptoDados.map((item: any) => ({
@@ -57,7 +68,10 @@ export class OlxCrawler extends PuppeteerCrawler {
       });
 
       if (!rawListaApto.length) break;
-      if (totalBusca > 0) totalItems = totalBusca;
+      if (totalBusca > 0 && totalItems === 0) {
+        totalItems = totalBusca;
+        console.log(`[OLX] Total de anúncios encontrados: ${totalItems}`);
+      }
 
       const listaApto = rawListaApto.map((apto: any) => {
         const condominio = this.parseFloat(this.getValueByKey(apto.properties, 'condominio'));
