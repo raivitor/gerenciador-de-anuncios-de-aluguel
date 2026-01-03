@@ -1,17 +1,5 @@
 [
   {
-    "id": "lideranca_LC540",
-    "valor_aluguel": 3500,
-    "valor_total": 4197,
-    "url_apartamento": "https://liderancaimobiliaria.com.br/imovel/apartamento-trindade-florianopolis-sc-1-quartos-16.24m2-LC540",
-    "bairro": "Trindade",
-    "tamanho": 16,
-    "quartos": 1,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "lideranca"
-  },
-  {
     "id": "lideranca_LC538",
     "valor_aluguel": 3300,
     "valor_total": 3825.42,

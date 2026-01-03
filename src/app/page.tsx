@@ -30,7 +30,7 @@ export default function Home() {
   const itemsPerPage = 10;
   const [filtros, setFiltros] = useState({
     bairro: '',
-    tamanho: 60,
+    tamanho: 30,
     quartos: '',
     banheiros: '',
     garagem: '',
@@ -128,7 +128,7 @@ export default function Home() {
   if (filtros.banheiros) url.searchParams.set('banheiros', filtros.banheiros);
   if (filtros.garagem) url.searchParams.set('garagem', filtros.garagem);
   if (filtros.corretora) url.searchParams.set('corretora', filtros.corretora);
-  if (filtros.tamanho > 70) url.searchParams.set('tamanho', filtros.tamanho.toString());
+  if (filtros.tamanho > 30) url.searchParams.set('tamanho', filtros.tamanho.toString());
   if (filtros.tag) url.searchParams.set('tag', filtros.tag);
   if (filtros.nota) url.searchParams.set('nota', filtros.nota);
   if (ocultarNao) url.searchParams.set('ocultarNao', 'true');
@@ -207,7 +207,7 @@ export default function Home() {
                 <Slider
                   value={filtros.tamanho}
                   onChange={(_, value) => setFiltros(f => ({ ...f, tamanho: value as number }))}
-                  min={70}
+                  min={30}
                   max={tamanhoMaximo}
                   step={5}
                   valueLabelDisplay="auto"

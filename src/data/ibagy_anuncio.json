@@ -226,5 +226,17 @@
     "banheiros": 1,
     "garagem": 1,
     "corretora": "ibagy"
+  },
+  {
+    "id": "ibagy_123880",
+    "valor_aluguel": 2890,
+    "valor_total": 3626.12,
+    "url_apartamento": "https://ibagy.com.br/imovel/123880/apartamento-2-quartos-ilha-dos-a%C3%A7ores-itacorubi-florianopolis/",
+    "bairro": "Itacorubi",
+    "tamanho": 46,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "ibagy"
   }
 ]
