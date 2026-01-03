@@ -3,21 +3,22 @@ import type { Page } from 'puppeteer';
 import { PuppeteerCrawler } from '@/crawlers/core/puppeteer-crawler';
 import type { Apartamento } from '@/crawlers/core/types';
 
+import { encodeFilters, filters } from './filter';
+
 export class IbagyCrawler extends PuppeteerCrawler {
   constructor() {
     super('ibagy');
   }
 
-  baseURL = `https://ibagy.com.br/aluguel/apartamento/florianopolis/trindade/com-vaga/?categoriagrupo=Residencial&finalidade=aluguel&tipo_residencial%5B%5D=apartamento&cidadebairro%5B%5D=florianopolis%2C%20agronomica&cidadebairro%5B%5D=florianopolis%2C%20carvoeira&cidadebairro%5B%5D=florianopolis%2C%20corrego-grande&cidadebairro%5B%5D=florianopolis%2C%20itacorubi&cidadebairro%5B%5D=florianopolis%2C%20joao-paulo&cidadebairro%5B%5D=florianopolis%2C%20monte-verde&cidadebairro%5B%5D=florianopolis%2C%20pantanal&cidadebairro%5B%5D=florianopolis%2C%20santa-monica&cidadebairro%5B%5D=florianopolis%2C%20trindade&vagas%5B%5D=1&valorvenda=0%2C1099999&valorlocacao=0%2C${this.maxValue}&filterpacote=Sim&area=${this.minSize}%2C509&codigo=&ordenar=maior_area_priv&pagina=1`;
+  baseURL = 'https://ibagy.com.br/aluguel/apartamento/florianopolis/trindade/com-vaga/';
 
   protected buildPageUrl(pageNumber: number): string {
-    const url = new URL(this.baseURL);
-    url.searchParams.set('pagina', pageNumber.toString());
-    return url.toString();
+    return `${this.baseURL}?${encodeFilters(filters)}&pagina=${pageNumber}`;
   }
 
   protected async navigateToListingsPage(page: Page, pageNumber: number): Promise<void> {
     const url = this.buildPageUrl(pageNumber);
+    console.log(`[IBAGY] Navegando para a página: ${url}`);
     await page.goto(url, { waitUntil: 'networkidle2', timeout: 90_000 });
     await page.waitForSelector('.imovel-box-single', { timeout: 60_000 }).catch(() => null);
   }
