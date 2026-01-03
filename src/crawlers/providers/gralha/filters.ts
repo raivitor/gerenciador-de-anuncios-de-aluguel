@@ -1,14 +1,14 @@
-export interface SanremoFilters {
+export interface GralhaFilters {
   finalidade: string;
   tipos: string;
   vagas: string;
   quartos: string;
 }
 
-export const filters: SanremoFilters = {
+export const filters: GralhaFilters = {
   finalidade: 'aluguel',
   tipos: 'apartamento',
-  vagas: '1',
+  vagas: '1, 2',
   quartos: '2, 3',
 };
 
@@ -20,7 +20,7 @@ const SUGGEST_FLORIANOPOLIS = [
     slug: 'cidade+sc+florianopolis',
     bairroId: 0,
     bairro: null,
-    cidadeId: 35,
+    cidadeId: 34,
     cidade: 'Florian\u00f3polis',
     estadoSigla: 'SC',
     empreendimento: null,
@@ -30,21 +30,20 @@ const SUGGEST_FLORIANOPOLIS = [
   },
 ];
 
-export function getSanremoParams(
-  customFilters: SanremoFilters,
+export function getGralhaParams(
+  customFilters: GralhaFilters,
   maxValue: number,
   minSize: number,
   page = 1
 ) {
   return {
     suggest: JSON.stringify(SUGGEST_FLORIANOPOLIS),
-    ordem: 'Menor Valor',
     finalidade: customFilters.finalidade,
-    tipos: customFilters.tipos,
     valorMaximo: maxValue.toString(),
     quartos: customFilters.quartos,
     vagas: customFilters.vagas,
     areaMinima: minSize.toString(),
+    tipos: customFilters.tipos,
     page: page.toString(),
   };
 }

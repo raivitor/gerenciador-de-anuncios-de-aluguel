@@ -3,7 +3,7 @@ import * as cheerio from 'cheerio';
 
 import { BaseCrawler } from '@/crawlers/core/base-crawler';
 import type { Apartamento } from '@/crawlers/core/types';
-import { filters, encodeFilters } from './filters';
+import { filters, getSanremoParams } from './filters';
 
 export class SanRemoCrawler extends BaseCrawler {
   constructor() {
@@ -28,10 +28,13 @@ export class SanRemoCrawler extends BaseCrawler {
 
     try {
       do {
-        const queryString = encodeFilters(filters, this.maxValue, this.minSize, currentPage);
-        const apiUrl = `${this.baseURL}/api/anuncios/search?${queryString}`;
+        const params = getSanremoParams(filters, this.maxValue, this.minSize, currentPage);
+        const apiUrl = `${this.baseURL}/api/anuncios/search`;
 
-        const { data } = await axios.get(apiUrl, this.axiosConfig);
+        const { data } = await axios.get(apiUrl, {
+          ...this.axiosConfig,
+          params,
+        });
 
         if (!data?.items?.length) break;
 
