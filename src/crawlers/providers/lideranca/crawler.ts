@@ -1,4 +1,4 @@
-import type { Page } from 'puppeteer';
+import type { Page, LaunchOptions } from 'puppeteer';
 
 import { PuppeteerCrawler } from '@/crawlers/core/puppeteer-crawler';
 import type { Apartamento } from '@/crawlers/core/types';
@@ -10,6 +10,14 @@ export class LiderancaCrawler extends PuppeteerCrawler {
     super('lideranca');
   }
 
+  protected getLaunchOptions(): LaunchOptions {
+    const options = super.getLaunchOptions();
+    return {
+      ...options,
+      args: [...(options.args || []), '--ignore-certificate-errors'],
+    };
+  }
+
   private buildBaseUrl(pageNumber: number): string {
     const url = new URL('/busca', this.baseURL);
     url.searchParams.set('finalidade', 'Aluguel');
@@ -18,15 +26,15 @@ export class LiderancaCrawler extends PuppeteerCrawler {
     url.searchParams.set('vagas', '1');
     url.searchParams.set('max', this.maxValue.toFixed(2));
     url.searchParams.set('page', pageNumber.toString());
-    //url.searchParams.set('areaPrivativaMin', this.minSize.toFixed(2));
+    url.searchParams.set('areaPrivativaMin', this.minSize.toFixed(2));
 
     return url.toString();
   }
 
   protected async navigateToListingsPage(page: Page, pageNumber: number): Promise<void> {
     const url = this.buildBaseUrl(pageNumber);
-    await page.goto(url, { waitUntil: 'networkidle2', timeout: 90_000 });
-    await page.waitForSelector('.swiper-wrapper', { timeout: 60_000 });
+    await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 90_000 });
+    await page.waitForSelector('div.mb-10 > div > a', { timeout: 60_000 }).catch(() => null);
   }
 
   protected async scrapeWithPage(page: Page): Promise<Apartamento[]> {
@@ -63,11 +71,23 @@ export class LiderancaCrawler extends PuppeteerCrawler {
 
     const listaApartamento: Apartamento[] = [];
     for (const card of listaAgregadaApto) {
-      await page.goto(card.url_apartamento, { waitUntil: 'networkidle2', timeout: 60_000 });
-      await page.waitForSelector('section.flex.flex-col.gap-8', { timeout: 30_000 });
+      try {
+        await page.goto(card.url_apartamento, { waitUntil: 'domcontentloaded', timeout: 60_000 });
+        await page
+          .waitForSelector('section.flex.flex-col.gap-8', { timeout: 30_000 })
+          .catch(() => null);
 
-      const { valor_aluguel, condominio, iptu, tamanho, quartos, banheiros, garagem, id, bairro } =
-        await page.evaluate(() => {
+        const {
+          valor_aluguel,
+          condominio,
+          iptu,
+          tamanho,
+          quartos,
+          banheiros,
+          garagem,
+          id,
+          bairro,
+        } = await page.evaluate(() => {
           const id =
             document
               .querySelector('.bg-white.text-brand.py-1.px-3.text-xs.font-medium.rounded-full')
@@ -152,19 +172,22 @@ export class LiderancaCrawler extends PuppeteerCrawler {
           };
         });
 
-      listaApartamento.push({
-        id,
-        valor_aluguel: this.parseFloat(valor_aluguel),
-        valor_total:
-          this.parseFloat(valor_aluguel) + this.parseFloat(condominio) + this.parseFloat(iptu),
-        url_apartamento: card.url_apartamento,
-        bairro,
-        tamanho: Number(tamanho),
-        quartos: Number(quartos),
-        banheiros: Number(banheiros),
-        garagem: Number(garagem),
-        corretora: this.name,
-      });
+        listaApartamento.push({
+          id: `${this.name}_${id}`,
+          valor_aluguel: this.parseFloat(valor_aluguel),
+          valor_total:
+            this.parseFloat(valor_aluguel) + this.parseFloat(condominio) + this.parseFloat(iptu),
+          url_apartamento: card.url_apartamento,
+          bairro,
+          tamanho: Number(tamanho),
+          quartos: Number(quartos),
+          banheiros: Number(banheiros),
+          garagem: Number(garagem),
+          corretora: this.name,
+        });
+      } catch (error) {
+        console.error(`[LIDERANCA] Erro ao processar imóvel ${card.url_apartamento}:`, error);
+      }
     }
     return listaApartamento;
   }
