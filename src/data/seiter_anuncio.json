@@ -1,5 +1,17 @@
 [
   {
+    "id": "AP03547",
+    "bairro": "AGRONÔMICA",
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "tamanho": 77,
+    "valor_aluguel": 3800,
+    "valor_total": 4987.97,
+    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/agronomica/apartamento/77801881",
+    "corretora": "seiter"
+  },
+  {
     "id": "AP03535",
     "bairro": "CARVOEIRA",
     "quartos": 4,
@@ -12,51 +24,27 @@
     "corretora": "seiter"
   },
   {
-    "id": "AP03526",
-    "bairro": "ITACORUBI",
-    "quartos": 2,
-    "banheiros": 0,
-    "garagem": 1,
-    "tamanho": 70,
-    "valor_aluguel": 3500,
-    "valor_total": 4231.09,
-    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/itacorubi/apartamento/77726136",
-    "corretora": "seiter"
-  },
-  {
-    "id": "CA00689",
-    "bairro": "CENTRO",
-    "quartos": 2,
-    "banheiros": 0,
-    "garagem": 1,
-    "tamanho": 82,
-    "valor_aluguel": 3299,
-    "valor_total": 3438,
-    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/centro/casa/77550072",
-    "corretora": "seiter"
-  },
-  {
-    "id": "CA00669",
-    "bairro": "TRINDADE",
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 2,
-    "tamanho": 90,
-    "valor_aluguel": 3800,
-    "valor_total": 3877.39,
-    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/trindade/casa/77454086",
-    "corretora": "seiter"
-  },
-  {
     "id": "AP02703",
     "bairro": "ITACORUBI",
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,
     "tamanho": 74,
-    "valor_aluguel": 3100,
-    "valor_total": 3939.09,
+    "valor_aluguel": 2999,
+    "valor_total": 3838.09,
     "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/itacorubi/apartamento/74002012",
+    "corretora": "seiter"
+  },
+  {
+    "id": "AP02634",
+    "bairro": "ITACORUBI",
+    "quartos": 3,
+    "banheiros": 0,
+    "garagem": 1,
+    "tamanho": 85,
+    "valor_aluguel": 3200,
+    "valor_total": 3985,
+    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/itacorubi/apartamento/73854316",
     "corretora": "seiter"
   },
   {

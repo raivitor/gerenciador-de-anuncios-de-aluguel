@@ -13,14 +13,19 @@ const toNumber = (text: string): number => {
 };
 
 export class SeiterCrawler extends BaseCrawler {
-  baseURL = 'https://www.seiterimobiliaria.com/alugar/sc/florianopolis';
+  baseURL = 'https://www.seiterimobiliaria.com/alugar/sc/florianopolis/apartamento';
 
   constructor() {
     super('seiter');
   }
 
   protected async scrape(): Promise<Apartamento[]> {
-    const url = buildSeiterURL(this.baseURL, filters);
+    const url = buildSeiterURL(this.baseURL, {
+      ...filters,
+      maxValue: this.maxValue,
+      minSize: this.minSize,
+    });
+    console.log(`[Seiter] Buscando URL: ${url}`);
     const { data: html } = await axios.get<string>(url);
     const $: CheerioAPI = cheerio.load(html);
 
