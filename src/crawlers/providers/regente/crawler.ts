@@ -34,12 +34,6 @@ interface RegenteApiResponse {
   >;
 }
 
-const toNumber = (text: string | number): number => {
-  if (typeof text === 'number') return text;
-  const n = parseInt(text.replace(/[^\d]/g, ''), 10);
-  return Number.isNaN(n) ? 0 : n;
-};
-
 const generateSlug = (text: string): string => {
   return text
     .toLowerCase()
@@ -52,10 +46,21 @@ const generateSlug = (text: string): string => {
 };
 
 export class RegenteCrawler extends BaseCrawler {
-  baseURL = 'https://regenteimoveis.com.br/wp-json/gritsoftware/v1/properties-test';
+  baseURL = 'https://regenteimoveis.com.br/wp-json/gritsoftware/v1/properties-v4';
 
   constructor() {
     super('regente');
+  }
+
+  /**
+   * Converte strings numéricas da API (que usam ponto como decimal) para number.
+   * Se houver vírgula, recorre ao parseFloat da BaseCrawler.
+   */
+  private parseRegenteValue(value: string): number {
+    if (!value) return 0;
+    if (value.includes(',')) return this.parseFloat(value);
+    const n = Number(value);
+    return isNaN(n) ? 0 : n;
   }
 
   protected async scrape(): Promise<Apartamento[]> {
@@ -67,7 +72,7 @@ export class RegenteCrawler extends BaseCrawler {
     do {
       const currentFilters = { ...filters, pagina: paginaAtual };
       const url = `${this.baseURL}?${encodeFilters(currentFilters)}`;
-
+      console.log(`Buscando página ${paginaAtual} de ${totalPaginas} - URL: ${url}`);
       try {
         const response = await axios.get<RegenteApiResponse>(url);
         const { success, data } = response.data;
@@ -92,24 +97,24 @@ export class RegenteCrawler extends BaseCrawler {
 
         // Processa os apartamentos da página atual
         for (const apto of apartamentos) {
-          const valorAluguel = toNumber(apto.ValorLocacao);
-          const valorIptu = toNumber(apto.ValorIptu);
-          const valorCondominio = toNumber(apto.ValorCondominio);
+          const valorAluguel = this.parseRegenteValue(apto.ValorLocacao);
+          const valorIptu = this.parseRegenteValue(apto.ValorIptu);
+          const valorCondominio = this.parseRegenteValue(apto.ValorCondominio);
 
           // Gera a URL completa com o código e o slug do título
           const slug = generateSlug(apto.TituloSite);
           const urlApartamento = `https://regenteimoveis.com.br/imovel/${apto.Codigo}/${slug}`;
 
           const aluguel: Apartamento = {
-            id: apto.Codigo,
+            id: `${this.name}_${apto.Codigo}`,
             valor_aluguel: valorAluguel,
             valor_total: valorAluguel + valorIptu + valorCondominio,
             url_apartamento: urlApartamento,
             bairro: apto.Bairro,
-            tamanho: parseFloat(apto.AreaTotal),
-            quartos: toNumber(apto.Dormitorios),
-            banheiros: toNumber(apto.TotalBanheiros),
-            garagem: toNumber(apto.Vagas),
+            tamanho: this.parseRegenteValue(apto.AreaTotal),
+            quartos: this.toNumber(apto.Dormitorios),
+            banheiros: this.toNumber(apto.TotalBanheiros),
+            garagem: this.toNumber(apto.Vagas),
             corretora: this.name,
           };
           listAlugueis.push(aluguel);
