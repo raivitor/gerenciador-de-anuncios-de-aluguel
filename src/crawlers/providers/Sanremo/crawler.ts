@@ -1,166 +1,92 @@
-import type { Page } from 'puppeteer';
+import axios from 'axios';
+import * as cheerio from 'cheerio';
 
-import { PuppeteerCrawler } from '@/crawlers/core/puppeteer-crawler';
+import { BaseCrawler } from '@/crawlers/core/base-crawler';
 import type { Apartamento } from '@/crawlers/core/types';
-import filtro from './filtro.json';
-export class SanRemoCrawler extends PuppeteerCrawler {
+import { filters, encodeFilters } from './filters';
+
+export class SanRemoCrawler extends BaseCrawler {
   constructor() {
     super('sanremo');
   }
 
   baseURL = 'https://www.sanremoimoveis.com.br';
 
-  protected escapeUnicode(str: string): string {
-    return str.replace(/[\u007F-\uFFFF]/g, c => {
-      return '\\u' + ('0000' + c.charCodeAt(0).toString(16)).slice(-4);
-    });
-  }
-
-  protected buildPageUrl(): string {
-    const url = new URL(this.baseURL + '/aluguel/apartamento/bairro+sc+florianopolis+agronomica');
-
-    const suggestArray = filtro.suggest.map(s => ({
-      ...s,
-      slug: s.slug.replace(/\s+/g, '+'),
-    }));
-
-    // serializa normal
-    let suggestParam = JSON.stringify(suggestArray);
-
-    // força unicode (se precisar)
-    suggestParam = this.escapeUnicode(suggestParam);
-
-    url.searchParams.set('suggest', suggestParam);
-    url.searchParams.set('finalidade', filtro.finalidade);
-    url.searchParams.set('valorMaximo', this.maxValue.toString());
-    url.searchParams.set('vagas', filtro.vagas);
-    url.searchParams.set('areaMinima', this.minSize.toString());
-    url.searchParams.set('tipos', filtro.tipos);
-
-    return url.toString();
-  }
-
-  protected async navigateToListingsPage(page: Page): Promise<void> {
-    const url = this.buildPageUrl();
-    await page.goto(url, { waitUntil: 'networkidle2', timeout: 90_000 });
-    await page
-      .waitForSelector('div#List_Products_ListResult', { timeout: 60_000 })
-      .catch(() => null);
-  }
-
-  protected getValueByKey(item: any[] = [], key: string): string {
-    const found = item.find((el: any) => el.name === key);
-    return found ? found.value : '';
-  }
-
-  protected scrollToBottom = async (page: Page): Promise<void> => {
-    await page.evaluate(async () => {
-      await new Promise<void>(resolve => {
-        let totalHeight = 0;
-        const distance = 500;
-        const timer = setInterval(() => {
-          const scrollHeight = document.body.scrollHeight;
-          window.scrollBy(0, distance);
-          totalHeight += distance;
-          if (totalHeight >= scrollHeight) {
-            clearInterval(timer);
-            resolve();
-          }
-        }, 300);
-      });
-    });
+  private readonly axiosConfig = {
+    headers: {
+      Accept: 'application/json',
+      'User-Agent':
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    },
+    timeout: 15000,
   };
 
-  protected async scrapeWithPage(page: Page): Promise<Apartamento[]> {
-    await this.navigateToListingsPage(page);
-    //this.scrollToBottom(page);
+  protected async scrape(): Promise<Apartamento[]> {
+    const listAlugueis: Apartamento[] = [];
+    let currentPage = 1;
+    let totalPages = 1;
 
-    const { rawListaApto } = await page.evaluate(() => {
-      const baseURL = 'https://www.sanremoimoveis.com.br';
-      const totalResultados =
-        document
-          .querySelector<HTMLElement>('div.ListResult_InfoBar_CountMsg > h1')
-          ?.innerText.split(' ')[0] || '0';
+    try {
+      do {
+        const queryString = encodeFilters(filters, this.maxValue, this.minSize, currentPage);
+        const apiUrl = `${this.baseURL}/api/anuncios/search?${queryString}`;
 
-      const cards = document.querySelectorAll('article.ListResult_Wrapper_Card');
-      const rawListaApto = Array.from(cards).map(card => {
-        const id = card.querySelector('.Tag_Content_Label')?.textContent?.trim() || '';
+        const { data } = await axios.get(apiUrl, this.axiosConfig);
 
-        const valor_aluguel =
-          card.querySelector<HTMLElement>('.Offer_Price_ValueSpotlight')?.textContent || '0';
+        if (!data?.items?.length) break;
 
-        const url_apartamento =
-          card
-            .querySelector<HTMLElement>('a.Tag.Tag_Primary.__is-ripplelink')
-            ?.getAttribute('href') || '';
+        totalPages = Math.ceil(data.total / data.pagesize);
 
-        const lis = card.querySelectorAll<HTMLElement>('div.Card_Info_Properties_List > ul > li');
-        const tamanho =
-          lis[0]?.querySelector<HTMLElement>('span')?.textContent?.replace('m²', '').trim() || '0';
-        const quartos = lis[1]?.querySelector<HTMLElement>('span')?.textContent || '0';
-        const banheiros = lis[2]?.querySelector<HTMLElement>('span')?.textContent || '0';
-        const garagem = lis[3]?.querySelector<HTMLElement>('span')?.textContent || '0';
+        // Busca detalhes em paralelo para acelerar o processo
+        const pageResults = await Promise.all(
+          data.items.map(async (item: any) => {
+            const urlApartamento = `${this.baseURL}/imovel/${item.url}/${item.id}`;
+            const { iptu, condominio } = await this.fetchDetails(urlApartamento);
 
-        return {
-          id,
-          valor_aluguel: valor_aluguel,
-          url_apartamento: baseURL + url_apartamento,
-          tamanho: tamanho,
-          quartos: quartos,
-          banheiros: banheiros,
-          garagem: garagem,
-        };
-      });
+            return {
+              id: `${this.name}_${item.codigo}`,
+              valor_aluguel: item.valorLocacao,
+              valor_total: item.valorLocacao + iptu + condominio,
+              url_apartamento: urlApartamento,
+              bairro: item.bairro,
+              tamanho: item.areaConstruida,
+              quartos: item.quartos,
+              banheiros: item.banheiros,
+              garagem: item.vagas,
+              corretora: this.name,
+            };
+          })
+        );
+
+        listAlugueis.push(...pageResults);
+        currentPage++;
+      } while (currentPage <= totalPages);
+    } catch (error) {
+      console.error(`[Sanremo] Erro fatal no crawler:`, error);
+    }
+
+    return listAlugueis;
+  }
+
+  private async fetchDetails(url: string): Promise<{ iptu: number; condominio: number }> {
+    try {
+      const { data } = await axios.get(url, this.axiosConfig);
+      const $ = cheerio.load(data);
+
+      const boxValores = $('.BoxFloat_Values_Complementation');
+      if (!boxValores.length) return { iptu: 0, condominio: 0 };
+
+      const iptuText = boxValores.find('p:nth-child(1) strong').text();
+      const condominioText = boxValores.find('p:nth-child(2) strong').text();
 
       return {
-        rawListaApto,
-        totalBusca: parseInt(totalResultados.replace(/\D/g, ''), 10) || 0,
+        iptu: this.parseFloat(iptuText),
+        condominio: this.parseFloat(condominioText),
       };
-    });
-
-    const listaApartamento: Apartamento[] = [];
-    for (const card of rawListaApto) {
-      await page.goto(card.url_apartamento, { waitUntil: 'networkidle2', timeout: 60_000 });
-      await page
-        .waitForSelector('.BoxFloat_Values_Complementation', { timeout: 30_000 })
-        .catch(() => null);
-
-      const { iptu, condominio, bairro } = await page.evaluate(() => {
-        const boxValores = document.querySelector('.BoxFloat_Values_Complementation');
-        const boxEndereco = document.querySelector(
-          'div.DetailProperty_Address_Label h2'
-        )?.textContent;
-        let iptu = 0,
-          condominio = 0,
-          bairro = '';
-
-        if (boxValores) {
-          const iptuText = boxValores.querySelector('p:nth-child(1) strong')?.textContent || '';
-          const condominioText =
-            boxValores.querySelector('p:nth-child(2) strong')?.textContent || '';
-          iptu = this.parseFloat(iptuText.replace(/[^\d,]/g, ''));
-          condominio = this.parseFloat(condominioText.replace(/[^\d,]/g, ''));
-        }
-        if (boxEndereco) {
-          bairro = boxEndereco.split(' - ')[1].split(',')[0].trim();
-        }
-        return { iptu, condominio, bairro };
-      });
-
-      listaApartamento.push({
-        id: `${this.name}_${String(card.id)}`,
-        valor_aluguel: this.parseFloat(card.valor_aluguel),
-        valor_total: this.parseFloat(card.valor_aluguel) + condominio + iptu,
-        url_apartamento: card.url_apartamento,
-        bairro,
-        tamanho: Number(card.tamanho),
-        quartos: this.parseFloat(card.quartos),
-        banheiros: this.parseFloat(card.banheiros),
-        garagem: this.parseFloat(card.garagem),
-        corretora: this.name,
-      });
+    } catch (error) {
+      console.error(`[Sanremo] Erro ao buscar detalhes (${url})`);
+      return { iptu: 0, condominio: 0 };
     }
-    return listaApartamento;
   }
 }
 
