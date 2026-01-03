@@ -25,6 +25,7 @@ export class ItacorubiCrawler extends PuppeteerCrawler {
   }
 
   protected async navigateToListingsPage(page: Page): Promise<void> {
+    console.log(`[Itacorubi] Navegando para a página inicial: ${this.baseURL}`);
     await page.goto(this.baseURL, { waitUntil: 'networkidle2', timeout: 90_000 });
     await page.waitForSelector('.swiper-wrapper', { timeout: 60_000 });
   }

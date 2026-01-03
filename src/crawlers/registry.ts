@@ -17,21 +17,21 @@ import seiterCrawler from './providers/seiter';
 import itacorubiCrawler from './providers/itacorubi';
 
 export const crawlers: BaseCrawler[] = [
-  // creditoRealCrawler,
-  // daltonCrawler,
-  // dudaCrawler,
+  // olxCrawler, //ok
+  creditoRealCrawler, //ok
+  ibagyCrawler, //ok
+  dudaCrawler, //ok
+  liderancaCrawler, //ok
+  regenteCrawler, //ok
+  sanRemoCrawler, //ok
+  realizarCrawler, //ok
+  daltonCrawler, //ok
+  gralhaCrawler, //ok
   f1Crawler,
-  // floripaImobCrawler,
-  // gralhaCrawler,
-  // olxCrawler,
-  // ibagyCrawler,
-  // sanRemoCrawler,
-  // regenteCrawler,
-  // realizarCrawler,
-  // quadraCrawler,
-  // liderancaCrawler,
-  // seiterCrawler,
-  // itacorubiCrawler,
+  quadraCrawler, //ok
+  floripaImobCrawler, //ok
+  seiterCrawler, //ok
+  // itacorubiCrawler, //off
 ];
 
 export default crawlers;
