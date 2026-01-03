@@ -2,85 +2,64 @@ import type { Page } from 'puppeteer';
 
 import { PuppeteerCrawler } from '@/crawlers/core/puppeteer-crawler';
 import type { Apartamento } from '@/crawlers/core/types';
-
-interface RawListing {
-  id: string;
-  url: string;
-  rent: string;
-  total?: string | null;
-  bairro?: string | null;
-  size?: number | null;
-  bedrooms?: number | null;
-  bathrooms?: number | null;
-  garage?: number | null;
-}
+import { filters, encodeFilters } from './filters';
 
 export class RealizarCrawler extends PuppeteerCrawler {
-  baseURL: string;
-  private readonly origin = 'https://realizarimoveisfloripa.com.br';
+  baseURL = 'https://realizarimoveisfloripa.com.br';
 
   constructor() {
     super('realizar');
-    this.baseURL = this.buildBaseUrl();
   }
 
-  private buildBaseUrl(): string {
-    const url = new URL('/busca', this.origin);
-    url.searchParams.set('finalidade', 'Aluguel');
-    url.searchParams.set('cidade', 'Florianópolis');
-    url.searchParams.set('vagas', '1');
-    url.searchParams.set('max', this.maxValue.toFixed(2));
-    url.searchParams.set('areaPrivativaMin', this.minSize.toFixed(2));
-    url.searchParams.set(
-      'bairro',
-      [
-        'Trindade',
-        'agronômica',
-        'Agronomica',
-        'Agronômica',
-        'Carvoeira',
-        'Córrego Grande',
-        'Corrego Grande',
-        'Itacorubi',
-        'JOAO PAULO',
-        'João Paulo',
-        'Joao Paulo',
-        'joão paulo',
-        'joao paulo',
-        'Joao paulo',
-        'Monte Verde',
-        'pantanal',
-        'Pantanal',
-        'Santa Mônica',
-        'Santa Monica',
-      ].join(',')
-    );
-
-    return url.toString();
+  private buildBaseUrl(pageNumber: number): string {
+    const queryString = encodeFilters(filters, this.maxValue, this.minSize, pageNumber);
+    return `${this.baseURL}/busca?${queryString}`;
   }
 
-  protected async navigateToListingsPage(page: Page): Promise<void> {
-    await page.goto(this.baseURL, { waitUntil: 'networkidle2', timeout: 90_000 });
-    await page.waitForSelector('.swiper-wrapper', { timeout: 60_000 });
+  protected async navigateToListingsPage(page: Page, pageNumber: number): Promise<void> {
+    const url = this.buildBaseUrl(pageNumber);
+    await page.goto(url, { waitUntil: 'networkidle2', timeout: 90_000 });
+    await page.waitForSelector('.swiper-wrapper', { timeout: 60_000 }).catch(() => null);
   }
 
   protected async scrapeWithPage(page: Page): Promise<Apartamento[]> {
-    await this.navigateToListingsPage(page);
+    let currentPage = 1;
+    let totalItems = 0;
+    const listaAgregadaApto = [];
 
-    const { rawListaApto } = await page.evaluate(() => {
-      const cards = document.querySelectorAll('div.mb-10 > div > a');
-      const rawListaApto = Array.from(cards).map(card => {
-        const href = card.getAttribute('href') || '';
-        return {
-          url_apartamento: `https://realizarimoveisfloripa.com.br${href}`,
+    while (true) {
+      await this.navigateToListingsPage(page, currentPage);
+
+      const { rawListaApto, totalBusca } = await page.evaluate(() => {
+        const getTotalItens = (doc: Document): number => {
+          const spanNode = doc.querySelector<HTMLElement>('span.text-base.font-normal');
+          if (!spanNode) return 0;
+          const match = spanNode.innerText.match(/de\s+(\d+)/);
+          return match ? parseInt(match[1], 10) : 0;
         };
+
+        const cards = document.querySelectorAll('div.mb-10 > div > a');
+        const rawListaApto = Array.from(cards).map(card => {
+          const href = card.getAttribute('href') || '';
+          return {
+            url_apartamento: `https://realizarimoveisfloripa.com.br${href}`,
+          };
+        });
+
+        return { rawListaApto, totalBusca: getTotalItens(document) };
       });
 
-      return { rawListaApto };
-    });
+      if (!rawListaApto.length) break;
+
+      listaAgregadaApto.push(...rawListaApto);
+      if (totalBusca > 0) totalItems = totalBusca;
+      if (listaAgregadaApto.length >= totalItems) break;
+
+      currentPage += 1;
+    }
 
     const listaApartamento: Apartamento[] = [];
-    for (const card of rawListaApto) {
+    for (const card of listaAgregadaApto) {
       await page.goto(card.url_apartamento, { waitUntil: 'networkidle2', timeout: 60_000 });
       await page.waitForSelector('section.flex.flex-col.gap-8', { timeout: 30_000 });
 
@@ -171,7 +150,7 @@ export class RealizarCrawler extends PuppeteerCrawler {
         });
 
       listaApartamento.push({
-        id,
+        id: `${this.name}_${id}`,
         valor_aluguel: this.parseFloat(valor_aluguel),
         valor_total:
           this.parseFloat(valor_aluguel) + this.parseFloat(condominio) + this.parseFloat(iptu),
