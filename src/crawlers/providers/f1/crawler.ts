@@ -5,6 +5,8 @@ import type { CheerioAPI } from 'cheerio';
 import { BaseCrawler } from '@/crawlers/core/base-crawler';
 import type { Apartamento } from '@/crawlers/core/types';
 
+import { encodeFilters, filters } from './filter';
+
 const getIconBoxNumber = (label: string, $: CheerioAPI): number => {
   const valueText = $('.elementor-widget-icon-box')
     .filter((_, el) => {
@@ -21,15 +23,15 @@ const getIconBoxNumber = (label: string, $: CheerioAPI): number => {
 };
 
 export class F1Crawler extends BaseCrawler {
-  baseURL = `https://f1ciaimobiliaria.com.br/imoveis-para-alugar/?jsf=jet-engine:pesquisa&tax=tipo-de-imovel:8;cidade:61,92,71,34,36,74,63,47,45&meta=area!range:${this.minSize}_1000;valor-do-aluguel!range:1000_${this.maxValue}&sort=orderby:meta_value_num;order:ASC;meta_key:valor-do-aluguel`;
+  baseURL = 'https://f1ciaimobiliaria.com.br/imoveis-para-alugar/';
 
   constructor() {
     super('f1');
   }
 
   protected async scrape(): Promise<Apartamento[]> {
-    const url = this.baseURL;
-
+    const url = `${this.baseURL}?${encodeFilters(filters)}`;
+    console.log(`Fetching URL: ${url}`);
     const { data: html } = await axios.get<string>(url);
     const $: CheerioAPI = cheerio.load(html);
 

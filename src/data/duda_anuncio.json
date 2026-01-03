@@ -119,18 +119,6 @@
     "corretora": "duda"
   },
   {
-    "id": "duda_26276",
-    "valor_aluguel": 3500,
-    "valor_total": 4188.833333333333,
-    "url_apartamento": "https://dudaimoveis.com.br/imovel/26276/apartamento-2-quartos-trindade-florianopolis/",
-    "bairro": "Trindade",
-    "tamanho": 73,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "duda"
-  },
-  {
     "id": "duda_8288",
     "valor_aluguel": 3500,
     "valor_total": 4379.666666666667,
@@ -149,6 +137,18 @@
     "url_apartamento": "https://dudaimoveis.com.br/imovel/21248/apartamento-2-quartos-trindade-florianopolis/",
     "bairro": "Trindade",
     "tamanho": 65,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "duda"
+  },
+  {
+    "id": "duda_26276",
+    "valor_aluguel": 3500,
+    "valor_total": 4188.833333333333,
+    "url_apartamento": "https://dudaimoveis.com.br/imovel/26276/apartamento-2-quartos-trindade-florianopolis/",
+    "bairro": "Trindade",
+    "tamanho": 73,
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,
