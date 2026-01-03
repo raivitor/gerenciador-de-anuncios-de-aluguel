@@ -31,7 +31,6 @@ export class F1Crawler extends BaseCrawler {
 
   protected async scrape(): Promise<Apartamento[]> {
     const url = `${this.baseURL}?${encodeFilters(filters)}`;
-    console.log(`Fetching URL: ${url}`);
     const { data: html } = await axios.get<string>(url);
     const $: CheerioAPI = cheerio.load(html);
 

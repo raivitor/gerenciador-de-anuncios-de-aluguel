@@ -25,7 +25,6 @@ export class LiderancaCrawler extends PuppeteerCrawler {
 
   protected async navigateToListingsPage(page: Page, pageNumber: number): Promise<void> {
     const url = this.buildBaseUrl(pageNumber);
-    console.log(this.name, url);
     await page.goto(url, { waitUntil: 'networkidle2', timeout: 90_000 });
     await page.waitForSelector('.swiper-wrapper', { timeout: 60_000 });
   }

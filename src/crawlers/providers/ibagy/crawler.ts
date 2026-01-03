@@ -18,7 +18,6 @@ export class IbagyCrawler extends PuppeteerCrawler {
 
   protected async navigateToListingsPage(page: Page, pageNumber: number): Promise<void> {
     const url = this.buildPageUrl(pageNumber);
-    console.log(`[IBAGY] Navegando para a página: ${url}`);
     await page.goto(url, { waitUntil: 'networkidle2', timeout: 90_000 });
     await page.waitForSelector('.imovel-box-single', { timeout: 60_000 }).catch(() => null);
   }

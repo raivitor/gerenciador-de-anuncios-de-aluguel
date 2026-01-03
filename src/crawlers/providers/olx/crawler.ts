@@ -27,7 +27,6 @@ export class OlxCrawler extends PuppeteerCrawler {
 
   protected async navigateToListingsPage(page: Page, pageNumber: number): Promise<void> {
     const url = this.buildPageUrl(pageNumber);
-    console.log(`Navigating to OLX page: ${url}`);
     await page.goto(url, { waitUntil: 'networkidle2', timeout: 120_000 });
     await page.waitForSelector('h1.olx-text--bold', { timeout: 60_000 }).catch(() => null);
   }
@@ -70,7 +69,6 @@ export class OlxCrawler extends PuppeteerCrawler {
       if (!rawListaApto.length) break;
       if (totalBusca > 0 && totalItems === 0) {
         totalItems = totalBusca;
-        console.log(`[OLX] Total de anúncios encontrados: ${totalItems}`);
       }
 
       const listaApto = rawListaApto.map((apto: any) => {

@@ -34,7 +34,6 @@ export class QuadraCrawler extends BaseCrawler {
   protected async scrape(): Promise<Apartamento[]> {
     const bairros = filters.neighborhoods.map(b => b.toLowerCase().replace(/\s+/g, '-')).join('+');
     const url = `${this.baseURL}/${bairros}?vagas=${filters.parking}+&area=${filters.areaInitialValue}+&preco-de-locacao=0~${filters.finalValue}`;
-    console.log('URL Quadra:', url);
     const { data: html } = await axios.get<string>(url);
     const $: CheerioAPI = cheerio.load(html);
 

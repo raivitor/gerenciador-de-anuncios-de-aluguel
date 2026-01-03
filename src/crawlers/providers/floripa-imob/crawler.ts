@@ -25,7 +25,6 @@ export class FloripaImobCrawler extends PuppeteerCrawler {
   }
 
   protected async navigateToListingsPage(page: Page): Promise<void> {
-    console.log(`Navigating to listings page: ${this.baseURL}`);
     await page.goto(this.baseURL, { waitUntil: 'networkidle2', timeout: 90_000 });
     await page.waitForSelector('.swiper-wrapper', { timeout: 60_000 });
   }
