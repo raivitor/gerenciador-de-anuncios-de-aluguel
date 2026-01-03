@@ -15,7 +15,7 @@ export class FloripaImobCrawler extends PuppeteerCrawler {
   private buildBaseUrl(): string {
     const url = new URL('/busca', this.origin);
     url.searchParams.set('finalidade', 'Aluguel');
-    //url.searchParams.set('cidade', 'Florianópolis');
+    url.searchParams.set('cidade', 'Florianópolis');
     url.searchParams.set('dormitorios', '2');
     url.searchParams.set('vagas', '1');
     url.searchParams.set('max', this.maxValue.toFixed(2));
@@ -26,6 +26,7 @@ export class FloripaImobCrawler extends PuppeteerCrawler {
 
   protected async navigateToListingsPage(page: Page): Promise<void> {
     await page.goto(this.baseURL, { waitUntil: 'networkidle2', timeout: 90_000 });
+    console.log(`[Floripa Imob] Navegando para a página: ${this.baseURL}`);
     await page.waitForSelector('.swiper-wrapper', { timeout: 60_000 });
   }
 
