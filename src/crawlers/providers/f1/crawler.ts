@@ -11,15 +11,15 @@ const getIconBoxNumber = (label: string, $: CheerioAPI): number => {
   const valueText = $('.elementor-widget-icon-box')
     .filter((_, el) => {
       const t = $(el).find('.elementor-icon-box-title').text().trim().toLowerCase();
-      return t === label.toLowerCase(); // ex: 'quartos', 'banheiros', 'vagas'
+      return t === label.toLowerCase();
     })
     .first()
     .find('.elementor-icon-box-description')
     .text()
     .trim();
 
-  // mantém só dígitos e converte
-  return parseInt(valueText.replace(/\D+/g, ''), 10) || 0;
+  const cleaned = valueText.replace(',', '.').replace(/[^\d.]/g, '');
+  return parseFloat(cleaned) || 0;
 };
 
 export class F1Crawler extends BaseCrawler {
