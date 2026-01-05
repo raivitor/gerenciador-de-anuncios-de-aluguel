@@ -58,17 +58,5 @@
     "banheiros": 2,
     "garagem": 1,
     "corretora": "f1"
-  },
-  {
-    "id": "f1_1958951",
-    "valor_aluguel": 3700,
-    "valor_total": 4620,
-    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-residencial-porto-pantanal-de-2-quartos-no-bairro-saco-dos-limoes-florianopolis-1958951/",
-    "bairro": "Pantanal",
-    "tamanho": 95,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 2,
-    "corretora": "f1"
   }
 ]

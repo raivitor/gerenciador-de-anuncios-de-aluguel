@@ -24,30 +24,6 @@
     "corretora": "lideranca"
   },
   {
-    "id": "lideranca_L41",
-    "valor_aluguel": 3800,
-    "valor_total": 4372.05,
-    "url_apartamento": "https://liderancaimobiliaria.com.br/imovel/apartamento-pantanal-florianopolis-sc-2-quartos-70.2m2-L41",
-    "bairro": "Pantanal",
-    "tamanho": 70,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "lideranca"
-  },
-  {
-    "id": "lideranca_LC434",
-    "valor_aluguel": 3500,
-    "valor_total": 4165,
-    "url_apartamento": "https://liderancaimobiliaria.com.br/imovel/studio-trindade-florianopolis-sc-1-quartos-30.84m2-LC434",
-    "bairro": "Trindade",
-    "tamanho": 30,
-    "quartos": 1,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "lideranca"
-  },
-  {
     "id": "lideranca_LC234",
     "valor_aluguel": 3500,
     "valor_total": 4254.89,
@@ -115,42 +91,6 @@
     "bairro": "Itacorubi",
     "tamanho": 73,
     "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "lideranca"
-  },
-  {
-    "id": "lideranca_LC449",
-    "valor_aluguel": 3500,
-    "valor_total": 3850.01,
-    "url_apartamento": "https://liderancaimobiliaria.com.br/imovel/studio-saco-dos-limoes-florianopolis-sc-1-quartos-37m2-LC449",
-    "bairro": "Saco dos Limões",
-    "tamanho": 37,
-    "quartos": 1,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "lideranca"
-  },
-  {
-    "id": "lideranca_LC450",
-    "valor_aluguel": 3500,
-    "valor_total": 3850.01,
-    "url_apartamento": "https://liderancaimobiliaria.com.br/imovel/studio-saco-dos-limoes-florianopolis-sc-1-quartos-37m2-LC450",
-    "bairro": "Saco dos Limões",
-    "tamanho": 37,
-    "quartos": 1,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "lideranca"
-  },
-  {
-    "id": "lideranca_LC451",
-    "valor_aluguel": 3500,
-    "valor_total": 3850.01,
-    "url_apartamento": "https://liderancaimobiliaria.com.br/imovel/studio-saco-dos-limoes-florianopolis-sc-1-quartos-37m2-LC451",
-    "bairro": "Saco dos Limões",
-    "tamanho": 37,
-    "quartos": 1,
     "banheiros": 1,
     "garagem": 1,
     "corretora": "lideranca"

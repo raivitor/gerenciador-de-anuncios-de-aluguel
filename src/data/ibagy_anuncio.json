@@ -12,18 +12,6 @@
     "corretora": "ibagy"
   },
   {
-    "id": "ibagy_130248",
-    "valor_aluguel": 3000,
-    "valor_total": 3764.38,
-    "url_apartamento": "https://ibagy.com.br/imovel/130248/apartamento-2-quartos-oasis-da-ilha-corrego-grande-florianopolis/",
-    "bairro": "Córrego Grande",
-    "tamanho": 85,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "ibagy"
-  },
-  {
     "id": "ibagy_113990",
     "valor_aluguel": 2600,
     "valor_total": 3222.78,
@@ -44,18 +32,6 @@
     "tamanho": 80,
     "quartos": 3,
     "banheiros": 1,
-    "garagem": 1,
-    "corretora": "ibagy"
-  },
-  {
-    "id": "ibagy_90864",
-    "valor_aluguel": 2600,
-    "valor_total": 3654.06,
-    "url_apartamento": "https://ibagy.com.br/imovel/90864/apartamento-2-quartos-catharina-feltrin-spillere-carvoeira-florianopolis/",
-    "bairro": "Carvoeira",
-    "tamanho": 72,
-    "quartos": 2,
-    "banheiros": 2,
     "garagem": 1,
     "corretora": "ibagy"
   },
@@ -84,18 +60,6 @@
     "corretora": "ibagy"
   },
   {
-    "id": "ibagy_90890",
-    "valor_aluguel": 2500,
-    "valor_total": 3723.82,
-    "url_apartamento": "https://ibagy.com.br/imovel/90890/apartamento-2-quartos-costa-do-sol-residence-itacorubi-florianopolis/",
-    "bairro": "Itacorubi",
-    "tamanho": 64,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "ibagy"
-  },
-  {
     "id": "ibagy_131066",
     "valor_aluguel": 2700,
     "valor_total": 3455.32,
@@ -114,18 +78,6 @@
     "url_apartamento": "https://ibagy.com.br/imovel/113733/apartamento-2-quartos-brida-pantanal-florianopolis/",
     "bairro": "Pantanal",
     "tamanho": 62,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "ibagy"
-  },
-  {
-    "id": "ibagy_114064",
-    "valor_aluguel": 3100,
-    "valor_total": 3752.25,
-    "url_apartamento": "https://ibagy.com.br/imovel/114064/apartamento-2-quartos-san-sebastian-%E2%80%93-itacorubi-itacorubi-florianopolis/",
-    "bairro": "Itacorubi",
-    "tamanho": 60,
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1,
@@ -156,18 +108,6 @@
     "corretora": "ibagy"
   },
   {
-    "id": "ibagy_103350",
-    "valor_aluguel": 2850,
-    "valor_total": 3621.66,
-    "url_apartamento": "https://ibagy.com.br/imovel/103350/apartamento-3-quartos-elos-corrego-grande-florianopolis/",
-    "bairro": "Córrego Grande",
-    "tamanho": 59,
-    "quartos": 3,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "ibagy"
-  },
-  {
     "id": "ibagy_131177",
     "valor_aluguel": 2700,
     "valor_total": 3479.37,
@@ -186,54 +126,6 @@
     "url_apartamento": "https://ibagy.com.br/imovel/103283/apartamento-2-quartos-saint-bernard-%E2%80%93-carvoeira-carvoeira-florianopolis/",
     "bairro": "Carvoeira",
     "tamanho": 57,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "ibagy"
-  },
-  {
-    "id": "ibagy_130095",
-    "valor_aluguel": 2900,
-    "valor_total": 3716.92,
-    "url_apartamento": "https://ibagy.com.br/imovel/130095/apartamento-2-quartos-royal-park-carvoeira-florianopolis/",
-    "bairro": "Carvoeira",
-    "tamanho": 56,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "ibagy"
-  },
-  {
-    "id": "ibagy_107751",
-    "valor_aluguel": 2600,
-    "valor_total": 3646.89,
-    "url_apartamento": "https://ibagy.com.br/imovel/107751/apartamento-2-quartos-residencial-itacolumi-agronomica-florianopolis/",
-    "bairro": "Agronômica",
-    "tamanho": 53,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "ibagy"
-  },
-  {
-    "id": "ibagy_130235",
-    "valor_aluguel": 2600,
-    "valor_total": 3403.36,
-    "url_apartamento": "https://ibagy.com.br/imovel/130235/apartamento-2-quartos-royal-park-carvoeira-florianopolis/",
-    "bairro": "Carvoeira",
-    "tamanho": 50,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "ibagy"
-  },
-  {
-    "id": "ibagy_123880",
-    "valor_aluguel": 2890,
-    "valor_total": 3626.12,
-    "url_apartamento": "https://ibagy.com.br/imovel/123880/apartamento-2-quartos-ilha-dos-a%C3%A7ores-itacorubi-florianopolis/",
-    "bairro": "Itacorubi",
-    "tamanho": 46,
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1,

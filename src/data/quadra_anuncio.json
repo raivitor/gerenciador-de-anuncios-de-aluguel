@@ -1,17 +1,5 @@
 [
   {
-    "id": "AP0937-QUB",
-    "valor_aluguel": 2000,
-    "valor_total": 2954.52,
-    "url_apartamento": "https://www.quadraimobiliaria.com.br/imovel/apartamento-florianopolis-1-quarto-40-m/AP0937-QUB",
-    "bairro": "Centro",
-    "tamanho": 40,
-    "quartos": 0,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "quadra"
-  },
-  {
     "id": "AP2659-QUB",
     "valor_aluguel": 2250,
     "valor_total": 2981.67,
@@ -29,7 +17,7 @@
     "valor_total": 4075,
     "url_apartamento": "https://www.quadraimobiliaria.com.br/imovel/apartamento-florianopolis-2-quartos-67-m/AP3070-QUB",
     "bairro": "Trindade",
-    "tamanho": 67,
+    "tamanho": 669,
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,

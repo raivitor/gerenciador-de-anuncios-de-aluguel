@@ -1,9 +1,11 @@
 {
   "ibagy_131227": {
-    "observacao": "teste"
+    "observacao": "Reservado",
+    "tag": "Talvez"
   },
   "AP2659-QUB": {
-    "tag": "Talvez"
+    "tag": "Agendado",
+    "nota": 2
   },
   "sanremo_SRAP2397": {
     "tag": "Não"
@@ -25,5 +27,195 @@
   },
   "creditoReal_cr79767": {
     "tag": "Agendar"
+  },
+  "olx_1442926772": {
+    "tag": "Não"
+  },
+  "olx_1452739649": {
+    "tag": "Não"
+  },
+  "olx_1449173353": {
+    "tag": "Não"
+  },
+  "olx_1465673751": {
+    "tag": "Agendado"
+  },
+  "olx_1446609790": {
+    "tag": "Não"
+  },
+  "olx_1442257076": {
+    "tag": "Talvez"
+  },
+  "olx_1463853745": {
+    "tag": "Não"
+  },
+  "olx_1447849085": {
+    "tag": "Não"
+  },
+  "olx_1451930261": {
+    "tag": "Agendado"
+  },
+  "creditoReal_cr80841": {
+    "tag": "Não"
+  },
+  "creditoReal_cr77830": {
+    "tag": "Não"
+  },
+  "sanremo_SRAP4977": {
+    "tag": "Não"
+  },
+  "realizar_5426": {
+    "tag": "Não"
+  },
+  "realizar_4846": {
+    "tag": "Não"
+  },
+  "sanremo_SRAP4526": {
+    "tag": "Não"
+  },
+  "realizar_6438": {
+    "tag": "Não"
+  },
+  "": {
+    "tag": "Não"
+  },
+  "realizar_6433": {
+    "tag": "Não"
+  },
+  "regente_A04035": {
+    "tag": "Não"
+  },
+  "regente_A04858": {
+    "tag": "Não"
+  },
+  "olx_1461505084": {
+    "tag": "Não"
+  },
+  "olx_1445301652": {
+    "tag": "Não"
+  },
+  "olx_1449677604": {
+    "tag": "Não"
+  },
+  "olx_1449115390": {
+    "tag": "Agendar"
+  },
+  "olx_1463853863": {
+    "tag": "Agendar"
+  },
+  "olx_1440490713": {
+    "tag": "Talvez"
+  },
+  "duda_1556": {
+    "tag": "Não"
+  },
+  "creditoReal_cr83877": {
+    "tag": "Não"
+  },
+  "daltonandrade_7143": {
+    "tag": "Não"
+  },
+  "creditoReal_cr83309": {
+    "tag": "Agendado"
+  },
+  "f1_1955831": {
+    "tag": "Agendado"
+  },
+  "sanremo_SRAP4427": {
+    "tag": "Não"
+  },
+  "sanremo_SRAP4430": {
+    "tag": "Não"
+  },
+  "sanremo_SRAP4428": {
+    "tag": "Não"
+  },
+  "sanremo_SRAP4429": {
+    "tag": "Não"
+  },
+  "sanremo_SRAP4431": {
+    "tag": "Não"
+  },
+  "sanremo_SRAP4426": {
+    "tag": "Não"
+  },
+  "duda_6014": {
+    "tag": "Não"
+  },
+  "lideranca_LC512": {
+    "tag": "Talvez"
+  },
+  "creditoReal_cr80504": {
+    "tag": "Agendado"
+  },
+  "olx_1457933665": {
+    "tag": "Não"
+  },
+  "gralha_28500": {
+    "tag": "Não"
+  },
+  "gralha_28501": {
+    "tag": "Não"
+  },
+  "ibagy_130235": {
+    "tag": "Talvez"
+  },
+  "duda_36571": {
+    "nota": 4,
+    "tag": "Agendar"
+  },
+  "olx_1452512549": {
+    "tag": "Não"
+  },
+  "olx_1452292893": {
+    "tag": "Não"
+  },
+  "olx_1436357435": {
+    "tag": "Não"
+  },
+  "ibagy_103283": {
+    "observacao": "reservado",
+    "tag": "Talvez"
+  },
+  "olx_1461504067": {
+    "tag": "Agendar"
+  },
+  "ibagy_117036": {
+    "tag": "Agendar"
+  },
+  "regente_A04879": {
+    "tag": "Talvez"
+  },
+  "ibagy_131066": {
+    "observacao": "falta foto"
+  },
+  "ibagy_113752": {
+    "tag": "Agendar"
+  },
+  "olx_1466307790": {
+    "tag": "Não"
+  },
+  "creditoReal_cr82460": {
+    "tag": "Não"
+  },
+  "creditoReal_cr80406": {
+    "tag": "Não"
+  },
+  "creditoReal_cr79404": {
+    "tag": "Talvez"
+  },
+  "creditoReal_cr83509": {
+    "observacao": "em breve",
+    "tag": "Talvez"
+  },
+  "creditoReal_cr80727": {
+    "tag": "Não"
+  },
+  "creditoReal_cr85633": {
+    "tag": "Não"
+  },
+  "creditoReal_cr83669": {
+    "observacao": "em breve",
+    "tag": "Talvez"
   }
 }

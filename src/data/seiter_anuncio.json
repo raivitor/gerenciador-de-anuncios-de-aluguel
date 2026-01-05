@@ -1,17 +1,5 @@
 [
   {
-    "id": "AP03547",
-    "bairro": "AGRONÔMICA",
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "tamanho": 77,
-    "valor_aluguel": 3800,
-    "valor_total": 4987.97,
-    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/agronomica/apartamento/77801881",
-    "corretora": "seiter"
-  },
-  {
     "id": "AP03535",
     "bairro": "CARVOEIRA",
     "quartos": 4,
