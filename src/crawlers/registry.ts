@@ -17,7 +17,7 @@ import seiterCrawler from './providers/seiter';
 import itacorubiCrawler from './providers/itacorubi';
 
 export const crawlers: BaseCrawler[] = [
-  // olxCrawler, //ok
+  olxCrawler, //ok
   creditoRealCrawler, //ok
   ibagyCrawler, //ok
   dudaCrawler, //ok
