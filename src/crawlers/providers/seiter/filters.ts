@@ -9,7 +9,7 @@ export interface SeiterFilters {
 }
 
 export const filters: SeiterFilters = {
-  bedrooms: 2,
+  bedrooms: 1,
   parking: 1,
   maxValue: DEFAULT_MAX_VALUE,
   minSize: DEFAULT_MIN_SIZE,

@@ -24,6 +24,18 @@
     "corretora": "regente"
   },
   {
+    "id": "regente_A04865",
+    "valor_aluguel": 2950,
+    "valor_total": 3575,
+    "url_apartamento": "https://regenteimoveis.com.br/imovel/A04865/otimo-apartamento-de-1-dormitorio-no-bairro-carvoeira-perto-da-ufsc",
+    "bairro": "Trindade",
+    "tamanho": 51.38,
+    "quartos": 1,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "regente"
+  },
+  {
     "id": "regente_A03987",
     "valor_aluguel": 3400,
     "valor_total": 4198,

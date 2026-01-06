@@ -1,5 +1,16 @@
 [
   {
+    "id": "daltonandrade_7417",
+    "valor_aluguel": 2650,
+    "valor_total": 3256,
+    "url_apartamento": "https://daltonandrade.com.br/imovel/7417/apartamento-1-quarto-centro-florianopolis/",
+    "bairro": "",
+    "tamanho": 59,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "daltonandrade"
+  },
+  {
     "id": "daltonandrade_7205",
     "valor_aluguel": 3100,
     "valor_total": 3761,

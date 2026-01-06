@@ -12,6 +12,17 @@
     "corretora": "duda"
   },
   {
+    "id": "duda_13610",
+    "valor_aluguel": 2600,
+    "valor_total": 3323.6666666666665,
+    "url_apartamento": "https://dudaimoveis.com.br/imovel/13610/apartamento-1-quarto-carvoeira-florianopolis/",
+    "bairro": "Carvoeira",
+    "tamanho": 50,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "duda"
+  },
+  {
     "id": "duda_6014",
     "valor_aluguel": 2600,
     "valor_total": 3325,
@@ -150,6 +161,17 @@
     "tamanho": 65,
     "quartos": 2,
     "banheiros": 2,
+    "garagem": 1,
+    "corretora": "duda"
+  },
+  {
+    "id": "duda_52490",
+    "valor_aluguel": 3500,
+    "valor_total": 4110,
+    "url_apartamento": "https://dudaimoveis.com.br/imovel/52490/apartamento-1-quarto-trindade-florianopolis/",
+    "bairro": "Trindade",
+    "tamanho": 50,
+    "banheiros": 1,
     "garagem": 1,
     "corretora": "duda"
   },

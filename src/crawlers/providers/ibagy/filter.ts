@@ -28,7 +28,7 @@ export const filters: IbagyFilters = {
     'florianopolis, santa-monica',
     'florianopolis, trindade',
   ],
-  dormitorios: [2, 3],
+  dormitorios: [1, 2, 3],
   vagas: [1],
   valorlocacao: [0, DEFAULT_MAX_VALUE],
   area: [DEFAULT_MIN_SIZE, 509],
@@ -43,7 +43,7 @@ export const encodeFilters = (ibagyFilters: IbagyFilters): string => {
 
   ibagyFilters.tipo_residencial.forEach(t => params.append('tipo_residencial[]', t));
   ibagyFilters.cidadebairro.forEach(cb => params.append('cidadebairro[]', cb));
-  ibagyFilters.dormitorios.forEach(d => params.append('dormitorios[]', String(d)));
+  //ibagyFilters.dormitorios.forEach(d => params.append('dormitorios[]', String(d)));
   ibagyFilters.vagas.forEach(v => params.append('vagas[]', String(v)));
 
   params.append('valorlocacao', `${ibagyFilters.valorlocacao[0]},${ibagyFilters.valorlocacao[1]}`);

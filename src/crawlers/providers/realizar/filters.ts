@@ -27,7 +27,7 @@ export function encodeFilters(
   params.set('max', maxValue.toFixed(2));
   params.set('areaPrivativaMin', minSize.toFixed(2));
   params.set('areaTotalMin', parseFloat(customFilters.areaTotalMin).toFixed(2));
-  params.set('dormitorios', customFilters.dormitorios);
+  //params.set('dormitorios', customFilters.dormitorios);
   params.set('page', page.toString());
 
   return params.toString();

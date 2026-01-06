@@ -17,7 +17,7 @@ export const filters: DaltonFilters = {
   finalidade: 'aluguel',
   tipo: ['apartamento'],
   cidadebairro: ['florianopolis'],
-  dormitorios: [2, 3],
+  dormitorios: [1, 2, 3],
   vagas: [1],
   valorlocacao: [0, DEFAULT_MAX_VALUE],
   area: [DEFAULT_MIN_SIZE, 509],
@@ -31,7 +31,7 @@ export const encodeFilters = (daltonFilters: DaltonFilters): string => {
 
   daltonFilters.tipo.forEach(t => params.append('tipo[]', t));
   daltonFilters.cidadebairro.forEach(cb => params.append('cidadebairro[]', cb));
-  daltonFilters.dormitorios.forEach(d => params.append('dormitorios[]', String(d)));
+  //daltonFilters.dormitorios.forEach(d => params.append('dormitorios[]', String(d)));
   daltonFilters.vagas.forEach(v => params.append('vagas[]', String(v)));
 
   params.append(

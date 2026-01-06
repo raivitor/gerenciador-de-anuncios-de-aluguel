@@ -1,6 +1,18 @@
 [
   {
     "id": "",
+    "valor_aluguel": 2600,
+    "valor_total": 3255,
+    "url_apartamento": "https://floripaimobiliariasc.com.br/imovel/apartamento-carvoeira-florianopolis-sc-1-quartos-38m2-344",
+    "bairro": "Carvoeira",
+    "tamanho": 38,
+    "quartos": 1,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "floripa-imob"
+  },
+  {
+    "id": "",
     "valor_aluguel": 3400,
     "valor_total": 4321,
     "url_apartamento": "https://floripaimobiliariasc.com.br/imovel/apartamento-capoeiras-florianopolis-sc-2-quartos-72m2-558",
@@ -8,6 +20,30 @@
     "tamanho": 72,
     "quartos": 2,
     "banheiros": 2,
+    "garagem": 1,
+    "corretora": "floripa-imob"
+  },
+  {
+    "id": "",
+    "valor_aluguel": 2950,
+    "valor_total": 3575,
+    "url_apartamento": "https://floripaimobiliariasc.com.br/imovel/apartamento-carvoeira-florianopolis-sc-1-quartos-43.3m2-595",
+    "bairro": "Carvoeira",
+    "tamanho": 43,
+    "quartos": 1,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "floripa-imob"
+  },
+  {
+    "id": "",
+    "valor_aluguel": 2300,
+    "valor_total": 2764,
+    "url_apartamento": "https://floripaimobiliariasc.com.br/imovel/kitnet-trindade-florianopolis-sc-1-quartos-35.95m2-175",
+    "bairro": "Trindade",
+    "tamanho": 35,
+    "quartos": 1,
+    "banheiros": 1,
     "garagem": 1,
     "corretora": "floripa-imob"
   },
@@ -55,6 +91,42 @@
     "bairro": "Carvoeira",
     "tamanho": 56,
     "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "floripa-imob"
+  },
+  {
+    "id": "",
+    "valor_aluguel": 3500,
+    "valor_total": 4420,
+    "url_apartamento": "https://floripaimobiliariasc.com.br/imovel/studio-saco-grande-florianopolis-sc-1-quartos-52m2-228",
+    "bairro": "Saco Grande",
+    "tamanho": 52,
+    "quartos": 1,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "floripa-imob"
+  },
+  {
+    "id": "",
+    "valor_aluguel": 2800,
+    "valor_total": 3520,
+    "url_apartamento": "https://floripaimobiliariasc.com.br/imovel/apartamento-itacorubi-florianopolis-sc-1-quartos-45m2-319",
+    "bairro": "Itacorubi",
+    "tamanho": 45,
+    "quartos": 1,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "floripa-imob"
+  },
+  {
+    "id": "",
+    "valor_aluguel": 3600,
+    "valor_total": 4170,
+    "url_apartamento": "https://floripaimobiliariasc.com.br/imovel/studio-joao-paulo-florianopolis-sc-1-quartos-40m2-370",
+    "bairro": "João Paulo",
+    "tamanho": 40,
+    "quartos": 1,
     "banheiros": 1,
     "garagem": 1,
     "corretora": "floripa-imob"

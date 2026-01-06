@@ -1,11 +1,35 @@
 [
   {
+    "id": "sanremo_AP0466_SRI",
+    "valor_aluguel": 2400,
+    "valor_total": 2859,
+    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+1-quarto+itaguacu+florianopolis+sc+52m2+rs2400/762",
+    "bairro": "Itaguaçu",
+    "tamanho": 52,
+    "quartos": 1,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "sanremo"
+  },
+  {
     "id": "sanremo_SRAP4977",
     "valor_aluguel": 2500,
     "valor_total": 3182,
     "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+capoeiras+florianopolis+sc+58m2+rs2500/4977",
     "bairro": "Capoeiras",
     "tamanho": 58,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "sanremo"
+  },
+  {
+    "id": "sanremo_SRAP2397",
+    "valor_aluguel": 2600,
+    "valor_total": 2996,
+    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+jardim-atlantico+florianopolis+sc+54m2+rs2600/2397",
+    "bairro": "Jardim Atlântico",
+    "tamanho": 54,
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1,
@@ -48,6 +72,18 @@
     "corretora": "sanremo"
   },
   {
+    "id": "sanremo_SRAP4764",
+    "valor_aluguel": 3000,
+    "valor_total": 3450,
+    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+1-quarto+coqueiros+florianopolis+sc+54m2+rs3000/4764",
+    "bairro": "Coqueiros",
+    "tamanho": 54,
+    "quartos": 1,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "sanremo"
+  },
+  {
     "id": "sanremo_SRAP3881",
     "valor_aluguel": 3000,
     "valor_total": 3902,
@@ -56,6 +92,18 @@
     "tamanho": 60,
     "quartos": 2,
     "banheiros": 0,
+    "garagem": 1,
+    "corretora": "sanremo"
+  },
+  {
+    "id": "sanremo_SRAP4279",
+    "valor_aluguel": 3100,
+    "valor_total": 3710,
+    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+1-quarto+carvoeira+florianopolis+sc+56m2+rs3100/4279",
+    "bairro": "Carvoeira",
+    "tamanho": 56,
+    "quartos": 1,
+    "banheiros": 2,
     "garagem": 1,
     "corretora": "sanremo"
   },
@@ -132,11 +180,35 @@
     "corretora": "sanremo"
   },
   {
+    "id": "sanremo_SRAP4368",
+    "valor_aluguel": 3250,
+    "valor_total": 3940,
+    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+itacorubi+florianopolis+sc+52m2+rs3250/4368",
+    "bairro": "Itacorubi",
+    "tamanho": 52,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "sanremo"
+  },
+  {
     "id": "sanremo_AP0628_SRI",
     "valor_aluguel": 3300,
     "valor_total": 4230,
     "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+coqueiros+florianopolis+sc+64m2+rs3300/1205",
     "bairro": "Coqueiros",
+    "tamanho": 64,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "sanremo"
+  },
+  {
+    "id": "sanremo_SRAP3267",
+    "valor_aluguel": 3300,
+    "valor_total": 4012,
+    "url_apartamento": "https://www.sanremoimoveis.com.br/imovel/aluguel+apartamento+2-quartos+itacorubi+florianopolis+sc+64m2+rs3300/3267",
+    "bairro": "Itacorubi",
     "tamanho": 64,
     "quartos": 2,
     "banheiros": 1,

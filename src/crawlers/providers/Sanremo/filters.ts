@@ -42,7 +42,7 @@ export function getSanremoParams(
     finalidade: customFilters.finalidade,
     tipos: customFilters.tipos,
     valorMaximo: maxValue.toString(),
-    quartos: customFilters.quartos,
+    //quartos: customFilters.quartos,
     vagas: customFilters.vagas,
     areaMinima: minSize.toString(),
     page: page.toString(),

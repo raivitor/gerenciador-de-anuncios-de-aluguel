@@ -17,7 +17,7 @@ export const filters: DudaFilters = {
   finalidade: 'aluguel',
   tipo_residencial: ['apartamento'],
   cidadebairro: ['florianopolis'],
-  dormitorios: [2, 3],
+  dormitorios: [1, 2, 3],
   vagas: [1],
   valorlocacao: [0, DEFAULT_MAX_VALUE],
   area: [DEFAULT_MIN_SIZE, 509],
@@ -31,7 +31,7 @@ export const encodeFilters = (dudaFilters: DudaFilters): string => {
 
   dudaFilters.tipo_residencial.forEach(t => params.append('tipo_residencial[]', t));
   dudaFilters.cidadebairro.forEach(cb => params.append('cidadebairro[]', cb));
-  dudaFilters.dormitorios.forEach(d => params.append('dormitorios[]', String(d)));
+  //dudaFilters.dormitorios.forEach(d => params.append('dormitorios[]', String(d)));
   dudaFilters.vagas.forEach(v => params.append('vagas[]', String(v)));
 
   params.append('valorlocacao', `${dudaFilters.valorlocacao[0]},${dudaFilters.valorlocacao[1]}`);

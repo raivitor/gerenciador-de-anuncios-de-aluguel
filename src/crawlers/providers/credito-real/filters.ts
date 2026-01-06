@@ -7,7 +7,7 @@ export interface CreditoRealFilters {
   finalValue: number;
   areaInitialValue: number;
   parking: number;
-  bedrooms: number;
+  //bedrooms: number;
   cityState: string;
 }
 
@@ -30,7 +30,7 @@ export const filters: CreditoRealFilters = {
   finalValue: DEFAULT_MAX_VALUE,
   areaInitialValue: DEFAULT_MIN_SIZE,
   parking: 1,
-  bedrooms: 3,
+  //bedrooms: 3,
 };
 
 export const encodeFilters = (creditoRealFilters: CreditoRealFilters): string => {

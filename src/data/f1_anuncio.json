@@ -1,5 +1,17 @@
 [
   {
+    "id": "f1_5710",
+    "valor_aluguel": 2500,
+    "valor_total": 2992,
+    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-epiros-park-de-1-quarto-no-bairro-corrego-grande-florianopolis-5710/",
+    "bairro": "Córrego Grande",
+    "tamanho": 48,
+    "quartos": 1,
+    "banheiros": 1,
+    "garagem": 0,
+    "corretora": "f1"
+  },
+  {
     "id": "f1_1955831",
     "valor_aluguel": 2600,
     "valor_total": 3280,
@@ -7,6 +19,54 @@
     "bairro": "Carvoeira",
     "tamanho": 68,
     "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "f1"
+  },
+  {
+    "id": "f1_1959278",
+    "valor_aluguel": 2800,
+    "valor_total": 3400,
+    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-condominio-belvedere-de-1-quarto-no-bairro-carvoeira-florianopolis-1959278/",
+    "bairro": "Carvoeira",
+    "tamanho": 57.28,
+    "quartos": 1,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "f1"
+  },
+  {
+    "id": "f1_162661",
+    "valor_aluguel": 2800,
+    "valor_total": 3200,
+    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-edificio-luciana-de-1-quarto-no-bairro-trindade-florianopolis-162661/",
+    "bairro": "Trindade",
+    "tamanho": 36.16,
+    "quartos": 1,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "f1"
+  },
+  {
+    "id": "f1_1955701",
+    "valor_aluguel": 2900,
+    "valor_total": 3397,
+    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-condominio-alexandre-de-1-quarto-no-bairro-pantanal-florianopolis-1955701/",
+    "bairro": "Pantanal",
+    "tamanho": 100,
+    "quartos": 1,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "f1"
+  },
+  {
+    "id": "f1_1958775",
+    "valor_aluguel": 2950,
+    "valor_total": 3575,
+    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-victoria-place-de-1-quarto-no-bairro-carvoeira-florianopolis-1958775/",
+    "bairro": "Carvoeira",
+    "tamanho": 55,
+    "quartos": 1,
     "banheiros": 1,
     "garagem": 1,
     "corretora": "f1"
@@ -44,18 +104,6 @@
     "tamanho": 70,
     "quartos": 3,
     "banheiros": 1,
-    "garagem": 1,
-    "corretora": "f1"
-  },
-  {
-    "id": "f1_1958829",
-    "valor_aluguel": 3600,
-    "valor_total": 4415.37,
-    "url_apartamento": "https://f1ciaimobiliaria.com.br/imoveis/aluguel-apartamento-reggio-di-calabria-de-2-quartos-no-bairro-pantanal-florianopolis-1958829/",
-    "bairro": "Pantanal",
-    "tamanho": 100,
-    "quartos": 2,
-    "banheiros": 2,
     "garagem": 1,
     "corretora": "f1"
   }

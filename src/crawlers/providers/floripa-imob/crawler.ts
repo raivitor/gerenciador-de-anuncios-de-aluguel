@@ -16,7 +16,7 @@ export class FloripaImobCrawler extends PuppeteerCrawler {
     const url = new URL('/busca', this.origin);
     url.searchParams.set('finalidade', 'Aluguel');
     url.searchParams.set('cidade', 'Florianópolis');
-    url.searchParams.set('dormitorios', '2');
+    //url.searchParams.set('dormitorios', '1');
     url.searchParams.set('vagas', '1');
     url.searchParams.set('max', this.maxValue.toFixed(2));
     //url.searchParams.set('areaPrivativaMin', this.minSize.toFixed(2));

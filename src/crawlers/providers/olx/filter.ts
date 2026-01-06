@@ -25,7 +25,7 @@ export const encodeFilters = (olxFilters: OlxFilters): string => {
   olxFilters.gsp.forEach(g => params.append('gsp', String(g)));
   params.append('ss', String(olxFilters.ss));
   params.append('rts', String(olxFilters.rts));
-  olxFilters.ros.forEach(r => params.append('ros', String(r)));
+  //olxFilters.ros.forEach(r => params.append('ros', String(r)));
 
   return params.toString();
 };

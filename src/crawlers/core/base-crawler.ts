@@ -4,7 +4,7 @@ import type { Cheerio } from 'cheerio';
 
 import type { Apartamento } from './types';
 
-export const DEFAULT_MIN_SIZE = 55;
+export const DEFAULT_MIN_SIZE = 50;
 export const DEFAULT_MAX_VALUE = 3600;
 
 export abstract class BaseCrawler {

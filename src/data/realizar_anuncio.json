@@ -24,6 +24,18 @@
     "corretora": "realizar"
   },
   {
+    "id": "realizar_4151",
+    "valor_aluguel": 3200,
+    "valor_total": 3700,
+    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/sala-comercial-saco-grande-florianopolis-sc-95m2-4151",
+    "bairro": "Saco Grande",
+    "tamanho": 95,
+    "quartos": 0,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "realizar"
+  },
+  {
     "id": "realizar_4846",
     "valor_aluguel": 3450,
     "valor_total": 4100,
@@ -108,6 +120,18 @@
     "corretora": "realizar"
   },
   {
+    "id": "realizar_6507",
+    "valor_aluguel": 3300,
+    "valor_total": 4025,
+    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/studio-carvoeira-florianopolis-sc-1-quartos-71m2-6507",
+    "bairro": "Carvoeira",
+    "tamanho": 71,
+    "quartos": 1,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "realizar"
+  },
+  {
     "id": "realizar_6509",
     "valor_aluguel": 3500,
     "valor_total": 4390,
@@ -117,6 +141,18 @@
     "quartos": 2,
     "banheiros": 1,
     "garagem": 2,
+    "corretora": "realizar"
+  },
+  {
+    "id": "realizar_6501",
+    "valor_aluguel": 3300,
+    "valor_total": 3917,
+    "url_apartamento": "https://realizarimoveisfloripa.com.br/imovel/apartamento-monte-verde-florianopolis-sc-1-quartos-80m2-6501",
+    "bairro": "Monte Verde",
+    "tamanho": 80,
+    "quartos": 1,
+    "banheiros": 1,
+    "garagem": 1,
     "corretora": "realizar"
   },
   {

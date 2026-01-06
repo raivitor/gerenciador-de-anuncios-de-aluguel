@@ -9,7 +9,7 @@ export const filters: GralhaFilters = {
   finalidade: 'aluguel',
   tipos: 'apartamento',
   vagas: '1, 2',
-  quartos: '2, 3',
+  quartos: '1, 2, 3',
 };
 
 const SUGGEST_FLORIANOPOLIS = [
@@ -41,7 +41,7 @@ export function getGralhaParams(
     finalidade: customFilters.finalidade,
     valorMaximo: maxValue.toString(),
     quartos: customFilters.quartos,
-    vagas: customFilters.vagas,
+    //vagas: customFilters.vagas,
     areaMinima: minSize.toString(),
     tipos: customFilters.tipos,
     page: page.toString(),

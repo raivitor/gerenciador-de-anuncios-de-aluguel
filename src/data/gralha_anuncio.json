@@ -36,6 +36,18 @@
     "corretora": "gralha"
   },
   {
+    "id": "gralha_28065",
+    "valor_aluguel": 3250,
+    "valor_total": 3713.1,
+    "url_apartamento": "https://www.gralhaalugueis.com.br/imovel/aluguel+apartamento+1-quarto+carvoeira+florianopolis+sc+56,56m2+rs3250/2342",
+    "bairro": "Carvoeira",
+    "tamanho": 56.56,
+    "quartos": 1,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "gralha"
+  },
+  {
     "id": "gralha_27972",
     "valor_aluguel": 3350,
     "valor_total": 4100,

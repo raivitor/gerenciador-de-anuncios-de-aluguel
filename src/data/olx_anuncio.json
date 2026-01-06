@@ -249,18 +249,6 @@
     "corretora": "olx"
   },
   {
-    "id": "olx_1454578327",
-    "valor_aluguel": 3500,
-    "valor_total": 4590,
-    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-para-aluguel-corrego-grande-florianopolis-sc-1454578327",
-    "bairro": "Córrego Grande",
-    "tamanho": 64,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "olx"
-  },
-  {
     "id": "olx_1459102503",
     "valor_aluguel": 3680,
     "valor_total": 4290,
@@ -321,17 +309,6 @@
     "corretora": "olx"
   },
   {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0,
-    "corretora": "olx"
-  },
-  {
     "id": "olx_1464591886",
     "valor_aluguel": 3500,
     "valor_total": 4595,
@@ -341,6 +318,17 @@
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
     "corretora": "olx"
   },
   {
@@ -416,17 +404,6 @@
     "corretora": "olx"
   },
   {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0,
-    "corretora": "olx"
-  },
-  {
     "id": "olx_1465431175",
     "valor_aluguel": 3200,
     "valor_total": 3749.3333333333335,
@@ -436,6 +413,17 @@
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
     "corretora": "olx"
   },
   {
@@ -511,17 +499,6 @@
     "corretora": "olx"
   },
   {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0,
-    "corretora": "olx"
-  },
-  {
     "id": "olx_1465072241",
     "valor_aluguel": 3500,
     "valor_total": 4182,
@@ -531,6 +508,17 @@
     "quartos": 3,
     "banheiros": 1,
     "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
     "corretora": "olx"
   },
   {
@@ -606,17 +594,6 @@
     "corretora": "olx"
   },
   {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0,
-    "corretora": "olx"
-  },
-  {
     "id": "olx_1463740315",
     "valor_aluguel": 3400,
     "valor_total": 4211,
@@ -626,6 +603,17 @@
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
     "corretora": "olx"
   },
   {
@@ -737,17 +725,6 @@
     "corretora": "olx"
   },
   {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0,
-    "corretora": "olx"
-  },
-  {
     "id": "olx_1463323203",
     "valor_aluguel": 3200,
     "valor_total": 3920,
@@ -757,6 +734,17 @@
     "quartos": 2,
     "banheiros": 2,
     "garagem": 2,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
     "corretora": "olx"
   },
   {
@@ -808,17 +796,6 @@
     "corretora": "olx"
   },
   {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0,
-    "corretora": "olx"
-  },
-  {
     "id": "olx_1463120109",
     "valor_aluguel": 3200,
     "valor_total": 4276,
@@ -828,6 +805,17 @@
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
     "corretora": "olx"
   },
   {
@@ -903,17 +891,6 @@
     "corretora": "olx"
   },
   {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0,
-    "corretora": "olx"
-  },
-  {
     "id": "olx_1462676517",
     "valor_aluguel": 3500,
     "valor_total": 4553.333333333333,
@@ -923,6 +900,17 @@
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
     "corretora": "olx"
   },
   {
@@ -998,17 +986,6 @@
     "corretora": "olx"
   },
   {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0,
-    "corretora": "olx"
-  },
-  {
     "id": "olx_1461823015",
     "valor_aluguel": 3700,
     "valor_total": 4690,
@@ -1021,6 +998,17 @@
     "corretora": "olx"
   },
   {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
+    "corretora": "olx"
+  },
+  {
     "id": "olx_1461624374",
     "valor_aluguel": 3790,
     "valor_total": 4516,
@@ -1030,6 +1018,18 @@
     "quartos": 2,
     "banheiros": 2,
     "garagem": 2,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_1442930991",
+    "valor_aluguel": 3700,
+    "valor_total": 4330,
+    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/studio-no-bairro-corrego-grande-florianopolis-1442930991",
+    "bairro": "Córrego Grande",
+    "tamanho": 63,
+    "quartos": 1,
+    "banheiros": 1,
+    "garagem": 1,
     "corretora": "olx"
   },
   {
@@ -1069,24 +1069,24 @@
     "corretora": "olx"
   },
   {
+    "id": "olx_1461544416",
+    "valor_aluguel": 3800,
+    "valor_total": 4839,
+    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/studio-mobiliado-de-alto-padrao-no-itacorubi-disponivel-fevereiro-a-agosto-2026-1461544416",
+    "bairro": "Itacorubi",
+    "tamanho": 72,
+    "quartos": 1,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "olx"
+  },
+  {
     "id": "olx_1461524149",
     "valor_aluguel": 3500,
     "valor_total": 4385,
     "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/excelente-apartamento-de-2-dormitorios-no-bairro-trindade-1461524149",
     "bairro": "Trindade",
     "tamanho": 67,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "olx"
-  },
-  {
-    "id": "olx_1461517112",
-    "valor_aluguel": 2900,
-    "valor_total": 3900,
-    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/otimo-apartamento-de-2-dormitorios-no-bairro-trindade-perto-da-ufsc-1461517112",
-    "bairro": "Trindade",
-    "tamanho": 93,
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,
@@ -1101,6 +1101,18 @@
     "quartos": 0,
     "banheiros": 0,
     "garagem": 0,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_1461517112",
+    "valor_aluguel": 2900,
+    "valor_total": 3900,
+    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/otimo-apartamento-de-2-dormitorios-no-bairro-trindade-perto-da-ufsc-1461517112",
+    "bairro": "Trindade",
+    "tamanho": 93,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
     "corretora": "olx"
   },
   {
@@ -1176,6 +1188,17 @@
     "corretora": "olx"
   },
   {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
+    "corretora": "olx"
+  },
+  {
     "id": "olx_1461504948",
     "valor_aluguel": 2840,
     "valor_total": 3615,
@@ -1185,17 +1208,6 @@
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,
-    "corretora": "olx"
-  },
-  {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0,
     "corretora": "olx"
   },
   {
@@ -1271,6 +1283,17 @@
     "corretora": "olx"
   },
   {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
+    "corretora": "olx"
+  },
+  {
     "id": "olx_1461041916",
     "valor_aluguel": 3800,
     "valor_total": 4372,
@@ -1283,17 +1306,6 @@
     "corretora": "olx"
   },
   {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0,
-    "corretora": "olx"
-  },
-  {
     "id": "olx_1461036409",
     "valor_aluguel": 3100,
     "valor_total": 3890,
@@ -1301,6 +1313,18 @@
     "bairro": "Córrego Grande",
     "tamanho": 67,
     "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_1461014940",
+    "valor_aluguel": 2600,
+    "valor_total": 3184,
+    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/excelente-apartamento-1-dormitorio-s-em-trindade-florianopolis-1461014940",
+    "bairro": "Trindade",
+    "tamanho": 77,
+    "quartos": 1,
     "banheiros": 1,
     "garagem": 1,
     "corretora": "olx"
@@ -1390,6 +1414,17 @@
     "corretora": "olx"
   },
   {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
+    "corretora": "olx"
+  },
+  {
     "id": "olx_1459644387",
     "valor_aluguel": 3500,
     "valor_total": 4312.166666666667,
@@ -1402,6 +1437,18 @@
     "corretora": "olx"
   },
   {
+    "id": "olx_1459470771",
+    "valor_aluguel": 3750,
+    "valor_total": 4665,
+    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-mobiliado-com-conforto-e-seguranca-em-itacorubi-florianopolis-1459470771",
+    "bairro": "Itacorubi",
+    "tamanho": 63,
+    "quartos": 1,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "olx"
+  },
+  {
     "id": "olx_1459412619",
     "valor_aluguel": 2500,
     "valor_total": 3462,
@@ -1411,17 +1458,6 @@
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1,
-    "corretora": "olx"
-  },
-  {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0,
     "corretora": "olx"
   },
   {
@@ -1446,6 +1482,17 @@
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
     "corretora": "olx"
   },
   {
@@ -1485,17 +1532,6 @@
     "corretora": "olx"
   },
   {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0,
-    "corretora": "olx"
-  },
-  {
     "id": "olx_1457933665",
     "valor_aluguel": 2700,
     "valor_total": 3374,
@@ -1520,6 +1556,18 @@
     "corretora": "olx"
   },
   {
+    "id": "olx_1457401664",
+    "valor_aluguel": 3800,
+    "valor_total": 5036,
+    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-florianopolis-sc-1457401664",
+    "bairro": "Trindade",
+    "tamanho": 132,
+    "quartos": 4,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "olx"
+  },
+  {
     "id": "olx_1457348297",
     "valor_aluguel": 3200,
     "valor_total": 4243,
@@ -1529,6 +1577,17 @@
     "quartos": 3,
     "banheiros": 2,
     "garagem": 2,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
     "corretora": "olx"
   },
   {
@@ -1580,17 +1639,6 @@
     "corretora": "olx"
   },
   {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0,
-    "corretora": "olx"
-  },
-  {
     "id": "olx_1456741593",
     "valor_aluguel": 3700,
     "valor_total": 4620,
@@ -1624,6 +1672,17 @@
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
     "corretora": "olx"
   },
   {
@@ -1675,17 +1734,6 @@
     "corretora": "olx"
   },
   {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0,
-    "corretora": "olx"
-  },
-  {
     "id": "olx_1453836891",
     "valor_aluguel": 3200,
     "valor_total": 4066,
@@ -1719,6 +1767,17 @@
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
     "corretora": "olx"
   },
   {
@@ -1770,17 +1829,6 @@
     "corretora": "olx"
   },
   {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0,
-    "corretora": "olx"
-  },
-  {
     "id": "olx_1452782453",
     "valor_aluguel": 3400,
     "valor_total": 3910,
@@ -1814,6 +1862,17 @@
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
     "corretora": "olx"
   },
   {
@@ -1865,17 +1924,6 @@
     "corretora": "olx"
   },
   {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0,
-    "corretora": "olx"
-  },
-  {
     "id": "olx_1450892411",
     "valor_aluguel": 3500,
     "valor_total": 4483.333333333333,
@@ -1909,6 +1957,17 @@
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
     "corretora": "olx"
   },
   {
@@ -1957,17 +2016,6 @@
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1,
-    "corretora": "olx"
-  },
-  {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0,
     "corretora": "olx"
   },
   {
@@ -2043,6 +2091,17 @@
     "corretora": "olx"
   },
   {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
+    "corretora": "olx"
+  },
+  {
     "id": "olx_1440490713",
     "valor_aluguel": 2900,
     "valor_total": 3761,
@@ -2091,17 +2150,6 @@
     "corretora": "olx"
   },
   {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0,
-    "corretora": "olx"
-  },
-  {
     "id": "olx_1446609790",
     "valor_aluguel": 2300,
     "valor_total": 3176,
@@ -2111,6 +2159,17 @@
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
     "corretora": "olx"
   },
   {
@@ -2162,17 +2221,6 @@
     "corretora": "olx"
   },
   {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0,
-    "corretora": "olx"
-  },
-  {
     "id": "olx_1445972351",
     "valor_aluguel": 3000,
     "valor_total": 4259,
@@ -2205,6 +2253,29 @@
     "tamanho": 67,
     "quartos": 2,
     "banheiros": 2,
+    "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_1445378821",
+    "valor_aluguel": 3750,
+    "valor_total": 4567.166666666667,
+    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-1-dormitorio-pantanal-1445378821",
+    "bairro": "Pantanal",
+    "tamanho": 67,
+    "quartos": 1,
+    "banheiros": 1,
     "garagem": 1,
     "corretora": "olx"
   },
@@ -2257,17 +2328,6 @@
     "corretora": "olx"
   },
   {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0,
-    "corretora": "olx"
-  },
-  {
     "id": "olx_1445301353",
     "valor_aluguel": 3400,
     "valor_total": 4571,
@@ -2289,6 +2349,17 @@
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
     "corretora": "olx"
   },
   {
@@ -2328,6 +2399,18 @@
     "corretora": "olx"
   },
   {
+    "id": "olx_1443833284",
+    "valor_aluguel": 3500,
+    "valor_total": 3531,
+    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-com-1-dormitorio-para-alugar-70-m-por-r-3-530-63-mes-corrego-grande-flo-1443833284",
+    "bairro": "Córrego Grande",
+    "tamanho": 70,
+    "quartos": 1,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "olx"
+  },
+  {
     "id": "olx_1442900172",
     "valor_aluguel": 3500,
     "valor_total": 4075,
@@ -2352,17 +2435,6 @@
     "corretora": "olx"
   },
   {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0,
-    "corretora": "olx"
-  },
-  {
     "id": "olx_1442257076",
     "valor_aluguel": 2450,
     "valor_total": 3248,
@@ -2372,6 +2444,17 @@
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
     "corretora": "olx"
   },
   {
@@ -2447,17 +2530,6 @@
     "corretora": "olx"
   },
   {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0,
-    "corretora": "olx"
-  },
-  {
     "id": "olx_1439626055",
     "valor_aluguel": 2800,
     "valor_total": 3614,
@@ -2470,6 +2542,17 @@
     "corretora": "olx"
   },
   {
+    "id": "olx_undefined",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
+    "corretora": "olx"
+  },
+  {
     "id": "olx_1439502832",
     "valor_aluguel": 3600,
     "valor_total": 4580.25,
@@ -2477,6 +2560,18 @@
     "bairro": "Córrego Grande",
     "tamanho": 65,
     "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "olx"
+  },
+  {
+    "id": "olx_1439335763",
+    "valor_aluguel": 3500,
+    "valor_total": 4060,
+    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-trindade-01-dormitorio-01-vaga-1439335763",
+    "bairro": "Trindade",
+    "tamanho": 60,
+    "quartos": 1,
     "banheiros": 1,
     "garagem": 1,
     "corretora": "olx"
@@ -2607,101 +2702,6 @@
     "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/excelente-apartamento-2-dormitorio-s-em-pantanal-florianopolis-1435092862",
     "bairro": "Pantanal",
     "tamanho": 74,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "olx"
-  },
-  {
-    "id": "olx_1434102946",
-    "valor_aluguel": 3100,
-    "valor_total": 3761,
-    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-com-02-dormitorios-na-trindade-1434102946",
-    "bairro": "Trindade",
-    "tamanho": 60,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "olx"
-  },
-  {
-    "id": "olx_1433800958",
-    "valor_aluguel": 3750,
-    "valor_total": 5005,
-    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/conforto-e-conveniencia-no-bairro-itacorubi-em-florianopolis-1433800958",
-    "bairro": "Itacorubi",
-    "tamanho": 80,
-    "quartos": 2,
-    "banheiros": 3,
-    "garagem": 2,
-    "corretora": "olx"
-  },
-  {
-    "id": "olx_undefined",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "bairro": "",
-    "tamanho": 0,
-    "quartos": 0,
-    "banheiros": 0,
-    "garagem": 0,
-    "corretora": "olx"
-  },
-  {
-    "id": "olx_1433378272",
-    "valor_aluguel": 3400,
-    "valor_total": 4310,
-    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-80m-para-alugar-1433378272",
-    "bairro": "Trindade",
-    "tamanho": 80,
-    "quartos": 3,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "olx"
-  },
-  {
-    "id": "olx_1433368523",
-    "valor_aluguel": 3500,
-    "valor_total": 4400,
-    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/apartamento-70m-para-alugar-1433368523",
-    "bairro": "Itacorubi",
-    "tamanho": 70,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "olx"
-  },
-  {
-    "id": "olx_1433124928",
-    "valor_aluguel": 3000,
-    "valor_total": 4108,
-    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/excelente-apartamento-2-dormitorio-s-em-trindade-florianopolis-1433124928",
-    "bairro": "Trindade",
-    "tamanho": 68,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 2,
-    "corretora": "olx"
-  },
-  {
-    "id": "olx_1432187338",
-    "valor_aluguel": 3500,
-    "valor_total": 4344,
-    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/excelente-apartamento-2-dormitorio-s-em-corrego-grande-florianopolis-1432187338",
-    "bairro": "Córrego Grande",
-    "tamanho": 65,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 2,
-    "corretora": "olx"
-  },
-  {
-    "id": "olx_1430640469",
-    "valor_aluguel": 3650,
-    "valor_total": 4525,
-    "url_apartamento": "https://sc.olx.com.br/florianopolis-e-regiao/imoveis/descubra-a-tranquilidade-e-o-conforto-no-coracao-do-bairro-trindade-em-florianopolis-1430640469",
-    "bairro": "Trindade",
-    "tamanho": 106,
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,

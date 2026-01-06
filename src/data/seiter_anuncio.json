@@ -36,6 +36,18 @@
     "corretora": "seiter"
   },
   {
+    "id": "AP02203",
+    "bairro": "AGRONÔMICA",
+    "quartos": 1,
+    "banheiros": 0,
+    "garagem": 1,
+    "tamanho": 31,
+    "valor_aluguel": 3500,
+    "valor_total": 3943.5,
+    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/agronomica/apartamento/73005585",
+    "corretora": "seiter"
+  },
+  {
     "id": "AP00956",
     "bairro": "ITACORUBI",
     "quartos": 2,
