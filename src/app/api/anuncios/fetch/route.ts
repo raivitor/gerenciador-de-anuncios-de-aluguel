@@ -15,6 +15,7 @@ export async function POST(): Promise<NextResponse<{ results: CrawlerResult[] }>
   for (const crawler of crawlers) {
     const start = Date.now();
     try {
+      console.log('Iniciando', crawler.name);
       const data = await crawler.run();
       const end = Date.now();
       results.push({

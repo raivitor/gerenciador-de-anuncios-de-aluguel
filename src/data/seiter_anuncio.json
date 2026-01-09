@@ -1,5 +1,17 @@
 [
   {
+    "id": "AP03567",
+    "bairro": "AGRONÔMICA",
+    "quartos": 1,
+    "banheiros": 0,
+    "garagem": 1,
+    "tamanho": 36,
+    "valor_aluguel": 3000,
+    "valor_total": 3462,
+    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/agronomica/apartamento/77862501",
+    "corretora": "seiter"
+  },
+  {
     "id": "AP03535",
     "bairro": "CARVOEIRA",
     "quartos": 4,
@@ -21,18 +33,6 @@
     "valor_aluguel": 3200,
     "valor_total": 3985,
     "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/itacorubi/apartamento/73854316",
-    "corretora": "seiter"
-  },
-  {
-    "id": "AP02203",
-    "bairro": "AGRONÔMICA",
-    "quartos": 1,
-    "banheiros": 0,
-    "garagem": 1,
-    "tamanho": 31,
-    "valor_aluguel": 3500,
-    "valor_total": 3943.5,
-    "url_apartamento": "https://www.seiterimobiliaria.com/alugar/sc/florianopolis/agronomica/apartamento/73005585",
     "corretora": "seiter"
   }
 ]

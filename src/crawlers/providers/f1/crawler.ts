@@ -1,5 +1,6 @@
 import * as cheerio from 'cheerio';
 import axios from 'axios';
+import https from 'node:https';
 import type { CheerioAPI } from 'cheerio';
 
 import { BaseCrawler } from '@/crawlers/core/base-crawler';
@@ -25,13 +26,22 @@ const getIconBoxNumber = (label: string, $: CheerioAPI): number => {
 export class F1Crawler extends BaseCrawler {
   baseURL = 'https://f1ciaimobiliaria.com.br/imoveis-para-alugar/';
 
+  private readonly axiosConfig = {
+    headers: {
+      'User-Agent':
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    },
+    timeout: 30000,
+    httpsAgent: new https.Agent({ family: 4 }),
+  };
+
   constructor() {
     super('f1');
   }
 
   protected async scrape(): Promise<Apartamento[]> {
     const url = `${this.baseURL}?${encodeFilters(filters)}`;
-    const { data: html } = await axios.get<string>(url);
+    const { data: html } = await axios.get<string>(url, this.axiosConfig);
     const $: CheerioAPI = cheerio.load(html);
 
     const listUrl = $('div.jet-engine-listing-overlay-wrap')
@@ -46,7 +56,7 @@ export class F1Crawler extends BaseCrawler {
     const listAlugueis: Apartamento[] = [];
 
     for (const url of listUrl) {
-      const { data: html } = await axios.get<string>(url);
+      const { data: html } = await axios.get<string>(url, this.axiosConfig);
       const $: CheerioAPI = cheerio.load(html);
       const texto = $('h1.elementor-heading-title.elementor-size-default').text().trim();
       const id = texto.split('–').pop()?.trim() || '';

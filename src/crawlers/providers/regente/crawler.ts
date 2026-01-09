@@ -72,7 +72,6 @@ export class RegenteCrawler extends BaseCrawler {
     do {
       const currentFilters = { ...filters, pagina: paginaAtual };
       const url = `${this.baseURL}?${encodeFilters(currentFilters)}`;
-      console.log(`Buscando página ${paginaAtual} de ${totalPaginas} - URL: ${url}`);
       try {
         const response = await axios.get<RegenteApiResponse>(url);
         const { success, data } = response.data;
@@ -87,9 +86,6 @@ export class RegenteCrawler extends BaseCrawler {
 
         if (paginas) {
           totalPaginas = paginas;
-          console.log(
-            `Total de imóveis: ${total}, Páginas: ${totalPaginas}, Página atual: ${pagina}`
-          );
         }
 
         // Converte os apartamentos para array (agora sem os metadados)

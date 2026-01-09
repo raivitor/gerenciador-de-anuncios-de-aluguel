@@ -1,5 +1,53 @@
 [
   {
+    "id": "lideranca_LC546",
+    "valor_aluguel": 2900,
+    "valor_total": 3475.28,
+    "url_apartamento": "https://liderancaimobiliaria.com.br/imovel/apartamento-trindade-florianopolis-sc-2-quartos-70m2-LC546",
+    "bairro": "Trindade",
+    "tamanho": 70,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "lideranca"
+  },
+  {
+    "id": "lideranca_LC438",
+    "valor_aluguel": 3200,
+    "valor_total": 4150,
+    "url_apartamento": "https://liderancaimobiliaria.com.br/imovel/cobertura-itacorubi-florianopolis-sc-2-quartos-92.51m2-LC438",
+    "bairro": "Itacorubi",
+    "tamanho": 92,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "lideranca"
+  },
+  {
+    "id": "lideranca_LC203",
+    "valor_aluguel": 2500,
+    "valor_total": 3083,
+    "url_apartamento": "https://liderancaimobiliaria.com.br/imovel/apartamento-corrego-grande-florianopolis-sc-2-quartos-52m2-LC203",
+    "bairro": "Córrego Grande",
+    "tamanho": 52,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "lideranca"
+  },
+  {
+    "id": "lideranca_LC194",
+    "valor_aluguel": 2700,
+    "valor_total": 3176.03,
+    "url_apartamento": "https://liderancaimobiliaria.com.br/imovel/apartamento-carvoeira-florianopolis-sc-2-quartos-61m2-LC194",
+    "bairro": "Carvoeira",
+    "tamanho": 61,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "lideranca"
+  },
+  {
     "id": "lideranca_L25",
     "valor_aluguel": 2400,
     "valor_total": 3030,
@@ -12,27 +60,15 @@
     "corretora": "lideranca"
   },
   {
-    "id": "lideranca_LC512",
-    "valor_aluguel": 2700,
-    "valor_total": 3334.54,
+    "id": "lideranca_",
+    "valor_aluguel": 0,
+    "valor_total": 0,
     "url_apartamento": "https://liderancaimobiliaria.com.br/imovel/apartamento-carvoeira-florianopolis-sc-2-quartos-65m2-LC512",
-    "bairro": "Carvoeira",
-    "tamanho": 65,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "lideranca"
-  },
-  {
-    "id": "lideranca_LC203",
-    "valor_aluguel": 2700,
-    "valor_total": 3283,
-    "url_apartamento": "https://liderancaimobiliaria.com.br/imovel/apartamento-corrego-grande-florianopolis-sc-2-quartos-52m2-LC203",
-    "bairro": "Córrego Grande",
-    "tamanho": 52,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1,
+    "bairro": "",
+    "tamanho": 0,
+    "quartos": 0,
+    "banheiros": 0,
+    "garagem": 0,
     "corretora": "lideranca"
   },
   {
@@ -44,18 +80,6 @@
     "tamanho": 60,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1,
-    "corretora": "lideranca"
-  },
-  {
-    "id": "lideranca_LC459",
-    "valor_aluguel": 3500,
-    "valor_total": 4060.42,
-    "url_apartamento": "https://liderancaimobiliaria.com.br/imovel/apartamento-trindade-florianopolis-sc-1-quartos-60m2-LC459",
-    "bairro": "Trindade",
-    "tamanho": 60,
-    "quartos": 1,
-    "banheiros": 1,
     "garagem": 1,
     "corretora": "lideranca"
   },
@@ -114,18 +138,6 @@
     "url_apartamento": "https://liderancaimobiliaria.com.br/imovel/apartamento-itacorubi-florianopolis-sc-2-quartos-73.35m2-LC465",
     "bairro": "Itacorubi",
     "tamanho": 73,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "lideranca"
-  },
-  {
-    "id": "lideranca_LC438",
-    "valor_aluguel": 3500,
-    "valor_total": 4450,
-    "url_apartamento": "https://liderancaimobiliaria.com.br/imovel/cobertura-itacorubi-florianopolis-sc-2-quartos-70m2-LC438",
-    "bairro": "Itacorubi",
-    "tamanho": 70,
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1,

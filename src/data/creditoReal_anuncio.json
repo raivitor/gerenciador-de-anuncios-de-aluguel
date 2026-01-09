@@ -12,6 +12,18 @@
     "garagem": 1
   },
   {
+    "id": "creditoReal_cr77843",
+    "valor_aluguel": 3000,
+    "valor_total": 3070,
+    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-itacorubi-florianopolis-cod-cr77843",
+    "corretora": "creditoReal",
+    "bairro": "Itacorubi",
+    "tamanho": 66,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1
+  },
+  {
     "id": "creditoReal_cr117429",
     "valor_aluguel": 3000,
     "valor_total": 3150,
@@ -36,6 +48,14 @@
     "garagem": 1
   },
   {
+    "id": "creditoReal_",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "url_apartamento": "https://www.creditoreal.com.br/anunciar-imovel",
+    "corretora": "creditoReal",
+    "bairro": ""
+  },
+  {
     "id": "creditoReal_cr80504",
     "valor_aluguel": 2200,
     "valor_total": 3345,
@@ -46,14 +66,6 @@
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1
-  },
-  {
-    "id": "creditoReal_",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "url_apartamento": "https://www.creditoreal.com.br/anunciar-imovel",
-    "corretora": "creditoReal",
-    "bairro": ""
   },
   {
     "id": "creditoReal_cr115385",
@@ -87,18 +99,6 @@
     "corretora": "creditoReal",
     "bairro": "Carvoeira",
     "tamanho": 50,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1
-  },
-  {
-    "id": "creditoReal_cr83509",
-    "valor_aluguel": 2600,
-    "valor_total": 3592,
-    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-corrego-grande-florianopolis-cod-cr83509",
-    "corretora": "creditoReal",
-    "bairro": "Córrego Grande",
-    "tamanho": 60,
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1
@@ -147,6 +147,18 @@
     "corretora": "creditoReal",
     "bairro": "Itacorubi",
     "tamanho": 67,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1
+  },
+  {
+    "id": "creditoReal_cr81499",
+    "valor_aluguel": 3200,
+    "valor_total": 3701,
+    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-carvoeira-florianopolis-cod-cr81499",
+    "corretora": "creditoReal",
+    "bairro": "Carvoeira",
+    "tamanho": 62,
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1

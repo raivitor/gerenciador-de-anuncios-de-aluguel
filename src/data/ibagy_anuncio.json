@@ -1,8 +1,8 @@
 [
   {
     "id": "ibagy_111613",
-    "valor_aluguel": 2500,
-    "valor_total": 3564.87,
+    "valor_aluguel": 2300,
+    "valor_total": 3364.87,
     "url_apartamento": "https://ibagy.com.br/imovel/111613/apartamento-2-quartos-ilha-formosa-corrego-grande-florianopolis/",
     "bairro": "Córrego Grande",
     "tamanho": 98,
@@ -54,7 +54,7 @@
     "bairro": "Carvoeira",
     "tamanho": 69,
     "quartos": 2,
-    "banheiros": 1,
+    "banheiros": 2,
     "garagem": 1,
     "corretora": "ibagy"
   },
@@ -131,8 +131,8 @@
   },
   {
     "id": "ibagy_131177",
-    "valor_aluguel": 2700,
-    "valor_total": 3479.37,
+    "valor_aluguel": 2600,
+    "valor_total": 3379.37,
     "url_apartamento": "https://ibagy.com.br/imovel/131177/apartamento-2-quartos-colinas-di-marinella-carvoeira-florianopolis/",
     "bairro": "Carvoeira",
     "tamanho": 58,

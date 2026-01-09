@@ -195,8 +195,9 @@
     "tag": "Talvez"
   },
   "olx_1461504067": {
-    "tag": "Agendar",
-    "nota": 3
+    "tag": "Agendado",
+    "nota": 3,
+    "observacao": "regente"
   },
   "ibagy_117036": {
     "tag": "Agendar",
@@ -360,7 +361,7 @@
     "observacao": "Condomínio Mirante Sul, R. Hipólito Mafra, 203 - Saco dos Limões, Florianópolis - SC, 88045-410"
   },
   "regente_A03801": {
-    "tag": "Agendar",
+    "tag": "Agendado",
     "nota": 4,
     "observacao": "cozinha e lavanderia, pouco espaço na sala. Varanda e churrasqueira grande. Ver se tem espaço para trabalho."
   },
@@ -417,5 +418,29 @@
   "ITA2610": {
     "nota": 3,
     "tag": "Agendar"
+  },
+  "olx_1467408373": {
+    "tag": "Não"
+  },
+  "creditoReal_cr77843": {
+    "tag": "Talvez"
+  },
+  "olx_1467679772": {
+    "tag": "Não"
+  },
+  "lideranca_LC194": {
+    "tag": "Não"
+  },
+  "regente_A04892": {
+    "tag": "Agendado"
+  },
+  "olx_1425313084": {
+    "tag": "Não"
+  },
+  "AP03567": {
+    "tag": "Não"
+  },
+  "lideranca_LC546": {
+    "tag": "Talvez"
   }
 }

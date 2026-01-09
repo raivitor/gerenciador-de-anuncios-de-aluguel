@@ -25,7 +25,6 @@ export class SeiterCrawler extends BaseCrawler {
       maxValue: this.maxValue,
       minSize: this.minSize,
     });
-    console.log(`[Seiter] Buscando URL: ${url}`);
     const { data: html } = await axios.get<string>(url);
     const $: CheerioAPI = cheerio.load(html);
 

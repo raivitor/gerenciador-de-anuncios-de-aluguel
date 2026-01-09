@@ -1,5 +1,6 @@
 import axios from 'axios';
 import * as cheerio from 'cheerio';
+import https from 'node:https';
 
 import { BaseCrawler } from '@/crawlers/core/base-crawler';
 import type { Apartamento } from '@/crawlers/core/types';
@@ -19,6 +20,7 @@ export class SanRemoCrawler extends BaseCrawler {
         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     },
     timeout: 15000,
+    httpsAgent: new https.Agent({ family: 4 }),
   };
 
   protected async scrape(): Promise<Apartamento[]> {
@@ -30,7 +32,6 @@ export class SanRemoCrawler extends BaseCrawler {
       do {
         const params = getSanremoParams(filters, this.maxValue, this.minSize, currentPage);
         const apiUrl = `${this.baseURL}/api/anuncios/search`;
-
         const { data } = await axios.get(apiUrl, {
           ...this.axiosConfig,
           params,
