@@ -58,7 +58,7 @@ export default function Home() {
     () => [...new Set(allAnuncios.map(a => a.bairro).filter(b => b && b.trim() !== ''))].sort(),
     [allAnuncios]
   );
-  const tamanhoMaximo = useMemo(() => Math.max(...allAnuncios.map(a => a.tamanho || 0)), [allAnuncios]);
+  const tamanhoMaximo = useMemo(() => 130, [allAnuncios]);
   const opcoesCorretoras = useMemo(
     () => [...new Set(allAnuncios.map(a => a.corretora).filter(c => c && c.trim() !== ''))].sort(),
     [allAnuncios]

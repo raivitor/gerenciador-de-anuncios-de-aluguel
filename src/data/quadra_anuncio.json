@@ -1,5 +1,17 @@
 [
   {
+    "id": "AP3134-QUB",
+    "valor_aluguel": 2000,
+    "valor_total": 2030.63,
+    "url_apartamento": "https://www.quadraimobiliaria.com.br/imovel/apartamento-florianopolis-1-quarto-70-m/AP3134-QUB",
+    "bairro": "Córrego Grande",
+    "tamanho": 70,
+    "quartos": 0,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "quadra"
+  },
+  {
     "id": "AP2659-QUB",
     "valor_aluguel": 2250,
     "valor_total": 2981.67,
@@ -24,18 +36,6 @@
     "corretora": "quadra"
   },
   {
-    "id": "AP3134-QUB",
-    "valor_aluguel": 3500,
-    "valor_total": 3530.63,
-    "url_apartamento": "https://www.quadraimobiliaria.com.br/imovel/apartamento-florianopolis-1-quarto-70-m/AP3134-QUB",
-    "bairro": "Córrego Grande",
-    "tamanho": 70,
-    "quartos": 0,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "quadra"
-  },
-  {
     "id": "AP3145-QUB",
     "valor_aluguel": 7500003.5,
     "valor_total": 5530,
@@ -56,6 +56,18 @@
     "tamanho": 75,
     "quartos": 3,
     "banheiros": 2,
+    "garagem": 1,
+    "corretora": "quadra"
+  },
+  {
+    "id": "AP0396-QUB",
+    "valor_aluguel": 3600,
+    "valor_total": 4457.89,
+    "url_apartamento": "https://www.quadraimobiliaria.com.br/imovel/apartamento-florianopolis-2-quartos-74-m/AP0396-QUB",
+    "bairro": "Pantanal",
+    "tamanho": 7358,
+    "quartos": 2,
+    "banheiros": 1,
     "garagem": 1,
     "corretora": "quadra"
   }

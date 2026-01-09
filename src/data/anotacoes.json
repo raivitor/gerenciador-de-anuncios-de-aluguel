@@ -1,11 +1,17 @@
 {
+  "2378": {
+    "tag": "Agendado",
+    "observacao": "Na rua que só sobe",
+    "nota": 2
+  },
   "ibagy_131227": {
     "observacao": "Reservado",
     "tag": ""
   },
   "AP2659-QUB": {
-    "tag": "Agendado",
-    "nota": 2
+    "tag": "Visitado",
+    "nota": 4,
+    "observacao": "Não tem varanda, tem bom espaço, localização \"ok\"."
   },
   "sanremo_SRAP2397": {
     "tag": "Não"
@@ -14,7 +20,7 @@
     "tag": "Não"
   },
   "regente_A04558": {
-    "tag": "Agendar"
+    "tag": "Não"
   },
   "creditoReal_cr80690": {
     "tag": "Agendado"
@@ -38,13 +44,17 @@
     "tag": "Não"
   },
   "olx_1465673751": {
-    "tag": "Agendado"
+    "tag": "Visitado",
+    "nota": 5,
+    "observacao": "completo, gostei bastante, garagem boa. 1o andar, não pega muito vento e não cabe cama queen"
   },
   "olx_1446609790": {
     "tag": "Não"
   },
   "olx_1442257076": {
-    "tag": "Agendado"
+    "tag": "Visitado",
+    "observacao": "Localização, levemente ruim. Não tem nada lá mas é muito ventilado.",
+    "nota": 3
   },
   "olx_1463853745": {
     "tag": "Não"
@@ -53,7 +63,9 @@
     "tag": "Não"
   },
   "olx_1451930261": {
-    "tag": "Agendado"
+    "tag": "Visitado",
+    "observacao": "Quarto é pequeno, não vi garagem",
+    "nota": 3
   },
   "creditoReal_cr80841": {
     "tag": "Não"
@@ -98,10 +110,11 @@
     "tag": "Não"
   },
   "olx_1449115390": {
-    "tag": "Agendar"
+    "tag": "Não"
   },
   "olx_1463853863": {
-    "tag": "Agendar"
+    "tag": "Agendar",
+    "nota": 2
   },
   "olx_1440490713": {
     "tag": "Talvez"
@@ -118,10 +131,12 @@
   "creditoReal_cr83309": {
     "tag": "Visitado",
     "nota": 4,
-    "observacao": "Tem v"
+    "observacao": "Falta achar a vaga de estacionamento"
   },
   "f1_1955831": {
-    "tag": "Agendado"
+    "tag": "Agendado",
+    "nota": 2,
+    "observacao": "Na rua que só sobe"
   },
   "sanremo_SRAP4427": {
     "tag": "Não"
@@ -145,7 +160,7 @@
     "tag": "Não"
   },
   "lideranca_LC512": {
-    "tag": "Talvez"
+    "tag": "Não"
   },
   "creditoReal_cr80504": {
     "tag": "Não"
@@ -160,11 +175,11 @@
     "tag": "Não"
   },
   "ibagy_130235": {
-    "tag": "Talvez"
+    "tag": "Não"
   },
   "duda_36571": {
-    "nota": 4,
-    "tag": "Agendar"
+    "tag": "Agendar",
+    "observacao": "reservado"
   },
   "olx_1452512549": {
     "tag": "Não"
@@ -180,10 +195,12 @@
     "tag": "Talvez"
   },
   "olx_1461504067": {
-    "tag": "Agendar"
+    "tag": "Agendar",
+    "nota": 3
   },
   "ibagy_117036": {
-    "tag": "Agendar"
+    "tag": "Agendar",
+    "observacao": "reservado"
   },
   "regente_A04879": {
     "tag": "Talvez"
@@ -192,7 +209,8 @@
     "observacao": "falta foto"
   },
   "ibagy_113752": {
-    "tag": "Agendar"
+    "tag": "Agendar",
+    "nota": 2
   },
   "olx_1466307790": {
     "tag": "Não"
@@ -230,13 +248,14 @@
     "tag": "Não"
   },
   "olx_1449454382": {
-    "tag": "Talvez"
+    "tag": "Não"
   },
   "ibagy_125985": {
-    "tag": "Talvez"
+    "tag": "Talvez",
+    "observacao": "reservado"
   },
   "duda_53498": {
-    "tag": "Talvez"
+    "tag": "Não"
   },
   "olx_1458573699": {
     "tag": "Não"
@@ -245,7 +264,7 @@
     "tag": "Não"
   },
   "sanremo_SRAP1779": {
-    "tag": "Talvez"
+    "tag": "Não"
   },
   "olx_1462417404": {
     "tag": "Não"
@@ -257,13 +276,17 @@
     "tag": "Agendar"
   },
   "ibagy_87712": {
-    "observacao": "reservado"
+    "observacao": "reservado",
+    "tag": "Agendar",
+    "nota": 3
   },
   "sanremo_AP0466_SRI": {
     "tag": "Não"
   },
   "f1_5710": {
-    "tag": "Agendar"
+    "tag": "Agendado",
+    "nota": 4,
+    "observacao": "chuveiro a gás, sem varanda"
   },
   "f1_162661": {
     "tag": "Não"
@@ -272,13 +295,15 @@
     "tag": "Não"
   },
   "f1_1959278": {
-    "tag": "Agendar"
+    "tag": "Agendado",
+    "nota": 4,
+    "observacao": "rua da serena"
   },
   "creditoReal_cr117429": {
     "tag": "Não"
   },
   "olx_1461014940": {
-    "tag": "Talvez"
+    "tag": "Não"
   },
   "daltonandrade_7417": {
     "tag": "Não"
@@ -293,12 +318,104 @@
     "tag": "Não"
   },
   "duda_13610": {
-    "tag": "Agendar"
+    "tag": "Não"
   },
   "ibagy_130322": {
-    "observacao": "Reservado"
+    "observacao": "Reservado",
+    "tag": "Não"
   },
   "sanremo_SRAP4764": {
     "tag": "Não"
+  },
+  "ibagy_118807": {
+    "tag": "Não",
+    "observacao": "Parece que falta valor de condominio"
+  },
+  "lideranca_LC203": {
+    "tag": "Não"
+  },
+  "olx_1459412619": {
+    "tag": "Não"
+  },
+  "creditoReal_cr115385": {
+    "tag": "Agendar",
+    "nota": 2
+  },
+  "ibagy_130095": {
+    "tag": "Não",
+    "nota": 2
+  },
+  "sanremo_AP0843_SRI": {
+    "tag": "Não"
+  },
+  "olx_1457766191": {
+    "tag": "Não"
+  },
+  "AP3134-QUB": {
+    "tag": "Não"
+  },
+  "realizar_3982": {
+    "tag": "Talvez",
+    "nota": 4,
+    "observacao": "Condomínio Mirante Sul, R. Hipólito Mafra, 203 - Saco dos Limões, Florianópolis - SC, 88045-410"
+  },
+  "regente_A03801": {
+    "tag": "Agendar",
+    "nota": 4,
+    "observacao": "cozinha e lavanderia, pouco espaço na sala. Varanda e churrasqueira grande. Ver se tem espaço para trabalho."
+  },
+  "lideranca_L25": {
+    "nota": 4,
+    "tag": "Agendar",
+    "observacao": "falta geladeira, não tem varanda. Tem ar nos 2 quartos"
+  },
+  "ibagy_103541": {
+    "tag": "Não"
+  },
+  "olx_1443833284": {
+    "tag": "Não"
+  },
+  "olx_1462738366": {
+    "tag": "Não"
+  },
+  "olx_1447571122": {
+    "tag": "Não"
+  },
+  "ibagy_113733": {
+    "tag": "Não"
+  },
+  "olx_1433365328": {
+    "tag": "Não"
+  },
+  "ibagy_111613": {
+    "tag": "Não"
+  },
+  "regente_A04865": {
+    "tag": "Agendar",
+    "nota": 4
+  },
+  "f1_1958775": {
+    "tag": "Agendar",
+    "nota": 4
+  },
+  "creditoReal_cr89353": {
+    "tag": "Não"
+  },
+  "f1_1955568": {
+    "tag": "Agendar",
+    "nota": 4
+  },
+  "sanremo_AP0700_SRI": {
+    "tag": "Não"
+  },
+  "olx_1466312099": {
+    "tag": "Não"
+  },
+  "gralha_18665": {
+    "tag": "Não"
+  },
+  "ITA2610": {
+    "nota": 3,
+    "tag": "Agendar"
   }
-}}
+}

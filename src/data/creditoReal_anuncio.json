@@ -12,18 +12,6 @@
     "garagem": 1
   },
   {
-    "id": "creditoReal_cr77830",
-    "valor_aluguel": 2550,
-    "valor_total": 3097,
-    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-carvoeira-florianopolis-cod-cr77830",
-    "corretora": "creditoReal",
-    "bairro": "Carvoeira",
-    "tamanho": 57,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1
-  },
-  {
     "id": "creditoReal_cr117429",
     "valor_aluguel": 3000,
     "valor_total": 3150,
@@ -34,26 +22,6 @@
     "quartos": 1,
     "banheiros": 1,
     "garagem": 1
-  },
-  {
-    "id": "creditoReal_cr83670",
-    "valor_aluguel": 2700,
-    "valor_total": 3267,
-    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-carvoeira-florianopolis-cod-cr83670",
-    "corretora": "creditoReal",
-    "bairro": "Carvoeira",
-    "tamanho": 54,
-    "quartos": 1,
-    "banheiros": 1,
-    "garagem": 1
-  },
-  {
-    "id": "creditoReal_",
-    "valor_aluguel": 0,
-    "valor_total": 0,
-    "url_apartamento": "https://www.creditoreal.com.br/anunciar-imovel",
-    "corretora": "creditoReal",
-    "bairro": ""
   },
   {
     "id": "creditoReal_cr83309",
@@ -80,14 +48,22 @@
     "garagem": 1
   },
   {
-    "id": "creditoReal_cr80690",
-    "valor_aluguel": 2900,
-    "valor_total": 3538,
-    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-trindade-florianopolis-cod-cr80690",
+    "id": "creditoReal_",
+    "valor_aluguel": 0,
+    "valor_total": 0,
+    "url_apartamento": "https://www.creditoreal.com.br/anunciar-imovel",
     "corretora": "creditoReal",
-    "bairro": "Trindade",
-    "tamanho": 72,
-    "quartos": 3,
+    "bairro": ""
+  },
+  {
+    "id": "creditoReal_cr115385",
+    "valor_aluguel": 2700,
+    "valor_total": 3478,
+    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-carvoeira-florianopolis-cod-cr115385",
+    "corretora": "creditoReal",
+    "bairro": "Carvoeira",
+    "tamanho": 56,
+    "quartos": 2,
     "banheiros": 1,
     "garagem": 1
   },
@@ -99,6 +75,18 @@
     "corretora": "creditoReal",
     "bairro": "Carvoeira",
     "tamanho": 65,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1
+  },
+  {
+    "id": "creditoReal_cr89353",
+    "valor_aluguel": 3000,
+    "valor_total": 3577,
+    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-carvoeira-florianopolis-cod-cr89353",
+    "corretora": "creditoReal",
+    "bairro": "Carvoeira",
+    "tamanho": 50,
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1
@@ -164,18 +152,6 @@
     "garagem": 1
   },
   {
-    "id": "creditoReal_cr115385",
-    "valor_aluguel": 2900,
-    "valor_total": 3678,
-    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-carvoeira-florianopolis-cod-cr115385",
-    "corretora": "creditoReal",
-    "bairro": "Carvoeira",
-    "tamanho": 56,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1
-  },
-  {
     "id": "creditoReal_cr83645",
     "valor_aluguel": 2900,
     "valor_total": 3752,
@@ -220,6 +196,18 @@
     "bairro": "Agronômica",
     "tamanho": 60,
     "quartos": 3,
+    "banheiros": 2,
+    "garagem": 1
+  },
+  {
+    "id": "creditoReal_cr79975",
+    "valor_aluguel": 3200,
+    "valor_total": 3909,
+    "url_apartamento": "https://www.creditoreal.com.br/alugueis/imovel/apartamento-em-carvoeira-florianopolis-cod-cr79975",
+    "corretora": "creditoReal",
+    "bairro": "Carvoeira",
+    "tamanho": 60,
+    "quartos": 2,
     "banheiros": 2,
     "garagem": 1
   }

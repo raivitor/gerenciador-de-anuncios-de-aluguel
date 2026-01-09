@@ -1,5 +1,41 @@
 [
   {
+    "id": "lideranca_L25",
+    "valor_aluguel": 2400,
+    "valor_total": 3030,
+    "url_apartamento": "https://liderancaimobiliaria.com.br/imovel/apartamento-carvoeira-florianopolis-sc-2-quartos-57.72m2-L25",
+    "bairro": "Carvoeira",
+    "tamanho": 57,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "lideranca"
+  },
+  {
+    "id": "lideranca_LC512",
+    "valor_aluguel": 2700,
+    "valor_total": 3334.54,
+    "url_apartamento": "https://liderancaimobiliaria.com.br/imovel/apartamento-carvoeira-florianopolis-sc-2-quartos-65m2-LC512",
+    "bairro": "Carvoeira",
+    "tamanho": 65,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "lideranca"
+  },
+  {
+    "id": "lideranca_LC203",
+    "valor_aluguel": 2700,
+    "valor_total": 3283,
+    "url_apartamento": "https://liderancaimobiliaria.com.br/imovel/apartamento-corrego-grande-florianopolis-sc-2-quartos-52m2-LC203",
+    "bairro": "Córrego Grande",
+    "tamanho": 52,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "lideranca"
+  },
+  {
     "id": "lideranca_LC538",
     "valor_aluguel": 3300,
     "valor_total": 3825.42,
@@ -44,18 +80,6 @@
     "tamanho": 93,
     "quartos": 2,
     "banheiros": 2,
-    "garagem": 1,
-    "corretora": "lideranca"
-  },
-  {
-    "id": "lideranca_LC512",
-    "valor_aluguel": 2700,
-    "valor_total": 3334.54,
-    "url_apartamento": "https://liderancaimobiliaria.com.br/imovel/apartamento-carvoeira-florianopolis-sc-2-quartos-65m2-LC512",
-    "bairro": "Carvoeira",
-    "tamanho": 65,
-    "quartos": 2,
-    "banheiros": 1,
     "garagem": 1,
     "corretora": "lideranca"
   },

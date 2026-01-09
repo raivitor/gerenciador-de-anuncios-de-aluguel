@@ -31,7 +31,7 @@ export const crawlers: BaseCrawler[] = [
   quadraCrawler, //ok
   floripaImobCrawler, //ok
   seiterCrawler, //ok
-  // itacorubiCrawler, //off
+  itacorubiCrawler, //ok
 ];
 
 export default crawlers;
