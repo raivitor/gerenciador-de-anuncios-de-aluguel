@@ -200,7 +200,7 @@
     "observacao": "regente"
   },
   "ibagy_117036": {
-    "tag": "Agendar",
+    "tag": "Não",
     "observacao": "reservado"
   },
   "regente_A04879": {
@@ -278,14 +278,14 @@
   },
   "ibagy_87712": {
     "observacao": "reservado",
-    "tag": "Agendar",
+    "tag": "Não",
     "nota": 3
   },
   "sanremo_AP0466_SRI": {
     "tag": "Não"
   },
   "f1_5710": {
-    "tag": "Agendado",
+    "tag": "Não",
     "nota": 4,
     "observacao": "chuveiro a gás, sem varanda"
   },
@@ -361,7 +361,7 @@
     "observacao": "Condomínio Mirante Sul, R. Hipólito Mafra, 203 - Saco dos Limões, Florianópolis - SC, 88045-410"
   },
   "regente_A03801": {
-    "tag": "Agendado",
+    "tag": "Não",
     "nota": 4,
     "observacao": "cozinha e lavanderia, pouco espaço na sala. Varanda e churrasqueira grande. Ver se tem espaço para trabalho."
   },
@@ -441,6 +441,102 @@
     "tag": "Não"
   },
   "lideranca_LC546": {
+    "tag": "Talvez"
+  },
+  "duda_13635": {
+    "tag": "Agendar",
+    "nota": 3
+  },
+  "olx_1468207548": {
+    "tag": "Não"
+  },
+  "olx_1467996187": {
+    "tag": "Agendar"
+  },
+  "sanremo_SRAP5008": {
+    "observacao": "Perto da Iron",
+    "tag": "Agendar"
+  },
+  "creditoReal_cr101424": {
+    "tag": "Não"
+  },
+  "olx_1468651411": {
+    "tag": "Não"
+  },
+  "creditoReal_cr84422": {
+    "observacao": "Terreo",
+    "tag": "Não"
+  },
+  "creditoReal_cr83504": {
+    "observacao": "em breve"
+  },
+  "duda_36077": {
+    "tag": "Não"
+  },
+  "f1_1956184": {
+    "tag": "Não"
+  },
+  "duda_19235": {
+    "observacao": "reservado"
+  },
+  "ibagy_97487": {
+    "tag": "Talvez",
+    "observacao": "sem varanda e sem churras",
+    "nota": 2
+  },
+  "regente_A04903": {
+    "tag": "Não",
+    "observacao": "muito pequeno, perto da iron"
+  },
+  "gralha_28576": {
+    "tag": "Não"
+  },
+  "daltonandrade_7078": {
+    "tag": "Não"
+  },
+  "olx_1469151159": {
+    "tag": ""
+  },
+  "ibagy_90949": {
+    "tag": "Talvez"
+  },
+  "olx_1471898513": {
+    "tag": "Não"
+  },
+  "olx_1470962863": {
+    "tag": "Não"
+  },
+  "f1_162692": {
+    "tag": "Não"
+  },
+  "f1_10500": {
+    "tag": "Não"
+  },
+  "olx_1475320118": {
+    "tag": "Não"
+  },
+  "duda_54327": {
+    "tag": "Não"
+  },
+  "sanremo_SRAP5240": {
+    "tag": "Não"
+  },
+  "olx_1480477031": {
+    "tag": "Não"
+  },
+  "olx_1473154576": {
+    "tag": "Talvez"
+  },
+  "duda_27595": {
+    "observacao": "reservado"
+  },
+  "olx_1475428274": {
+    "tag": "Não"
+  },
+  "creditoReal_cr85448": {
+    "tag": "Agendar"
+  },
+  "creditoReal_cr81060": {
     "tag": "Talvez"
   }
 }
