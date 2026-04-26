@@ -10,7 +10,13 @@ interface CrawlerResult {
   durationMs?: number;
 }
 
-export async function POST(): Promise<NextResponse<{ results: CrawlerResult[] }>> {
+interface FetchResponse {
+  ok: boolean;
+  hasFailures: boolean;
+  results: CrawlerResult[];
+}
+
+export async function POST(): Promise<NextResponse<FetchResponse>> {
   const results: CrawlerResult[] = [];
   for (const crawler of crawlers) {
     const start = Date.now();
@@ -36,8 +42,16 @@ export async function POST(): Promise<NextResponse<{ results: CrawlerResult[] }>
     }
   }
 
+  const hasSuccess = results.some(result => result.success);
   const hasFailure = results.some(result => !result.success);
-  const status = hasFailure ? 500 : 200;
+  const status = hasSuccess ? 200 : 500;
   console.log('Crawler results:', results);
-  return NextResponse.json({ results }, { status });
+  return NextResponse.json(
+    {
+      ok: hasSuccess,
+      hasFailures: hasFailure,
+      results,
+    },
+    { status }
+  );
 }

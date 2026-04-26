@@ -5,7 +5,6 @@ export interface SeiterFilters {
   parking: number;
   maxValue: number;
   minSize: number;
-  quantity?: number;
 }
 
 export const filters: SeiterFilters = {
@@ -13,10 +12,9 @@ export const filters: SeiterFilters = {
   parking: 1,
   maxValue: DEFAULT_MAX_VALUE,
   minSize: DEFAULT_MIN_SIZE,
-  quantity: 48,
 };
 
 export const buildSeiterURL = (baseURL: string, seiterFilters: SeiterFilters): string => {
-  const { bedrooms, parking, maxValue, minSize, quantity = 48 } = seiterFilters;
-  return `${baseURL}/dormitorios-${bedrooms}/vagas-${parking}/valor-max_${maxValue}/area-min_${minSize}/ordem-recentes/resultado-decrescente/quantidade-${quantity}/`;
+  const { bedrooms, maxValue, minSize } = seiterFilters;
+  return `${baseURL}/imoveis/aluguel/apartamento/florianopolis/dormitorios-${bedrooms}/valor-0-${maxValue}/area-${minSize}`;
 };

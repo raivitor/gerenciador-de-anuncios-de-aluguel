@@ -9,6 +9,11 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+.npm-cache
+.playwright-home
+.tmp
+.home
+.cache
 
 # testing
 /coverage

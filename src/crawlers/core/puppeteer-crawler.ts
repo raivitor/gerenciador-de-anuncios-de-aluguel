@@ -30,8 +30,10 @@ export abstract class PuppeteerCrawler extends BaseCrawler {
 
       return await this.scrapeWithPage(page);
     } catch (error) {
-      console.error(`${this.name} scrape error:`, error);
-      return [];
+      const normalizedError =
+        error instanceof Error ? error : new Error(`${this.name} scrape failed`);
+      console.error(`${this.name} scrape error:`, normalizedError);
+      throw normalizedError;
     } finally {
       await browser?.close();
     }

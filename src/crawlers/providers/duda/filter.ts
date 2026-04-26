@@ -1,41 +1,62 @@
 import { DEFAULT_MAX_VALUE, DEFAULT_MIN_SIZE } from '@/crawlers/core/base-crawler';
-
 export interface DudaFilters {
-  categoriagrupo: string;
   finalidade: string;
-  tipo_residencial: string[];
-  cidadebairro: string[];
-  dormitorios: number[];
-  vagas: number[];
-  valorlocacao: [number, number];
-  area: [number, number];
-  ordenar: string;
+  city: string;
+  tipo_imovel: string[];
+  dorm: string[];
+  garages: string[];
+  min_value_squaremeters: string;
+  max_value_squaremeters: string;
+  min_value: string;
+  max_value: string;
 }
 
-export const filters: DudaFilters = {
-  categoriagrupo: 'Residencial',
-  finalidade: 'aluguel',
-  tipo_residencial: ['apartamento'],
-  cidadebairro: ['florianopolis'],
-  dormitorios: [1, 2, 3],
-  vagas: [1],
-  valorlocacao: [0, DEFAULT_MAX_VALUE],
-  area: [DEFAULT_MIN_SIZE, 509],
-  ordenar: 'exclusivosDesc',
-};
+interface DudaFilterRuntimeConfig {
+  maxValue?: number;
+  minSize?: number;
+}
 
-export const encodeFilters = (dudaFilters: DudaFilters): string => {
-  const params = new URLSearchParams();
-  params.append('categoriagrupo', dudaFilters.categoriagrupo);
-  params.append('finalidade', dudaFilters.finalidade);
+const DEFAULT_CITY_ID = '2';
+const DEFAULT_PROPERTY_TYPE_IDS = ['2'];
+const DEFAULT_BEDROOM_IDS = ['2', '3'];
+const DEFAULT_GARAGE_IDS = ['1'];
+const DEFAULT_DUDA_MAX_VALUE = DEFAULT_MAX_VALUE;
+const DEFAULT_DUDA_MIN_SIZE = DEFAULT_MIN_SIZE;
 
-  dudaFilters.tipo_residencial.forEach(t => params.append('tipo_residencial[]', t));
-  dudaFilters.cidadebairro.forEach(cb => params.append('cidadebairro[]', cb));
-  //dudaFilters.dormitorios.forEach(d => params.append('dormitorios[]', String(d)));
-  dudaFilters.vagas.forEach(v => params.append('vagas[]', String(v)));
+const formatCurrency = (value: number): string =>
+  value > 0
+    ? `R$ ${value.toLocaleString('pt-BR', {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2,
+      })}`
+    : '';
 
-  params.append('valorlocacao', `${dudaFilters.valorlocacao[0]},${dudaFilters.valorlocacao[1]}`);
-  params.append('area', `${dudaFilters.area[0]},${dudaFilters.area[1]}`);
+const formatSquareMeters = (value: number): string =>
+  value > 0
+    ? `${value.toLocaleString('pt-BR', {
+        maximumFractionDigits: 0,
+      })} m²`
+    : '';
 
-  return params.toString();
-};
+export const buildFilters = ({
+  maxValue = DEFAULT_DUDA_MAX_VALUE,
+  minSize = DEFAULT_DUDA_MIN_SIZE,
+}: DudaFilterRuntimeConfig = {}): DudaFilters => ({
+  finalidade: 'alugar',
+  city: DEFAULT_CITY_ID,
+  tipo_imovel: [...DEFAULT_PROPERTY_TYPE_IDS],
+  dorm: [...DEFAULT_BEDROOM_IDS],
+  garages: [...DEFAULT_GARAGE_IDS],
+  min_value_squaremeters: formatSquareMeters(minSize),
+  max_value_squaremeters: '',
+  min_value: '',
+  max_value: formatCurrency(maxValue),
+});
+
+export const filters: DudaFilters = buildFilters();
+
+export const encodeFilters = (dudaFilters: DudaFilters): string =>
+  Buffer.from(JSON.stringify(dudaFilters), 'utf8').toString('base64');
+
+export const decodeFilters = (encodedFilters: string): DudaFilters =>
+  JSON.parse(Buffer.from(encodedFilters, 'base64').toString('utf8')) as DudaFilters;

@@ -1,136 +1,91 @@
-import type { Page } from 'puppeteer';
+import axios from 'axios';
 
-import { PuppeteerCrawler } from '@/crawlers/core/puppeteer-crawler';
-import type { Apartamento } from '@/crawlers/core/types';
+import { BaseCrawler } from '../../core/base-crawler.ts';
+import type { Apartamento } from '../../core/types.ts';
 
-import { encodeFilters, filters } from './filter';
+import { buildFilters, encodeFilters } from './filter.ts';
+import { DUDA_SITE_ORIGIN, parseLoadMoreResponse, parseSearchPageHtml } from './parser.ts';
 
-export class DudaCrawler extends PuppeteerCrawler {
+export class DudaCrawler extends BaseCrawler {
+  private readonly defaultHeaders = {
+    Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'User-Agent':
+      'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+  };
+
   constructor() {
     super('duda');
   }
 
-  baseURL =
-    'https://dudaimoveis.com.br/aluguel/apartamento/florianopolis/2-3-dormitorios/com-vaga/';
+  baseURL = `${DUDA_SITE_ORIGIN}/alugar/florianopolis`;
 
-  protected buildPageUrl(pageNumber: number): string {
-    return `${this.baseURL}?${encodeFilters(filters)}&pagina=${pageNumber}`;
+  private buildSearchUrl(encodedFilters: string): string {
+    const url = new URL(this.baseURL);
+    url.searchParams.set('filters', encodedFilters);
+    return url.toString();
   }
 
-  protected async navigateToListingsPage(page: Page, pageNumber: number): Promise<void> {
-    const url = this.buildPageUrl(pageNumber);
-    await page.goto(url, { waitUntil: 'networkidle2', timeout: 90_000 });
-    await page.waitForSelector('.imovel-box-single', { timeout: 60_000 }).catch(() => null);
+  private buildLoadMoreUrl(encodedFilters: string, pageNumber: number): string {
+    const url = new URL(this.baseURL);
+    url.searchParams.set('filters', encodedFilters);
+    url.searchParams.set('action', 'loadMoreImoveis');
+    url.searchParams.set('page', String(pageNumber));
+    return url.toString();
   }
 
-  protected async scrapeWithPage(page: Page): Promise<Apartamento[]> {
-    let currentPage = 1;
-    let totalItems = 0;
-    const listaAgregadaApto: Apartamento[] = [];
+  private mapListingToApartamento(listing: ReturnType<typeof parseSearchPageHtml>[number]): Apartamento {
+    return {
+      id: `${this.name}_${listing.id}`,
+      valor_aluguel: listing.valor_aluguel,
+      valor_total: listing.valor_aluguel + listing.condominio + listing.iptu,
+      url_apartamento: listing.url_apartamento,
+      bairro: listing.bairro,
+      tamanho: listing.tamanho,
+      quartos: listing.quartos,
+      banheiros: listing.banheiros,
+      garagem: listing.garagem,
+      corretora: this.name,
+    } satisfies Apartamento;
+  }
 
-    while (true) {
-      await this.navigateToListingsPage(page, currentPage);
+  protected async scrape(): Promise<Apartamento[]> {
+    const encodedFilters = encodeFilters(
+      buildFilters({
+        maxValue: this.maxValue,
+        minSize: this.minSize,
+      })
+    );
+    const apartamentos = new Map<string, Apartamento>();
 
-      const { rawListaApto, totalBusca } = await page.evaluate(() => {
-        const getTotalItens = (doc: Document): number => {
-          const totalsNode = doc.querySelector<HTMLElement>('p.result-totals-phrase');
-          const digits = totalsNode?.innerText.replace(/\D/g, '');
-          return digits ? parseInt(digits, 10) : 0;
-        };
+    const { data: initialHtml } = await axios.get<string>(this.buildSearchUrl(encodedFilters), {
+      headers: this.defaultHeaders,
+      timeout: 90_000,
+    });
 
-        const normalizeKey = (key: string) =>
-          key
-            .normalize('NFD')
-            .replace(/[\u0300-\u036f]/g, '')
-            .replace(/\s+/g, '_')
-            .replace('.', '')
-            .toLowerCase();
-
-        const cards = document.querySelectorAll<HTMLDivElement>('.imovel-box-single');
-
-        const rawListaApto = Array.from(cards).map(card => {
-          const aluguelRaw =
-            card.querySelector<HTMLElement>('.thumb-price')?.textContent ||
-            card.querySelector<HTMLElement>('.item-price-rent')?.textContent ||
-            '';
-          const condominioRaw =
-            card.querySelector<HTMLElement>('.item-price-condominio')?.textContent || '';
-          const iptuRaw = card.querySelector<HTMLElement>('.item-price-iptu')?.textContent || '';
-
-          const urlLink =
-            card.querySelector<HTMLAnchorElement>('.titulo-anuncio a')?.href ||
-            card.querySelector<HTMLAnchorElement>("a[href*='/imovel/']")?.href ||
-            '';
-
-          const endereco =
-            card.querySelector<HTMLElement>('h3[itemprop="streetAddress"]')?.innerText.trim() || '';
-          const bairro = endereco.split('-')[0].trim() || '';
-
-          const container = card.querySelector('.property-amenities.amenities-main');
-          const divs = container?.querySelectorAll(':scope > div') || [];
-
-          const properties = Array.from(divs).reduce((acc, div) => {
-            const rawKey = div.querySelector('small')?.innerText.trim() || '';
-            const key = normalizeKey(rawKey);
-
-            let value = div.querySelector('span')?.innerText.trim() || '';
-            value = value.replace(/[^\d]/g, '');
-            acc[key] = Number(value);
-
-            return acc;
-          }, {} as Record<string, number>);
-
-          return {
-            id: urlLink.split('imovel/')[1]?.split('/')?.[0] ?? '',
-            valor_aluguel: aluguelRaw,
-            condominio: condominioRaw,
-            iptu: iptuRaw,
-            url_apartamento: urlLink || '',
-            bairro: bairro,
-            tamanho: properties.privat,
-            quartos: properties.quartos,
-            banheiros: properties.suite ? properties.suite + 1 : 1,
-            garagem: properties.vaga,
-          };
-        });
-
-        return {
-          rawListaApto,
-          totalBusca: getTotalItens(document),
-        };
-      });
-
-      if (!rawListaApto.length) break;
-      if (totalBusca > 0) totalItems = totalBusca;
-
-      const listaApto = rawListaApto.map(apto => {
-        const valor_aluguel = this.parseFloat(apto.valor_aluguel);
-        const condominio = this.parseFloat(apto.condominio);
-        let iptu = this.parseFloat(apto.iptu);
-
-        // Se o IPTU for muito alto, provavelmente é o valor anual
-        if (iptu > 500) iptu = iptu / 12;
-
-        return {
-          id: `${this.name}_${String(apto.id)}`,
-          valor_aluguel,
-          valor_total: valor_aluguel + condominio + iptu,
-          url_apartamento: apto.url_apartamento,
-          bairro: apto.bairro,
-          tamanho: apto.tamanho,
-          quartos: apto.quartos,
-          banheiros: apto.banheiros,
-          garagem: apto.garagem,
-          corretora: this.name,
-        } satisfies Apartamento;
-      });
-
-      listaAgregadaApto.push(...listaApto);
-      if (listaAgregadaApto.length >= totalItems) break;
-      currentPage += 1;
+    for (const listing of parseSearchPageHtml(initialHtml)) {
+      apartamentos.set(listing.id, this.mapListingToApartamento(listing));
     }
 
-    return listaAgregadaApto;
+    for (let page = 2; ; page += 1) {
+      const { data } = await axios.get<string | object>(this.buildLoadMoreUrl(encodedFilters, page), {
+        headers: {
+          ...this.defaultHeaders,
+          'X-Requested-With': 'XMLHttpRequest',
+        },
+        timeout: 90_000,
+      });
+
+      const pageItems = parseLoadMoreResponse(data as string | { content?: string });
+      if (!pageItems.length) break;
+
+      const previousSize = apartamentos.size;
+      for (const listing of pageItems) {
+        apartamentos.set(listing.id, this.mapListingToApartamento(listing));
+      }
+      if (apartamentos.size === previousSize) break;
+    }
+
+    return Array.from(apartamentos.values());
   }
 }
 

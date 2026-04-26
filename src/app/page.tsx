@@ -44,12 +44,19 @@ export default function Home() {
 
   const [allAnuncios, setAllAnuncios] = useState<Apartamento[]>([]);
 
-  useEffect(() => {
-    fetch('/api/anuncios?all=true')
-      .then(res => res.json())
-      .then(data => setAllAnuncios(data.anuncios || data))
-      .catch(err => console.error('Erro ao buscar dados para filtros', err));
+  const carregarTodosAnuncios = useCallback(async () => {
+    try {
+      const response = await fetch('/api/anuncios?all=true');
+      const data = await response.json();
+      setAllAnuncios(data.anuncios || data);
+    } catch (err) {
+      console.error('Erro ao buscar dados para filtros', err);
+    }
   }, []);
+
+  useEffect(() => {
+    void carregarTodosAnuncios();
+  }, [carregarTodosAnuncios]);
 
   const opcoesQuartos = useMemo(() => [...new Set(allAnuncios.map(a => a.quartos).filter(Boolean))].sort((a, b) => (a || 0) - (b || 0)), [allAnuncios]);
   const opcoesBanheiros = useMemo(() => [...new Set(allAnuncios.map(a => a.banheiros).filter(Boolean))].sort((a, b) => (a || 0) - (b || 0)), [allAnuncios]);
@@ -58,7 +65,7 @@ export default function Home() {
     () => [...new Set(allAnuncios.map(a => a.bairro).filter(b => b && b.trim() !== ''))].sort(),
     [allAnuncios]
   );
-  const tamanhoMaximo = useMemo(() => 130, [allAnuncios]);
+  const tamanhoMaximo = 130;
   const opcoesCorretoras = useMemo(
     () => [...new Set(allAnuncios.map(a => a.corretora).filter(c => c && c.trim() !== ''))].sort(),
     [allAnuncios]
@@ -98,51 +105,65 @@ export default function Home() {
     }).catch(err => console.error('Erro ao salvar anotações', err));
   }, [anuncios]);
 
+  const carregarAnuncios = useCallback(async (page = currentPage) => {
+    try {
+      const url = new URL('/api/anuncios', window.location.origin);
+      url.searchParams.set('page', page.toString());
+      url.searchParams.set('limit', itemsPerPage.toString());
+
+      if (filtros.bairro) url.searchParams.set('bairro', filtros.bairro);
+      if (filtros.quartos) url.searchParams.set('quartos', filtros.quartos);
+      if (filtros.banheiros) url.searchParams.set('banheiros', filtros.banheiros);
+      if (filtros.garagem) url.searchParams.set('garagem', filtros.garagem);
+      if (filtros.corretora) url.searchParams.set('corretora', filtros.corretora);
+      if (filtros.tamanho > 30) url.searchParams.set('tamanho', filtros.tamanho.toString());
+      if (filtros.tag) url.searchParams.set('tag', filtros.tag);
+      if (filtros.nota) url.searchParams.set('nota', filtros.nota);
+      if (ocultarNao) url.searchParams.set('ocultarNao', 'true');
+
+      const response = await fetch(url.toString());
+      const data = await response.json();
+      setAnuncios(data.anuncios);
+      setTotalAnuncios(data.total);
+    } catch (err) {
+      console.error('Erro ao buscar anúncios', err);
+    }
+  }, [currentPage, filtros, itemsPerPage, ocultarNao]);
+
   const atualizarDados = useCallback(async () => {
     try {
       const response = await fetch('/api/anuncios/fetch', {
         method: 'POST',
       });
       const result = await response.json();
-      if (response.ok && (result.ok === undefined || result.ok === true)) {
-        setCurrentPage(1);
+      if (response.ok && result.ok !== false) {
+        const nextPage = 1;
+        setCurrentPage(nextPage);
+        await Promise.all([carregarTodosAnuncios(), carregarAnuncios(nextPage)]);
+
+        if (result.hasFailures) {
+          console.error(
+            'Atualização parcial dos anúncios:',
+            result.results?.filter((item: { success: boolean }) => !item.success) ?? result
+          );
+        }
       } else {
         console.error('Erro ao atualizar dados:', result.error ?? result);
       }
     } catch (err) {
       console.error('Erro ao atualizar dados:', err);
     }
-  }, []);
+  }, [carregarAnuncios, carregarTodosAnuncios]);
 
   useEffect(() => {
     setCurrentPage(1);
   }, [filtros, ocultarNao]);
 
   useEffect(() => {
-    const url = new URL('/api/anuncios', window.location.origin);
-    url.searchParams.set('page', currentPage.toString());
-    url.searchParams.set('limit', itemsPerPage.toString());
+    void carregarAnuncios();
+  }, [carregarAnuncios]);
 
-  if (filtros.bairro) url.searchParams.set('bairro', filtros.bairro);
-  if (filtros.quartos) url.searchParams.set('quartos', filtros.quartos);
-  if (filtros.banheiros) url.searchParams.set('banheiros', filtros.banheiros);
-  if (filtros.garagem) url.searchParams.set('garagem', filtros.garagem);
-  if (filtros.corretora) url.searchParams.set('corretora', filtros.corretora);
-  if (filtros.tamanho > 30) url.searchParams.set('tamanho', filtros.tamanho.toString());
-  if (filtros.tag) url.searchParams.set('tag', filtros.tag);
-  if (filtros.nota) url.searchParams.set('nota', filtros.nota);
-  if (ocultarNao) url.searchParams.set('ocultarNao', 'true');
-
-    fetch(url.toString())
-      .then(res => res.json())
-      .then(data => {
-        setAnuncios(data.anuncios);
-        setTotalAnuncios(data.total);
-      })
-      .catch(err => console.error('Erro ao buscar anúncios', err));
-  }, [currentPage, filtros]);
-
-  const handlePageChange = (event: React.ChangeEvent<unknown>, page: number) => {
+  const handlePageChange = (_event: React.ChangeEvent<unknown>, page: number) => {
     setCurrentPage(page);
   };
 
