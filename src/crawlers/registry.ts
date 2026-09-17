@@ -15,23 +15,25 @@ import floripaImobCrawler from './providers/floripa-imob';
 import liderancaCrawler from './providers/lideranca';
 import seiterCrawler from './providers/seiter';
 import itacorubiCrawler from './providers/itacorubi';
+import intelectoCrawler from './providers/intelecto';
 
 export const crawlers: BaseCrawler[] = [
-  olxCrawler, //ok
-  creditoRealCrawler, //ok
-  ibagyCrawler, //ok
-  dudaCrawler, //ok
-  liderancaCrawler, //ok
-  regenteCrawler, //ok
-  sanRemoCrawler, //ok
-  realizarCrawler, //ok
-  daltonCrawler, //ok
-  gralhaCrawler, //ok
-  f1Crawler,
-  quadraCrawler, //ok
-  floripaImobCrawler, //ok
-  seiterCrawler, //ok
-  itacorubiCrawler, //ok
+  // olxCrawler, //ok
+  // creditoRealCrawler, //ok
+  // ibagyCrawler, //ok
+  // dudaCrawler, //ok
+  // liderancaCrawler, //ok
+  // regenteCrawler, //ok
+  // sanRemoCrawler, //ok
+  // realizarCrawler, //ok
+  // daltonCrawler, //ok
+  // gralhaCrawler, //ok
+  // f1Crawler,
+  // quadraCrawler, //ok
+  // floripaImobCrawler, //ok
+  // seiterCrawler, //ok
+  // itacorubiCrawler, //ok
+  intelectoCrawler,
 ];
 
 export default crawlers;
