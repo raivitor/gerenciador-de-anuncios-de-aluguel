@@ -18,6 +18,7 @@ import itacorubiCrawler from './providers/itacorubi';
 import intelectoCrawler from './providers/intelecto';
 import habitacionalCrawler from './providers/habitacional';
 import emobiCrawler from './providers/emobi';
+import remaxCrawler from './providers/remax';
 
 export const crawlers: BaseCrawler[] = [
   // olxCrawler, //ok
@@ -38,6 +39,7 @@ export const crawlers: BaseCrawler[] = [
   intelectoCrawler,
   habitacionalCrawler,
   emobiCrawler,
+  remaxCrawler,
 ];
 
 export default crawlers;
