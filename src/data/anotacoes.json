@@ -593,5 +593,26 @@
   },
   "remax_720891276-24": {
     "tag": "Não"
+  },
+  "viver-imoveis_AP0006-VIYS": {
+    "nota": 2,
+    "tag": "Talvez"
+  },
+  "remax_720891003-162": {
+    "tag": "Não"
+  },
+  "viver-imoveis_AP0084-VIYS": {
+    "tag": "Não"
+  },
+  "habitacional_AP0676": {
+    "tag": "Visitado",
+    "nota": 2
+  },
+  "habitacional_HB1268": {
+    "tag": "Não"
+  },
+  "intelecto_L9400967": {
+    "tag": "Visitado",
+    "nota": 3
   }
 }

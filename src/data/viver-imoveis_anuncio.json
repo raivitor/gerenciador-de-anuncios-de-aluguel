@@ -1,0 +1,74 @@
+[
+  {
+    "id": "viver-imoveis_AP0368-VIYS",
+    "valor_aluguel": 1200,
+    "valor_total": 2111.81,
+    "url_apartamento": "https://www.viverimoveisrn.com.br/imovel/apartamento-natal-2-quartos-55-m/AP0368-VIYS",
+    "bairro": "Capim Macio",
+    "tamanho": 55,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "viver-imoveis"
+  },
+  {
+    "id": "viver-imoveis_AP0006-VIYS",
+    "valor_aluguel": 650,
+    "valor_total": 1061.49,
+    "url_apartamento": "https://www.viverimoveisrn.com.br/imovel/apartamento-natal-2-quartos-56-m/AP0006-VIYS",
+    "bairro": "Pitimbu",
+    "tamanho": 56.41,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "viver-imoveis"
+  },
+  {
+    "id": "viver-imoveis_AP0084-VIYS",
+    "valor_aluguel": 950,
+    "valor_total": 1390,
+    "url_apartamento": "https://www.viverimoveisrn.com.br/imovel/apartamento-natal-2-quartos-80-m/AP0084-VIYS",
+    "bairro": "Cidade da Esperança",
+    "tamanho": 80,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "viver-imoveis"
+  },
+  {
+    "id": "viver-imoveis_AP0232-VIYS",
+    "valor_aluguel": 1409.83,
+    "valor_total": 2300,
+    "url_apartamento": "https://www.viverimoveisrn.com.br/imovel/apartamento-natal-2-quartos-77-m/AP0232-VIYS",
+    "bairro": "Petrópolis",
+    "tamanho": 77,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "viver-imoveis"
+  },
+  {
+    "id": "viver-imoveis_AP0092-VIYS",
+    "valor_aluguel": 1700,
+    "valor_total": 2348.19,
+    "url_apartamento": "https://www.viverimoveisrn.com.br/imovel/apartamento-natal-2-quartos-55-m/AP0092-VIYS",
+    "bairro": "Petrópolis",
+    "tamanho": 55,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "viver-imoveis"
+  },
+  {
+    "id": "viver-imoveis_AP0363-VIYS",
+    "valor_aluguel": 1000,
+    "valor_total": 2208.59,
+    "url_apartamento": "https://www.viverimoveisrn.com.br/imovel/apartamento-natal-2-quartos-130-m/AP0363-VIYS",
+    "bairro": "Areia Preta",
+    "tamanho": 130,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 2,
+    "corretora": "viver-imoveis"
+  }
+]
