@@ -12,6 +12,30 @@
     "corretora": "intelecto"
   },
   {
+    "id": "intelecto_LA935865",
+    "valor_aluguel": 2800,
+    "valor_total": 2800,
+    "url_apartamento": "https://www.intelectoimobiliaria.com/imovel/apartamento-com-2-quartos-para-alugar-e-2-vagas-bairro-tirol-em-natal/LA935865",
+    "bairro": "Tirol",
+    "tamanho": 55,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 2,
+    "corretora": "intelecto"
+  },
+  {
+    "id": "intelecto_L9400980",
+    "valor_aluguel": 1600,
+    "valor_total": 1600,
+    "url_apartamento": "https://www.intelectoimobiliaria.com/imovel/apartamento-com-2-quartos-para-alugar-e-1-vaga-bairro-emaus-em-parnamirim/L9400980",
+    "bairro": "Emaús",
+    "tamanho": 47,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "intelecto"
+  },
+  {
     "id": "intelecto_L9400967",
     "valor_aluguel": 1900,
     "valor_total": 1900,
@@ -33,30 +57,6 @@
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,
-    "corretora": "intelecto"
-  },
-  {
-    "id": "intelecto_LA935865",
-    "valor_aluguel": 2800,
-    "valor_total": 2800,
-    "url_apartamento": "https://www.intelectoimobiliaria.com/imovel/apartamento-com-2-quartos-para-alugar-e-2-vagas-bairro-tirol-em-natal/LA935865",
-    "bairro": "Tirol",
-    "tamanho": 55,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 2,
-    "corretora": "intelecto"
-  },
-  {
-    "id": "intelecto_L936008",
-    "valor_aluguel": 2300,
-    "valor_total": 2300,
-    "url_apartamento": "https://www.intelectoimobiliaria.com/imovel/apartamento-com-3-quartos-para-alugar-e-2-vagas-condominio-residencial-panamericano-bairro-nova-parnamirim-em-parnamirim/L936008",
-    "bairro": "Nova Parnamirim",
-    "tamanho": 77,
-    "quartos": 3,
-    "banheiros": 2,
-    "garagem": 2,
     "corretora": "intelecto"
   },
   {
