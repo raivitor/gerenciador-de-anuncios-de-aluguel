@@ -21,6 +21,7 @@ import emobiCrawler from './providers/emobi';
 import remaxCrawler from './providers/remax';
 import viverImoveisCrawler from './providers/viver-imoveis';
 import imoveisPotiguaresCrawler from './providers/imoveis-potiguares';
+import gorettiCrawler from './providers/goretti';
 
 export const crawlers: BaseCrawler[] = [
   // olxCrawler, //ok
@@ -44,6 +45,7 @@ export const crawlers: BaseCrawler[] = [
   remaxCrawler,
   viverImoveisCrawler,
   imoveisPotiguaresCrawler,
+  gorettiCrawler,
 ];
 
 export default crawlers;

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "goretti_AP0382-EF8",
+    "valor_aluguel": 2200,
+    "valor_total": 3698.14,
+    "url_apartamento": "https://www.gorettimobiliaria.com/imovel/apartamento-natal-3-quartos-84-m/AP0382-EF8",
+    "bairro": "Petrópolis",
+    "tamanho": 84,
+    "quartos": 3,
+    "banheiros": 3,
+    "garagem": 2,
+    "corretora": "goretti"
+  },
+  {
+    "id": "goretti_AP0776-EF8",
+    "valor_aluguel": 2500,
+    "valor_total": 3527.7,
+    "url_apartamento": "https://www.gorettimobiliaria.com/imovel/apartamento-natal-3-quartos-94-m/AP0776-EF8",
+    "bairro": "Ponta Negra",
+    "tamanho": 94,
+    "quartos": 3,
+    "banheiros": 3,
+    "garagem": 2,
+    "corretora": "goretti"
+  }
+]
