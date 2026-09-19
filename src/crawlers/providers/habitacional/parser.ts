@@ -1,21 +1,20 @@
 import { load } from 'cheerio';
-
 import type { Apartamento } from '@/crawlers/core/types';
+import {
+  normalizeWhitespace as normalize,
+  parseArea,
+  parseBrazilianNumber,
+  parsePrice,
+  roundMoney,
+} from '@/crawlers/shared/numbers';
+import { createListing, type ListingReference } from '@/crawlers/shared/listings';
+import { hasEmptySearchMessage } from '@/crawlers/shared/search';
 
-export interface SearchListing {
-  code: string;
-  url: string;
+export interface SearchListing extends ListingReference {
   neighborhood?: string;
 }
 
-const normalize = (value: string): string => value.replace(/\s+/g, ' ').trim();
-
-export function parseBrazilianNumber(value: string): number | undefined {
-  const match = value.replace(/\u00a0/g, ' ').match(/\d[\d.]*(?:,\d+)?/);
-  if (!match) return undefined;
-  const parsed = Number(match[0].replace(/\./g, '').replace(',', '.'));
-  return Number.isFinite(parsed) ? parsed : undefined;
-}
+export { parseBrazilianNumber } from '@/crawlers/shared/numbers';
 
 function codeFromUrl(url: string): string {
   const code = new URL(url).pathname.match(/-([A-Z]{2,}\d+)\/?$/i)?.[1];
@@ -48,19 +47,22 @@ export function parseSearch(html: string, pageUrl: string): { listings: SearchLi
     .map(element => Number($(element).text().trim()))
     .filter(page => Number.isInteger(page) && page > 0);
   const pages = uniquePages.length ? Math.max(...uniquePages) : 1;
-  const body = normalize($('body').text()).toLowerCase();
-  if (!listings.length && !/0\s+im[oó]veis|nenhum im[oó]vel|não encontr/.test(body)) {
+  if (!listings.length && !hasEmptySearchMessage($)) {
     throw new Error(`Habitacional: busca sem anúncios em ${pageUrl}`);
   }
   return { listings, pages };
 }
 
-function findCharacteristic($: ReturnType<typeof load>, label: RegExp): number | undefined {
+function findCharacteristic(
+  $: ReturnType<typeof load>,
+  label: RegExp,
+  parse = parseBrazilianNumber
+): number | undefined {
   const text = $('span')
     .toArray()
     .map(element => normalize($(element).text()))
     .find(value => label.test(value));
-  return text ? parseBrazilianNumber(text) : undefined;
+  return text ? parse(text) : undefined;
 }
 
 export function parseDetail(html: string, listing: SearchListing): Apartamento | undefined {
@@ -74,7 +76,7 @@ export function parseDetail(html: string, listing: SearchListing): Apartamento |
     .toArray()
     .find(element => normalize($(element).text()) === 'Valor aluguel');
   if (!rentLabel) throw new Error(`Habitacional: aluguel ausente em ${listing.code}`);
-  const rent = parseBrazilianNumber($(rentLabel).next().text());
+  const rent = parsePrice($(rentLabel).next().text());
   if (rent === undefined || rent <= 0) return undefined;
 
   const charges = new Map<string, number>();
@@ -83,11 +85,11 @@ export function parseDetail(html: string, listing: SearchListing): Apartamento |
     const label = normalize($(element).find('div.flex-1 span').first().text());
     const value = normalize($(element).children('span').last().text());
     if (!label || !/^(condomínio|condominio|iptu)$/i.test(label)) return;
-    const amount = parseBrazilianNumber(value);
+    const amount = parsePrice(value);
     if (amount !== undefined) charges.set(label.toLowerCase(), amount);
   });
 
-  const area = findCharacteristic($, /^Área Privativa\s+/i);
+  const area = findCharacteristic($, /^Área Privativa\s+/i, parseArea);
   const quartos = findCharacteristic($, /^\d+\s+Dormitórios?$/i);
   const banheiros = findCharacteristic($, /^\d+\s+Banheiros?$/i);
   const garagem = findCharacteristic($, /^\d+\s+Vagas?$/i);
@@ -95,10 +97,9 @@ export function parseDetail(html: string, listing: SearchListing): Apartamento |
     throw new Error(`Habitacional: características ausentes em ${listing.code}`);
   }
 
-  const total = Math.round((rent + [...charges.values()].reduce((sum, amount) => sum + amount, 0)) * 100) / 100;
+  const total = roundMoney(rent + [...charges.values()].reduce((sum, amount) => sum + amount, 0));
   if (total <= 0 || total > 3000 || area < 45 || quartos < 2 || garagem < 1) return undefined;
-  return {
-    id: `habitacional_${listing.code}`,
+  return createListing('habitacional', listing.code, {
     valor_aluguel: rent,
     valor_total: total,
     url_apartamento: listing.url,
@@ -107,6 +108,5 @@ export function parseDetail(html: string, listing: SearchListing): Apartamento |
     quartos,
     banheiros,
     garagem,
-    corretora: 'habitacional',
-  };
+  });
 }

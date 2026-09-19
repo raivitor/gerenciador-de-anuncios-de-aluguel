@@ -1,6 +1,7 @@
 import type { Page } from 'puppeteer';
 import { PuppeteerCrawler } from '@/crawlers/core/puppeteer-crawler';
 import type { Apartamento } from '@/crawlers/core/types';
+import { collectPages, pageUrl } from '@/crawlers/shared/pagination';
 import {
   CARD_SELECTOR,
   COUNT_SELECTOR,
@@ -22,9 +23,7 @@ export const SEARCH_URL =
   });
 
 export function searchPageUrl(searchUrl: string, pageNumber: number): string {
-  const url = new URL(searchUrl);
-  url.searchParams.set('pagina', String(pageNumber));
-  return url.toString();
+  return pageUrl(searchUrl, 'pagina', pageNumber);
 }
 
 export class IntelectoCrawler extends PuppeteerCrawler {
@@ -102,25 +101,20 @@ export class IntelectoCrawler extends PuppeteerCrawler {
   }
 
   protected async scrapeWithPage(page: Page): Promise<Apartamento[]> {
-    const cards = new Map<string, ListingCard>();
-    const fingerprints = new Set<string>();
-    for (let pageNumber = 1; ; pageNumber += 1) {
-      const result = await this.readSearchPage(page, pageNumber);
-      if (!result.total) {
-        if (pageNumber !== 1) throw new Error('Intelecto: busca esvaziou durante a paginação');
-        return [];
-      }
-      const fingerprint = [...new Set(result.cards.map(card => card.code))].sort().join('|');
-      if (fingerprints.has(fingerprint)) {
-        throw new Error('Intelecto: página repetida; coleta interrompida para preservar os dados');
-      }
-      fingerprints.add(fingerprint);
-      for (const card of result.cards) cards.set(card.code, card);
-      if (!result.hasNext) break;
-    }
+    const cards = await collectPages(
+      this.name,
+      async pageNumber => {
+        const result = await this.readSearchPage(page, pageNumber);
+        if (!result.total && pageNumber !== 1) {
+          throw new Error('Intelecto: busca esvaziou durante a paginação');
+        }
+        return { items: result.cards, hasNext: result.hasNext };
+      },
+      card => card.code
+    );
 
     const listings: Apartamento[] = [];
-    for (const card of cards.values()) {
+    for (const card of cards) {
       if (card.type.toLowerCase() !== 'apartamento') continue;
       const listing = await this.readDetail(page, card);
       if (listing && meetsLimits(listing, this.minSize, this.maxValue)) listings.push(listing);

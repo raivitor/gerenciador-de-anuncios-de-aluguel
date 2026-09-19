@@ -12,15 +12,15 @@
     "corretora": "intelecto"
   },
   {
-    "id": "intelecto_LA935865",
-    "valor_aluguel": 2800,
-    "valor_total": 2800,
-    "url_apartamento": "https://www.intelectoimobiliaria.com/imovel/apartamento-com-2-quartos-para-alugar-e-2-vagas-bairro-tirol-em-natal/LA935865",
-    "bairro": "Tirol",
-    "tamanho": 55,
+    "id": "intelecto_L9400967",
+    "valor_aluguel": 1900,
+    "valor_total": 1900,
+    "url_apartamento": "https://www.intelectoimobiliaria.com/imovel/apartamento-com-2-quartos-para-alugar-e-1-vaga-bairro-pitimbu-em-natal/L9400967",
+    "bairro": "Pitimbu",
+    "tamanho": 49,
     "quartos": 2,
-    "banheiros": 2,
-    "garagem": 2,
+    "banheiros": 1,
+    "garagem": 1,
     "corretora": "intelecto"
   },
   {
@@ -36,15 +36,15 @@
     "corretora": "intelecto"
   },
   {
-    "id": "intelecto_L9400967",
-    "valor_aluguel": 1900,
-    "valor_total": 1900,
-    "url_apartamento": "https://www.intelectoimobiliaria.com/imovel/apartamento-com-2-quartos-para-alugar-e-1-vaga-bairro-pitimbu-em-natal/L9400967",
-    "bairro": "Pitimbu",
-    "tamanho": 49,
+    "id": "intelecto_LA935865",
+    "valor_aluguel": 2800,
+    "valor_total": 2800,
+    "url_apartamento": "https://www.intelectoimobiliaria.com/imovel/apartamento-com-2-quartos-para-alugar-e-2-vagas-bairro-tirol-em-natal/LA935865",
+    "bairro": "Tirol",
+    "tamanho": 55,
     "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1,
+    "banheiros": 2,
+    "garagem": 2,
     "corretora": "intelecto"
   },
   {

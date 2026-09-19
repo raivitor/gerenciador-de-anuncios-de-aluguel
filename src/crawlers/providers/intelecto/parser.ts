@@ -1,28 +1,22 @@
 import { load } from 'cheerio';
 import type { Apartamento } from '@/crawlers/core/types';
+import {
+  normalizeText as normalize,
+  parseArea,
+  parseBrazilianNumber,
+  parsePrice,
+  roundMoney,
+} from '@/crawlers/shared/numbers';
+import { createListing, type ListingReference } from '@/crawlers/shared/listings';
+import { hasEmptySearchMessage } from '@/crawlers/shared/search';
 
 export const CARD_SELECTOR = 'a[href*="/imovel/"]:has(article)';
 export const COUNT_SELECTOR = '[class*="list-search-header_numberOfResults"]';
 export const DETAIL_SELECTOR = '.HeadTextSection';
 
-const normalize = (text: string): string =>
-  text
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/\s+/g, ' ')
-    .trim()
-    .toLowerCase();
+export { parseBrazilianNumber } from '@/crawlers/shared/numbers';
 
-export function parseBrazilianNumber(text: string): number | undefined {
-  const match = text.match(/\d+(?:\.\d{3})*(?:,\d+)?/);
-  if (!match) return undefined;
-  const value = Number(match[0].replace(/\./g, '').replace(',', '.'));
-  return Number.isFinite(value) ? value : undefined;
-}
-
-export interface ListingCard {
-  code: string;
-  url: string;
+export interface ListingCard extends ListingReference {
   type: string;
   area?: number;
   neighborhood?: string;
@@ -65,13 +59,13 @@ export function parseSearch(html: string, url: string) {
         code: listingCode(href.toString()),
         url: href.toString(),
         type,
-        area: parseBrazilianNumber(areaText ?? ''),
+        area: parseArea(areaText ?? ''),
         neighborhood: card.find('[class*="_neighborhood_"]').text().trim() || undefined,
       };
     });
 
   if (total === 0) {
-    if (cards.length || !/nenhum|nao encontr|0 imoveis/.test(normalize($('body').text()))) {
+    if (cards.length || !hasEmptySearchMessage($)) {
       throw new Error('Intelecto: busca vazia não confirmada');
     }
     return { cards, total, hasNext: false };
@@ -116,11 +110,11 @@ export function parseDetail(html: string, card: ListingCard): Apartamento | unde
       )
     );
   if (!rentColumn) throw new Error(`Intelecto: contrato de aluguel ausente em ${card.code}`);
-  const rent = parseBrazilianNumber(
+  const rent = parsePrice(
     $(rentColumn).find('[class*="property-values_priceValue"]').text()
   );
   const totalElement = $(rentColumn).find('[class*="property-values_additionalValue_"]');
-  const publishedTotal = parseBrazilianNumber(totalElement.text());
+  const publishedTotal = parsePrice(totalElement.text());
   if (totalElement.length && publishedTotal === undefined) return undefined;
   if (!rent || rent <= 0) return undefined;
 
@@ -143,7 +137,7 @@ export function parseDetail(html: string, card: ListingCard): Apartamento | unde
         `${escapedLabel}\\s+(?:(?:ja|esta|estao)\\s+)*(?:inclus[oa]s?|incluid[oa]s?|isent[oa]s?)\\b`
       ).test(description);
       if (included(amountText) || includedInDescription) continue;
-      const amount = parseBrazilianNumber(amountText);
+      const amount = parsePrice(amountText);
       if (amount === undefined) return undefined;
       const previous = charges.get(label);
       if (previous !== undefined && previous !== amount) {
@@ -156,7 +150,11 @@ export function parseDetail(html: string, card: ListingCard): Apartamento | unde
   const characteristics = new Map<string, number | undefined>();
   head.find('[class*="property-characteristics-icons_property__"]').each((_, element) => {
     const label = normalize($(element).find('[class*="_itemTitle__"]').text());
-    characteristics.set(label, parseBrazilianNumber($(element).find('[class*="_text__"]').text()));
+    const text = $(element).find('[class*="_text__"]').text();
+    characteristics.set(
+      label,
+      label.startsWith('area ') ? parseArea(text) : parseBrazilianNumber(text)
+    );
   });
   const area = characteristics.has('area util') ? characteristics.get('area util') : card.area;
   const address = head.find('[class*="_address_"]').first().text().replace(/\s+/g, ' ').trim();
@@ -167,10 +165,9 @@ export function parseDetail(html: string, card: ListingCard): Apartamento | unde
       : undefined;
   const total =
     publishedTotal ??
-    Math.round((rent + [...charges.values()].reduce((a, b) => a + b, 0)) * 100) / 100;
+    roundMoney(rent + [...charges.values()].reduce((a, b) => a + b, 0));
   if (!area || total <= 0) return undefined;
-  return {
-    id: `intelecto_${code}`,
+  return createListing('intelecto', code, {
     valor_aluguel: rent,
     valor_total: total,
     url_apartamento: card.url,
@@ -179,8 +176,7 @@ export function parseDetail(html: string, card: ListingCard): Apartamento | unde
     quartos: characteristics.get('quartos') ?? characteristics.get('quarto'),
     banheiros: characteristics.get('banheiros') ?? characteristics.get('banheiro'),
     garagem: characteristics.get('vagas') ?? characteristics.get('vaga'),
-    corretora: 'intelecto',
-  };
+  });
 }
 
 export function meetsLimits(listing: Apartamento, minSize: number, maxValue: number): boolean {
