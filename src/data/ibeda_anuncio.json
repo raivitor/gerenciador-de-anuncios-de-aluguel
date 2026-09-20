@@ -1,0 +1,61 @@
+[
+  {
+    "id": "ibeda_1258",
+    "valor_aluguel": 530,
+    "valor_total": 2260,
+    "url_apartamento": "https://ibeda.com.br/imovel/apartamento-para-alugar-3-quartos-lagoa-nova-natal-rn-90m2-id-1258",
+    "bairro": "Lagoa Nova",
+    "tamanho": 90,
+    "quartos": 3,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "ibeda"
+  },
+  {
+    "id": "ibeda_907",
+    "valor_aluguel": 1200,
+    "valor_total": 1202,
+    "url_apartamento": "https://ibeda.com.br/imovel/kitnet-para-alugar-1-quarto-conjunto-ponta-negra-natal-rn-33m2-id-907",
+    "bairro": "Conjunto Ponta Negra",
+    "tamanho": 33,
+    "quartos": 1,
+    "banheiros": 1,
+    "corretora": "ibeda"
+  },
+  {
+    "id": "ibeda_1064",
+    "valor_aluguel": 2115,
+    "valor_total": 2800,
+    "url_apartamento": "https://ibeda.com.br/imovel/apartamento-para-alugar-3-quartos-nova-parnamirim-parnamirim-rn-79m2-id-1064",
+    "bairro": "Nova Parnamirim",
+    "tamanho": 79,
+    "quartos": 3,
+    "banheiros": 2,
+    "garagem": 2,
+    "corretora": "ibeda"
+  },
+  {
+    "id": "ibeda_1242",
+    "valor_aluguel": 4500,
+    "valor_total": 6419,
+    "url_apartamento": "https://ibeda.com.br/imovel/apartamento-para-alugar-3-quartos-lagoa-nova-natal-rn-169m2-id-1242",
+    "bairro": "Lagoa Nova",
+    "tamanho": 169.33,
+    "quartos": 3,
+    "banheiros": 5,
+    "garagem": 2,
+    "corretora": "ibeda"
+  },
+  {
+    "id": "ibeda_798",
+    "valor_aluguel": 8800,
+    "valor_total": 10000,
+    "url_apartamento": "https://ibeda.com.br/imovel/apartamento-para-alugar-3-quartos-tirol-natal-rn-119m2-id-798",
+    "bairro": "Tirol",
+    "tamanho": 119,
+    "quartos": 3,
+    "banheiros": 5,
+    "garagem": 2,
+    "corretora": "ibeda"
+  }
+]
