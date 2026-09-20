@@ -1,62 +1,62 @@
 [
   {
     "id": "imoveis-potiguares_1387",
-    "valor_aluguel": 2600,
-    "valor_total": 3010.01,
     "url_apartamento": "https://www.imoveispotiguares.com.br/imovel/condominio-vita-club-para-locacao/1387",
     "bairro": "Pitimbu",
+    "valor_aluguel": 2600,
     "tamanho": 55,
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,
+    "valor_total": 3010.01,
     "corretora": "imoveis-potiguares"
   },
   {
     "id": "imoveis-potiguares_1170",
-    "valor_aluguel": 2100,
-    "valor_total": 2100,
     "url_apartamento": "https://www.imoveispotiguares.com.br/imovel/mc-residenc/1170",
     "bairro": "Capim Macio",
+    "valor_aluguel": 2100,
     "tamanho": 70,
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,
+    "valor_total": 2100,
     "corretora": "imoveis-potiguares"
   },
   {
     "id": "imoveis-potiguares_1026",
-    "valor_aluguel": 2400,
-    "valor_total": 2527,
     "url_apartamento": "https://www.imoveispotiguares.com.br/imovel/condominio-residencial-lizieux/1026",
     "bairro": "Lagoa Nova",
+    "valor_aluguel": 2400,
     "tamanho": 80,
     "quartos": 3,
     "banheiros": 2,
     "garagem": 1,
+    "valor_total": 2527,
     "corretora": "imoveis-potiguares"
   },
   {
     "id": "imoveis-potiguares_1343",
-    "valor_aluguel": 2999,
-    "valor_total": 2999,
     "url_apartamento": "https://www.imoveispotiguares.com.br/imovel/apartamento-vista-mar-2-quartos-em-ponta-negra/1343",
     "bairro": "Ponta Negra",
+    "valor_aluguel": 2999,
     "tamanho": 60,
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,
+    "valor_total": 2999,
     "corretora": "imoveis-potiguares"
   },
   {
     "id": "imoveis-potiguares_1362",
-    "valor_aluguel": 2500,
-    "valor_total": 2500,
     "url_apartamento": "https://www.imoveispotiguares.com.br/imovel/excelente-apartamento-com-2-quartos-1-suite-andar-alto-lado-sombra-ventilado-no-bairro-do-tirol/1362",
     "bairro": "Tirol",
+    "valor_aluguel": 2500,
     "tamanho": 55,
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,
+    "valor_total": 2500,
     "corretora": "imoveis-potiguares"
   }
 ]

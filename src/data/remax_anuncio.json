@@ -1,10 +1,10 @@
 [
   {
-    "id": "remax_720891228-50",
-    "valor_aluguel": 1900,
-    "valor_total": 1900,
-    "url_apartamento": "https://www.remax.com.br/pt-br/imoveis/apartamento/alugar/natal/720891228-50",
-    "bairro": "Ponta Negra",
+    "id": "remax_720891149-355",
+    "valor_aluguel": 2400,
+    "valor_total": 2400,
+    "url_apartamento": "https://www.remax.com.br/pt-br/imoveis/apartamento/alugar/natal/150-r-da-lagosta/720891149-355",
+    "bairro": "Conjunto ALAGAMAR",
     "tamanho": 56,
     "quartos": 2,
     "banheiros": 2,
@@ -24,11 +24,11 @@
     "corretora": "remax"
   },
   {
-    "id": "remax_720891149-355",
-    "valor_aluguel": 2400,
-    "valor_total": 2400,
-    "url_apartamento": "https://www.remax.com.br/pt-br/imoveis/apartamento/alugar/natal/150-r-da-lagosta/720891149-355",
-    "bairro": "Conjunto ALAGAMAR",
+    "id": "remax_720891228-50",
+    "valor_aluguel": 1900,
+    "valor_total": 1900,
+    "url_apartamento": "https://www.remax.com.br/pt-br/imoveis/apartamento/alugar/natal/720891228-50",
+    "bairro": "Ponta Negra",
     "tamanho": 56,
     "quartos": 2,
     "banheiros": 2,
@@ -48,11 +48,11 @@
     "corretora": "remax"
   },
   {
-    "id": "remax_720891211-49",
-    "valor_aluguel": 2100,
-    "valor_total": 2100,
-    "url_apartamento": "https://www.remax.com.br/pt-br/imoveis/apartamento/alugar/natal/2312-avenida-praia-de-genipabu/720891211-49",
-    "bairro": "Ponta Negra",
+    "id": "remax_720891276-24",
+    "valor_aluguel": 1389,
+    "valor_total": 1389,
+    "url_apartamento": "https://www.remax.com.br/pt-br/imoveis/apartamento/alugar/natal/720891276-24",
+    "bairro": "Planalto",
     "tamanho": 65,
     "quartos": 2,
     "banheiros": 2,
@@ -60,11 +60,11 @@
     "corretora": "remax"
   },
   {
-    "id": "remax_720891276-24",
-    "valor_aluguel": 1389,
-    "valor_total": 1389,
-    "url_apartamento": "https://www.remax.com.br/pt-br/imoveis/apartamento/alugar/natal/720891276-24",
-    "bairro": "Planalto",
+    "id": "remax_720891211-49",
+    "valor_aluguel": 2100,
+    "valor_total": 2100,
+    "url_apartamento": "https://www.remax.com.br/pt-br/imoveis/apartamento/alugar/natal/2312-avenida-praia-de-genipabu/720891211-49",
+    "bairro": "Ponta Negra",
     "tamanho": 65,
     "quartos": 2,
     "banheiros": 2,
@@ -108,18 +108,6 @@
     "corretora": "remax"
   },
   {
-    "id": "remax_720891022-581",
-    "valor_aluguel": 2300,
-    "valor_total": 2300,
-    "url_apartamento": "https://www.remax.com.br/pt-br/imoveis/apartamento/alugar/natal/140-rua-da-campina-ponta-negra/720891022-581",
-    "bairro": "Ponta Negra",
-    "tamanho": 55,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "remax"
-  },
-  {
     "id": "remax_720891228-38",
     "valor_aluguel": 2290,
     "valor_total": 2290,
@@ -132,14 +120,14 @@
     "corretora": "remax"
   },
   {
-    "id": "remax_720891003-162",
-    "valor_aluguel": 1200,
-    "valor_total": 1200,
-    "url_apartamento": "https://www.remax.com.br/pt-br/imoveis/apartamento/alugar/natal/135-rua-santa-rita/720891003-162",
+    "id": "remax_720891022-581",
+    "valor_aluguel": 2300,
+    "valor_total": 2300,
+    "url_apartamento": "https://www.remax.com.br/pt-br/imoveis/apartamento/alugar/natal/140-rua-da-campina-ponta-negra/720891022-581",
     "bairro": "Ponta Negra",
-    "tamanho": 50,
+    "tamanho": 55,
     "quartos": 2,
-    "banheiros": 1,
+    "banheiros": 2,
     "garagem": 1,
     "corretora": "remax"
   },
@@ -164,6 +152,18 @@
     "tamanho": 52,
     "quartos": 2,
     "banheiros": 2,
+    "garagem": 1,
+    "corretora": "remax"
+  },
+  {
+    "id": "remax_720891003-162",
+    "valor_aluguel": 1200,
+    "valor_total": 1200,
+    "url_apartamento": "https://www.remax.com.br/pt-br/imoveis/apartamento/alugar/natal/135-rua-santa-rita/720891003-162",
+    "bairro": "Ponta Negra",
+    "tamanho": 50,
+    "quartos": 2,
+    "banheiros": 1,
     "garagem": 1,
     "corretora": "remax"
   },
