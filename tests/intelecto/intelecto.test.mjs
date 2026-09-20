@@ -168,19 +168,29 @@ test('limites são inclusivos e imóveis sem dados suficientes são excluídos',
 });
 
 test('busca vazia confirmada difere de carregamento incompleto', () => {
-  assert.deepEqual(
-    parseSearch(
-      '<span class="list-search-header_numberOfResults__x">0 resultados</span><p>Nenhum imóvel encontrado</p>',
-      SEARCH_URL
-    ),
-    { cards: [], total: 0, hasNext: false }
-  );
+  const zeroCount = '<span class="list-search-header_numberOfResults__x">0 resultados</span>';
+  assert.deepEqual(parseSearch(zeroCount + '<p>Nenhum imóvel encontrado</p>', SEARCH_URL), {
+    cards: [],
+    total: 0,
+    hasNext: false,
+  });
   for (const html of [
     '<p>Buscando resultados...</p>',
-    '<span class="list-search-header_numberOfResults__x">0 resultados</span>',
+    zeroCount,
+    zeroCount + '<p>Buscando resultados...</p>',
+    zeroCount + '<script>Nenhum imóvel encontrado</script>',
+    zeroCount + '<style>/* Nenhum imóvel encontrado */</style>',
+    zeroCount + '<p>Não encontrou o imóvel?</p>',
     '<p>Erro de carregamento</p>',
   ])
     assert.throws(() => parseSearch(html, SEARCH_URL));
+  const contradictorySearch = load(searchHtml);
+  contradictorySearch('[class*="list-search-header_numberOfResults"]').text('0 resultados');
+  contradictorySearch('body').append('<p>Nenhum imóvel encontrado</p>');
+  assert.throws(
+    () => parseSearch(contradictorySearch.html(), SEARCH_URL),
+    /busca vazia não confirmada/
+  );
   assert.throws(() => parseDetail('<h1>Erro</h1>', card));
   assert.throws(() => parseDetail(detailHtml, { ...card, code: 'L123' }));
 });

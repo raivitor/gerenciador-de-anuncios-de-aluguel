@@ -65,6 +65,8 @@ export function parseSearch(html: string, url: string) {
     });
 
   if (total === 0) {
+    // O contador sozinho não confirma que a busca terminou de carregar.
+    $(COUNT_SELECTOR).remove();
     if (cards.length || !hasEmptySearchMessage($)) {
       throw new Error('Intelecto: busca vazia não confirmada');
     }
@@ -110,9 +112,7 @@ export function parseDetail(html: string, card: ListingCard): Apartamento | unde
       )
     );
   if (!rentColumn) throw new Error(`Intelecto: contrato de aluguel ausente em ${card.code}`);
-  const rent = parsePrice(
-    $(rentColumn).find('[class*="property-values_priceValue"]').text()
-  );
+  const rent = parsePrice($(rentColumn).find('[class*="property-values_priceValue"]').text());
   const totalElement = $(rentColumn).find('[class*="property-values_additionalValue_"]');
   const publishedTotal = parsePrice(totalElement.text());
   if (totalElement.length && publishedTotal === undefined) return undefined;
@@ -164,8 +164,7 @@ export function parseDetail(html: string, card: ListingCard): Apartamento | unde
       ? addressParts[addressParts.length - 3].split(',').pop()?.trim()
       : undefined;
   const total =
-    publishedTotal ??
-    roundMoney(rent + [...charges.values()].reduce((a, b) => a + b, 0));
+    publishedTotal ?? roundMoney(rent + [...charges.values()].reduce((a, b) => a + b, 0));
   if (!area || total <= 0) return undefined;
   return createListing('intelecto', code, {
     valor_aluguel: rent,

@@ -6,10 +6,10 @@ import type { Apartamento } from '@/crawlers/core/types';
 
 import { parseDetail, parseSearch } from './parser';
 
-export const SEARCH_URL =
+const SEARCH_URL =
   'https://habitacionalonline.com.br/busca?finalidade=Aluguel&tipo=Apartamento%2CApartamento+Duplex&dormitorios=2&vagas=1&max=3000.00&areaPrivativaMin=45.00';
 
-export class HabitacionalCrawler extends BaseCrawler {
+class HabitacionalCrawler extends BaseCrawler {
   baseURL = 'https://habitacionalonline.com.br';
 
   constructor(private readonly searchUrl = SEARCH_URL) {

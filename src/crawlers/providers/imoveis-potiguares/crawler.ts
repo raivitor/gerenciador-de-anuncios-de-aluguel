@@ -6,12 +6,12 @@ import { collectPages } from '@/crawlers/shared/pagination';
 import { buildPayload } from './filters';
 import { parseSearch, parseTotal, type ImoveisPotiguaresResponse } from './parser';
 
-export const SEARCH_URL =
+const SEARCH_URL =
   'https://www.imoveispotiguares.com.br/aluguel/apartamento/natal/todos-os-bairros/todos-os-condominios/todas-as-opcoes/2-quartos+1-vagas?valor_max=3.000,00&area_min=45&pagina=1';
 
 const API_URL = 'https://www.imoveispotiguares.com.br/retornar-imoveis-disponiveis';
 
-export class ImoveisPotiguaresCrawler extends BaseCrawler {
+class ImoveisPotiguaresCrawler extends BaseCrawler {
   baseURL: string;
   private readonly http = createHttpClient();
 
@@ -47,7 +47,8 @@ export class ImoveisPotiguaresCrawler extends BaseCrawler {
     for (const card of cards) {
       let total = card.fields.valor_aluguel;
       try {
-        total = parseTotal((await this.http.get<string>(card.url, { timeout: 15_000 })).data) ?? total;
+        total =
+          parseTotal((await this.http.get<string>(card.url, { timeout: 15_000 })).data) ?? total;
       } catch (error) {
         console.warn(`[ImoveisPotiguares] Falha ao obter detalhes de ${card.url}:`, error);
       }

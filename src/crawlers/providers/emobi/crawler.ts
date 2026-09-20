@@ -6,10 +6,10 @@ import { createListing, uniqueBy } from '@/crawlers/shared/listings';
 import { parseBrazilianNumber } from '@/crawlers/shared/numbers';
 import { parseBathrooms, parseSearch } from './parser';
 
-export const SEARCH_URL =
+const SEARCH_URL =
   'https://emobiimobiliaria.com.br/aluguel/apartamento/natal/2-3-dormitorios/1-banheiro/com-vaga/';
 
-export class EmobiCrawler extends PuppeteerCrawler {
+class EmobiCrawler extends PuppeteerCrawler {
   baseURL: string;
   private readonly http = createHttpClient({ timeout: 10_000 });
 
@@ -74,7 +74,9 @@ export class EmobiCrawler extends PuppeteerCrawler {
     const rawCards = parseSearch(await page.content(), page.url());
     const cards = uniqueBy(rawCards, card => card.code);
     if (cards.length !== totalExpected) {
-      throw new Error(`Emobi: contagem divergente de imóveis únicos (${cards.length}/${totalExpected})`);
+      throw new Error(
+        `Emobi: contagem divergente de imóveis únicos (${cards.length}/${totalExpected})`
+      );
     }
     const listings: Apartamento[] = [];
     for (const card of cards) {

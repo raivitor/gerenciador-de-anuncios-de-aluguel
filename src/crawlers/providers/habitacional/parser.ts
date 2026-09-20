@@ -14,15 +14,16 @@ export interface SearchListing extends ListingReference {
   neighborhood?: string;
 }
 
-export { parseBrazilianNumber } from '@/crawlers/shared/numbers';
-
 function codeFromUrl(url: string): string {
   const code = new URL(url).pathname.match(/-([A-Z]{2,}\d+)\/?$/i)?.[1];
   if (!code) throw new Error(`Habitacional: código ausente em ${url}`);
   return code.toUpperCase();
 }
 
-export function parseSearch(html: string, pageUrl: string): { listings: SearchListing[]; pages: number } {
+export function parseSearch(
+  html: string,
+  pageUrl: string
+): { listings: SearchListing[]; pages: number } {
   const $ = load(html);
   const listings = $('a[href^="/imovel/"]')
     .toArray()
@@ -30,7 +31,8 @@ export function parseSearch(html: string, pageUrl: string): { listings: SearchLi
       const href = $(element).attr('href');
       if (!href) throw new Error('Habitacional: link de imóvel sem href');
       const url = new URL(href, pageUrl);
-      if (url.origin !== new URL(pageUrl).origin) throw new Error('Habitacional: link externo inesperado');
+      if (url.origin !== new URL(pageUrl).origin)
+        throw new Error('Habitacional: link externo inesperado');
       url.search = '';
       url.hash = '';
       const location = $(element)
@@ -93,7 +95,12 @@ export function parseDetail(html: string, listing: SearchListing): Apartamento |
   const quartos = findCharacteristic($, /^\d+\s+Dormitórios?$/i);
   const banheiros = findCharacteristic($, /^\d+\s+Banheiros?$/i);
   const garagem = findCharacteristic($, /^\d+\s+Vagas?$/i);
-  if (area === undefined || quartos === undefined || banheiros === undefined || garagem === undefined) {
+  if (
+    area === undefined ||
+    quartos === undefined ||
+    banheiros === undefined ||
+    garagem === undefined
+  ) {
     throw new Error(`Habitacional: características ausentes em ${listing.code}`);
   }
 

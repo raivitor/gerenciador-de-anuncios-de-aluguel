@@ -3,7 +3,7 @@
 Requer Node.js >= 22.15 e o navegador do Puppeteer já instalado. Sem dependências adicionais.
 
 ```sh
-node --import ./tests/intelecto/register-typescript.mjs --test tests/intelecto/intelecto.test.mjs
+npm test
 ```
 
 Os HTMLs são recortes dos cards e detalhes públicos inspecionados em 17/09/2026, sem imagens ou
