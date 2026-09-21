@@ -9,6 +9,7 @@ import imoveisPotiguaresCrawler from './providers/imoveis-potiguares';
 import gorettiCrawler from './providers/goretti';
 import karllaBrandaoCrawler from './providers/karlla-brandao';
 import ibedaCrawler from './providers/ibeda';
+import abreuCrawler from './providers/abreu';
 
 const crawlers: BaseCrawler[] = [
   intelectoCrawler,
@@ -20,6 +21,7 @@ const crawlers: BaseCrawler[] = [
   gorettiCrawler,
   karllaBrandaoCrawler,
   ibedaCrawler,
+  abreuCrawler,
 ];
 
 export default crawlers;
