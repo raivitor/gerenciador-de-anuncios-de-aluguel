@@ -12,6 +12,18 @@
     "corretora": "intelecto"
   },
   {
+    "id": "intelecto_L9400980",
+    "valor_aluguel": 1550,
+    "valor_total": 1550,
+    "url_apartamento": "https://www.intelectoimobiliaria.com/imovel/apartamento-com-2-quartos-para-alugar-e-1-vaga-bairro-emaus-em-parnamirim/L9400980",
+    "bairro": "Emaús",
+    "tamanho": 47,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "intelecto"
+  },
+  {
     "id": "intelecto_L9400967",
     "valor_aluguel": 1900,
     "valor_total": 1900,
@@ -24,12 +36,12 @@
     "corretora": "intelecto"
   },
   {
-    "id": "intelecto_L9400980",
-    "valor_aluguel": 1600,
-    "valor_total": 1600,
-    "url_apartamento": "https://www.intelectoimobiliaria.com/imovel/apartamento-com-2-quartos-para-alugar-e-1-vaga-bairro-emaus-em-parnamirim/L9400980",
-    "bairro": "Emaús",
-    "tamanho": 47,
+    "id": "intelecto_L9400926",
+    "valor_aluguel": 2399,
+    "valor_total": 2399,
+    "url_apartamento": "https://www.intelectoimobiliaria.com/imovel/apartamento-com-2-quartos-para-alugar-e-1-vaga-bairro-pitimbu-em-natal/L9400926",
+    "bairro": "Pitimbu",
+    "tamanho": 55,
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,
@@ -45,18 +57,6 @@
     "quartos": 2,
     "banheiros": 2,
     "garagem": 2,
-    "corretora": "intelecto"
-  },
-  {
-    "id": "intelecto_L9400926",
-    "valor_aluguel": 2399,
-    "valor_total": 2399,
-    "url_apartamento": "https://www.intelectoimobiliaria.com/imovel/apartamento-com-2-quartos-para-alugar-e-1-vaga-bairro-pitimbu-em-natal/L9400926",
-    "bairro": "Pitimbu",
-    "tamanho": 55,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
     "corretora": "intelecto"
   },
   {

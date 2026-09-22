@@ -24,18 +24,6 @@
     "corretora": "emobi"
   },
   {
-    "id": "emobi_10534",
-    "url_apartamento": "https://emobiimobiliaria.com.br/imovel/10534/apartamento-2-quartos-pitimbu-natal/",
-    "bairro": "Pitimbu",
-    "valor_aluguel": 2100,
-    "valor_total": 2100,
-    "tamanho": 49,
-    "quartos": 2,
-    "garagem": 1,
-    "banheiros": 1,
-    "corretora": "emobi"
-  },
-  {
     "id": "emobi_5423",
     "url_apartamento": "https://emobiimobiliaria.com.br/imovel/5423/apartamento-2-quartos-neopolis-natal/",
     "bairro": "Neópolis",
@@ -96,18 +84,6 @@
     "corretora": "emobi"
   },
   {
-    "id": "emobi_10860",
-    "url_apartamento": "https://emobiimobiliaria.com.br/imovel/10860/apartamento-2-quartos-ponta-negra-natal/",
-    "bairro": "Ponta Negra",
-    "valor_aluguel": 4000,
-    "valor_total": 4000,
-    "tamanho": 56,
-    "quartos": 2,
-    "garagem": 1,
-    "banheiros": 2,
-    "corretora": "emobi"
-  },
-  {
     "id": "emobi_4455",
     "url_apartamento": "https://emobiimobiliaria.com.br/imovel/4455/apartamento-2-quartos-ponta-negra-natal/",
     "bairro": "Ponta Negra",
@@ -129,6 +105,18 @@
     "quartos": 1,
     "garagem": 1,
     "banheiros": 1,
+    "corretora": "emobi"
+  },
+  {
+    "id": "emobi_10860",
+    "url_apartamento": "https://emobiimobiliaria.com.br/imovel/10860/apartamento-2-quartos-ponta-negra-natal/",
+    "bairro": "Ponta Negra",
+    "valor_aluguel": 4000,
+    "valor_total": 4000,
+    "tamanho": 56,
+    "quartos": 2,
+    "garagem": 1,
+    "banheiros": 2,
     "corretora": "emobi"
   },
   {

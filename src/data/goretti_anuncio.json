@@ -1,5 +1,17 @@
 [
   {
+    "id": "goretti_AP0487-EF8",
+    "url_apartamento": "https://www.gorettimobiliaria.com/imovel/apartamento-natal-3-quartos-67-m/AP0487-EF8",
+    "bairro": "Capim Macio",
+    "valor_aluguel": 1300,
+    "tamanho": 67,
+    "quartos": 3,
+    "banheiros": 2,
+    "garagem": 2,
+    "valor_total": 1538.38,
+    "corretora": "goretti"
+  },
+  {
     "id": "goretti_AP0382-EF8",
     "url_apartamento": "https://www.gorettimobiliaria.com/imovel/apartamento-natal-3-quartos-84-m/AP0382-EF8",
     "bairro": "Petrópolis",

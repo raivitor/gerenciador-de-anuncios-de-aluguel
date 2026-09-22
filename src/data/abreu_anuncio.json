@@ -1,17 +1,5 @@
 [
   {
-    "id": "abreu_36250",
-    "valor_aluguel": 1200,
-    "valor_total": 1762.84,
-    "url_apartamento": "https://www.abreuimoveis.com.br/comprar/Natal/Imoveis-Residenciais/Apartamento/Ponta-Negra/36250",
-    "bairro": "Ponta Negra",
-    "tamanho": 47.52,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "abreu"
-  },
-  {
     "id": "abreu_37157",
     "valor_aluguel": 1200,
     "valor_total": 1624,
@@ -27,7 +15,7 @@
     "id": "abreu_38010",
     "valor_aluguel": 1250,
     "valor_total": 1293.66,
-    "url_apartamento": "https://www.abreuimoveis.com.br/alugar/Natal/Casa/Padrao/Potengi/38010",
+    "url_apartamento": "https://www.abreuimoveis.com.br/alugar/Natal/Imoveis-Residenciais/Casa/Potengi/38010",
     "bairro": "Potengi",
     "tamanho": 53.29,
     "quartos": 2,
@@ -54,18 +42,6 @@
     "url_apartamento": "https://www.abreuimoveis.com.br/alugar/Natal/Imoveis-Residenciais/Apartamento/Areia-Preta/33946",
     "bairro": "Areia Preta",
     "tamanho": 52.54,
-    "quartos": 1,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "abreu"
-  },
-  {
-    "id": "abreu_31942",
-    "valor_aluguel": 1500,
-    "valor_total": 1500,
-    "url_apartamento": "https://www.abreuimoveis.com.br/alugar/Natal/Imoveis-Residenciais/Apartamento/Capim-Macio/31942",
-    "bairro": "Capim Macio",
-    "tamanho": 45.15,
     "quartos": 1,
     "banheiros": 1,
     "garagem": 1,
@@ -104,6 +80,30 @@
     "tamanho": 40,
     "quartos": 2,
     "banheiros": 2,
+    "garagem": 1,
+    "corretora": "abreu"
+  },
+  {
+    "id": "abreu_36967",
+    "valor_aluguel": 1500,
+    "valor_total": 1667.84,
+    "url_apartamento": "https://www.abreuimoveis.com.br/comprar/Natal/Imoveis-Residenciais/Casa/Quintas/36967",
+    "bairro": "Quintas",
+    "tamanho": 186,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "abreu"
+  },
+  {
+    "id": "abreu_31942",
+    "valor_aluguel": 1500,
+    "valor_total": 1500,
+    "url_apartamento": "https://www.abreuimoveis.com.br/alugar/Natal/Imoveis-Residenciais/Apartamento/Capim-Macio/31942",
+    "bairro": "Capim Macio",
+    "tamanho": 45.15,
+    "quartos": 1,
+    "banheiros": 1,
     "garagem": 1,
     "corretora": "abreu"
   },
@@ -155,18 +155,6 @@
     "corretora": "abreu"
   },
   {
-    "id": "abreu_32122",
-    "valor_aluguel": 1800,
-    "valor_total": 3217.74,
-    "url_apartamento": "https://www.abreuimoveis.com.br/alugar/Natal/Imoveis-Residenciais/Apartamento/Petropolis/32122",
-    "bairro": "Petrópolis",
-    "tamanho": 45,
-    "quartos": 1,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "abreu"
-  },
-  {
     "id": "abreu_37000",
     "valor_aluguel": 1900,
     "valor_total": 2627.23,
@@ -174,18 +162,6 @@
     "bairro": "Ponta Negra",
     "tamanho": 52,
     "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "abreu"
-  },
-  {
-    "id": "abreu_38003",
-    "valor_aluguel": 2100,
-    "valor_total": 2940,
-    "url_apartamento": "https://www.abreuimoveis.com.br/alugar/Natal/Imoveis-Residenciais/Apartamento/Capim-Macio/38003",
-    "bairro": "Capim Macio",
-    "tamanho": 100,
-    "quartos": 3,
     "banheiros": 2,
     "garagem": 1,
     "corretora": "abreu"
@@ -227,6 +203,18 @@
     "corretora": "abreu"
   },
   {
+    "id": "abreu_38025",
+    "valor_aluguel": 2800,
+    "valor_total": 3280,
+    "url_apartamento": "https://www.abreuimoveis.com.br/alugar/Natal/Imoveis-Residenciais/Apartamento/Tirol/38025",
+    "bairro": "Tirol",
+    "tamanho": 55,
+    "quartos": 2,
+    "banheiros": 2,
+    "garagem": 1,
+    "corretora": "abreu"
+  },
+  {
     "id": "abreu_38004",
     "valor_aluguel": 3050,
     "valor_total": 3787.4,
@@ -247,18 +235,6 @@
     "tamanho": 200,
     "quartos": 4,
     "banheiros": 4,
-    "garagem": 1,
-    "corretora": "abreu"
-  },
-  {
-    "id": "abreu_37003",
-    "valor_aluguel": 4100,
-    "valor_total": 5040.14,
-    "url_apartamento": "https://www.abreuimoveis.com.br/alugar/Natal/Apartamento/Padrao/Capim-Macio/37003",
-    "bairro": "Capim Macio",
-    "tamanho": 79,
-    "quartos": 3,
-    "banheiros": 2,
     "garagem": 1,
     "corretora": "abreu"
   },
