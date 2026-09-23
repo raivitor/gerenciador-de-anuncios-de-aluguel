@@ -12,18 +12,6 @@
     "corretora": "ibeda"
   },
   {
-    "id": "ibeda_664",
-    "valor_aluguel": 1650,
-    "valor_total": 2300,
-    "url_apartamento": "https://ibeda.com.br/imovel/apartamento-para-alugar-2-quartos-tirol-natal-rn-57m2-id-664",
-    "bairro": "Tirol",
-    "tamanho": 57,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "ibeda"
-  },
-  {
     "id": "ibeda_1258",
     "valor_aluguel": 530,
     "valor_total": 2260,

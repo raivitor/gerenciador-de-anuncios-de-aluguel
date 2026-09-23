@@ -82,17 +82,5 @@
     "banheiros": 1,
     "garagem": 1,
     "corretora": "habitacional"
-  },
-  {
-    "id": "habitacional_AP0679",
-    "valor_aluguel": 1237.5,
-    "valor_total": 1337.5,
-    "url_apartamento": "https://habitacionalonline.com.br/imovel/apartamento-monte-castelo-parnamirim-rn-2-quartos-50m2-AP0679",
-    "bairro": "Monte Castelo",
-    "tamanho": 50,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "habitacional"
   }
 ]

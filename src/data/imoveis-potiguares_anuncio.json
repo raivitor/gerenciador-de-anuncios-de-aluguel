@@ -1,17 +1,5 @@
 [
   {
-    "id": "imoveis-potiguares_1343",
-    "url_apartamento": "https://www.imoveispotiguares.com.br/imovel/apartamento-vista-mar-2-quartos-em-ponta-negra/1343",
-    "bairro": "Ponta Negra",
-    "valor_aluguel": 2999,
-    "tamanho": 60,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "valor_total": 2999,
-    "corretora": "imoveis-potiguares"
-  },
-  {
     "id": "imoveis-potiguares_1170",
     "url_apartamento": "https://www.imoveispotiguares.com.br/imovel/mc-residenc/1170",
     "bairro": "Capim Macio",

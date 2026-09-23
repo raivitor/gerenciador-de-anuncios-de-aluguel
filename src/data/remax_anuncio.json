@@ -168,6 +168,18 @@
     "corretora": "remax"
   },
   {
+    "id": "remax_720891211-66",
+    "valor_aluguel": 2100,
+    "valor_total": 2100,
+    "url_apartamento": "https://www.remax.com.br/pt-br/imoveis/apartamento/alugar/natal/857-rua-dos-tororos-central-dos-correios-de-natal/720891211-66",
+    "bairro": "Lagoa Nova",
+    "tamanho": 86,
+    "quartos": 3,
+    "banheiros": 3,
+    "garagem": 12,
+    "corretora": "remax"
+  },
+  {
     "id": "remax_720811011-111",
     "valor_aluguel": 1300,
     "valor_total": 1300,
