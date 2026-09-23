@@ -1,5 +1,17 @@
 [
   {
+    "id": "abreu_36250",
+    "valor_aluguel": 1200,
+    "valor_total": 1762.84,
+    "url_apartamento": "https://www.abreuimoveis.com.br/comprar/Natal/Imoveis-Residenciais/Apartamento/Ponta-Negra/36250",
+    "bairro": "Ponta Negra",
+    "tamanho": 47.52,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "abreu"
+  },
+  {
     "id": "abreu_37157",
     "valor_aluguel": 1200,
     "valor_total": 1624,
@@ -48,6 +60,18 @@
     "corretora": "abreu"
   },
   {
+    "id": "abreu_31942",
+    "valor_aluguel": 1500,
+    "valor_total": 1500,
+    "url_apartamento": "https://www.abreuimoveis.com.br/alugar/Natal/Imoveis-Residenciais/Apartamento/Capim-Macio/31942",
+    "bairro": "Capim Macio",
+    "tamanho": 45.15,
+    "quartos": 1,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "abreu"
+  },
+  {
     "id": "abreu_34590",
     "valor_aluguel": 1500,
     "valor_total": 1865.28,
@@ -55,18 +79,6 @@
     "bairro": "Lagoa Seca",
     "tamanho": 78.98,
     "quartos": 1,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "abreu"
-  },
-  {
-    "id": "abreu_37815",
-    "valor_aluguel": 1500,
-    "valor_total": 2161.79,
-    "url_apartamento": "https://www.abreuimoveis.com.br/alugar/Natal/Imoveis-Residenciais/Apartamento/Ponta-Negra/37815",
-    "bairro": "Ponta Negra",
-    "tamanho": 56,
-    "quartos": 2,
     "banheiros": 1,
     "garagem": 1,
     "corretora": "abreu"
@@ -96,24 +108,12 @@
     "corretora": "abreu"
   },
   {
-    "id": "abreu_31942",
+    "id": "abreu_37815",
     "valor_aluguel": 1500,
-    "valor_total": 1500,
-    "url_apartamento": "https://www.abreuimoveis.com.br/alugar/Natal/Imoveis-Residenciais/Apartamento/Capim-Macio/31942",
-    "bairro": "Capim Macio",
-    "tamanho": 45.15,
-    "quartos": 1,
-    "banheiros": 1,
-    "garagem": 1,
-    "corretora": "abreu"
-  },
-  {
-    "id": "abreu_37215",
-    "valor_aluguel": 1500,
-    "valor_total": 2067.6,
-    "url_apartamento": "https://www.abreuimoveis.com.br/alugar/Natal/Imoveis-Residenciais/Apartamento/Ponta-Negra/37215",
+    "valor_total": 2161.79,
+    "url_apartamento": "https://www.abreuimoveis.com.br/alugar/Natal/Imoveis-Residenciais/Apartamento/Ponta-Negra/37815",
     "bairro": "Ponta Negra",
-    "tamanho": 46.25,
+    "tamanho": 56,
     "quartos": 2,
     "banheiros": 1,
     "garagem": 1,
@@ -155,6 +155,30 @@
     "corretora": "abreu"
   },
   {
+    "id": "abreu_32122",
+    "valor_aluguel": 1800,
+    "valor_total": 3217.74,
+    "url_apartamento": "https://www.abreuimoveis.com.br/alugar/Natal/Imoveis-Residenciais/Apartamento/Petropolis/32122",
+    "bairro": "Petrópolis",
+    "tamanho": 45,
+    "quartos": 1,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "abreu"
+  },
+  {
+    "id": "abreu_38032",
+    "valor_aluguel": 1800,
+    "valor_total": 2580,
+    "url_apartamento": "https://www.abreuimoveis.com.br/alugar/Natal/Imoveis-Residenciais/Apartamento/Rocas/38032",
+    "bairro": "Rocas",
+    "tamanho": 60,
+    "quartos": 2,
+    "banheiros": 1,
+    "garagem": 1,
+    "corretora": "abreu"
+  },
+  {
     "id": "abreu_37000",
     "valor_aluguel": 1900,
     "valor_total": 2627.23,
@@ -163,6 +187,18 @@
     "tamanho": 52,
     "quartos": 2,
     "banheiros": 2,
+    "garagem": 1,
+    "corretora": "abreu"
+  },
+  {
+    "id": "abreu_38024",
+    "valor_aluguel": 1900,
+    "valor_total": 2486.35,
+    "url_apartamento": "https://www.abreuimoveis.com.br/alugar/Natal/Imoveis-Residenciais/Apartamento/Lagoa-Seca/38024",
+    "bairro": "Lagoa Seca",
+    "tamanho": 50,
+    "quartos": 2,
+    "banheiros": 1,
     "garagem": 1,
     "corretora": "abreu"
   },
@@ -209,18 +245,6 @@
     "url_apartamento": "https://www.abreuimoveis.com.br/alugar/Natal/Imoveis-Residenciais/Apartamento/Tirol/38025",
     "bairro": "Tirol",
     "tamanho": 55,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "corretora": "abreu"
-  },
-  {
-    "id": "abreu_38004",
-    "valor_aluguel": 3050,
-    "valor_total": 3787.4,
-    "url_apartamento": "https://www.abreuimoveis.com.br/alugar/Natal/Imoveis-Residenciais/Apartamento/Tirol/38004",
-    "bairro": "Tirol",
-    "tamanho": 55.05,
     "quartos": 2,
     "banheiros": 2,
     "garagem": 1,

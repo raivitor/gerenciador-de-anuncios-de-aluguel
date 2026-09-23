@@ -605,15 +605,13 @@
     "tag": "Não"
   },
   "habitacional_AP0676": {
-    "tag": "Visitado",
-    "nota": 2
+    "tag": "Não"
   },
   "habitacional_HB1268": {
     "tag": "Não"
   },
   "intelecto_L9400967": {
-    "tag": "Visitado",
-    "nota": 3
+    "tag": "Não"
   },
   "remax_720891228-50": {
     "tag": "Não"
@@ -632,6 +630,99 @@
     "tag": "Não"
   },
   "remax_720891022-581": {
+    "tag": "Não"
+  },
+  "emobi_10917": {
+    "tag": "Não"
+  },
+  "karlla-brandao_AP01464": {
+    "tag": "Não"
+  },
+  "karlla-brandao_AP01468": {
+    "tag": "Não"
+  },
+  "emobi_9836": {
+    "tag": "Não"
+  },
+  "ibeda_1258": {
+    "tag": "Não"
+  },
+  "imoveis-potiguares_1026": {
+    "tag": "Não"
+  },
+  "emobi_10856": {
+    "tag": "Agendar"
+  },
+  "emobi_10673": {
+    "tag": "Não"
+  },
+  "ibeda_1242": {
+    "tag": "Não"
+  },
+  "abreu_31942": {
+    "tag": "Não"
+  },
+  "goretti_AP0487-EF8": {
+    "tag": "Não"
+  },
+  "remax_720731004-201": {
+    "tag": "Não"
+  },
+  "imoveis-potiguares_1170": {
+    "tag": "Não"
+  },
+  "remax_720891228-38": {
+    "tag": "Agendar"
+  },
+  "emobi_10901": {
+    "tag": "Não"
+  },
+  "ibeda_867": {
+    "tag": "Não"
+  },
+  "emobi_10403": {
+    "tag": "Não"
+  },
+  "ibeda_907": {
+    "tag": "Não"
+  },
+  "abreu_36250": {
+    "tag": "Não"
+  },
+  "remax_720891211-49": {
+    "tag": "Não"
+  },
+  "abreu_37994": {
+    "tag": "Não"
+  },
+  "remax_720731004-260": {
+    "tag": "Não"
+  },
+  "abreu_37000": {
+    "tag": "Não"
+  },
+  "habitacional_HB1483": {
+    "tag": "Não"
+  },
+  "imoveis-potiguares_1343": {
+    "tag": "Não"
+  },
+  "emobi_5200": {
+    "tag": "Não"
+  },
+  "remax_720731020-178": {
+    "tag": "Não"
+  },
+  "emobi_5423": {
+    "tag": "Não"
+  },
+  "habitacional_HB1510": {
+    "tag": "Não"
+  },
+  "ibeda_1064": {
+    "tag": "Não"
+  },
+  "intelecto_L9400972": {
     "tag": "Não"
   }
 }

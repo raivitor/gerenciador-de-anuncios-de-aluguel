@@ -1,41 +1,5 @@
 [
   {
-    "id": "viver-imoveis_AP0368-VIYS",
-    "url_apartamento": "https://www.viverimoveisrn.com.br/imovel/apartamento-natal-2-quartos-55-m/AP0368-VIYS",
-    "bairro": "Capim Macio",
-    "valor_aluguel": 1200,
-    "tamanho": 55,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "valor_total": 2111.81,
-    "corretora": "viver-imoveis"
-  },
-  {
-    "id": "viver-imoveis_AP0006-VIYS",
-    "url_apartamento": "https://www.viverimoveisrn.com.br/imovel/apartamento-natal-2-quartos-56-m/AP0006-VIYS",
-    "bairro": "Pitimbu",
-    "valor_aluguel": 650,
-    "tamanho": 56.41,
-    "quartos": 2,
-    "banheiros": 1,
-    "garagem": 1,
-    "valor_total": 1061.49,
-    "corretora": "viver-imoveis"
-  },
-  {
-    "id": "viver-imoveis_AP0084-VIYS",
-    "url_apartamento": "https://www.viverimoveisrn.com.br/imovel/apartamento-natal-2-quartos-80-m/AP0084-VIYS",
-    "bairro": "Cidade da Esperança",
-    "valor_aluguel": 950,
-    "tamanho": 80,
-    "quartos": 2,
-    "banheiros": 2,
-    "garagem": 1,
-    "valor_total": 1390,
-    "corretora": "viver-imoveis"
-  },
-  {
     "id": "viver-imoveis_AP0232-VIYS",
     "url_apartamento": "https://www.viverimoveisrn.com.br/imovel/apartamento-natal-2-quartos-77-m/AP0232-VIYS",
     "bairro": "Petrópolis",
